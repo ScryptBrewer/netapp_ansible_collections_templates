@@ -7,16 +7,16 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    name: '{{ req_export_policy_rule_name }}'
-    vserver: '{{ req_export_policy_rule_vserver }}'
-    allow_suid: '{{ opt_export_policy_rule_allow_suid | default(omit) }}'
-    anonymous_user_id: '{{ opt_export_policy_rule_anonymous_user_id | default(omit) }}'
-    client_match: '{{ opt_export_policy_rule_client_match | default(omit) }}'
-    feature_flags: '{{ opt_export_policy_rule_feature_flags | default(omit) }}'
-    protocol: '{{ opt_export_policy_rule_protocol | default(omit) }}'
-    ro_rule: '{{ opt_export_policy_rule_ro_rule | default(omit) }}'
-    rule_index: '{{ opt_export_policy_rule_rule_index | default(omit) }}'
-    rw_rule: '{{ opt_export_policy_rule_rw_rule | default(omit) }}'
-    state: '{{ opt_export_policy_rule_state | default(omit) }}'
-    super_user_security: '{{ opt_export_policy_rule_super_user_security | default(omit) }}'
+    name: '{{ req_export_policy_rule_name_01 }}'
+    vserver: '{{ req_export_policy_rule_vserver_01 }}'
+    allow_suid: '{{ opt_export_policy_rule_allow_suid_01 | default(omit) }}'
+    anonymous_user_id: '{{ opt_export_policy_rule_anonymous_user_id_01 | default(omit) }}'
+    client_match: '{{ opt_export_policy_rule_client_match_01 | default(omit) }}'
+    feature_flags: '{{ opt_export_policy_rule_feature_flags_01 | default(omit) }}'
+    protocol: '{{ opt_export_policy_rule_protocol_01 | default(omit) }}'
+    ro_rule: '{{ opt_export_policy_rule_ro_rule_01 | default(omit) }}'
+    rule_index: '{{ opt_export_policy_rule_rule_index_01 | default(omit) }}'
+    rw_rule: '{{ opt_export_policy_rule_rw_rule_01 | default(omit) }}'
+    state: '{{ opt_export_policy_rule_state_01 | default(omit) }}'
+    super_user_security: '{{ opt_export_policy_rule_super_user_security_01 | default(omit) }}'
   register: results

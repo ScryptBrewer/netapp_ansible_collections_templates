@@ -7,14 +7,14 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    subsystem: '{{ req_nvme_subsystem_subsystem }}'
-    vserver: '{{ req_nvme_subsystem_vserver }}'
-    feature_flags: '{{ opt_nvme_subsystem_feature_flags | default(omit) }}'
-    hosts: '{{ opt_nvme_subsystem_hosts | default(omit) }}'
-    name: '{{ opt_nvme_subsystem_name | default(omit) }}'
-    ostype: '{{ opt_nvme_subsystem_ostype | default(omit) }}'
-    paths: '{{ opt_nvme_subsystem_paths | default(omit) }}'
-    skip_host_check: '{{ opt_nvme_subsystem_skip_host_check | default(omit) }}'
-    skip_mapped_check: '{{ opt_nvme_subsystem_skip_mapped_check | default(omit) }}'
-    state: '{{ opt_nvme_subsystem_state | default(omit) }}'
+    subsystem: '{{ req_nvme_subsystem_subsystem_01 }}'
+    vserver: '{{ req_nvme_subsystem_vserver_01 }}'
+    feature_flags: '{{ opt_nvme_subsystem_feature_flags_01 | default(omit) }}'
+    hosts: '{{ opt_nvme_subsystem_hosts_01 | default(omit) }}'
+    name: '{{ opt_nvme_subsystem_name_01 | default(omit) }}'
+    ostype: '{{ opt_nvme_subsystem_ostype_01 | default(omit) }}'
+    paths: '{{ opt_nvme_subsystem_paths_01 | default(omit) }}'
+    skip_host_check: '{{ opt_nvme_subsystem_skip_host_check_01 | default(omit) }}'
+    skip_mapped_check: '{{ opt_nvme_subsystem_skip_mapped_check_01 | default(omit) }}'
+    state: '{{ opt_nvme_subsystem_state_01 | default(omit) }}'
   register: results

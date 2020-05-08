@@ -7,15 +7,15 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    node: '{{ req_net_port_node }}'
-    ports: '{{ req_net_port_ports }}'
-    autonegotiate_admin: '{{ opt_net_port_autonegotiate_admin | default(omit) }}'
-    duplex_admin: '{{ opt_net_port_duplex_admin | default(omit) }}'
-    feature_flags: '{{ opt_net_port_feature_flags | default(omit) }}'
-    flowcontrol_admin: '{{ opt_net_port_flowcontrol_admin | default(omit) }}'
-    ipspace: '{{ opt_net_port_ipspace | default(omit) }}'
-    mtu: '{{ opt_net_port_mtu | default(omit) }}'
-    name: '{{ opt_net_port_name | default(omit) }}'
-    speed_admin: '{{ opt_net_port_speed_admin | default(omit) }}'
-    state: '{{ opt_net_port_state | default(omit) }}'
+    node: '{{ req_net_port_node_01 }}'
+    ports: '{{ req_net_port_ports_01 }}'
+    autonegotiate_admin: '{{ opt_net_port_autonegotiate_admin_01 | default(omit) }}'
+    duplex_admin: '{{ opt_net_port_duplex_admin_01 | default(omit) }}'
+    feature_flags: '{{ opt_net_port_feature_flags_01 | default(omit) }}'
+    flowcontrol_admin: '{{ opt_net_port_flowcontrol_admin_01 | default(omit) }}'
+    ipspace: '{{ opt_net_port_ipspace_01 | default(omit) }}'
+    mtu: '{{ opt_net_port_mtu_01 | default(omit) }}'
+    name: '{{ opt_net_port_name_01 | default(omit) }}'
+    speed_admin: '{{ opt_net_port_speed_admin_01 | default(omit) }}'
+    state: '{{ opt_net_port_state_01 | default(omit) }}'
   register: results

@@ -7,11 +7,11 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    initiator_group: '{{ req_igroup_initiator_initiator_group }}'
-    names: '{{ req_igroup_initiator_names }}'
-    vserver: '{{ req_igroup_initiator_vserver }}'
-    feature_flags: '{{ opt_igroup_initiator_feature_flags | default(omit) }}'
-    force_remove: '{{ opt_igroup_initiator_force_remove | default(omit) }}'
-    name: '{{ opt_igroup_initiator_name | default(omit) }}'
-    state: '{{ opt_igroup_initiator_state | default(omit) }}'
+    initiator_group: '{{ req_igroup_initiator_initiator_group_01 }}'
+    names: '{{ req_igroup_initiator_names_01 }}'
+    vserver: '{{ req_igroup_initiator_vserver_01 }}'
+    feature_flags: '{{ opt_igroup_initiator_feature_flags_01 | default(omit) }}'
+    force_remove: '{{ opt_igroup_initiator_force_remove_01 | default(omit) }}'
+    name: '{{ opt_igroup_initiator_name_01 | default(omit) }}'
+    state: '{{ opt_igroup_initiator_state_01 | default(omit) }}'
   register: results

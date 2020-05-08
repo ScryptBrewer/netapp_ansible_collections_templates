@@ -7,11 +7,11 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    share_name: '{{ req_cifs_acl_share_name }}'
-    user_or_group: '{{ req_cifs_acl_user_or_group }}'
-    vserver: '{{ req_cifs_acl_vserver }}'
-    feature_flags: '{{ opt_cifs_acl_feature_flags | default(omit) }}'
-    name: '{{ opt_cifs_acl_name | default(omit) }}'
-    permission: '{{ opt_cifs_acl_permission | default(omit) }}'
-    state: '{{ opt_cifs_acl_state | default(omit) }}'
+    share_name: '{{ req_cifs_acl_share_name_01 }}'
+    user_or_group: '{{ req_cifs_acl_user_or_group_01 }}'
+    vserver: '{{ req_cifs_acl_vserver_01 }}'
+    feature_flags: '{{ opt_cifs_acl_feature_flags_01 | default(omit) }}'
+    name: '{{ opt_cifs_acl_name_01 | default(omit) }}'
+    permission: '{{ opt_cifs_acl_permission_01 | default(omit) }}'
+    state: '{{ opt_cifs_acl_state_01 | default(omit) }}'
   register: results

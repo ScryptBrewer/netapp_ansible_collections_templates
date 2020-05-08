@@ -7,14 +7,14 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    destination: '{{ req_net_routes_destination }}'
-    gateway: '{{ req_net_routes_gateway }}'
-    vserver: '{{ req_net_routes_vserver }}'
-    feature_flags: '{{ opt_net_routes_feature_flags | default(omit) }}'
-    from_destination: '{{ opt_net_routes_from_destination | default(omit) }}'
-    from_gateway: '{{ opt_net_routes_from_gateway | default(omit) }}'
-    from_metric: '{{ opt_net_routes_from_metric | default(omit) }}'
-    metric: '{{ opt_net_routes_metric | default(omit) }}'
-    name: '{{ opt_net_routes_name | default(omit) }}'
-    state: '{{ opt_net_routes_state | default(omit) }}'
+    destination: '{{ req_net_routes_destination_01 }}'
+    gateway: '{{ req_net_routes_gateway_01 }}'
+    vserver: '{{ req_net_routes_vserver_01 }}'
+    feature_flags: '{{ opt_net_routes_feature_flags_01 | default(omit) }}'
+    from_destination: '{{ opt_net_routes_from_destination_01 | default(omit) }}'
+    from_gateway: '{{ opt_net_routes_from_gateway_01 | default(omit) }}'
+    from_metric: '{{ opt_net_routes_from_metric_01 | default(omit) }}'
+    metric: '{{ opt_net_routes_metric_01 | default(omit) }}'
+    name: '{{ opt_net_routes_name_01 | default(omit) }}'
+    state: '{{ opt_net_routes_state_01 | default(omit) }}'
   register: results

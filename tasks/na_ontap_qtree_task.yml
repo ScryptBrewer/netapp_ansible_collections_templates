@@ -7,14 +7,14 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    flexvol_name: '{{ req_qtree_flexvol_name }}'
-    name: '{{ req_qtree_name }}'
-    vserver: '{{ req_qtree_vserver }}'
-    export_policy: '{{ opt_qtree_export_policy | default(omit) }}'
-    feature_flags: '{{ opt_qtree_feature_flags | default(omit) }}'
-    from_name: '{{ opt_qtree_from_name | default(omit) }}'
-    oplocks: '{{ opt_qtree_oplocks | default(omit) }}'
-    security_style: '{{ opt_qtree_security_style | default(omit) }}'
-    state: '{{ opt_qtree_state | default(omit) }}'
-    unix_permissions: '{{ opt_qtree_unix_permissions | default(omit) }}'
+    flexvol_name: '{{ req_qtree_flexvol_name_01 }}'
+    name: '{{ req_qtree_name_01 }}'
+    vserver: '{{ req_qtree_vserver_01 }}'
+    export_policy: '{{ opt_qtree_export_policy_01 | default(omit) }}'
+    feature_flags: '{{ opt_qtree_feature_flags_01 | default(omit) }}'
+    from_name: '{{ opt_qtree_from_name_01 | default(omit) }}'
+    oplocks: '{{ opt_qtree_oplocks_01 | default(omit) }}'
+    security_style: '{{ opt_qtree_security_style_01 | default(omit) }}'
+    state: '{{ opt_qtree_state_01 | default(omit) }}'
+    unix_permissions: '{{ opt_qtree_unix_permissions_01 | default(omit) }}'
   register: results

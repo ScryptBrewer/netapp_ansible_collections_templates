@@ -7,8 +7,8 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    vserver: '{{ req_vscan_vserver }}'
-    enable: '{{ opt_vscan_enable | default(omit) }}'
-    feature_flags: '{{ opt_vscan_feature_flags | default(omit) }}'
-    name: '{{ opt_vscan_name | default(omit) }}'
+    vserver: '{{ req_vscan_vserver_01 }}'
+    enable: '{{ opt_vscan_enable_01 | default(omit) }}'
+    feature_flags: '{{ opt_vscan_feature_flags_01 | default(omit) }}'
+    name: '{{ opt_vscan_name_01 | default(omit) }}'
   register: results

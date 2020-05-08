@@ -7,12 +7,12 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    package_url: '{{ req_software_update_package_url }}'
-    package_version: '{{ req_software_update_package_version }}'
-    download_only: '{{ opt_software_update_download_only | default(omit) }}'
-    feature_flags: '{{ opt_software_update_feature_flags | default(omit) }}'
-    ignore_validation_warning: '{{ opt_software_update_ignore_validation_warning | default(omit) }}'
-    name: '{{ opt_software_update_name | default(omit) }}'
-    nodes: '{{ opt_software_update_nodes | default(omit) }}'
-    state: '{{ opt_software_update_state | default(omit) }}'
+    package_url: '{{ req_software_update_package_url_01 }}'
+    package_version: '{{ req_software_update_package_version_01 }}'
+    download_only: '{{ opt_software_update_download_only_01 | default(omit) }}'
+    feature_flags: '{{ opt_software_update_feature_flags_01 | default(omit) }}'
+    ignore_validation_warning: '{{ opt_software_update_ignore_validation_warning_01 | default(omit) }}'
+    name: '{{ opt_software_update_name_01 | default(omit) }}'
+    nodes: '{{ opt_software_update_nodes_01 | default(omit) }}'
+    state: '{{ opt_software_update_state_01 | default(omit) }}'
   register: results

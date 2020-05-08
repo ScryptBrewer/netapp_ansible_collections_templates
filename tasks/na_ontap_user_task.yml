@@ -7,13 +7,13 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    applications: '{{ req_user_applications }}'
-    authentication_method: '{{ req_user_authentication_method }}'
-    name: '{{ req_user_name }}'
-    vserver: '{{ req_user_vserver }}'
-    feature_flags: '{{ opt_user_feature_flags | default(omit) }}'
-    lock_user: '{{ opt_user_lock_user | default(omit) }}'
-    role_name: '{{ opt_user_role_name | default(omit) }}'
-    set_password: '{{ opt_user_set_password | default(omit) }}'
-    state: '{{ opt_user_state | default(omit) }}'
+    applications: '{{ req_user_applications_01 }}'
+    authentication_method: '{{ req_user_authentication_method_01 }}'
+    name: '{{ req_user_name_01 }}'
+    vserver: '{{ req_user_vserver_01 }}'
+    feature_flags: '{{ opt_user_feature_flags_01 | default(omit) }}'
+    lock_user: '{{ opt_user_lock_user_01 | default(omit) }}'
+    role_name: '{{ opt_user_role_name_01 | default(omit) }}'
+    set_password: '{{ opt_user_set_password_01 | default(omit) }}'
+    state: '{{ opt_user_state_01 | default(omit) }}'
   register: results

@@ -7,9 +7,9 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    vserver: '{{ req_iscsi_vserver }}'
-    feature_flags: '{{ opt_iscsi_feature_flags | default(omit) }}'
-    name: '{{ opt_iscsi_name | default(omit) }}'
-    service_state: '{{ opt_iscsi_service_state | default(omit) }}'
-    state: '{{ opt_iscsi_state | default(omit) }}'
+    vserver: '{{ req_iscsi_vserver_01 }}'
+    feature_flags: '{{ opt_iscsi_feature_flags_01 | default(omit) }}'
+    name: '{{ opt_iscsi_name_01 | default(omit) }}'
+    service_state: '{{ opt_iscsi_service_state_01 | default(omit) }}'
+    state: '{{ opt_iscsi_state_01 | default(omit) }}'
   register: results

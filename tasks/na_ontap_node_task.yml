@@ -7,7 +7,7 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    from_name: '{{ req_node_from_name }}'
-    name: '{{ req_node_name }}'
-    feature_flags: '{{ opt_node_feature_flags | default(omit) }}'
+    from_name: '{{ req_node_from_name_01 }}'
+    name: '{{ req_node_name_01 }}'
+    feature_flags: '{{ opt_node_feature_flags_01 | default(omit) }}'
   register: results

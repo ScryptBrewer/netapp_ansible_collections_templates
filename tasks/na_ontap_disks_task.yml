@@ -7,8 +7,8 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    node: '{{ req_disks_node }}'
-    disk_count: '{{ opt_disks_disk_count | default(omit) }}'
-    feature_flags: '{{ opt_disks_feature_flags | default(omit) }}'
-    name: '{{ opt_disks_name | default(omit) }}'
+    node: '{{ req_disks_node_01 }}'
+    disk_count: '{{ opt_disks_disk_count_01 | default(omit) }}'
+    feature_flags: '{{ opt_disks_feature_flags_01 | default(omit) }}'
+    name: '{{ opt_disks_name_01 | default(omit) }}'
   register: results

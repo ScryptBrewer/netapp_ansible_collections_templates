@@ -7,11 +7,11 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    command_directory_name: '{{ req_user_role_command_directory_name }}'
-    name: '{{ req_user_role_name }}'
-    vserver: '{{ req_user_role_vserver }}'
-    access_level: '{{ opt_user_role_access_level | default(omit) }}'
-    feature_flags: '{{ opt_user_role_feature_flags | default(omit) }}'
-    query: '{{ opt_user_role_query | default(omit) }}'
-    state: '{{ opt_user_role_state | default(omit) }}'
+    command_directory_name: '{{ req_user_role_command_directory_name_01 }}'
+    name: '{{ req_user_role_name_01 }}'
+    vserver: '{{ req_user_role_vserver_01 }}'
+    access_level: '{{ opt_user_role_access_level_01 | default(omit) }}'
+    feature_flags: '{{ opt_user_role_feature_flags_01 | default(omit) }}'
+    query: '{{ opt_user_role_query_01 | default(omit) }}'
+    state: '{{ opt_user_role_state_01 | default(omit) }}'
   register: results

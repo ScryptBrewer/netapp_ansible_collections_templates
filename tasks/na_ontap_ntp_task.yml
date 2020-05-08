@@ -7,9 +7,9 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    server_name: '{{ req_ntp_server_name }}'
-    feature_flags: '{{ opt_ntp_feature_flags | default(omit) }}'
-    name: '{{ opt_ntp_name | default(omit) }}'
-    state: '{{ opt_ntp_state | default(omit) }}'
-    version: '{{ opt_ntp_version | default(omit) }}'
+    server_name: '{{ req_ntp_server_name_01 }}'
+    feature_flags: '{{ opt_ntp_feature_flags_01 | default(omit) }}'
+    name: '{{ opt_ntp_name_01 | default(omit) }}'
+    state: '{{ opt_ntp_state_01 | default(omit) }}'
+    version: '{{ opt_ntp_version_01 | default(omit) }}'
   register: results

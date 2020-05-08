@@ -7,12 +7,12 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    command: '{{ req_command_command }}'
-    exclude_lines: '{{ opt_command_exclude_lines | default(omit) }}'
-    feature_flags: '{{ opt_command_feature_flags | default(omit) }}'
-    include_lines: '{{ opt_command_include_lines | default(omit) }}'
-    name: '{{ opt_command_name | default(omit) }}'
-    privilege: '{{ opt_command_privilege | default(omit) }}'
-    return_dict: '{{ opt_command_return_dict | default(omit) }}'
-    vserver: '{{ opt_command_vserver | default(omit) }}'
+    command: '{{ req_command_command_01 }}'
+    exclude_lines: '{{ opt_command_exclude_lines_01 | default(omit) }}'
+    feature_flags: '{{ opt_command_feature_flags_01 | default(omit) }}'
+    include_lines: '{{ opt_command_include_lines_01 | default(omit) }}'
+    name: '{{ opt_command_name_01 | default(omit) }}'
+    privilege: '{{ opt_command_privilege_01 | default(omit) }}'
+    return_dict: '{{ opt_command_return_dict_01 | default(omit) }}'
+    vserver: '{{ opt_command_vserver_01 | default(omit) }}'
   register: results

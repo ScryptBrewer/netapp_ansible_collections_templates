@@ -7,16 +7,16 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    dest_hostname: '{{ req_cluster_peer_dest_hostname }}'
-    dest_cluster_name: '{{ opt_cluster_peer_dest_cluster_name | default(omit) }}'
-    dest_intercluster_lifs: '{{ opt_cluster_peer_dest_intercluster_lifs | default(omit) }}'
-    dest_password: '{{ opt_cluster_peer_dest_password | default(omit) }}'
-    dest_username: '{{ opt_cluster_peer_dest_username | default(omit) }}'
-    encryption_protocol_proposed: '{{ opt_cluster_peer_encryption_protocol_proposed | default(omit) }}'
-    feature_flags: '{{ opt_cluster_peer_feature_flags | default(omit) }}'
-    name: '{{ opt_cluster_peer_name | default(omit) }}'
-    passphrase: '{{ opt_cluster_peer_passphrase | default(omit) }}'
-    source_cluster_name: '{{ opt_cluster_peer_source_cluster_name | default(omit) }}'
-    source_intercluster_lifs: '{{ opt_cluster_peer_source_intercluster_lifs | default(omit) }}'
-    state: '{{ opt_cluster_peer_state | default(omit) }}'
+    dest_hostname: '{{ req_cluster_peer_dest_hostname_01 }}'
+    dest_cluster_name: '{{ opt_cluster_peer_dest_cluster_name_01 | default(omit) }}'
+    dest_intercluster_lifs: '{{ opt_cluster_peer_dest_intercluster_lifs_01 | default(omit) }}'
+    dest_password: '{{ opt_cluster_peer_dest_password_01 | default(omit) }}'
+    dest_username: '{{ opt_cluster_peer_dest_username_01 | default(omit) }}'
+    encryption_protocol_proposed: '{{ opt_cluster_peer_encryption_protocol_proposed_01 | default(omit) }}'
+    feature_flags: '{{ opt_cluster_peer_feature_flags_01 | default(omit) }}'
+    name: '{{ opt_cluster_peer_name_01 | default(omit) }}'
+    passphrase: '{{ opt_cluster_peer_passphrase_01 | default(omit) }}'
+    source_cluster_name: '{{ opt_cluster_peer_source_cluster_name_01 | default(omit) }}'
+    source_intercluster_lifs: '{{ opt_cluster_peer_source_intercluster_lifs_01 | default(omit) }}'
+    state: '{{ opt_cluster_peer_state_01 | default(omit) }}'
   register: results

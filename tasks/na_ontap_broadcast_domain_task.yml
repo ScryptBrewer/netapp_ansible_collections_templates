@@ -7,11 +7,11 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    name: '{{ req_broadcast_domain_name }}'
-    feature_flags: '{{ opt_broadcast_domain_feature_flags | default(omit) }}'
-    from_name: '{{ opt_broadcast_domain_from_name | default(omit) }}'
-    ipspace: '{{ opt_broadcast_domain_ipspace | default(omit) }}'
-    mtu: '{{ opt_broadcast_domain_mtu | default(omit) }}'
-    ports: '{{ opt_broadcast_domain_ports | default(omit) }}'
-    state: '{{ opt_broadcast_domain_state | default(omit) }}'
+    name: '{{ req_broadcast_domain_name_01 }}'
+    feature_flags: '{{ opt_broadcast_domain_feature_flags_01 | default(omit) }}'
+    from_name: '{{ opt_broadcast_domain_from_name_01 | default(omit) }}'
+    ipspace: '{{ opt_broadcast_domain_ipspace_01 | default(omit) }}'
+    mtu: '{{ opt_broadcast_domain_mtu_01 | default(omit) }}'
+    ports: '{{ opt_broadcast_domain_ports_01 | default(omit) }}'
+    state: '{{ opt_broadcast_domain_state_01 | default(omit) }}'
   register: results
