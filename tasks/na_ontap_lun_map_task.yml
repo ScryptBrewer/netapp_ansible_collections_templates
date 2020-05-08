@@ -10,6 +10,7 @@
     initiator_group_name: '{{ req_lun_map_initiator_group_name }}'
     path: '{{ req_lun_map_path }}'
     vserver: '{{ req_lun_map_vserver }}'
+    feature_flags: '{{ opt_lun_map_feature_flags | default(omit) }}'
     lun_id: '{{ opt_lun_map_lun_id | default(omit) }}'
     name: '{{ opt_lun_map_name | default(omit) }}'
     state: '{{ opt_lun_map_state | default(omit) }}'

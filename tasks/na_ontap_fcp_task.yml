@@ -8,6 +8,7 @@
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     vserver: '{{ req_fcp_vserver }}'
+    feature_flags: '{{ opt_fcp_feature_flags | default(omit) }}'
     name: '{{ opt_fcp_name | default(omit) }}'
     state: '{{ opt_fcp_state | default(omit) }}'
     status: '{{ opt_fcp_status | default(omit) }}'

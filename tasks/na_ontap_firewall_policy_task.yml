@@ -9,6 +9,7 @@
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     allow_list: '{{ opt_firewall_policy_allow_list | default(omit) }}'
     enable: '{{ opt_firewall_policy_enable | default(omit) }}'
+    feature_flags: '{{ opt_firewall_policy_feature_flags | default(omit) }}'
     logging: '{{ opt_firewall_policy_logging | default(omit) }}'
     name: '{{ opt_firewall_policy_name | default(omit) }}'
     node: '{{ opt_firewall_policy_node | default(omit) }}'

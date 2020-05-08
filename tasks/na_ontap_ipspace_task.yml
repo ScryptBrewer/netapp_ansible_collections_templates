@@ -8,6 +8,7 @@
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     name: '{{ req_ipspace_name }}'
+    feature_flags: '{{ opt_ipspace_feature_flags | default(omit) }}'
     from_name: '{{ opt_ipspace_from_name | default(omit) }}'
     state: '{{ opt_ipspace_state | default(omit) }}'
   register: results

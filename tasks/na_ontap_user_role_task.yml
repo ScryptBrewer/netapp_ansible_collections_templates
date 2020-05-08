@@ -11,6 +11,7 @@
     name: '{{ req_user_role_name }}'
     vserver: '{{ req_user_role_vserver }}'
     access_level: '{{ opt_user_role_access_level | default(omit) }}'
+    feature_flags: '{{ opt_user_role_feature_flags | default(omit) }}'
     query: '{{ opt_user_role_query | default(omit) }}'
     state: '{{ opt_user_role_state | default(omit) }}'
   register: results

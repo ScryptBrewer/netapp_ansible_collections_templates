@@ -9,10 +9,13 @@
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     realm: '{{ req_kerberos_realm_realm }}'
     vserver: '{{ req_kerberos_realm_vserver }}'
+    ad_server_ip: '{{ opt_kerberos_realm_ad_server_ip | default(omit) }}'
+    ad_server_name: '{{ opt_kerberos_realm_ad_server_name | default(omit) }}'
     admin_server_ip: '{{ opt_kerberos_realm_admin_server_ip | default(omit) }}'
     admin_server_port: '{{ opt_kerberos_realm_admin_server_port | default(omit) }}'
     clock_skew: '{{ opt_kerberos_realm_clock_skew | default(omit) }}'
     comment: '{{ opt_kerberos_realm_comment | default(omit) }}'
+    feature_flags: '{{ opt_kerberos_realm_feature_flags | default(omit) }}'
     kdc_ip: '{{ opt_kerberos_realm_kdc_ip | default(omit) }}'
     kdc_port: '{{ opt_kerberos_realm_kdc_port | default(omit) }}'
     kdc_vendor: '{{ opt_kerberos_realm_kdc_vendor | default(omit) }}'

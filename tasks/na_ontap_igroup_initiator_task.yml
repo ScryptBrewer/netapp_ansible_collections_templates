@@ -10,6 +10,8 @@
     initiator_group: '{{ req_igroup_initiator_initiator_group }}'
     names: '{{ req_igroup_initiator_names }}'
     vserver: '{{ req_igroup_initiator_vserver }}'
+    feature_flags: '{{ opt_igroup_initiator_feature_flags | default(omit) }}'
+    force_remove: '{{ opt_igroup_initiator_force_remove | default(omit) }}'
     name: '{{ opt_igroup_initiator_name | default(omit) }}'
     state: '{{ opt_igroup_initiator_state | default(omit) }}'
   register: results

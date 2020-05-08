@@ -7,10 +7,4 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    node_id: '{{ req_drive_node_id }}'
-    drive_id: '{{ opt_drive_drive_id | default(omit) }}'
-    force_during_bin_sync: '{{ opt_drive_force_during_bin_sync | default(omit) }}'
-    force_during_upgrade: '{{ opt_drive_force_during_upgrade | default(omit) }}'
-    name: '{{ opt_drive_name | default(omit) }}'
-    state: '{{ opt_drive_state | default(omit) }}'
   register: results

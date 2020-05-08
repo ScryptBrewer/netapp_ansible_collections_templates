@@ -8,6 +8,7 @@
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     name: '{{ req_job_schedule_name }}'
+    feature_flags: '{{ opt_job_schedule_feature_flags | default(omit) }}'
     job_days_of_month: '{{ opt_job_schedule_job_days_of_month | default(omit) }}'
     job_days_of_week: '{{ opt_job_schedule_job_days_of_week | default(omit) }}'
     job_hours: '{{ opt_job_schedule_job_hours | default(omit) }}'

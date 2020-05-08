@@ -9,6 +9,7 @@
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     volume: '{{ req_volume_autosize_volume }}'
     vserver: '{{ req_volume_autosize_vserver }}'
+    feature_flags: '{{ opt_volume_autosize_feature_flags | default(omit) }}'
     grow_threshold_percent: '{{ opt_volume_autosize_grow_threshold_percent | default(omit) }}'
     increment_size: '{{ opt_volume_autosize_increment_size | default(omit) }}'
     maximum_size: '{{ opt_volume_autosize_maximum_size | default(omit) }}'

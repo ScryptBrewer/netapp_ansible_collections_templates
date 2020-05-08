@@ -11,6 +11,7 @@
     vserver: '{{ req_qos_adaptive_policy_group_vserver }}'
     absolute_min_iops: '{{ opt_qos_adaptive_policy_group_absolute_min_iops | default(omit) }}'
     expected_iops: '{{ opt_qos_adaptive_policy_group_expected_iops | default(omit) }}'
+    feature_flags: '{{ opt_qos_adaptive_policy_group_feature_flags | default(omit) }}'
     force: '{{ opt_qos_adaptive_policy_group_force | default(omit) }}'
     from_name: '{{ opt_qos_adaptive_policy_group_from_name | default(omit) }}'
     peak_iops: '{{ opt_qos_adaptive_policy_group_peak_iops | default(omit) }}'

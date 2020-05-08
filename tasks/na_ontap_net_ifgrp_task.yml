@@ -10,6 +10,7 @@
     name: '{{ req_net_ifgrp_name }}'
     node: '{{ req_net_ifgrp_node }}'
     distribution_function: '{{ opt_net_ifgrp_distribution_function | default(omit) }}'
+    feature_flags: '{{ opt_net_ifgrp_feature_flags | default(omit) }}'
     mode: '{{ opt_net_ifgrp_mode | default(omit) }}'
     ports: '{{ opt_net_ifgrp_ports | default(omit) }}'
     state: '{{ opt_net_ifgrp_state | default(omit) }}'

@@ -7,23 +7,4 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    state: '{{ req_snapshot_schedule_state }}'
-    account_id: '{{ opt_snapshot_schedule_account_id | default(omit) }}'
-    days_of_month_hours: '{{ opt_snapshot_schedule_days_of_month_hours | default(omit) }}'
-    days_of_month_minutes: '{{ opt_snapshot_schedule_days_of_month_minutes | default(omit) }}'
-    days_of_month_monthdays: '{{ opt_snapshot_schedule_days_of_month_monthdays | default(omit) }}'
-    days_of_week_hours: '{{ opt_snapshot_schedule_days_of_week_hours | default(omit) }}'
-    days_of_week_minutes: '{{ opt_snapshot_schedule_days_of_week_minutes | default(omit) }}'
-    days_of_week_weekdays: '{{ opt_snapshot_schedule_days_of_week_weekdays | default(omit) }}'
-    name: '{{ opt_snapshot_schedule_name | default(omit) }}'
-    paused: '{{ opt_snapshot_schedule_paused | default(omit) }}'
-    recurring: '{{ opt_snapshot_schedule_recurring | default(omit) }}'
-    retention: '{{ opt_snapshot_schedule_retention | default(omit) }}'
-    schedule_type: '{{ opt_snapshot_schedule_schedule_type | default(omit) }}'
-    snapshot_name: '{{ opt_snapshot_schedule_snapshot_name | default(omit) }}'
-    starting_date: '{{ opt_snapshot_schedule_starting_date | default(omit) }}'
-    time_interval_days: '{{ opt_snapshot_schedule_time_interval_days | default(omit) }}'
-    time_interval_hours: '{{ opt_snapshot_schedule_time_interval_hours | default(omit) }}'
-    time_interval_minutes: '{{ opt_snapshot_schedule_time_interval_minutes | default(omit) }}'
-    volumes: '{{ opt_snapshot_schedule_volumes | default(omit) }}'
   register: results

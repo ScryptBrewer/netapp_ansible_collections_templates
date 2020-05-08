@@ -10,6 +10,7 @@
     name: '{{ req_igroup_name }}'
     vserver: '{{ req_igroup_vserver }}'
     bind_portset: '{{ opt_igroup_bind_portset | default(omit) }}'
+    feature_flags: '{{ opt_igroup_feature_flags | default(omit) }}'
     force_remove_initiator: '{{ opt_igroup_force_remove_initiator | default(omit) }}'
     from_name: '{{ opt_igroup_from_name | default(omit) }}'
     initiator_group_type: '{{ opt_igroup_initiator_group_type | default(omit) }}'

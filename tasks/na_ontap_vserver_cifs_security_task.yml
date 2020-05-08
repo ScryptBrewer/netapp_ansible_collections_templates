@@ -8,6 +8,7 @@
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     vserver: '{{ req_vserver_cifs_security_vserver }}'
+    feature_flags: '{{ opt_vserver_cifs_security_feature_flags | default(omit) }}'
     is_aes_encryption_enabled: '{{ opt_vserver_cifs_security_is_aes_encryption_enabled | default(omit) }}'
     is_password_complexity_required: '{{ opt_vserver_cifs_security_is_password_complexity_required | default(omit) }}'
     is_signing_required: '{{ opt_vserver_cifs_security_is_signing_required | default(omit) }}'

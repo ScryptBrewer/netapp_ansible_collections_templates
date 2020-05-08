@@ -10,6 +10,7 @@
     node: '{{ req_net_vlan_node }}'
     parent_interface: '{{ req_net_vlan_parent_interface }}'
     vlanid: '{{ req_net_vlan_vlanid }}'
+    feature_flags: '{{ opt_net_vlan_feature_flags | default(omit) }}'
     name: '{{ opt_net_vlan_name | default(omit) }}'
     state: '{{ opt_net_vlan_state | default(omit) }}'
   register: results

@@ -8,6 +8,7 @@
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     ip_address: '{{ req_security_key_manager_ip_address }}'
+    feature_flags: '{{ opt_security_key_manager_feature_flags | default(omit) }}'
     name: '{{ opt_security_key_manager_name | default(omit) }}'
     node: '{{ opt_security_key_manager_node | default(omit) }}'
     state: '{{ opt_security_key_manager_state | default(omit) }}'

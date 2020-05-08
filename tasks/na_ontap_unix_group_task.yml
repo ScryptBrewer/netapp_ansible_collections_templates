@@ -9,6 +9,7 @@
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     name: '{{ req_unix_group_name }}'
     vserver: '{{ req_unix_group_vserver }}'
+    feature_flags: '{{ opt_unix_group_feature_flags | default(omit) }}'
     id: '{{ opt_unix_group_id | default(omit) }}'
     skip_name_validation: '{{ opt_unix_group_skip_name_validation | default(omit) }}'
     state: '{{ opt_unix_group_state | default(omit) }}'

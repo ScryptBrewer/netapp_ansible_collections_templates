@@ -13,6 +13,7 @@
     base_scope: '{{ opt_ldap_client_base_scope | default(omit) }}'
     bind_dn: '{{ opt_ldap_client_bind_dn | default(omit) }}'
     bind_password: '{{ opt_ldap_client_bind_password | default(omit) }}'
+    feature_flags: '{{ opt_ldap_client_feature_flags | default(omit) }}'
     ldap_servers: '{{ opt_ldap_client_ldap_servers | default(omit) }}'
     min_bind_level: '{{ opt_ldap_client_min_bind_level | default(omit) }}'
     port: '{{ opt_ldap_client_port | default(omit) }}'

@@ -7,7 +7,4 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    initiators: '{{ opt_initiators_initiators | default(omit) }}'
-    name: '{{ opt_initiators_name | default(omit) }}'
-    state: '{{ opt_initiators_state | default(omit) }}'
   register: results

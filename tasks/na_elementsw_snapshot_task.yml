@@ -7,13 +7,4 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    account_id: '{{ req_snapshot_account_id }}'
-    src_volume_id: '{{ req_snapshot_src_volume_id }}'
-    enable_remote_replication: '{{ opt_snapshot_enable_remote_replication | default(omit) }}'
-    expiration_time: '{{ opt_snapshot_expiration_time | default(omit) }}'
-    name: '{{ opt_snapshot_name | default(omit) }}'
-    retention: '{{ opt_snapshot_retention | default(omit) }}'
-    snap_mirror_label: '{{ opt_snapshot_snap_mirror_label | default(omit) }}'
-    src_snapshot_id: '{{ opt_snapshot_src_snapshot_id | default(omit) }}'
-    state: '{{ opt_snapshot_state | default(omit) }}'
   register: results

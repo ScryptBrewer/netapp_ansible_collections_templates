@@ -10,6 +10,7 @@
     flexvol_name: '{{ req_lun_flexvol_name }}'
     name: '{{ req_lun_name }}'
     vserver: '{{ req_lun_vserver }}'
+    feature_flags: '{{ opt_lun_feature_flags | default(omit) }}'
     force_remove: '{{ opt_lun_force_remove | default(omit) }}'
     force_remove_fenced: '{{ opt_lun_force_remove_fenced | default(omit) }}'
     force_resize: '{{ opt_lun_force_resize | default(omit) }}'

@@ -7,7 +7,4 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    node_id: '{{ req_node_node_id }}'
-    name: '{{ opt_node_name | default(omit) }}'
-    state: '{{ opt_node_state | default(omit) }}'
   register: results

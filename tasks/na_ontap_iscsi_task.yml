@@ -8,6 +8,7 @@
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     vserver: '{{ req_iscsi_vserver }}'
+    feature_flags: '{{ opt_iscsi_feature_flags | default(omit) }}'
     name: '{{ opt_iscsi_name | default(omit) }}'
     service_state: '{{ opt_iscsi_service_state | default(omit) }}'
     state: '{{ opt_iscsi_state | default(omit) }}'

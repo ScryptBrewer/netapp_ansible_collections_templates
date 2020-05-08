@@ -7,11 +7,12 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    cluster_contact: '{{ opt_cluster_cluster_contact | default(omit) }}'
     cluster_ip_address: '{{ opt_cluster_cluster_ip_address | default(omit) }}'
+    cluster_location: '{{ opt_cluster_cluster_location | default(omit) }}'
     cluster_name: '{{ opt_cluster_cluster_name | default(omit) }}'
-    license_code: '{{ opt_cluster_license_code | default(omit) }}'
-    license_package: '{{ opt_cluster_license_package | default(omit) }}'
+    feature_flags: '{{ opt_cluster_feature_flags | default(omit) }}'
     name: '{{ opt_cluster_name | default(omit) }}'
-    node_serial_number: '{{ opt_cluster_node_serial_number | default(omit) }}'
+    single_node_cluster: '{{ opt_cluster_single_node_cluster | default(omit) }}'
     state: '{{ opt_cluster_state | default(omit) }}'
   register: results

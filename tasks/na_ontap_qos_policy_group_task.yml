@@ -7,6 +7,7 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    feature_flags: '{{ opt_qos_policy_group_feature_flags | default(omit) }}'
     force: '{{ opt_qos_policy_group_force | default(omit) }}'
     from_name: '{{ opt_qos_policy_group_from_name | default(omit) }}'
     max_throughput: '{{ opt_qos_policy_group_max_throughput | default(omit) }}'

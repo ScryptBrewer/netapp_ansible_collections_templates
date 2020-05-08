@@ -9,6 +9,7 @@
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     adapter_name: '{{ req_ucadapter_adapter_name }}'
     node_name: '{{ req_ucadapter_node_name }}'
+    feature_flags: '{{ opt_ucadapter_feature_flags | default(omit) }}'
     mode: '{{ opt_ucadapter_mode | default(omit) }}'
     name: '{{ opt_ucadapter_name | default(omit) }}'
     state: '{{ opt_ucadapter_state | default(omit) }}'

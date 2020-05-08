@@ -9,6 +9,7 @@
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     policy_name: '{{ req_vscan_on_access_policy_policy_name }}'
     vserver: '{{ req_vscan_on_access_policy_vserver }}'
+    feature_flags: '{{ opt_vscan_on_access_policy_feature_flags | default(omit) }}'
     file_ext_to_exclude: '{{ opt_vscan_on_access_policy_file_ext_to_exclude | default(omit) }}'
     file_ext_to_include: '{{ opt_vscan_on_access_policy_file_ext_to_include | default(omit) }}'
     filters: '{{ opt_vscan_on_access_policy_filters | default(omit) }}'

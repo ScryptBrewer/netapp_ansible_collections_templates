@@ -10,6 +10,7 @@
     destination_path: '{{ req_lun_copy_destination_path }}'
     destination_vserver: '{{ req_lun_copy_destination_vserver }}'
     source_path: '{{ req_lun_copy_source_path }}'
+    feature_flags: '{{ opt_lun_copy_feature_flags | default(omit) }}'
     name: '{{ opt_lun_copy_name | default(omit) }}'
     source_vserver: '{{ opt_lun_copy_source_vserver | default(omit) }}'
     state: '{{ opt_lun_copy_state | default(omit) }}'

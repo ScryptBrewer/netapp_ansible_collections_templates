@@ -9,6 +9,7 @@
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     vserver: '{{ req_dns_vserver }}'
     domains: '{{ opt_dns_domains | default(omit) }}'
+    feature_flags: '{{ opt_dns_feature_flags | default(omit) }}'
     name: '{{ opt_dns_name | default(omit) }}'
     nameservers: '{{ opt_dns_nameservers | default(omit) }}'
     skip_validation: '{{ opt_dns_skip_validation | default(omit) }}'

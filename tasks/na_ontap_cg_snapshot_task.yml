@@ -10,6 +10,7 @@
     snapshot: '{{ req_cg_snapshot_snapshot }}'
     volumes: '{{ req_cg_snapshot_volumes }}'
     vserver: '{{ req_cg_snapshot_vserver }}'
+    feature_flags: '{{ opt_cg_snapshot_feature_flags | default(omit) }}'
     name: '{{ opt_cg_snapshot_name | default(omit) }}'
     snapmirror_label: '{{ opt_cg_snapshot_snapmirror_label | default(omit) }}'
     state: '{{ opt_cg_snapshot_state | default(omit) }}'

@@ -10,6 +10,7 @@
     name: '{{ req_object_store_name }}'
     access_key: '{{ opt_object_store_access_key | default(omit) }}'
     container: '{{ opt_object_store_container | default(omit) }}'
+    feature_flags: '{{ opt_object_store_feature_flags | default(omit) }}'
     provider_type: '{{ opt_object_store_provider_type | default(omit) }}'
     secret_password: '{{ opt_object_store_secret_password | default(omit) }}'
     server: '{{ opt_object_store_server | default(omit) }}'

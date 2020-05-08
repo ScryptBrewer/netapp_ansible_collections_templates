@@ -12,6 +12,7 @@
     aggr_list: '{{ opt_flexcache_aggr_list | default(omit) }}'
     aggr_list_multiplier: '{{ opt_flexcache_aggr_list_multiplier | default(omit) }}'
     auto_provision_as: '{{ opt_flexcache_auto_provision_as | default(omit) }}'
+    feature_flags: '{{ opt_flexcache_feature_flags | default(omit) }}'
     force_offline: '{{ opt_flexcache_force_offline | default(omit) }}'
     force_unmount: '{{ opt_flexcache_force_unmount | default(omit) }}'
     junction_path: '{{ opt_flexcache_junction_path | default(omit) }}'

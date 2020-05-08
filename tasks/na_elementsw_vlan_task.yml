@@ -7,13 +7,4 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    vlan_tag: '{{ req_vlan_vlan_tag }}'
-    address_blocks: '{{ opt_vlan_address_blocks | default(omit) }}'
-    attributes: '{{ opt_vlan_attributes | default(omit) }}'
-    gateway: '{{ opt_vlan_gateway | default(omit) }}'
-    name: '{{ opt_vlan_name | default(omit) }}'
-    namespace: '{{ opt_vlan_namespace | default(omit) }}'
-    netmask: '{{ opt_vlan_netmask | default(omit) }}'
-    state: '{{ opt_vlan_state | default(omit) }}'
-    svip: '{{ opt_vlan_svip | default(omit) }}'
   register: results

@@ -8,6 +8,7 @@
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     broadcast_domain: '{{ req_broadcast_domain_ports_broadcast_domain }}'
+    feature_flags: '{{ opt_broadcast_domain_ports_feature_flags | default(omit) }}'
     ipspace: '{{ opt_broadcast_domain_ports_ipspace | default(omit) }}'
     name: '{{ opt_broadcast_domain_ports_name | default(omit) }}'
     ports: '{{ opt_broadcast_domain_ports_ports | default(omit) }}'

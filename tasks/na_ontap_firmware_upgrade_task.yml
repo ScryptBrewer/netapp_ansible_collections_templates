@@ -7,13 +7,16 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    node: '{{ req_firmware_upgrade_node }}'
     clear_logs: '{{ opt_firmware_upgrade_clear_logs | default(omit) }}'
     disk_fw: '{{ opt_firmware_upgrade_disk_fw | default(omit) }}'
+    feature_flags: '{{ opt_firmware_upgrade_feature_flags | default(omit) }}'
     firmware_type: '{{ opt_firmware_upgrade_firmware_type | default(omit) }}'
+    force_disruptive_update: '{{ opt_firmware_upgrade_force_disruptive_update | default(omit) }}'
     install_baseline_image: '{{ opt_firmware_upgrade_install_baseline_image | default(omit) }}'
     name: '{{ opt_firmware_upgrade_name | default(omit) }}'
+    node: '{{ opt_firmware_upgrade_node | default(omit) }}'
     package: '{{ opt_firmware_upgrade_package | default(omit) }}'
+    package_url: '{{ opt_firmware_upgrade_package_url | default(omit) }}'
     shelf_module_fw: '{{ opt_firmware_upgrade_shelf_module_fw | default(omit) }}'
     state: '{{ opt_firmware_upgrade_state | default(omit) }}'
     update_type: '{{ opt_firmware_upgrade_update_type | default(omit) }}'

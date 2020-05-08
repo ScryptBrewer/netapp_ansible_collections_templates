@@ -9,5 +9,6 @@
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     vserver: '{{ req_vscan_vserver }}'
     enable: '{{ opt_vscan_enable | default(omit) }}'
+    feature_flags: '{{ opt_vscan_feature_flags | default(omit) }}'
     name: '{{ opt_vscan_name | default(omit) }}'
   register: results

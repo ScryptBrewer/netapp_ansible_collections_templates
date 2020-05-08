@@ -11,6 +11,7 @@
     aggr_list: '{{ opt_svm_aggr_list | default(omit) }}'
     allowed_protocols: '{{ opt_svm_allowed_protocols | default(omit) }}'
     comment: '{{ opt_svm_comment | default(omit) }}'
+    feature_flags: '{{ opt_svm_feature_flags | default(omit) }}'
     from_name: '{{ opt_svm_from_name | default(omit) }}'
     ipspace: '{{ opt_svm_ipspace | default(omit) }}'
     language: '{{ opt_svm_language | default(omit) }}'

@@ -9,6 +9,7 @@
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     scanner_pool: '{{ req_vscan_scanner_pool_scanner_pool }}'
     vserver: '{{ req_vscan_scanner_pool_vserver }}'
+    feature_flags: '{{ opt_vscan_scanner_pool_feature_flags | default(omit) }}'
     hostnames: '{{ opt_vscan_scanner_pool_hostnames | default(omit) }}'
     name: '{{ opt_vscan_scanner_pool_name | default(omit) }}'
     privileged_users: '{{ opt_vscan_scanner_pool_privileged_users | default(omit) }}'

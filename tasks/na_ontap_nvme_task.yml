@@ -8,6 +8,7 @@
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     vserver: '{{ req_nvme_vserver }}'
+    feature_flags: '{{ opt_nvme_feature_flags | default(omit) }}'
     name: '{{ opt_nvme_name | default(omit) }}'
     state: '{{ opt_nvme_state | default(omit) }}'
     status_admin: '{{ opt_nvme_status_admin | default(omit) }}'

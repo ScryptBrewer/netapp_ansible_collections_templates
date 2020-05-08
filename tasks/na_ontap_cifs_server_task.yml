@@ -12,6 +12,7 @@
     admin_password: '{{ opt_cifs_server_admin_password | default(omit) }}'
     admin_user_name: '{{ opt_cifs_server_admin_user_name | default(omit) }}'
     domain: '{{ opt_cifs_server_domain | default(omit) }}'
+    feature_flags: '{{ opt_cifs_server_feature_flags | default(omit) }}'
     force: '{{ opt_cifs_server_force | default(omit) }}'
     ou: '{{ opt_cifs_server_ou | default(omit) }}'
     service_state: '{{ opt_cifs_server_service_state | default(omit) }}'

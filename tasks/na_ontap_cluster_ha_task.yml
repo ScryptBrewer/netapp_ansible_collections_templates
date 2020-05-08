@@ -7,6 +7,7 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    feature_flags: '{{ opt_cluster_ha_feature_flags | default(omit) }}'
     name: '{{ opt_cluster_ha_name | default(omit) }}'
     state: '{{ opt_cluster_ha_state | default(omit) }}'
   register: results

@@ -9,6 +9,7 @@
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     access_control: '{{ req_snmp_access_control }}'
     community_name: '{{ req_snmp_community_name }}'
+    feature_flags: '{{ opt_snmp_feature_flags | default(omit) }}'
     name: '{{ opt_snmp_name | default(omit) }}'
     state: '{{ opt_snmp_state | default(omit) }}'
   register: results

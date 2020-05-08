@@ -12,6 +12,7 @@
     volume: '{{ req_quotas_volume }}'
     vserver: '{{ req_quotas_vserver }}'
     disk_limit: '{{ opt_quotas_disk_limit | default(omit) }}'
+    feature_flags: '{{ opt_quotas_feature_flags | default(omit) }}'
     file_limit: '{{ opt_quotas_file_limit | default(omit) }}'
     name: '{{ opt_quotas_name | default(omit) }}'
     policy: '{{ opt_quotas_policy | default(omit) }}'

@@ -9,6 +9,7 @@
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     name: '{{ req_portset_name }}'
     vserver: '{{ req_portset_vserver }}'
+    feature_flags: '{{ opt_portset_feature_flags | default(omit) }}'
     force: '{{ opt_portset_force | default(omit) }}'
     ports: '{{ opt_portset_ports | default(omit) }}'
     state: '{{ opt_portset_state | default(omit) }}'

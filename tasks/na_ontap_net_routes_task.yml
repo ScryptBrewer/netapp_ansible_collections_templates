@@ -10,6 +10,7 @@
     destination: '{{ req_net_routes_destination }}'
     gateway: '{{ req_net_routes_gateway }}'
     vserver: '{{ req_net_routes_vserver }}'
+    feature_flags: '{{ opt_net_routes_feature_flags | default(omit) }}'
     from_destination: '{{ opt_net_routes_from_destination | default(omit) }}'
     from_gateway: '{{ opt_net_routes_from_gateway | default(omit) }}'
     from_metric: '{{ opt_net_routes_from_metric | default(omit) }}'

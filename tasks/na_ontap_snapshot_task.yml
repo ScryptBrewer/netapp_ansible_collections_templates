@@ -12,6 +12,7 @@
     vserver: '{{ req_snapshot_vserver }}'
     async_bool: '{{ opt_snapshot_async_bool | default(omit) }}'
     comment: '{{ opt_snapshot_comment | default(omit) }}'
+    feature_flags: '{{ opt_snapshot_feature_flags | default(omit) }}'
     from_name: '{{ opt_snapshot_from_name | default(omit) }}'
     ignore_owners: '{{ opt_snapshot_ignore_owners | default(omit) }}'
     name: '{{ opt_snapshot_name | default(omit) }}'

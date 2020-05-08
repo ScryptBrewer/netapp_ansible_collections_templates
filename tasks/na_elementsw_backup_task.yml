@@ -7,12 +7,4 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    dest_volume_id: '{{ req_backup_dest_volume_id }}'
-    src_volume_id: '{{ req_backup_src_volume_id }}'
-    dest_hostname: '{{ opt_backup_dest_hostname | default(omit) }}'
-    dest_password: '{{ opt_backup_dest_password | default(omit) }}'
-    dest_username: '{{ opt_backup_dest_username | default(omit) }}'
-    format: '{{ opt_backup_format | default(omit) }}'
-    script: '{{ opt_backup_script | default(omit) }}'
-    script_parameters: '{{ opt_backup_script_parameters | default(omit) }}'
   register: results

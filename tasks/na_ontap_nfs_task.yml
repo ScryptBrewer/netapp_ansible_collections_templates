@@ -8,6 +8,7 @@
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     vserver: '{{ req_nfs_vserver }}'
+    feature_flags: '{{ opt_nfs_feature_flags | default(omit) }}'
     name: '{{ opt_nfs_name | default(omit) }}'
     nfsv3: '{{ opt_nfs_nfsv3 | default(omit) }}'
     nfsv3_fsid_change: '{{ opt_nfs_nfsv3_fsid_change | default(omit) }}'

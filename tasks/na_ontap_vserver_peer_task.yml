@@ -11,6 +11,7 @@
     dest_hostname: '{{ opt_vserver_peer_dest_hostname | default(omit) }}'
     dest_password: '{{ opt_vserver_peer_dest_password | default(omit) }}'
     dest_username: '{{ opt_vserver_peer_dest_username | default(omit) }}'
+    feature_flags: '{{ opt_vserver_peer_feature_flags | default(omit) }}'
     name: '{{ opt_vserver_peer_name | default(omit) }}'
     peer_cluster: '{{ opt_vserver_peer_peer_cluster | default(omit) }}'
     peer_vserver: '{{ opt_vserver_peer_peer_vserver | default(omit) }}'

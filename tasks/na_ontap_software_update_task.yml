@@ -9,6 +9,8 @@
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     package_url: '{{ req_software_update_package_url }}'
     package_version: '{{ req_software_update_package_version }}'
+    download_only: '{{ opt_software_update_download_only | default(omit) }}'
+    feature_flags: '{{ opt_software_update_feature_flags | default(omit) }}'
     ignore_validation_warning: '{{ opt_software_update_ignore_validation_warning | default(omit) }}'
     name: '{{ opt_software_update_name | default(omit) }}'
     nodes: '{{ opt_software_update_nodes | default(omit) }}'

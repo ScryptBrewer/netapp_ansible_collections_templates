@@ -7,16 +7,4 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    state: '{{ req_ldap_state }}'
-    authType: '{{ opt_ldap_authType | default(omit) }}'
-    groupSearchBaseDn: '{{ opt_ldap_groupSearchBaseDn | default(omit) }}'
-    groupSearchCustomFilter: '{{ opt_ldap_groupSearchCustomFilter | default(omit) }}'
-    groupSearchType: '{{ opt_ldap_groupSearchType | default(omit) }}'
-    name: '{{ opt_ldap_name | default(omit) }}'
-    searchBindDN: '{{ opt_ldap_searchBindDN | default(omit) }}'
-    searchBindPassword: '{{ opt_ldap_searchBindPassword | default(omit) }}'
-    serverURIs: '{{ opt_ldap_serverURIs | default(omit) }}'
-    userDNTemplate: '{{ opt_ldap_userDNTemplate | default(omit) }}'
-    userSearchBaseDN: '{{ opt_ldap_userSearchBaseDN | default(omit) }}'
-    userSearchFilter: '{{ opt_ldap_userSearchFilter | default(omit) }}'
   register: results

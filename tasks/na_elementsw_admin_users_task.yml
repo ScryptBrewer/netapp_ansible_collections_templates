@@ -7,10 +7,4 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    element_username: '{{ req_admin_users_element_username }}'
-    state: '{{ req_admin_users_state }}'
-    acceptEula: '{{ opt_admin_users_acceptEula | default(omit) }}'
-    access: '{{ opt_admin_users_access | default(omit) }}'
-    element_password: '{{ opt_admin_users_element_password | default(omit) }}'
-    name: '{{ opt_admin_users_name | default(omit) }}'
   register: results

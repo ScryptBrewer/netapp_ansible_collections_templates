@@ -10,6 +10,7 @@
     share_name: '{{ req_cifs_acl_share_name }}'
     user_or_group: '{{ req_cifs_acl_user_or_group }}'
     vserver: '{{ req_cifs_acl_vserver }}'
+    feature_flags: '{{ opt_cifs_acl_feature_flags | default(omit) }}'
     name: '{{ opt_cifs_acl_name | default(omit) }}'
     permission: '{{ opt_cifs_acl_permission | default(omit) }}'
     state: '{{ opt_cifs_acl_state | default(omit) }}'

@@ -9,4 +9,5 @@
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     from_name: '{{ req_node_from_name }}'
     name: '{{ req_node_name }}'
+    feature_flags: '{{ opt_node_feature_flags | default(omit) }}'
   register: results

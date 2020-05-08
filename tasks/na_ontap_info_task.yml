@@ -8,7 +8,12 @@
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     debug: '{{ opt_info_debug | default(omit) }}'
+    feature_flags: '{{ opt_info_feature_flags | default(omit) }}'
     gather_subset: '{{ opt_info_gather_subset | default(omit) }}'
+    max_records: '{{ opt_info_max_records | default(omit) }}'
     name: '{{ opt_info_name | default(omit) }}'
     state: '{{ opt_info_state | default(omit) }}'
+    summary: '{{ opt_info_summary | default(omit) }}'
+    volume_move_target_aggr_info: '{{ opt_info_volume_move_target_aggr_info | default(omit) }}'
+    vserver: '{{ opt_info_vserver | default(omit) }}'
   register: results

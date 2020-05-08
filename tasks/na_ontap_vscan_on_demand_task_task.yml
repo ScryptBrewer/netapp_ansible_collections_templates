@@ -11,6 +11,7 @@
     vserver: '{{ req_vscan_on_demand_task_vserver }}'
     cross_junction: '{{ opt_vscan_on_demand_task_cross_junction | default(omit) }}'
     directory_recursion: '{{ opt_vscan_on_demand_task_directory_recursion | default(omit) }}'
+    feature_flags: '{{ opt_vscan_on_demand_task_feature_flags | default(omit) }}'
     file_ext_to_exclude: '{{ opt_vscan_on_demand_task_file_ext_to_exclude | default(omit) }}'
     file_ext_to_include: '{{ opt_vscan_on_demand_task_file_ext_to_include | default(omit) }}'
     max_file_size: '{{ opt_vscan_on_demand_task_max_file_size | default(omit) }}'

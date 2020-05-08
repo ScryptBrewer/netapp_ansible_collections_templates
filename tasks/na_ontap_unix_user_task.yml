@@ -9,6 +9,7 @@
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     name: '{{ req_unix_user_name }}'
     vserver: '{{ req_unix_user_vserver }}'
+    feature_flags: '{{ opt_unix_user_feature_flags | default(omit) }}'
     full_name: '{{ opt_unix_user_full_name | default(omit) }}'
     group_id: '{{ opt_unix_user_group_id | default(omit) }}'
     id: '{{ opt_unix_user_id | default(omit) }}'

@@ -10,6 +10,7 @@
     broadcast_domain: '{{ req_net_subnet_broadcast_domain }}'
     name: '{{ req_net_subnet_name }}'
     subnet: '{{ req_net_subnet_subnet }}'
+    feature_flags: '{{ opt_net_subnet_feature_flags | default(omit) }}'
     from_name: '{{ opt_net_subnet_from_name | default(omit) }}'
     gateway: '{{ opt_net_subnet_gateway | default(omit) }}'
     ip_ranges: '{{ opt_net_subnet_ip_ranges | default(omit) }}'

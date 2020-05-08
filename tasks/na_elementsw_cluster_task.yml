@@ -7,13 +7,4 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    management_virtual_ip: '{{ req_cluster_management_virtual_ip }}'
-    nodes: '{{ req_cluster_nodes }}'
-    storage_virtual_ip: '{{ req_cluster_storage_virtual_ip }}'
-    accept_eula: '{{ opt_cluster_accept_eula | default(omit) }}'
-    attributes: '{{ opt_cluster_attributes | default(omit) }}'
-    cluster_admin_password: '{{ opt_cluster_cluster_admin_password | default(omit) }}'
-    cluster_admin_username: '{{ opt_cluster_cluster_admin_username | default(omit) }}'
-    name: '{{ opt_cluster_name | default(omit) }}'
-    replica_count: '{{ opt_cluster_replica_count | default(omit) }}'
   register: results

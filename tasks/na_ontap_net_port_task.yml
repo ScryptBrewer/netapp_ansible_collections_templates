@@ -11,6 +11,7 @@
     ports: '{{ req_net_port_ports }}'
     autonegotiate_admin: '{{ opt_net_port_autonegotiate_admin | default(omit) }}'
     duplex_admin: '{{ opt_net_port_duplex_admin | default(omit) }}'
+    feature_flags: '{{ opt_net_port_feature_flags | default(omit) }}'
     flowcontrol_admin: '{{ opt_net_port_flowcontrol_admin | default(omit) }}'
     ipspace: '{{ opt_net_port_ipspace | default(omit) }}'
     mtu: '{{ opt_net_port_mtu | default(omit) }}'

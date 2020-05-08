@@ -11,6 +11,7 @@
     name: '{{ req_qtree_name }}'
     vserver: '{{ req_qtree_vserver }}'
     export_policy: '{{ opt_qtree_export_policy | default(omit) }}'
+    feature_flags: '{{ opt_qtree_feature_flags | default(omit) }}'
     from_name: '{{ opt_qtree_from_name | default(omit) }}'
     oplocks: '{{ opt_qtree_oplocks | default(omit) }}'
     security_style: '{{ opt_qtree_security_style | default(omit) }}'

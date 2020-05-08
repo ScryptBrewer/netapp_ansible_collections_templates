@@ -8,7 +8,8 @@
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     name: '{{ req_export_policy_name }}'
+    vserver: '{{ req_export_policy_vserver }}'
+    feature_flags: '{{ opt_export_policy_feature_flags | default(omit) }}'
     from_name: '{{ opt_export_policy_from_name | default(omit) }}'
     state: '{{ opt_export_policy_state | default(omit) }}'
-    vserver: '{{ opt_export_policy_vserver | default(omit) }}'
   register: results

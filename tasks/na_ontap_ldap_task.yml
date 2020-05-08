@@ -9,6 +9,7 @@
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     name: '{{ req_ldap_name }}'
     vserver: '{{ req_ldap_vserver }}'
+    feature_flags: '{{ opt_ldap_feature_flags | default(omit) }}'
     skip_config_validation: '{{ opt_ldap_skip_config_validation | default(omit) }}'
     state: '{{ opt_ldap_state | default(omit) }}'
   register: results

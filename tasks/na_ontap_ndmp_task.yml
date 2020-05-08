@@ -17,6 +17,7 @@
     dump_detailed_stats: '{{ opt_ndmp_dump_detailed_stats | default(omit) }}'
     dump_logical_find: '{{ opt_ndmp_dump_logical_find | default(omit) }}'
     enable: '{{ opt_ndmp_enable | default(omit) }}'
+    feature_flags: '{{ opt_ndmp_feature_flags | default(omit) }}'
     fh_dir_retry_interval: '{{ opt_ndmp_fh_dir_retry_interval | default(omit) }}'
     fh_node_retry_interval: '{{ opt_ndmp_fh_node_retry_interval | default(omit) }}'
     ignore_ctime_enabled: '{{ opt_ndmp_ignore_ctime_enabled | default(omit) }}'

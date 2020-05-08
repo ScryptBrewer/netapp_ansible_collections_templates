@@ -8,6 +8,7 @@
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     node_name: '{{ req_autosupport_node_name }}'
+    feature_flags: '{{ opt_autosupport_feature_flags | default(omit) }}'
     from_address: '{{ opt_autosupport_from_address | default(omit) }}'
     hostname_in_subject: '{{ opt_autosupport_hostname_in_subject | default(omit) }}'
     mail_hosts: '{{ opt_autosupport_mail_hosts | default(omit) }}'

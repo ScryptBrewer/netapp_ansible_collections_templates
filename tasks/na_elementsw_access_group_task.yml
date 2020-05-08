@@ -7,13 +7,4 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    name: '{{ req_access_group_name }}'
-    state: '{{ req_access_group_state }}'
-    account_id: '{{ opt_access_group_account_id | default(omit) }}'
-    attributes: '{{ opt_access_group_attributes | default(omit) }}'
-    from_name: '{{ opt_access_group_from_name | default(omit) }}'
-    initiators: '{{ opt_access_group_initiators | default(omit) }}'
-    virtual_network_id: '{{ opt_access_group_virtual_network_id | default(omit) }}'
-    virtual_network_tags: '{{ opt_access_group_virtual_network_tags | default(omit) }}'
-    volumes: '{{ opt_access_group_volumes | default(omit) }}'
   register: results

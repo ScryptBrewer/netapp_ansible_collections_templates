@@ -9,6 +9,7 @@
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     share_name: '{{ req_cifs_share_name }}'
     vserver: '{{ req_cifs_vserver }}'
+    feature_flags: '{{ opt_cifs_feature_flags | default(omit) }}'
     name: '{{ opt_cifs_name | default(omit) }}'
     path: '{{ opt_cifs_path | default(omit) }}'
     share_properties: '{{ opt_cifs_share_properties | default(omit) }}'

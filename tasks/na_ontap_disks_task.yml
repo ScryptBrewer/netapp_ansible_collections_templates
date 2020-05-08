@@ -9,5 +9,6 @@
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     node: '{{ req_disks_node }}'
     disk_count: '{{ opt_disks_disk_count | default(omit) }}'
+    feature_flags: '{{ opt_disks_feature_flags | default(omit) }}'
     name: '{{ opt_disks_name | default(omit) }}'
   register: results

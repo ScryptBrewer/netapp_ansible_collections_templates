@@ -8,6 +8,7 @@
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     vserver: '{{ req_svm_options_vserver }}'
+    feature_flags: '{{ opt_svm_options_feature_flags | default(omit) }}'
     name: '{{ opt_svm_options_name | default(omit) }}'
     value: '{{ opt_svm_options_value | default(omit) }}'
   register: results

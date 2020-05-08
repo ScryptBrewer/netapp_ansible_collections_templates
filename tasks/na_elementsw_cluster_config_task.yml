@@ -7,9 +7,4 @@
     https: "{{{{ netapp_https | default(omit) }}}}"
     port: "{{{{ netapp_port | default(omit) }}}}"
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
-    enable_virtual_volumes: '{{ opt_cluster_config_enable_virtual_volumes | default(omit) }}'
-    encryption_at_rest: '{{ opt_cluster_config_encryption_at_rest | default(omit) }}'
-    modify_cluster_full_threshold: '{{ opt_cluster_config_modify_cluster_full_threshold | default(omit) }}'
-    name: '{{ opt_cluster_config_name | default(omit) }}'
-    set_ntp_info: '{{ opt_cluster_config_set_ntp_info | default(omit) }}'
   register: results

@@ -11,6 +11,8 @@
     comment: '{{ opt_snapshot_policy_comment | default(omit) }}'
     count: '{{ opt_snapshot_policy_count | default(omit) }}'
     enabled: '{{ opt_snapshot_policy_enabled | default(omit) }}'
+    feature_flags: '{{ opt_snapshot_policy_feature_flags | default(omit) }}'
+    prefix: '{{ opt_snapshot_policy_prefix | default(omit) }}'
     schedule: '{{ opt_snapshot_policy_schedule | default(omit) }}'
     snapmirror_label: '{{ opt_snapshot_policy_snapmirror_label | default(omit) }}'
     state: '{{ opt_snapshot_policy_state | default(omit) }}'

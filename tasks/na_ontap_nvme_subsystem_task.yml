@@ -9,6 +9,7 @@
     validate_certs: "{{{{ validate_certs | default(false) }}}}"
     subsystem: '{{ req_nvme_subsystem_subsystem }}'
     vserver: '{{ req_nvme_subsystem_vserver }}'
+    feature_flags: '{{ opt_nvme_subsystem_feature_flags | default(omit) }}'
     hosts: '{{ opt_nvme_subsystem_hosts | default(omit) }}'
     name: '{{ opt_nvme_subsystem_name | default(omit) }}'
     ostype: '{{ opt_nvme_subsystem_ostype | default(omit) }}'

@@ -10,6 +10,7 @@
     names: '{{ req_ports_names }}'
     resource_name: '{{ req_ports_resource_name }}'
     resource_type: '{{ req_ports_resource_type }}'
+    feature_flags: '{{ opt_ports_feature_flags | default(omit) }}'
     ipspace: '{{ opt_ports_ipspace | default(omit) }}'
     name: '{{ opt_ports_name | default(omit) }}'
     portset_type: '{{ opt_ports_portset_type | default(omit) }}'
