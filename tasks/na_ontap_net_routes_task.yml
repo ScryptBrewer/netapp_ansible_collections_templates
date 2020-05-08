@@ -1,0 +1,19 @@
+---
+- name: Running command na_ontap_net_routes
+  na_ontap_net_routes:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    destination: '{{ req_net_routes_destination }}'
+    gateway: '{{ req_net_routes_gateway }}'
+    vserver: '{{ req_net_routes_vserver }}'
+    from_destination: '{{ opt_net_routes_from_destination | default(omit) }}'
+    from_gateway: '{{ opt_net_routes_from_gateway | default(omit) }}'
+    from_metric: '{{ opt_net_routes_from_metric | default(omit) }}'
+    metric: '{{ opt_net_routes_metric | default(omit) }}'
+    name: '{{ opt_net_routes_name | default(omit) }}'
+    state: '{{ opt_net_routes_state | default(omit) }}'
+  register: results

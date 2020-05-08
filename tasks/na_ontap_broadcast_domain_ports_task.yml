@@ -1,0 +1,15 @@
+---
+- name: Running command na_ontap_broadcast_domain_ports
+  na_ontap_broadcast_domain_ports:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    broadcast_domain: '{{ req_broadcast_domain_ports_broadcast_domain }}'
+    ipspace: '{{ opt_broadcast_domain_ports_ipspace | default(omit) }}'
+    name: '{{ opt_broadcast_domain_ports_name | default(omit) }}'
+    ports: '{{ opt_broadcast_domain_ports_ports | default(omit) }}'
+    state: '{{ opt_broadcast_domain_ports_state | default(omit) }}'
+  register: results

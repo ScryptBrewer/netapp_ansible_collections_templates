@@ -1,0 +1,14 @@
+---
+- name: Running command na_elementsw_check_connections
+  na_elementsw_check_connections:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    mvip: '{{ opt_check_connections_mvip | default(omit) }}'
+    name: '{{ opt_check_connections_name | default(omit) }}'
+    skip: '{{ opt_check_connections_skip | default(omit) }}'
+    svip: '{{ opt_check_connections_svip | default(omit) }}'
+  register: results

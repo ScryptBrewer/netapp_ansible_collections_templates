@@ -1,0 +1,19 @@
+---
+- name: Running command na_ontap_qos_adaptive_policy_group
+  na_ontap_qos_adaptive_policy_group:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    name: '{{ req_qos_adaptive_policy_group_name }}'
+    vserver: '{{ req_qos_adaptive_policy_group_vserver }}'
+    absolute_min_iops: '{{ opt_qos_adaptive_policy_group_absolute_min_iops | default(omit) }}'
+    expected_iops: '{{ opt_qos_adaptive_policy_group_expected_iops | default(omit) }}'
+    force: '{{ opt_qos_adaptive_policy_group_force | default(omit) }}'
+    from_name: '{{ opt_qos_adaptive_policy_group_from_name | default(omit) }}'
+    peak_iops: '{{ opt_qos_adaptive_policy_group_peak_iops | default(omit) }}'
+    peak_iops_allocation: '{{ opt_qos_adaptive_policy_group_peak_iops_allocation | default(omit) }}'
+    state: '{{ opt_qos_adaptive_policy_group_state | default(omit) }}'
+  register: results

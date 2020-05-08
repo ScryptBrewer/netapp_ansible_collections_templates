@@ -1,0 +1,19 @@
+---
+- name: Running command na_elementsw_volume
+  na_elementsw_volume:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    account_id: '{{ req_volume_account_id }}'
+    name: '{{ req_volume_name }}'
+    state: '{{ req_volume_state }}'
+    access: '{{ opt_volume_access | default(omit) }}'
+    attributes: '{{ opt_volume_attributes | default(omit) }}'
+    enable512e: '{{ opt_volume_enable512e | default(omit) }}'
+    qos: '{{ opt_volume_qos | default(omit) }}'
+    size: '{{ opt_volume_size | default(omit) }}'
+    size_unit: '{{ opt_volume_size_unit | default(omit) }}'
+  register: results

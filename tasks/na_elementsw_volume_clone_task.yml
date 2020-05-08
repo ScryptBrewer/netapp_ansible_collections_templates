@@ -1,0 +1,18 @@
+---
+- name: Running command na_elementsw_volume_clone
+  na_elementsw_volume_clone:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    account_id: '{{ req_volume_clone_account_id }}'
+    name: '{{ req_volume_clone_name }}'
+    src_volume_id: '{{ req_volume_clone_src_volume_id }}'
+    access: '{{ opt_volume_clone_access | default(omit) }}'
+    attributes: '{{ opt_volume_clone_attributes | default(omit) }}'
+    size: '{{ opt_volume_clone_size | default(omit) }}'
+    size_unit: '{{ opt_volume_clone_size_unit | default(omit) }}'
+    src_snapshot_id: '{{ opt_volume_clone_src_snapshot_id | default(omit) }}'
+  register: results

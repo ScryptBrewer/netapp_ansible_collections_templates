@@ -1,0 +1,14 @@
+---
+- name: Running command na_ontap_ntp
+  na_ontap_ntp:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    server_name: '{{ req_ntp_server_name }}'
+    name: '{{ opt_ntp_name | default(omit) }}'
+    state: '{{ opt_ntp_state | default(omit) }}'
+    version: '{{ opt_ntp_version | default(omit) }}'
+  register: results

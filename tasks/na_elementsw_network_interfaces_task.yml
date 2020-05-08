@@ -1,0 +1,27 @@
+---
+- name: Running command na_elementsw_network_interfaces
+  na_elementsw_network_interfaces:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    gateway_address_10g: '{{ req_network_interfaces_gateway_address_10g }}'
+    gateway_address_1g: '{{ req_network_interfaces_gateway_address_1g }}'
+    ip_address_10g: '{{ req_network_interfaces_ip_address_10g }}'
+    ip_address_1g: '{{ req_network_interfaces_ip_address_1g }}'
+    method: '{{ req_network_interfaces_method }}'
+    subnet_10g: '{{ req_network_interfaces_subnet_10g }}'
+    subnet_1g: '{{ req_network_interfaces_subnet_1g }}'
+    bond_mode_10g: '{{ opt_network_interfaces_bond_mode_10g | default(omit) }}'
+    bond_mode_1g: '{{ opt_network_interfaces_bond_mode_1g | default(omit) }}'
+    dns_nameservers: '{{ opt_network_interfaces_dns_nameservers | default(omit) }}'
+    dns_search_domains: '{{ opt_network_interfaces_dns_search_domains | default(omit) }}'
+    lacp_10g: '{{ opt_network_interfaces_lacp_10g | default(omit) }}'
+    lacp_1g: '{{ opt_network_interfaces_lacp_1g | default(omit) }}'
+    mtu_10g: '{{ opt_network_interfaces_mtu_10g | default(omit) }}'
+    mtu_1g: '{{ opt_network_interfaces_mtu_1g | default(omit) }}'
+    name: '{{ opt_network_interfaces_name | default(omit) }}'
+    virtual_network_tag: '{{ opt_network_interfaces_virtual_network_tag | default(omit) }}'
+  register: results

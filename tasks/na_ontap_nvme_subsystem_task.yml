@@ -1,0 +1,19 @@
+---
+- name: Running command na_ontap_nvme_subsystem
+  na_ontap_nvme_subsystem:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    subsystem: '{{ req_nvme_subsystem_subsystem }}'
+    vserver: '{{ req_nvme_subsystem_vserver }}'
+    hosts: '{{ opt_nvme_subsystem_hosts | default(omit) }}'
+    name: '{{ opt_nvme_subsystem_name | default(omit) }}'
+    ostype: '{{ opt_nvme_subsystem_ostype | default(omit) }}'
+    paths: '{{ opt_nvme_subsystem_paths | default(omit) }}'
+    skip_host_check: '{{ opt_nvme_subsystem_skip_host_check | default(omit) }}'
+    skip_mapped_check: '{{ opt_nvme_subsystem_skip_mapped_check | default(omit) }}'
+    state: '{{ opt_nvme_subsystem_state | default(omit) }}'
+  register: results

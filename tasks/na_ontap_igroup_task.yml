@@ -1,0 +1,19 @@
+---
+- name: Running command na_ontap_igroup
+  na_ontap_igroup:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    name: '{{ req_igroup_name }}'
+    vserver: '{{ req_igroup_vserver }}'
+    bind_portset: '{{ opt_igroup_bind_portset | default(omit) }}'
+    force_remove_initiator: '{{ opt_igroup_force_remove_initiator | default(omit) }}'
+    from_name: '{{ opt_igroup_from_name | default(omit) }}'
+    initiator_group_type: '{{ opt_igroup_initiator_group_type | default(omit) }}'
+    initiators: '{{ opt_igroup_initiators | default(omit) }}'
+    ostype: '{{ opt_igroup_ostype | default(omit) }}'
+    state: '{{ opt_igroup_state | default(omit) }}'
+  register: results

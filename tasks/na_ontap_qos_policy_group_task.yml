@@ -1,0 +1,17 @@
+---
+- name: Running command na_ontap_qos_policy_group
+  na_ontap_qos_policy_group:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    force: '{{ opt_qos_policy_group_force | default(omit) }}'
+    from_name: '{{ opt_qos_policy_group_from_name | default(omit) }}'
+    max_throughput: '{{ opt_qos_policy_group_max_throughput | default(omit) }}'
+    min_throughput: '{{ opt_qos_policy_group_min_throughput | default(omit) }}'
+    name: '{{ opt_qos_policy_group_name | default(omit) }}'
+    state: '{{ opt_qos_policy_group_state | default(omit) }}'
+    vserver: '{{ opt_qos_policy_group_vserver | default(omit) }}'
+  register: results

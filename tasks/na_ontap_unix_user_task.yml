@@ -1,0 +1,16 @@
+---
+- name: Running command na_ontap_unix_user
+  na_ontap_unix_user:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    name: '{{ req_unix_user_name }}'
+    vserver: '{{ req_unix_user_vserver }}'
+    full_name: '{{ opt_unix_user_full_name | default(omit) }}'
+    group_id: '{{ opt_unix_user_group_id | default(omit) }}'
+    id: '{{ opt_unix_user_id | default(omit) }}'
+    state: '{{ opt_unix_user_state | default(omit) }}'
+  register: results

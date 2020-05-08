@@ -1,0 +1,15 @@
+---
+- name: Running command na_elementsw_cluster_pair
+  na_elementsw_cluster_pair:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    dest_mvip: '{{ req_cluster_pair_dest_mvip }}'
+    dest_password: '{{ opt_cluster_pair_dest_password | default(omit) }}'
+    dest_username: '{{ opt_cluster_pair_dest_username | default(omit) }}'
+    name: '{{ opt_cluster_pair_name | default(omit) }}'
+    state: '{{ opt_cluster_pair_state | default(omit) }}'
+  register: results

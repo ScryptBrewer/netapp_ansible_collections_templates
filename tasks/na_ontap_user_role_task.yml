@@ -1,0 +1,16 @@
+---
+- name: Running command na_ontap_user_role
+  na_ontap_user_role:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    command_directory_name: '{{ req_user_role_command_directory_name }}'
+    name: '{{ req_user_role_name }}'
+    vserver: '{{ req_user_role_vserver }}'
+    access_level: '{{ opt_user_role_access_level | default(omit) }}'
+    query: '{{ opt_user_role_query | default(omit) }}'
+    state: '{{ opt_user_role_state | default(omit) }}'
+  register: results

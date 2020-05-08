@@ -1,0 +1,16 @@
+---
+- name: Running command na_ontap_dns
+  na_ontap_dns:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    vserver: '{{ req_dns_vserver }}'
+    domains: '{{ opt_dns_domains | default(omit) }}'
+    name: '{{ opt_dns_name | default(omit) }}'
+    nameservers: '{{ opt_dns_nameservers | default(omit) }}'
+    skip_validation: '{{ opt_dns_skip_validation | default(omit) }}'
+    state: '{{ opt_dns_state | default(omit) }}'
+  register: results

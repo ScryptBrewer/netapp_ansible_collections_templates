@@ -1,0 +1,26 @@
+---
+- name: Running command na_ontap_flexcache
+  na_ontap_flexcache:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    volume: '{{ req_flexcache_volume }}'
+    vserver: '{{ req_flexcache_vserver }}'
+    aggr_list: '{{ opt_flexcache_aggr_list | default(omit) }}'
+    aggr_list_multiplier: '{{ opt_flexcache_aggr_list_multiplier | default(omit) }}'
+    auto_provision_as: '{{ opt_flexcache_auto_provision_as | default(omit) }}'
+    force_offline: '{{ opt_flexcache_force_offline | default(omit) }}'
+    force_unmount: '{{ opt_flexcache_force_unmount | default(omit) }}'
+    junction_path: '{{ opt_flexcache_junction_path | default(omit) }}'
+    name: '{{ opt_flexcache_name | default(omit) }}'
+    origin_cluster: '{{ opt_flexcache_origin_cluster | default(omit) }}'
+    origin_volume: '{{ opt_flexcache_origin_volume | default(omit) }}'
+    origin_vserver: '{{ opt_flexcache_origin_vserver | default(omit) }}'
+    size: '{{ opt_flexcache_size | default(omit) }}'
+    size_unit: '{{ opt_flexcache_size_unit | default(omit) }}'
+    state: '{{ opt_flexcache_state | default(omit) }}'
+    time_out: '{{ opt_flexcache_time_out | default(omit) }}'
+  register: results

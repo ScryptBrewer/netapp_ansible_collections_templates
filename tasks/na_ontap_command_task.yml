@@ -1,0 +1,14 @@
+---
+- name: Running command na_ontap_command
+  na_ontap_command:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    command: '{{ req_command_command }}'
+    name: '{{ opt_command_name | default(omit) }}'
+    privilege: '{{ opt_command_privilege | default(omit) }}'
+    return_dict: '{{ opt_command_return_dict | default(omit) }}'
+  register: results

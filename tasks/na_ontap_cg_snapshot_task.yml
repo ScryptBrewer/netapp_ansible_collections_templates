@@ -1,0 +1,17 @@
+---
+- name: Running command na_ontap_cg_snapshot
+  na_ontap_cg_snapshot:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    snapshot: '{{ req_cg_snapshot_snapshot }}'
+    volumes: '{{ req_cg_snapshot_volumes }}'
+    vserver: '{{ req_cg_snapshot_vserver }}'
+    name: '{{ opt_cg_snapshot_name | default(omit) }}'
+    snapmirror_label: '{{ opt_cg_snapshot_snapmirror_label | default(omit) }}'
+    state: '{{ opt_cg_snapshot_state | default(omit) }}'
+    timeout: '{{ opt_cg_snapshot_timeout | default(omit) }}'
+  register: results

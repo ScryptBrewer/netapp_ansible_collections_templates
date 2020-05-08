@@ -1,0 +1,12 @@
+---
+- name: Running command na_ontap_node
+  na_ontap_node:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    from_name: '{{ req_node_from_name }}'
+    name: '{{ req_node_name }}'
+  register: results

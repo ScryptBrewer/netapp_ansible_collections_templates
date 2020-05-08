@@ -1,0 +1,15 @@
+---
+- name: Running command na_elementsw_snapshot_restore
+  na_elementsw_snapshot_restore:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    account_id: '{{ req_snapshot_restore_account_id }}'
+    dest_volume_name: '{{ req_snapshot_restore_dest_volume_name }}'
+    src_snapshot_id: '{{ req_snapshot_restore_src_snapshot_id }}'
+    src_volume_id: '{{ req_snapshot_restore_src_volume_id }}'
+    name: '{{ opt_snapshot_restore_name | default(omit) }}'
+  register: results

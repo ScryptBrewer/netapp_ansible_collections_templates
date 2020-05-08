@@ -1,0 +1,14 @@
+---
+- name: Running command na_ontap_ldap
+  na_ontap_ldap:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    name: '{{ req_ldap_name }}'
+    vserver: '{{ req_ldap_vserver }}'
+    skip_config_validation: '{{ opt_ldap_skip_config_validation | default(omit) }}'
+    state: '{{ opt_ldap_state | default(omit) }}'
+  register: results

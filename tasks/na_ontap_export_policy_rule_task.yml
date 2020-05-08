@@ -1,0 +1,20 @@
+---
+- name: Running command na_ontap_export_policy_rule
+  na_ontap_export_policy_rule:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    name: '{{ req_export_policy_rule_name }}'
+    vserver: '{{ req_export_policy_rule_vserver }}'
+    allow_suid: '{{ opt_export_policy_rule_allow_suid | default(omit) }}'
+    client_match: '{{ opt_export_policy_rule_client_match | default(omit) }}'
+    protocol: '{{ opt_export_policy_rule_protocol | default(omit) }}'
+    ro_rule: '{{ opt_export_policy_rule_ro_rule | default(omit) }}'
+    rule_index: '{{ opt_export_policy_rule_rule_index | default(omit) }}'
+    rw_rule: '{{ opt_export_policy_rule_rw_rule | default(omit) }}'
+    state: '{{ opt_export_policy_rule_state | default(omit) }}'
+    super_user_security: '{{ opt_export_policy_rule_super_user_security | default(omit) }}'
+  register: results

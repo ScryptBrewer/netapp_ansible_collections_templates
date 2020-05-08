@@ -1,0 +1,23 @@
+---
+- name: Running command na_ontap_kerberos_realm
+  na_ontap_kerberos_realm:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    realm: '{{ req_kerberos_realm_realm }}'
+    vserver: '{{ req_kerberos_realm_vserver }}'
+    admin_server_ip: '{{ opt_kerberos_realm_admin_server_ip | default(omit) }}'
+    admin_server_port: '{{ opt_kerberos_realm_admin_server_port | default(omit) }}'
+    clock_skew: '{{ opt_kerberos_realm_clock_skew | default(omit) }}'
+    comment: '{{ opt_kerberos_realm_comment | default(omit) }}'
+    kdc_ip: '{{ opt_kerberos_realm_kdc_ip | default(omit) }}'
+    kdc_port: '{{ opt_kerberos_realm_kdc_port | default(omit) }}'
+    kdc_vendor: '{{ opt_kerberos_realm_kdc_vendor | default(omit) }}'
+    name: '{{ opt_kerberos_realm_name | default(omit) }}'
+    pw_server_ip: '{{ opt_kerberos_realm_pw_server_ip | default(omit) }}'
+    pw_server_port: '{{ opt_kerberos_realm_pw_server_port | default(omit) }}'
+    state: '{{ opt_kerberos_realm_state | default(omit) }}'
+  register: results

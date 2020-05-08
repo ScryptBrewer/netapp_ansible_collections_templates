@@ -1,0 +1,17 @@
+---
+- name: Running command na_ontap_cluster
+  na_ontap_cluster:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    cluster_ip_address: '{{ opt_cluster_cluster_ip_address | default(omit) }}'
+    cluster_name: '{{ opt_cluster_cluster_name | default(omit) }}'
+    license_code: '{{ opt_cluster_license_code | default(omit) }}'
+    license_package: '{{ opt_cluster_license_package | default(omit) }}'
+    name: '{{ opt_cluster_name | default(omit) }}'
+    node_serial_number: '{{ opt_cluster_node_serial_number | default(omit) }}'
+    state: '{{ opt_cluster_state | default(omit) }}'
+  register: results

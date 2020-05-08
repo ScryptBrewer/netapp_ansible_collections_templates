@@ -1,0 +1,14 @@
+---
+- name: Running command na_ontap_fcp
+  na_ontap_fcp:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    vserver: '{{ req_fcp_vserver }}'
+    name: '{{ opt_fcp_name | default(omit) }}'
+    state: '{{ opt_fcp_state | default(omit) }}'
+    status: '{{ opt_fcp_status | default(omit) }}'
+  register: results

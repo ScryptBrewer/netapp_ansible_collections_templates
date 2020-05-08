@@ -1,0 +1,20 @@
+---
+- name: Running command na_ontap_cifs_server
+  na_ontap_cifs_server:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    name: '{{ req_cifs_server_name }}'
+    vserver: '{{ req_cifs_server_vserver }}'
+    admin_password: '{{ opt_cifs_server_admin_password | default(omit) }}'
+    admin_user_name: '{{ opt_cifs_server_admin_user_name | default(omit) }}'
+    domain: '{{ opt_cifs_server_domain | default(omit) }}'
+    force: '{{ opt_cifs_server_force | default(omit) }}'
+    ou: '{{ opt_cifs_server_ou | default(omit) }}'
+    service_state: '{{ opt_cifs_server_service_state | default(omit) }}'
+    state: '{{ opt_cifs_server_state | default(omit) }}'
+    workgroup: '{{ opt_cifs_server_workgroup | default(omit) }}'
+  register: results

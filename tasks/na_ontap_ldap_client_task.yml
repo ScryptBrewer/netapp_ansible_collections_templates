@@ -1,0 +1,25 @@
+---
+- name: Running command na_ontap_ldap_client
+  na_ontap_ldap_client:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    name: '{{ req_ldap_client_name }}'
+    vserver: '{{ req_ldap_client_vserver }}'
+    base_dn: '{{ opt_ldap_client_base_dn | default(omit) }}'
+    base_scope: '{{ opt_ldap_client_base_scope | default(omit) }}'
+    bind_dn: '{{ opt_ldap_client_bind_dn | default(omit) }}'
+    bind_password: '{{ opt_ldap_client_bind_password | default(omit) }}'
+    ldap_servers: '{{ opt_ldap_client_ldap_servers | default(omit) }}'
+    min_bind_level: '{{ opt_ldap_client_min_bind_level | default(omit) }}'
+    port: '{{ opt_ldap_client_port | default(omit) }}'
+    query_timeout: '{{ opt_ldap_client_query_timeout | default(omit) }}'
+    referral_enabled: '{{ opt_ldap_client_referral_enabled | default(omit) }}'
+    schema: '{{ opt_ldap_client_schema | default(omit) }}'
+    session_security: '{{ opt_ldap_client_session_security | default(omit) }}'
+    state: '{{ opt_ldap_client_state | default(omit) }}'
+    use_start_tls: '{{ opt_ldap_client_use_start_tls | default(omit) }}'
+  register: results

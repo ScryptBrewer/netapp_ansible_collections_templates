@@ -1,0 +1,17 @@
+---
+- name: Running command na_ontap_job_schedule
+  na_ontap_job_schedule:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    name: '{{ req_job_schedule_name }}'
+    job_days_of_month: '{{ opt_job_schedule_job_days_of_month | default(omit) }}'
+    job_days_of_week: '{{ opt_job_schedule_job_days_of_week | default(omit) }}'
+    job_hours: '{{ opt_job_schedule_job_hours | default(omit) }}'
+    job_minutes: '{{ opt_job_schedule_job_minutes | default(omit) }}'
+    job_months: '{{ opt_job_schedule_job_months | default(omit) }}'
+    state: '{{ opt_job_schedule_state | default(omit) }}'
+  register: results

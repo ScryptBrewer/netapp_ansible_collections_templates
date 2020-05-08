@@ -1,0 +1,29 @@
+---
+- name: Running command na_ontap_interface
+  na_ontap_interface:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    interface_name: '{{ req_interface_interface_name }}'
+    vserver: '{{ req_interface_vserver }}'
+    address: '{{ opt_interface_address | default(omit) }}'
+    admin_status: '{{ opt_interface_admin_status | default(omit) }}'
+    dns_domain_name: '{{ opt_interface_dns_domain_name | default(omit) }}'
+    failover_policy: '{{ opt_interface_failover_policy | default(omit) }}'
+    firewall_policy: '{{ opt_interface_firewall_policy | default(omit) }}'
+    force_subnet_association: '{{ opt_interface_force_subnet_association | default(omit) }}'
+    home_node: '{{ opt_interface_home_node | default(omit) }}'
+    home_port: '{{ opt_interface_home_port | default(omit) }}'
+    is_auto_revert: '{{ opt_interface_is_auto_revert | default(omit) }}'
+    is_dns_update_enabled: '{{ opt_interface_is_dns_update_enabled | default(omit) }}'
+    listen_for_dns_query: '{{ opt_interface_listen_for_dns_query | default(omit) }}'
+    name: '{{ opt_interface_name | default(omit) }}'
+    netmask: '{{ opt_interface_netmask | default(omit) }}'
+    protocols: '{{ opt_interface_protocols | default(omit) }}'
+    role: '{{ opt_interface_role | default(omit) }}'
+    state: '{{ opt_interface_state | default(omit) }}'
+    subnet_name: '{{ opt_interface_subnet_name | default(omit) }}'
+  register: results

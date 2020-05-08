@@ -1,0 +1,44 @@
+---
+- name: Running command na_ontap_volume
+  na_ontap_volume:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    name: '{{ req_volume_name }}'
+    vserver: '{{ req_volume_vserver }}'
+    aggr_list: '{{ opt_volume_aggr_list | default(omit) }}'
+    aggr_list_multiplier: '{{ opt_volume_aggr_list_multiplier | default(omit) }}'
+    aggregate_name: '{{ opt_volume_aggregate_name | default(omit) }}'
+    atime_update: '{{ opt_volume_atime_update | default(omit) }}'
+    auto_provision_as: '{{ opt_volume_auto_provision_as | default(omit) }}'
+    comment: '{{ opt_volume_comment | default(omit) }}'
+    efficiency_policy: '{{ opt_volume_efficiency_policy | default(omit) }}'
+    encrypt: '{{ opt_volume_encrypt | default(omit) }}'
+    from_name: '{{ opt_volume_from_name | default(omit) }}'
+    is_infinite: '{{ opt_volume_is_infinite | default(omit) }}'
+    is_online: '{{ opt_volume_is_online | default(omit) }}'
+    junction_path: '{{ opt_volume_junction_path | default(omit) }}'
+    language: '{{ opt_volume_language | default(omit) }}'
+    nvfail_enabled: '{{ opt_volume_nvfail_enabled | default(omit) }}'
+    percent_snapshot_space: '{{ opt_volume_percent_snapshot_space | default(omit) }}'
+    policy: '{{ opt_volume_policy | default(omit) }}'
+    qos_adaptive_policy_group: '{{ opt_volume_qos_adaptive_policy_group | default(omit) }}'
+    qos_policy_group: '{{ opt_volume_qos_policy_group | default(omit) }}'
+    size: '{{ opt_volume_size | default(omit) }}'
+    size_unit: '{{ opt_volume_size_unit | default(omit) }}'
+    snapdir_access: '{{ opt_volume_snapdir_access | default(omit) }}'
+    snapshot_policy: '{{ opt_volume_snapshot_policy | default(omit) }}'
+    space_guarantee: '{{ opt_volume_space_guarantee | default(omit) }}'
+    space_slo: '{{ opt_volume_space_slo | default(omit) }}'
+    state: '{{ opt_volume_state | default(omit) }}'
+    tiering_policy: '{{ opt_volume_tiering_policy | default(omit) }}'
+    time_out: '{{ opt_volume_time_out | default(omit) }}'
+    type: '{{ opt_volume_type | default(omit) }}'
+    unix_permissions: '{{ opt_volume_unix_permissions | default(omit) }}'
+    volume_security_style: '{{ opt_volume_volume_security_style | default(omit) }}'
+    vserver_dr_protection: '{{ opt_volume_vserver_dr_protection | default(omit) }}'
+    wait_for_completion: '{{ opt_volume_wait_for_completion | default(omit) }}'
+  register: results

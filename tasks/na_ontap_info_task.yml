@@ -1,0 +1,14 @@
+---
+- name: Running command na_ontap_info
+  na_ontap_info:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    debug: '{{ opt_info_debug | default(omit) }}'
+    gather_subset: '{{ opt_info_gather_subset | default(omit) }}'
+    name: '{{ opt_info_name | default(omit) }}'
+    state: '{{ opt_info_state | default(omit) }}'
+  register: results

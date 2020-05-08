@@ -1,0 +1,16 @@
+---
+- name: Running command na_ontap_net_ifgrp
+  na_ontap_net_ifgrp:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    name: '{{ req_net_ifgrp_name }}'
+    node: '{{ req_net_ifgrp_node }}'
+    distribution_function: '{{ opt_net_ifgrp_distribution_function | default(omit) }}'
+    mode: '{{ opt_net_ifgrp_mode | default(omit) }}'
+    ports: '{{ opt_net_ifgrp_ports | default(omit) }}'
+    state: '{{ opt_net_ifgrp_state | default(omit) }}'
+  register: results

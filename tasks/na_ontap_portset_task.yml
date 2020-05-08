@@ -1,0 +1,16 @@
+---
+- name: Running command na_ontap_portset
+  na_ontap_portset:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    name: '{{ req_portset_name }}'
+    vserver: '{{ req_portset_vserver }}'
+    force: '{{ opt_portset_force | default(omit) }}'
+    ports: '{{ opt_portset_ports | default(omit) }}'
+    state: '{{ opt_portset_state | default(omit) }}'
+    type: '{{ opt_portset_type | default(omit) }}'
+  register: results

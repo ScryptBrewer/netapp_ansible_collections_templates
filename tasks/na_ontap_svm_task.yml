@@ -1,0 +1,23 @@
+---
+- name: Running command na_ontap_svm
+  na_ontap_svm:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    name: '{{ req_svm_name }}'
+    aggr_list: '{{ opt_svm_aggr_list | default(omit) }}'
+    allowed_protocols: '{{ opt_svm_allowed_protocols | default(omit) }}'
+    comment: '{{ opt_svm_comment | default(omit) }}'
+    from_name: '{{ opt_svm_from_name | default(omit) }}'
+    ipspace: '{{ opt_svm_ipspace | default(omit) }}'
+    language: '{{ opt_svm_language | default(omit) }}'
+    root_volume: '{{ opt_svm_root_volume | default(omit) }}'
+    root_volume_aggregate: '{{ opt_svm_root_volume_aggregate | default(omit) }}'
+    root_volume_security_style: '{{ opt_svm_root_volume_security_style | default(omit) }}'
+    snapshot_policy: '{{ opt_svm_snapshot_policy | default(omit) }}'
+    state: '{{ opt_svm_state | default(omit) }}'
+    subtype: '{{ opt_svm_subtype | default(omit) }}'
+  register: results

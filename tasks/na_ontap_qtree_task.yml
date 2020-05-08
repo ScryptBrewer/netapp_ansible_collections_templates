@@ -1,0 +1,19 @@
+---
+- name: Running command na_ontap_qtree
+  na_ontap_qtree:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    flexvol_name: '{{ req_qtree_flexvol_name }}'
+    name: '{{ req_qtree_name }}'
+    vserver: '{{ req_qtree_vserver }}'
+    export_policy: '{{ opt_qtree_export_policy | default(omit) }}'
+    from_name: '{{ opt_qtree_from_name | default(omit) }}'
+    oplocks: '{{ opt_qtree_oplocks | default(omit) }}'
+    security_style: '{{ opt_qtree_security_style | default(omit) }}'
+    state: '{{ opt_qtree_state | default(omit) }}'
+    unix_permissions: '{{ opt_qtree_unix_permissions | default(omit) }}'
+  register: results

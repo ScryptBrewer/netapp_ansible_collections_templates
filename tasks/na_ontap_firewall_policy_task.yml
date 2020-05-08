@@ -1,0 +1,19 @@
+---
+- name: Running command na_ontap_firewall_policy
+  na_ontap_firewall_policy:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    allow_list: '{{ opt_firewall_policy_allow_list | default(omit) }}'
+    enable: '{{ opt_firewall_policy_enable | default(omit) }}'
+    logging: '{{ opt_firewall_policy_logging | default(omit) }}'
+    name: '{{ opt_firewall_policy_name | default(omit) }}'
+    node: '{{ opt_firewall_policy_node | default(omit) }}'
+    policy: '{{ opt_firewall_policy_policy | default(omit) }}'
+    service: '{{ opt_firewall_policy_service | default(omit) }}'
+    state: '{{ opt_firewall_policy_state | default(omit) }}'
+    vserver: '{{ opt_firewall_policy_vserver | default(omit) }}'
+  register: results

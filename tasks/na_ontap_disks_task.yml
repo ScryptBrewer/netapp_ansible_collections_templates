@@ -1,0 +1,13 @@
+---
+- name: Running command na_ontap_disks
+  na_ontap_disks:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    node: '{{ req_disks_node }}'
+    disk_count: '{{ opt_disks_disk_count | default(omit) }}'
+    name: '{{ opt_disks_name | default(omit) }}'
+  register: results

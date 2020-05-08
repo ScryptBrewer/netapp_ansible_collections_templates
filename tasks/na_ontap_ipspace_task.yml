@@ -1,0 +1,13 @@
+---
+- name: Running command na_ontap_ipspace
+  na_ontap_ipspace:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    name: '{{ req_ipspace_name }}'
+    from_name: '{{ opt_ipspace_from_name | default(omit) }}'
+    state: '{{ opt_ipspace_state | default(omit) }}'
+  register: results

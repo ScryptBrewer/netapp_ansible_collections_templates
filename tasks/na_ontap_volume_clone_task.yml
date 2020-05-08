@@ -1,0 +1,22 @@
+---
+- name: Running command na_ontap_volume_clone
+  na_ontap_volume_clone:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    name: '{{ req_volume_clone_name }}'
+    parent_volume: '{{ req_volume_clone_parent_volume }}'
+    vserver: '{{ req_volume_clone_vserver }}'
+    gid: '{{ opt_volume_clone_gid | default(omit) }}'
+    junction_path: '{{ opt_volume_clone_junction_path | default(omit) }}'
+    parent_snapshot: '{{ opt_volume_clone_parent_snapshot | default(omit) }}'
+    parent_vserver: '{{ opt_volume_clone_parent_vserver | default(omit) }}'
+    qos_policy_group_name: '{{ opt_volume_clone_qos_policy_group_name | default(omit) }}'
+    space_reserve: '{{ opt_volume_clone_space_reserve | default(omit) }}'
+    state: '{{ opt_volume_clone_state | default(omit) }}'
+    uid: '{{ opt_volume_clone_uid | default(omit) }}'
+    volume_type: '{{ opt_volume_clone_volume_type | default(omit) }}'
+  register: results

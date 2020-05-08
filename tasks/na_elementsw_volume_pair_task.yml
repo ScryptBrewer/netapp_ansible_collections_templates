@@ -1,0 +1,20 @@
+---
+- name: Running command na_elementsw_volume_pair
+  na_elementsw_volume_pair:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    dest_account: '{{ req_volume_pair_dest_account }}'
+    dest_mvip: '{{ req_volume_pair_dest_mvip }}'
+    dest_volume: '{{ req_volume_pair_dest_volume }}'
+    src_account: '{{ req_volume_pair_src_account }}'
+    src_volume: '{{ req_volume_pair_src_volume }}'
+    dest_password: '{{ opt_volume_pair_dest_password | default(omit) }}'
+    dest_username: '{{ opt_volume_pair_dest_username | default(omit) }}'
+    mode: '{{ opt_volume_pair_mode | default(omit) }}'
+    name: '{{ opt_volume_pair_name | default(omit) }}'
+    state: '{{ opt_volume_pair_state | default(omit) }}'
+  register: results

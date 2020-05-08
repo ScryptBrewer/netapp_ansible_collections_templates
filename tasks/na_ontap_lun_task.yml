@@ -1,0 +1,22 @@
+---
+- name: Running command na_ontap_lun
+  na_ontap_lun:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    flexvol_name: '{{ req_lun_flexvol_name }}'
+    name: '{{ req_lun_name }}'
+    vserver: '{{ req_lun_vserver }}'
+    force_remove: '{{ opt_lun_force_remove | default(omit) }}'
+    force_remove_fenced: '{{ opt_lun_force_remove_fenced | default(omit) }}'
+    force_resize: '{{ opt_lun_force_resize | default(omit) }}'
+    ostype: '{{ opt_lun_ostype | default(omit) }}'
+    size: '{{ opt_lun_size | default(omit) }}'
+    size_unit: '{{ opt_lun_size_unit | default(omit) }}'
+    space_allocation: '{{ opt_lun_space_allocation | default(omit) }}'
+    space_reserve: '{{ opt_lun_space_reserve | default(omit) }}'
+    state: '{{ opt_lun_state | default(omit) }}'
+  register: results

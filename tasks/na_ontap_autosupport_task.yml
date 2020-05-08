@@ -1,0 +1,23 @@
+---
+- name: Running command na_ontap_autosupport
+  na_ontap_autosupport:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    node_name: '{{ req_autosupport_node_name }}'
+    from_address: '{{ opt_autosupport_from_address | default(omit) }}'
+    hostname_in_subject: '{{ opt_autosupport_hostname_in_subject | default(omit) }}'
+    mail_hosts: '{{ opt_autosupport_mail_hosts | default(omit) }}'
+    name: '{{ opt_autosupport_name | default(omit) }}'
+    noteto: '{{ opt_autosupport_noteto | default(omit) }}'
+    partner_addresses: '{{ opt_autosupport_partner_addresses | default(omit) }}'
+    post_url: '{{ opt_autosupport_post_url | default(omit) }}'
+    proxy_url: '{{ opt_autosupport_proxy_url | default(omit) }}'
+    state: '{{ opt_autosupport_state | default(omit) }}'
+    support: '{{ opt_autosupport_support | default(omit) }}'
+    to_addresses: '{{ opt_autosupport_to_addresses | default(omit) }}'
+    transport: '{{ opt_autosupport_transport | default(omit) }}'
+  register: results

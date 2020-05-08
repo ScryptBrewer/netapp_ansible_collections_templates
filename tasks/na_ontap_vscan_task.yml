@@ -1,0 +1,13 @@
+---
+- name: Running command na_ontap_vscan
+  na_ontap_vscan:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    vserver: '{{ req_vscan_vserver }}'
+    enable: '{{ opt_vscan_enable | default(omit) }}'
+    name: '{{ opt_vscan_name | default(omit) }}'
+  register: results
