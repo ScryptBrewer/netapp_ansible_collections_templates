@@ -1,0 +1,6 @@
+    - name: Running command na_ontap_zapit
+      include_task: tasks/na_ontap_zapit_task.yml
+      vars:
+        zapi: '{{ req_zapit_zapi_01 }}'
+        feature_flags: '{{ opt_zapit_feature_flags_01 | default(omit) }}'
+        vserver: '{{ opt_zapit_vserver_01 | default(omit) }}'

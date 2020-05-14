@@ -1,0 +1,6 @@
+    - name: Running command na_ontap_node
+      include_task: tasks/na_ontap_node_task.yml
+      vars:
+        from_name: '{{ req_node_from_name_01 }}'
+        name: '{{ req_node_name_01 }}'
+        feature_flags: '{{ opt_node_feature_flags_01 | default(omit) }}'

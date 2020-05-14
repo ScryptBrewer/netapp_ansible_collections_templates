@@ -1,0 +1,9 @@
+    - name: Running command na_ontap_rest_cli
+      include_task: tasks/na_ontap_rest_cli_task.yml
+      vars:
+        command: '{{ req_rest_cli_command_01 }}'
+        body: '{{ opt_rest_cli_body_01 | default(omit) }}'
+        feature_flags: '{{ opt_rest_cli_feature_flags_01 | default(omit) }}'
+        name: '{{ opt_rest_cli_name_01 | default(omit) }}'
+        params: '{{ opt_rest_cli_params_01 | default(omit) }}'
+        verb: '{{ opt_rest_cli_verb_01 | default(omit) }}'

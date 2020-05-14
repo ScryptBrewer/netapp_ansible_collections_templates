@@ -1,0 +1,7 @@
+    - name: Running command na_ontap_disks
+      include_task: tasks/na_ontap_disks_task.yml
+      vars:
+        node: '{{ req_disks_node_01 }}'
+        disk_count: '{{ opt_disks_disk_count_01 | default(omit) }}'
+        feature_flags: '{{ opt_disks_feature_flags_01 | default(omit) }}'
+        name: '{{ opt_disks_name_01 | default(omit) }}'

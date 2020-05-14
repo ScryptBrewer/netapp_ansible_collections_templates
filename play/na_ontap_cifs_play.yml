@@ -1,0 +1,12 @@
+    - name: Running command na_ontap_cifs
+      include_task: tasks/na_ontap_cifs_task.yml
+      vars:
+        share_name: '{{ req_cifs_share_name_01 }}'
+        vserver: '{{ req_cifs_vserver_01 }}'
+        feature_flags: '{{ opt_cifs_feature_flags_01 | default(omit) }}'
+        name: '{{ opt_cifs_name_01 | default(omit) }}'
+        path: '{{ opt_cifs_path_01 | default(omit) }}'
+        share_properties: '{{ opt_cifs_share_properties_01 | default(omit) }}'
+        state: '{{ opt_cifs_state_01 | default(omit) }}'
+        symlink_properties: '{{ opt_cifs_symlink_properties_01 | default(omit) }}'
+        vscan_fileop_profile: '{{ opt_cifs_vscan_fileop_profile_01 | default(omit) }}'
