@@ -1,12 +1,12 @@
 ---
 - name: Running command na_ontap_vscan_on_demand_task
   na_ontap_vscan_on_demand_task:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    validate_certs: "{{ validate_certs | default(false) }}"
     task_name: '{{ req_vscan_on_demand_task_task_name_01 }}'
     vserver: '{{ req_vscan_on_demand_task_vserver_01 }}'
     cross_junction: '{{ opt_vscan_on_demand_task_cross_junction_01 | default(omit) }}'

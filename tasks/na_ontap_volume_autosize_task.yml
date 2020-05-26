@@ -1,12 +1,12 @@
 ---
 - name: Running command na_ontap_volume_autosize
   na_ontap_volume_autosize:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    validate_certs: "{{ validate_certs | default(false) }}"
     volume: '{{ req_volume_autosize_volume_01 }}'
     vserver: '{{ req_volume_autosize_vserver_01 }}'
     feature_flags: '{{ opt_volume_autosize_feature_flags_01 | default(omit) }}'

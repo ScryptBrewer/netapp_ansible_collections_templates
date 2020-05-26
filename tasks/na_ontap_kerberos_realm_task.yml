@@ -1,12 +1,12 @@
 ---
 - name: Running command na_ontap_kerberos_realm
   na_ontap_kerberos_realm:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    validate_certs: "{{ validate_certs | default(false) }}"
     realm: '{{ req_kerberos_realm_realm_01 }}'
     vserver: '{{ req_kerberos_realm_vserver_01 }}'
     ad_server_ip: '{{ opt_kerberos_realm_ad_server_ip_01 | default(omit) }}'

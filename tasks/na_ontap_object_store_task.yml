@@ -1,12 +1,12 @@
 ---
 - name: Running command na_ontap_object_store
   na_ontap_object_store:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    validate_certs: "{{ validate_certs | default(false) }}"
     name: '{{ req_object_store_name_01 }}'
     access_key: '{{ opt_object_store_access_key_01 | default(omit) }}'
     container: '{{ opt_object_store_container_01 | default(omit) }}'

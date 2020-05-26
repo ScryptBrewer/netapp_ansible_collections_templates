@@ -1,12 +1,12 @@
 ---
 - name: Running command na_ontap_svm_options
   na_ontap_svm_options:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    validate_certs: "{{ validate_certs | default(false) }}"
     vserver: '{{ req_svm_options_vserver_01 }}'
     feature_flags: '{{ opt_svm_options_feature_flags_01 | default(omit) }}'
     name: '{{ opt_svm_options_name_01 | default(omit) }}'

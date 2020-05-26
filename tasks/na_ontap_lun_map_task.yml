@@ -1,12 +1,12 @@
 ---
 - name: Running command na_ontap_lun_map
   na_ontap_lun_map:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    validate_certs: "{{ validate_certs | default(false) }}"
     initiator_group_name: '{{ req_lun_map_initiator_group_name_01 }}'
     path: '{{ req_lun_map_path_01 }}'
     vserver: '{{ req_lun_map_vserver_01 }}'
