@@ -1,0 +1,15 @@
+---
+# na_ontap_motd:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    vserver: '{{ req_motd_vserver_01 }}'
+    #feature_flags: '{{ opt_motd_feature_flags_01 | default(omit) }}'
+    #motd_message: '{{ opt_motd_motd_message_01 | default(omit) }}'
+    #name: '{{ opt_motd_name_01 | default(omit) }}'
+    #show_cluster_motd: '{{ opt_motd_show_cluster_motd_01 | default(omit) }}'
+    #state: '{{ opt_motd_state_01 | default(omit) }}'
+  

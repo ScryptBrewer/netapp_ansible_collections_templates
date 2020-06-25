@@ -1,12 +1,12 @@
 ---
 - name: Running command na_ontap_service_processor_network
   na_ontap_service_processor_network:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    validate_certs: "{{ validate_certs | default(false) }}"
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
     address_type: '{{ req_service_processor_network_address_type_01 }}'
     is_enabled: '{{ req_service_processor_network_is_enabled_01 }}'
     node: '{{ req_service_processor_network_node_01 }}'

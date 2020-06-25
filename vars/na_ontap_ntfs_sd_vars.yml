@@ -1,0 +1,16 @@
+---
+# na_ontap_ntfs_sd:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    name: '{{ req_ntfs_sd_name_01 }}'
+    vserver: '{{ req_ntfs_sd_vserver_01 }}'
+    #control_flags_raw: '{{ opt_ntfs_sd_control_flags_raw_01 | default(omit) }}'
+    #feature_flags: '{{ opt_ntfs_sd_feature_flags_01 | default(omit) }}'
+    #group: '{{ opt_ntfs_sd_group_01 | default(omit) }}'
+    #owner: '{{ opt_ntfs_sd_owner_01 | default(omit) }}'
+    #state: '{{ opt_ntfs_sd_state_01 | default(omit) }}'
+  

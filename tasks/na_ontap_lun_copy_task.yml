@@ -1,12 +1,12 @@
 ---
 - name: Running command na_ontap_lun_copy
   na_ontap_lun_copy:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    validate_certs: "{{ validate_certs | default(false) }}"
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
     destination_path: '{{ req_lun_copy_destination_path_01 }}'
     destination_vserver: '{{ req_lun_copy_destination_vserver_01 }}'
     source_path: '{{ req_lun_copy_source_path_01 }}'

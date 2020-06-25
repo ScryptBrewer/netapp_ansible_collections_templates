@@ -1,0 +1,14 @@
+---
+# na_ontap_snmp:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    access_control: '{{ req_snmp_access_control_01 }}'
+    community_name: '{{ req_snmp_community_name_01 }}'
+    #feature_flags: '{{ opt_snmp_feature_flags_01 | default(omit) }}'
+    #name: '{{ opt_snmp_name_01 | default(omit) }}'
+    #state: '{{ opt_snmp_state_01 | default(omit) }}'
+  

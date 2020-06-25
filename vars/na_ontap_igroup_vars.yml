@@ -1,0 +1,19 @@
+---
+# na_ontap_igroup:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    name: '{{ req_igroup_name_01 }}'
+    vserver: '{{ req_igroup_vserver_01 }}'
+    #bind_portset: '{{ opt_igroup_bind_portset_01 | default(omit) }}'
+    #feature_flags: '{{ opt_igroup_feature_flags_01 | default(omit) }}'
+    #force_remove_initiator: '{{ opt_igroup_force_remove_initiator_01 | default(omit) }}'
+    #from_name: '{{ opt_igroup_from_name_01 | default(omit) }}'
+    #initiator_group_type: '{{ opt_igroup_initiator_group_type_01 | default(omit) }}'
+    #initiators: '{{ opt_igroup_initiators_01 | default(omit) }}'
+    #ostype: '{{ opt_igroup_ostype_01 | default(omit) }}'
+    #state: '{{ opt_igroup_state_01 | default(omit) }}'
+  

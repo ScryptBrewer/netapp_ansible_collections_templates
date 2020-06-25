@@ -1,12 +1,12 @@
 ---
 - name: Running command na_ontap_cifs_server
   na_ontap_cifs_server:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    validate_certs: "{{ validate_certs | default(false) }}"
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
     name: '{{ req_cifs_server_name_01 }}'
     vserver: '{{ req_cifs_server_vserver_01 }}'
     admin_password: '{{ opt_cifs_server_admin_password_01 | default(omit) }}'

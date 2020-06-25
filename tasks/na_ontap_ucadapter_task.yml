@@ -1,17 +1,18 @@
 ---
 - name: Running command na_ontap_ucadapter
   na_ontap_ucadapter:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    validate_certs: "{{ validate_certs | default(false) }}"
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
     adapter_name: '{{ req_ucadapter_adapter_name_01 }}'
     node_name: '{{ req_ucadapter_node_name_01 }}'
     feature_flags: '{{ opt_ucadapter_feature_flags_01 | default(omit) }}'
     mode: '{{ opt_ucadapter_mode_01 | default(omit) }}'
     name: '{{ opt_ucadapter_name_01 | default(omit) }}'
+    pair_adapters: '{{ opt_ucadapter_pair_adapters_01 | default(omit) }}'
     state: '{{ opt_ucadapter_state_01 | default(omit) }}'
     type: '{{ opt_ucadapter_type_01 | default(omit) }}'
   register: results

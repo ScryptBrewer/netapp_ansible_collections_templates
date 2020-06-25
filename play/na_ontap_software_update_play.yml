@@ -8,4 +8,5 @@
         ignore_validation_warning: '{{ opt_software_update_ignore_validation_warning_01 | default(omit) }}'
         name: '{{ opt_software_update_name_01 | default(omit) }}'
         nodes: '{{ opt_software_update_nodes_01 | default(omit) }}'
+        stabilize_minutes: '{{ opt_software_update_stabilize_minutes_01 | default(omit) }}'
         state: '{{ opt_software_update_state_01 | default(omit) }}'

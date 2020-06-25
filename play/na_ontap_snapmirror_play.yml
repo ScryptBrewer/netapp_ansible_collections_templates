@@ -17,6 +17,7 @@
         source_hostname: '{{ opt_snapmirror_source_hostname_01 | default(omit) }}'
         source_password: '{{ opt_snapmirror_source_password_01 | default(omit) }}'
         source_path: '{{ opt_snapmirror_source_path_01 | default(omit) }}'
+        source_snapshot: '{{ opt_snapmirror_source_snapshot_01 | default(omit) }}'
         source_username: '{{ opt_snapmirror_source_username_01 | default(omit) }}'
         source_volume: '{{ opt_snapmirror_source_volume_01 | default(omit) }}'
         source_vserver: '{{ opt_snapmirror_source_vserver_01 | default(omit) }}'

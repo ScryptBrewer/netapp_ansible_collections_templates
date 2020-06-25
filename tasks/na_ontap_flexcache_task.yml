@@ -1,12 +1,12 @@
 ---
 - name: Running command na_ontap_flexcache
   na_ontap_flexcache:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    validate_certs: "{{ validate_certs | default(false) }}"
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
     volume: '{{ req_flexcache_volume_01 }}'
     vserver: '{{ req_flexcache_vserver_01 }}'
     aggr_list: '{{ opt_flexcache_aggr_list_01 | default(omit) }}'

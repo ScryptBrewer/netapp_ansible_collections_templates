@@ -1,12 +1,12 @@
 ---
 - name: Running command na_ontap_ldap
   na_ontap_ldap:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    validate_certs: "{{ validate_certs | default(false) }}"
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
     name: '{{ req_ldap_name_01 }}'
     vserver: '{{ req_ldap_vserver_01 }}'
     feature_flags: '{{ opt_ldap_feature_flags_01 | default(omit) }}'

@@ -1,12 +1,12 @@
 ---
 - name: Running command na_ontap_license
   na_ontap_license:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    validate_certs: "{{ validate_certs | default(false) }}"
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
     feature_flags: '{{ opt_license_feature_flags_01 | default(omit) }}'
     license_codes: '{{ opt_license_license_codes_01 | default(omit) }}'
     license_names: '{{ opt_license_license_names_01 | default(omit) }}'

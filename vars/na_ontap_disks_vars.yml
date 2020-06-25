@@ -1,0 +1,14 @@
+---
+# na_ontap_disks:
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    node: '{{ req_disks_node_01 }}'
+    #disk_count: '{{ opt_disks_disk_count_01 | default(omit) }}'
+    #disk_type: '{{ opt_disks_disk_type_01 | default(omit) }}'
+    #feature_flags: '{{ opt_disks_feature_flags_01 | default(omit) }}'
+    #name: '{{ opt_disks_name_01 | default(omit) }}'
+  

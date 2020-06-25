@@ -1,12 +1,12 @@
 ---
 - name: Running command na_ontap_volume
   na_ontap_volume:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    validate_certs: "{{ validate_certs | default(false) }}"
+    hostname: "{{{{ netapp_hostname }}}}"
+    username: "{{{{ netapp_username }}}}"
+    password: "{{{{ netapp_password }}}}"
+    https: "{{{{ netapp_https | default(omit) }}}}"
+    port: "{{{{ netapp_port | default(omit) }}}}"
+    validate_certs: "{{{{ validate_certs | default(false) }}}}"
     name: '{{ req_volume_name_01 }}'
     vserver: '{{ req_volume_vserver_01 }}'
     aggr_list: '{{ opt_volume_aggr_list_01 | default(omit) }}'
@@ -14,12 +14,17 @@
     aggregate_name: '{{ opt_volume_aggregate_name_01 | default(omit) }}'
     atime_update: '{{ opt_volume_atime_update_01 | default(omit) }}'
     auto_provision_as: '{{ opt_volume_auto_provision_as_01 | default(omit) }}'
+    auto_remap_luns: '{{ opt_volume_auto_remap_luns_01 | default(omit) }}'
+    check_interval: '{{ opt_volume_check_interval_01 | default(omit) }}'
     comment: '{{ opt_volume_comment_01 | default(omit) }}'
     cutover_action: '{{ opt_volume_cutover_action_01 | default(omit) }}'
     efficiency_policy: '{{ opt_volume_efficiency_policy_01 | default(omit) }}'
     encrypt: '{{ opt_volume_encrypt_01 | default(omit) }}'
     feature_flags: '{{ opt_volume_feature_flags_01 | default(omit) }}'
+    force_restore: '{{ opt_volume_force_restore_01 | default(omit) }}'
+    force_unmap_luns: '{{ opt_volume_force_unmap_luns_01 | default(omit) }}'
     from_name: '{{ opt_volume_from_name_01 | default(omit) }}'
+    from_vserver: '{{ opt_volume_from_vserver_01 | default(omit) }}'
     group_id: '{{ opt_volume_group_id_01 | default(omit) }}'
     is_infinite: '{{ opt_volume_is_infinite_01 | default(omit) }}'
     is_online: '{{ opt_volume_is_online_01 | default(omit) }}'
@@ -28,6 +33,7 @@
     nvfail_enabled: '{{ opt_volume_nvfail_enabled_01 | default(omit) }}'
     percent_snapshot_space: '{{ opt_volume_percent_snapshot_space_01 | default(omit) }}'
     policy: '{{ opt_volume_policy_01 | default(omit) }}'
+    preserve_lun_ids: '{{ opt_volume_preserve_lun_ids_01 | default(omit) }}'
     qos_adaptive_policy_group: '{{ opt_volume_qos_adaptive_policy_group_01 | default(omit) }}'
     qos_policy_group: '{{ opt_volume_qos_policy_group_01 | default(omit) }}'
     size: '{{ opt_volume_size_01 | default(omit) }}'
@@ -35,6 +41,7 @@
     snapdir_access: '{{ opt_volume_snapdir_access_01 | default(omit) }}'
     snapshot_auto_delete: '{{ opt_volume_snapshot_auto_delete_01 | default(omit) }}'
     snapshot_policy: '{{ opt_volume_snapshot_policy_01 | default(omit) }}'
+    snapshot_restore: '{{ opt_volume_snapshot_restore_01 | default(omit) }}'
     space_guarantee: '{{ opt_volume_space_guarantee_01 | default(omit) }}'
     space_slo: '{{ opt_volume_space_slo_01 | default(omit) }}'
     state: '{{ opt_volume_state_01 | default(omit) }}'
