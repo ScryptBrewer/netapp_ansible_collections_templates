@@ -1,11 +1,12 @@
----
-# na_ontap_autosupport:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+
+    #vars:
+# Section: na_ontap_autosupport:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
     node_name: '{{ req_autosupport_node_name_01 }}'
     #feature_flags: '{{ opt_autosupport_feature_flags_01 | default(omit) }}'
     #from_address: '{{ opt_autosupport_from_address_01 | default(omit) }}'

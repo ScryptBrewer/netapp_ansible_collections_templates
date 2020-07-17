@@ -1,11 +1,12 @@
----
-# na_ontap_login_messages:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+
+    #vars:
+# Section: na_ontap_login_messages:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
     vserver: '{{ req_login_messages_vserver_01 }}'
     #banner: '{{ opt_login_messages_banner_01 | default(omit) }}'
     #feature_flags: '{{ opt_login_messages_feature_flags_01 | default(omit) }}'

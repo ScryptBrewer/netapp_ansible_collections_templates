@@ -1,10 +1,2 @@
     - name: Running command na_ontap_unix_user
       include_task: tasks/na_ontap_unix_user_task.yml
-      vars:
-        name: '{{ req_unix_user_name_01 }}'
-        vserver: '{{ req_unix_user_vserver_01 }}'
-        feature_flags: '{{ opt_unix_user_feature_flags_01 | default(omit) }}'
-        full_name: '{{ opt_unix_user_full_name_01 | default(omit) }}'
-        group_id: '{{ opt_unix_user_group_id_01 | default(omit) }}'
-        id: '{{ opt_unix_user_id_01 | default(omit) }}'
-        state: '{{ opt_unix_user_state_01 | default(omit) }}'

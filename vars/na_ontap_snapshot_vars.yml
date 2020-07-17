@@ -1,11 +1,12 @@
----
-# na_ontap_snapshot:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+
+    #vars:
+# Section: na_ontap_snapshot:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
     snapshot: '{{ req_snapshot_snapshot_01 }}'
     volume: '{{ req_snapshot_volume_01 }}'
     vserver: '{{ req_snapshot_vserver_01 }}'

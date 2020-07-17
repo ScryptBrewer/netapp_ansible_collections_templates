@@ -1,11 +1,12 @@
----
-# na_ontap_ndmp:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+
+    #vars:
+# Section: na_ontap_ndmp:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
     vserver: '{{ req_ndmp_vserver_01 }}'
     #abort_on_disk_error: '{{ opt_ndmp_abort_on_disk_error_01 | default(omit) }}'
     #authtype: '{{ opt_ndmp_authtype_01 | default(omit) }}'

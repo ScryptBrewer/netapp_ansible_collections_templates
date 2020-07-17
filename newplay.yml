@@ -1,3 +1,10 @@
+---
+- hosts: localhost
+  gather_facts: false
+
+  collections:
+    - netapp.ontap
+
 
     #vars:
 # Section: na_ontap_volume:
@@ -54,3 +61,6 @@
     #vserver_dr_protection: '{{ opt_volume_vserver_dr_protection_01 | default(omit) }}'
     #wait_for_completion: '{{ opt_volume_wait_for_completion_01 | default(omit) }}'
   
+  tasks:
+    - name: Running command na_ontap_volume
+      include_task: tasks/na_ontap_volume_task.yml

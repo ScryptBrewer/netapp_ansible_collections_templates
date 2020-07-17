@@ -1,12 +1,12 @@
 ---
 - name: Running command na_ontap_snmp_traphosts
   na_ontap_snmp_traphosts:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
     ip_address: '{{ req_snmp_traphosts_ip_address_01 }}'
     feature_flags: '{{ opt_snmp_traphosts_feature_flags_01 | default(omit) }}'
     name: '{{ opt_snmp_traphosts_name_01 | default(omit) }}'

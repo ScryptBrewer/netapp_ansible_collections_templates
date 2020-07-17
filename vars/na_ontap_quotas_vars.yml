@@ -1,11 +1,12 @@
----
-# na_ontap_quotas:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+
+    #vars:
+# Section: na_ontap_quotas:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
     quota_target: '{{ req_quotas_quota_target_01 }}'
     type: '{{ req_quotas_type_01 }}'
     volume: '{{ req_quotas_volume_01 }}'

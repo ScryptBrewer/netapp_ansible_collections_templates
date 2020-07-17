@@ -1,10 +1,2 @@
     - name: Running command na_ontap_broadcast_domain
       include_task: tasks/na_ontap_broadcast_domain_task.yml
-      vars:
-        name: '{{ req_broadcast_domain_name_01 }}'
-        feature_flags: '{{ opt_broadcast_domain_feature_flags_01 | default(omit) }}'
-        from_name: '{{ opt_broadcast_domain_from_name_01 | default(omit) }}'
-        ipspace: '{{ opt_broadcast_domain_ipspace_01 | default(omit) }}'
-        mtu: '{{ opt_broadcast_domain_mtu_01 | default(omit) }}'
-        ports: '{{ opt_broadcast_domain_ports_01 | default(omit) }}'
-        state: '{{ opt_broadcast_domain_state_01 | default(omit) }}'

@@ -1,12 +1,12 @@
 ---
 - name: Running command na_ontap_broadcast_domain_ports
   na_ontap_broadcast_domain_ports:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
     broadcast_domain: '{{ req_broadcast_domain_ports_broadcast_domain_01 }}'
     feature_flags: '{{ opt_broadcast_domain_ports_feature_flags_01 | default(omit) }}'
     ipspace: '{{ opt_broadcast_domain_ports_ipspace_01 | default(omit) }}'

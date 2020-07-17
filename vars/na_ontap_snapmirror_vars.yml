@@ -1,11 +1,12 @@
----
-# na_ontap_snapmirror:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+
+    #vars:
+# Section: na_ontap_snapmirror:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
     #connection_type: '{{ opt_snapmirror_connection_type_01 | default(omit) }}'
     #destination_path: '{{ opt_snapmirror_destination_path_01 | default(omit) }}'
     #destination_volume: '{{ opt_snapmirror_destination_volume_01 | default(omit) }}'

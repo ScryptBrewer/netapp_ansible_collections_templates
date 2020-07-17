@@ -1,16 +1,2 @@
     - name: Running command na_ontap_quotas
       include_task: tasks/na_ontap_quotas_task.yml
-      vars:
-        quota_target: '{{ req_quotas_quota_target_01 }}'
-        type: '{{ req_quotas_type_01 }}'
-        volume: '{{ req_quotas_volume_01 }}'
-        vserver: '{{ req_quotas_vserver_01 }}'
-        disk_limit: '{{ opt_quotas_disk_limit_01 | default(omit) }}'
-        feature_flags: '{{ opt_quotas_feature_flags_01 | default(omit) }}'
-        file_limit: '{{ opt_quotas_file_limit_01 | default(omit) }}'
-        name: '{{ opt_quotas_name_01 | default(omit) }}'
-        policy: '{{ opt_quotas_policy_01 | default(omit) }}'
-        qtree: '{{ opt_quotas_qtree_01 | default(omit) }}'
-        set_quota_status: '{{ opt_quotas_set_quota_status_01 | default(omit) }}'
-        state: '{{ opt_quotas_state_01 | default(omit) }}'
-        threshold: '{{ opt_quotas_threshold_01 | default(omit) }}'

@@ -1,12 +1,12 @@
 ---
 - name: Running command na_ontap_rest_info
   na_ontap_rest_info:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
     feature_flags: '{{ opt_rest_info_feature_flags_01 | default(omit) }}'
     fields: '{{ opt_rest_info_fields_01 | default(omit) }}'
     gather_subset: '{{ opt_rest_info_gather_subset_01 | default(omit) }}'

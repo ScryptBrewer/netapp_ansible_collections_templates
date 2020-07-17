@@ -1,11 +1,12 @@
----
-# na_ontap_qos_policy_group:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+
+    #vars:
+# Section: na_ontap_qos_policy_group:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
     #feature_flags: '{{ opt_qos_policy_group_feature_flags_01 | default(omit) }}'
     #force: '{{ opt_qos_policy_group_force_01 | default(omit) }}'
     #from_name: '{{ opt_qos_policy_group_from_name_01 | default(omit) }}'

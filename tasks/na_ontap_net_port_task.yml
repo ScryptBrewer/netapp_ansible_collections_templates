@@ -1,12 +1,12 @@
 ---
 - name: Running command na_ontap_net_port
   na_ontap_net_port:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
     node: '{{ req_net_port_node_01 }}'
     ports: '{{ req_net_port_ports_01 }}'
     autonegotiate_admin: '{{ opt_net_port_autonegotiate_admin_01 | default(omit) }}'

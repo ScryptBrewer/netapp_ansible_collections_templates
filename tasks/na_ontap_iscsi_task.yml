@@ -1,12 +1,12 @@
 ---
 - name: Running command na_ontap_iscsi
   na_ontap_iscsi:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
     vserver: '{{ req_iscsi_vserver_01 }}'
     feature_flags: '{{ opt_iscsi_feature_flags_01 | default(omit) }}'
     name: '{{ opt_iscsi_name_01 | default(omit) }}'

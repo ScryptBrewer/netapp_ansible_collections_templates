@@ -1,11 +1,12 @@
----
-# na_ontap_snapmirror_policy:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+
+    #vars:
+# Section: na_ontap_snapmirror_policy:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
     policy_name: '{{ req_snapmirror_policy_policy_name_01 }}'
     vserver: '{{ req_snapmirror_policy_vserver_01 }}'
     #comment: '{{ opt_snapmirror_policy_comment_01 | default(omit) }}'

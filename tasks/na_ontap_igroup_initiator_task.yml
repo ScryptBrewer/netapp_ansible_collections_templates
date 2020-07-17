@@ -1,12 +1,12 @@
 ---
 - name: Running command na_ontap_igroup_initiator
   na_ontap_igroup_initiator:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
     initiator_group: '{{ req_igroup_initiator_initiator_group_01 }}'
     names: '{{ req_igroup_initiator_names_01 }}'
     vserver: '{{ req_igroup_initiator_vserver_01 }}'

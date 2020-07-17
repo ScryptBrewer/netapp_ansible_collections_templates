@@ -1,12 +1,12 @@
 ---
 - name: Running command na_ontap_user_role
   na_ontap_user_role:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
     command_directory_name: '{{ req_user_role_command_directory_name_01 }}'
     name: '{{ req_user_role_name_01 }}'
     vserver: '{{ req_user_role_vserver_01 }}'

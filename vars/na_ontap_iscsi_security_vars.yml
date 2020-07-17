@@ -1,11 +1,12 @@
----
-# na_ontap_iscsi_security:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+
+    #vars:
+# Section: na_ontap_iscsi_security:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
     initiator: '{{ req_iscsi_security_initiator_01 }}'
     vserver: '{{ req_iscsi_security_vserver_01 }}'
     #address_ranges: '{{ opt_iscsi_security_address_ranges_01 | default(omit) }}'

@@ -1,11 +1,12 @@
----
-# na_ontap_ntfs_dacl:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+
+    #vars:
+# Section: na_ontap_ntfs_dacl:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
     access_type: '{{ req_ntfs_dacl_access_type_01 }}'
     account: '{{ req_ntfs_dacl_account_01 }}'
     security_descriptor: '{{ req_ntfs_dacl_security_descriptor_01 }}'

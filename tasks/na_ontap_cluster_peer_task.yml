@@ -1,12 +1,12 @@
 ---
 - name: Running command na_ontap_cluster_peer
   na_ontap_cluster_peer:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
     dest_hostname: '{{ req_cluster_peer_dest_hostname_01 }}'
     dest_cluster_name: '{{ opt_cluster_peer_dest_cluster_name_01 | default(omit) }}'
     dest_intercluster_lifs: '{{ opt_cluster_peer_dest_intercluster_lifs_01 | default(omit) }}'

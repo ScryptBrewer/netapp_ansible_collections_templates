@@ -1,8 +1,2 @@
     - name: Running command na_ontap_iscsi
       include_task: tasks/na_ontap_iscsi_task.yml
-      vars:
-        vserver: '{{ req_iscsi_vserver_01 }}'
-        feature_flags: '{{ opt_iscsi_feature_flags_01 | default(omit) }}'
-        name: '{{ opt_iscsi_name_01 | default(omit) }}'
-        service_state: '{{ opt_iscsi_service_state_01 | default(omit) }}'
-        state: '{{ opt_iscsi_state_01 | default(omit) }}'

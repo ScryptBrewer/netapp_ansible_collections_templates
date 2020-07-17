@@ -1,11 +1,12 @@
----
-# na_ontap_firmware_upgrade:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+
+    #vars:
+# Section: na_ontap_firmware_upgrade:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
     #clear_logs: '{{ opt_firmware_upgrade_clear_logs_01 | default(omit) }}'
     #disk_fw: '{{ opt_firmware_upgrade_disk_fw_01 | default(omit) }}'
     #fail_on_502_error: '{{ opt_firmware_upgrade_fail_on_502_error_01 | default(omit) }}'

@@ -1,8 +1,2 @@
     - name: Running command na_ontap_autosupport_invoke
       include_task: tasks/na_ontap_autosupport_invoke_task.yml
-      vars:
-        feature_flags: '{{ opt_autosupport_invoke_feature_flags_01 | default(omit) }}'
-        message: '{{ opt_autosupport_invoke_message_01 | default(omit) }}'
-        name: '{{ opt_autosupport_invoke_name_01 | default(omit) }}'
-        type: '{{ opt_autosupport_invoke_type_01 | default(omit) }}'
-        uri: '{{ opt_autosupport_invoke_uri_01 | default(omit) }}'

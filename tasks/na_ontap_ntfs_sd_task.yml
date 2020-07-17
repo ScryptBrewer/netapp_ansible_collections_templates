@@ -1,12 +1,12 @@
 ---
 - name: Running command na_ontap_ntfs_sd
   na_ontap_ntfs_sd:
-    hostname: "{{{{ netapp_hostname }}}}"
-    username: "{{{{ netapp_username }}}}"
-    password: "{{{{ netapp_password }}}}"
-    https: "{{{{ netapp_https | default(omit) }}}}"
-    port: "{{{{ netapp_port | default(omit) }}}}"
-    validate_certs: "{{{{ validate_certs | default(false) }}}}"
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
     name: '{{ req_ntfs_sd_name_01 }}'
     vserver: '{{ req_ntfs_sd_vserver_01 }}'
     control_flags_raw: '{{ opt_ntfs_sd_control_flags_raw_01 | default(omit) }}'
