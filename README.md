@@ -8,13 +8,14 @@ The objective allows users to rapidly prototype and build complete complex ontap
 
 The play allows users to uncomment whatever vars are required and use the include_tasks to run each task. This allows you to add a loop statement to each play without duplicating tasks over and over again or needed to constantly lookup or define additional parameters per play. 
 **How to run**
-```
-ansible-playbook multi_create_vol_ntap.yml -e "netapp_hostname=cluster1" -e "netapp_username=admin" -e "netapp_password=Secret123^"
-```
+
 **Example 1:**
 Creates a complete volume create command.
 ```
 cat head.yml vars/na_ontap_volume_vars.yml main.yml play/na_ontap_volume_play.yml >create_new_netapp_volume.yml
+```
+```
+ansible-playbook multi_create_vol_ntap.yml -e "netapp_hostname=cluster1" -e "netapp_username=admin" -e "netapp_password=Secret123^"
 ```
 
 **Example 2:**
@@ -39,4 +40,5 @@ copy this to the bottom of the vars section and update for your environment.
 **And run the commands**
 ```
 ansible-playbook multi_create_vol_ntap.yml -e "netapp_hostname=cluster1" -e "netapp_username=admin" -e "netapp_password=Secret123^"
+```
 ```
