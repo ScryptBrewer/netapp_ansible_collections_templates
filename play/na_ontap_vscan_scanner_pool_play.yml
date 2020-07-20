@@ -1,2 +1,2 @@
     - name: Running command na_ontap_vscan_scanner_pool
-      include_task: tasks/na_ontap_vscan_scanner_pool_task.yml
+      include_tasks: tasks/na_ontap_vscan_scanner_pool_task.yml

@@ -1,5 +1,4 @@
 
-    #vars:
 # Section: na_ontap_ldap_client:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
@@ -9,18 +8,18 @@
     #validate_certs: "{{ validate_certs }}"
     name: '{{ req_ldap_client_name_01 }}'
     vserver: '{{ req_ldap_client_vserver_01 }}'
-    #base_dn: '{{ opt_ldap_client_base_dn_01 | default(omit) }}'
-    #base_scope: '{{ opt_ldap_client_base_scope_01 | default(omit) }}'
-    #bind_dn: '{{ opt_ldap_client_bind_dn_01 | default(omit) }}'
-    #bind_password: '{{ opt_ldap_client_bind_password_01 | default(omit) }}'
-    #feature_flags: '{{ opt_ldap_client_feature_flags_01 | default(omit) }}'
-    #ldap_servers: '{{ opt_ldap_client_ldap_servers_01 | default(omit) }}'
-    #min_bind_level: '{{ opt_ldap_client_min_bind_level_01 | default(omit) }}'
-    #port: '{{ opt_ldap_client_port_01 | default(omit) }}'
-    #query_timeout: '{{ opt_ldap_client_query_timeout_01 | default(omit) }}'
-    #referral_enabled: '{{ opt_ldap_client_referral_enabled_01 | default(omit) }}'
-    #schema: '{{ opt_ldap_client_schema_01 | default(omit) }}'
-    #session_security: '{{ opt_ldap_client_session_security_01 | default(omit) }}'
-    #state: '{{ opt_ldap_client_state_01 | default(omit) }}'
-    #use_start_tls: '{{ opt_ldap_client_use_start_tls_01 | default(omit) }}'
+    base_dn: '{{ opt_ldap_client_base_dn_01 | default(omit) }}'
+    base_scope: '{{ opt_ldap_client_base_scope_01 | default(omit) }}'
+    bind_dn: '{{ opt_ldap_client_bind_dn_01 | default(omit) }}'
+    bind_password: '{{ opt_ldap_client_bind_password_01 | default(omit) }}'
+    feature_flags: '{{ opt_ldap_client_feature_flags_01 | default(omit) }}'
+    ldap_servers: '{{ opt_ldap_client_ldap_servers_01 | default(omit) }}'
+    min_bind_level: '{{ opt_ldap_client_min_bind_level_01 | default(omit) }}'
+    port: '{{ opt_ldap_client_port_01 | default(omit) }}'
+    query_timeout: '{{ opt_ldap_client_query_timeout_01 | default(omit) }}'
+    referral_enabled: '{{ opt_ldap_client_referral_enabled_01 | default(omit) }}'
+    schema: '{{ opt_ldap_client_schema_01 | default(omit) }}'
+    session_security: '{{ opt_ldap_client_session_security_01 | default(omit) }}'
+    state: '{{ opt_ldap_client_state_01 | default(omit) }}'
+    use_start_tls: '{{ opt_ldap_client_use_start_tls_01 | default(omit) }}'
   

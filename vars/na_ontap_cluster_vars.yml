@@ -1,5 +1,4 @@
 
-    #vars:
 # Section: na_ontap_cluster:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
@@ -7,12 +6,12 @@
     https: "{{ netapp_https | default(omit) }}"
     port: "{{ netapp_port | default(omit) }}"
     #validate_certs: "{{ validate_certs }}"
-    #cluster_contact: '{{ opt_cluster_cluster_contact_01 | default(omit) }}'
-    #cluster_ip_address: '{{ opt_cluster_cluster_ip_address_01 | default(omit) }}'
-    #cluster_location: '{{ opt_cluster_cluster_location_01 | default(omit) }}'
-    #cluster_name: '{{ opt_cluster_cluster_name_01 | default(omit) }}'
-    #feature_flags: '{{ opt_cluster_feature_flags_01 | default(omit) }}'
-    #name: '{{ opt_cluster_name_01 | default(omit) }}'
-    #single_node_cluster: '{{ opt_cluster_single_node_cluster_01 | default(omit) }}'
-    #state: '{{ opt_cluster_state_01 | default(omit) }}'
+    cluster_contact: '{{ opt_cluster_cluster_contact_01 | default(omit) }}'
+    cluster_ip_address: '{{ opt_cluster_cluster_ip_address_01 | default(omit) }}'
+    cluster_location: '{{ opt_cluster_cluster_location_01 | default(omit) }}'
+    cluster_name: '{{ opt_cluster_cluster_name_01 | default(omit) }}'
+    feature_flags: '{{ opt_cluster_feature_flags_01 | default(omit) }}'
+    name: '{{ opt_cluster_name_01 | default(omit) }}'
+    single_node_cluster: '{{ opt_cluster_single_node_cluster_01 | default(omit) }}'
+    state: '{{ opt_cluster_state_01 | default(omit) }}'
   

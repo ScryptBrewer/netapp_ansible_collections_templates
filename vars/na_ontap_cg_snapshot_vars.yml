@@ -1,5 +1,4 @@
 
-    #vars:
 # Section: na_ontap_cg_snapshot:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
@@ -10,9 +9,9 @@
     snapshot: '{{ req_cg_snapshot_snapshot_01 }}'
     volumes: '{{ req_cg_snapshot_volumes_01 }}'
     vserver: '{{ req_cg_snapshot_vserver_01 }}'
-    #feature_flags: '{{ opt_cg_snapshot_feature_flags_01 | default(omit) }}'
-    #name: '{{ opt_cg_snapshot_name_01 | default(omit) }}'
-    #snapmirror_label: '{{ opt_cg_snapshot_snapmirror_label_01 | default(omit) }}'
-    #state: '{{ opt_cg_snapshot_state_01 | default(omit) }}'
-    #timeout: '{{ opt_cg_snapshot_timeout_01 | default(omit) }}'
+    feature_flags: '{{ opt_cg_snapshot_feature_flags_01 | default(omit) }}'
+    name: '{{ opt_cg_snapshot_name_01 | default(omit) }}'
+    snapmirror_label: '{{ opt_cg_snapshot_snapmirror_label_01 | default(omit) }}'
+    state: '{{ opt_cg_snapshot_state_01 | default(omit) }}'
+    timeout: '{{ opt_cg_snapshot_timeout_01 | default(omit) }}'
   

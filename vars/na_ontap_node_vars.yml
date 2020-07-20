@@ -1,5 +1,4 @@
 
-    #vars:
 # Section: na_ontap_node:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
@@ -9,5 +8,5 @@
     #validate_certs: "{{ validate_certs }}"
     from_name: '{{ req_node_from_name_01 }}'
     name: '{{ req_node_name_01 }}'
-    #feature_flags: '{{ opt_node_feature_flags_01 | default(omit) }}'
+    feature_flags: '{{ opt_node_feature_flags_01 | default(omit) }}'
   

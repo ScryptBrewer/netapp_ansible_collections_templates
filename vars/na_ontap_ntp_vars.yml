@@ -1,5 +1,4 @@
 
-    #vars:
 # Section: na_ontap_ntp:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
@@ -8,8 +7,8 @@
     port: "{{ netapp_port | default(omit) }}"
     #validate_certs: "{{ validate_certs }}"
     server_name: '{{ req_ntp_server_name_01 }}'
-    #feature_flags: '{{ opt_ntp_feature_flags_01 | default(omit) }}'
-    #name: '{{ opt_ntp_name_01 | default(omit) }}'
-    #state: '{{ opt_ntp_state_01 | default(omit) }}'
-    #version: '{{ opt_ntp_version_01 | default(omit) }}'
+    feature_flags: '{{ opt_ntp_feature_flags_01 | default(omit) }}'
+    name: '{{ opt_ntp_name_01 | default(omit) }}'
+    state: '{{ opt_ntp_state_01 | default(omit) }}'
+    version: '{{ opt_ntp_version_01 | default(omit) }}'
   

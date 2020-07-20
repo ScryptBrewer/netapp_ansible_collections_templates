@@ -1,5 +1,4 @@
 
-    #vars:
 # Section: na_ontap_broadcast_domain_ports:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
@@ -8,9 +7,9 @@
     port: "{{ netapp_port | default(omit) }}"
     #validate_certs: "{{ validate_certs }}"
     broadcast_domain: '{{ req_broadcast_domain_ports_broadcast_domain_01 }}'
-    #feature_flags: '{{ opt_broadcast_domain_ports_feature_flags_01 | default(omit) }}'
-    #ipspace: '{{ opt_broadcast_domain_ports_ipspace_01 | default(omit) }}'
-    #name: '{{ opt_broadcast_domain_ports_name_01 | default(omit) }}'
-    #ports: '{{ opt_broadcast_domain_ports_ports_01 | default(omit) }}'
-    #state: '{{ opt_broadcast_domain_ports_state_01 | default(omit) }}'
+    feature_flags: '{{ opt_broadcast_domain_ports_feature_flags_01 | default(omit) }}'
+    ipspace: '{{ opt_broadcast_domain_ports_ipspace_01 | default(omit) }}'
+    name: '{{ opt_broadcast_domain_ports_name_01 | default(omit) }}'
+    ports: '{{ opt_broadcast_domain_ports_ports_01 | default(omit) }}'
+    state: '{{ opt_broadcast_domain_ports_state_01 | default(omit) }}'
   

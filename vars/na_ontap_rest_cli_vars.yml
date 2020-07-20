@@ -1,5 +1,4 @@
 
-    #vars:
 # Section: na_ontap_rest_cli:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
@@ -8,9 +7,9 @@
     port: "{{ netapp_port | default(omit) }}"
     #validate_certs: "{{ validate_certs }}"
     command: '{{ req_rest_cli_command_01 }}'
-    #body: '{{ opt_rest_cli_body_01 | default(omit) }}'
-    #feature_flags: '{{ opt_rest_cli_feature_flags_01 | default(omit) }}'
-    #name: '{{ opt_rest_cli_name_01 | default(omit) }}'
-    #params: '{{ opt_rest_cli_params_01 | default(omit) }}'
-    #verb: '{{ opt_rest_cli_verb_01 | default(omit) }}'
+    body: '{{ opt_rest_cli_body_01 | default(omit) }}'
+    feature_flags: '{{ opt_rest_cli_feature_flags_01 | default(omit) }}'
+    name: '{{ opt_rest_cli_name_01 | default(omit) }}'
+    params: '{{ opt_rest_cli_params_01 | default(omit) }}'
+    verb: '{{ opt_rest_cli_verb_01 | default(omit) }}'
   

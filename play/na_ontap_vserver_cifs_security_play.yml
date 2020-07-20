@@ -1,2 +1,2 @@
     - name: Running command na_ontap_vserver_cifs_security
-      include_task: tasks/na_ontap_vserver_cifs_security_task.yml
+      include_tasks: tasks/na_ontap_vserver_cifs_security_task.yml

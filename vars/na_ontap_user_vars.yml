@@ -1,5 +1,4 @@
 
-    #vars:
 # Section: na_ontap_user:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
@@ -11,15 +10,15 @@
     authentication_method: '{{ req_user_authentication_method_01 }}'
     name: '{{ req_user_name_01 }}'
     vserver: '{{ req_user_vserver_01 }}'
-    #authentication_password: '{{ opt_user_authentication_password_01 | default(omit) }}'
-    #authentication_protocol: '{{ opt_user_authentication_protocol_01 | default(omit) }}'
-    #engine_id: '{{ opt_user_engine_id_01 | default(omit) }}'
-    #feature_flags: '{{ opt_user_feature_flags_01 | default(omit) }}'
-    #lock_user: '{{ opt_user_lock_user_01 | default(omit) }}'
-    #privacy_password: '{{ opt_user_privacy_password_01 | default(omit) }}'
-    #privacy_protocol: '{{ opt_user_privacy_protocol_01 | default(omit) }}'
-    #remote_switch_ipaddress: '{{ opt_user_remote_switch_ipaddress_01 | default(omit) }}'
-    #role_name: '{{ opt_user_role_name_01 | default(omit) }}'
-    #set_password: '{{ opt_user_set_password_01 | default(omit) }}'
-    #state: '{{ opt_user_state_01 | default(omit) }}'
+    authentication_password: '{{ opt_user_authentication_password_01 | default(omit) }}'
+    authentication_protocol: '{{ opt_user_authentication_protocol_01 | default(omit) }}'
+    engine_id: '{{ opt_user_engine_id_01 | default(omit) }}'
+    feature_flags: '{{ opt_user_feature_flags_01 | default(omit) }}'
+    lock_user: '{{ opt_user_lock_user_01 | default(omit) }}'
+    privacy_password: '{{ opt_user_privacy_password_01 | default(omit) }}'
+    privacy_protocol: '{{ opt_user_privacy_protocol_01 | default(omit) }}'
+    remote_switch_ipaddress: '{{ opt_user_remote_switch_ipaddress_01 | default(omit) }}'
+    role_name: '{{ opt_user_role_name_01 | default(omit) }}'
+    set_password: '{{ opt_user_set_password_01 | default(omit) }}'
+    state: '{{ opt_user_state_01 | default(omit) }}'
   

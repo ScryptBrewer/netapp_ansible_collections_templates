@@ -1,5 +1,4 @@
 
-    #vars:
 # Section: na_ontap_volume_snaplock:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
@@ -9,10 +8,10 @@
     #validate_certs: "{{ validate_certs }}"
     name: '{{ req_volume_snaplock_name_01 }}'
     vserver: '{{ req_volume_snaplock_vserver_01 }}'
-    #autocommit_period: '{{ opt_volume_snaplock_autocommit_period_01 | default(omit) }}'
-    #default_retention_period: '{{ opt_volume_snaplock_default_retention_period_01 | default(omit) }}'
-    #feature_flags: '{{ opt_volume_snaplock_feature_flags_01 | default(omit) }}'
-    #is_volume_append_mode_enabled: '{{ opt_volume_snaplock_is_volume_append_mode_enabled_01 | default(omit) }}'
-    #maximum_retention_period: '{{ opt_volume_snaplock_maximum_retention_period_01 | default(omit) }}'
-    #minimum_retention_period: '{{ opt_volume_snaplock_minimum_retention_period_01 | default(omit) }}'
+    autocommit_period: '{{ opt_volume_snaplock_autocommit_period_01 | default(omit) }}'
+    default_retention_period: '{{ opt_volume_snaplock_default_retention_period_01 | default(omit) }}'
+    feature_flags: '{{ opt_volume_snaplock_feature_flags_01 | default(omit) }}'
+    is_volume_append_mode_enabled: '{{ opt_volume_snaplock_is_volume_append_mode_enabled_01 | default(omit) }}'
+    maximum_retention_period: '{{ opt_volume_snaplock_maximum_retention_period_01 | default(omit) }}'
+    minimum_retention_period: '{{ opt_volume_snaplock_minimum_retention_period_01 | default(omit) }}'
   

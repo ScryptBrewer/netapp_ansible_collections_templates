@@ -1,5 +1,4 @@
 
-    #vars:
 # Section: na_ontap_fcp:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
@@ -8,8 +7,8 @@
     port: "{{ netapp_port | default(omit) }}"
     #validate_certs: "{{ validate_certs }}"
     vserver: '{{ req_fcp_vserver_01 }}'
-    #feature_flags: '{{ opt_fcp_feature_flags_01 | default(omit) }}'
-    #name: '{{ opt_fcp_name_01 | default(omit) }}'
-    #state: '{{ opt_fcp_state_01 | default(omit) }}'
-    #status: '{{ opt_fcp_status_01 | default(omit) }}'
+    feature_flags: '{{ opt_fcp_feature_flags_01 | default(omit) }}'
+    name: '{{ opt_fcp_name_01 | default(omit) }}'
+    state: '{{ opt_fcp_state_01 | default(omit) }}'
+    status: '{{ opt_fcp_status_01 | default(omit) }}'
   

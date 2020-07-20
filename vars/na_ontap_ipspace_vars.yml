@@ -1,5 +1,4 @@
 
-    #vars:
 # Section: na_ontap_ipspace:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
@@ -8,7 +7,7 @@
     port: "{{ netapp_port | default(omit) }}"
     #validate_certs: "{{ validate_certs }}"
     name: '{{ req_ipspace_name_01 }}'
-    #feature_flags: '{{ opt_ipspace_feature_flags_01 | default(omit) }}'
-    #from_name: '{{ opt_ipspace_from_name_01 | default(omit) }}'
-    #state: '{{ opt_ipspace_state_01 | default(omit) }}'
+    feature_flags: '{{ opt_ipspace_feature_flags_01 | default(omit) }}'
+    from_name: '{{ opt_ipspace_from_name_01 | default(omit) }}'
+    state: '{{ opt_ipspace_state_01 | default(omit) }}'
   

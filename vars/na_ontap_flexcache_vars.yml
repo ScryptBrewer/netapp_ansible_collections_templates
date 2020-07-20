@@ -1,5 +1,4 @@
 
-    #vars:
 # Section: na_ontap_flexcache:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
@@ -9,19 +8,19 @@
     #validate_certs: "{{ validate_certs }}"
     volume: '{{ req_flexcache_volume_01 }}'
     vserver: '{{ req_flexcache_vserver_01 }}'
-    #aggr_list: '{{ opt_flexcache_aggr_list_01 | default(omit) }}'
-    #aggr_list_multiplier: '{{ opt_flexcache_aggr_list_multiplier_01 | default(omit) }}'
-    #auto_provision_as: '{{ opt_flexcache_auto_provision_as_01 | default(omit) }}'
-    #feature_flags: '{{ opt_flexcache_feature_flags_01 | default(omit) }}'
-    #force_offline: '{{ opt_flexcache_force_offline_01 | default(omit) }}'
-    #force_unmount: '{{ opt_flexcache_force_unmount_01 | default(omit) }}'
-    #junction_path: '{{ opt_flexcache_junction_path_01 | default(omit) }}'
-    #name: '{{ opt_flexcache_name_01 | default(omit) }}'
-    #origin_cluster: '{{ opt_flexcache_origin_cluster_01 | default(omit) }}'
-    #origin_volume: '{{ opt_flexcache_origin_volume_01 | default(omit) }}'
-    #origin_vserver: '{{ opt_flexcache_origin_vserver_01 | default(omit) }}'
-    #size: '{{ opt_flexcache_size_01 | default(omit) }}'
-    #size_unit: '{{ opt_flexcache_size_unit_01 | default(omit) }}'
-    #state: '{{ opt_flexcache_state_01 | default(omit) }}'
-    #time_out: '{{ opt_flexcache_time_out_01 | default(omit) }}'
+    aggr_list: '{{ opt_flexcache_aggr_list_01 | default(omit) }}'
+    aggr_list_multiplier: '{{ opt_flexcache_aggr_list_multiplier_01 | default(omit) }}'
+    auto_provision_as: '{{ opt_flexcache_auto_provision_as_01 | default(omit) }}'
+    feature_flags: '{{ opt_flexcache_feature_flags_01 | default(omit) }}'
+    force_offline: '{{ opt_flexcache_force_offline_01 | default(omit) }}'
+    force_unmount: '{{ opt_flexcache_force_unmount_01 | default(omit) }}'
+    junction_path: '{{ opt_flexcache_junction_path_01 | default(omit) }}'
+    name: '{{ opt_flexcache_name_01 | default(omit) }}'
+    origin_cluster: '{{ opt_flexcache_origin_cluster_01 | default(omit) }}'
+    origin_volume: '{{ opt_flexcache_origin_volume_01 | default(omit) }}'
+    origin_vserver: '{{ opt_flexcache_origin_vserver_01 | default(omit) }}'
+    size: '{{ opt_flexcache_size_01 | default(omit) }}'
+    size_unit: '{{ opt_flexcache_size_unit_01 | default(omit) }}'
+    state: '{{ opt_flexcache_state_01 | default(omit) }}'
+    time_out: '{{ opt_flexcache_time_out_01 | default(omit) }}'
   

@@ -1,5 +1,4 @@
 
-    #vars:
 # Section: na_ontap_name_service_switch:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
@@ -9,8 +8,8 @@
     #validate_certs: "{{ validate_certs }}"
     database_type: '{{ req_name_service_switch_database_type_01 }}'
     vserver: '{{ req_name_service_switch_vserver_01 }}'
-    #feature_flags: '{{ opt_name_service_switch_feature_flags_01 | default(omit) }}'
-    #name: '{{ opt_name_service_switch_name_01 | default(omit) }}'
-    #sources: '{{ opt_name_service_switch_sources_01 | default(omit) }}'
-    #state: '{{ opt_name_service_switch_state_01 | default(omit) }}'
+    feature_flags: '{{ opt_name_service_switch_feature_flags_01 | default(omit) }}'
+    name: '{{ opt_name_service_switch_name_01 | default(omit) }}'
+    sources: '{{ opt_name_service_switch_sources_01 | default(omit) }}'
+    state: '{{ opt_name_service_switch_state_01 | default(omit) }}'
   

@@ -5,4 +5,8 @@
   collections:
     - netapp.ontap
 
+<<<<<<< Updated upstream
   vars:
+=======
+  vars:
+>>>>>>> Stashed changes

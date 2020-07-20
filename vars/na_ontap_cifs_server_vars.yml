@@ -1,5 +1,4 @@
 
-    #vars:
 # Section: na_ontap_cifs_server:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
@@ -9,13 +8,13 @@
     #validate_certs: "{{ validate_certs }}"
     name: '{{ req_cifs_server_name_01 }}'
     vserver: '{{ req_cifs_server_vserver_01 }}'
-    #admin_password: '{{ opt_cifs_server_admin_password_01 | default(omit) }}'
-    #admin_user_name: '{{ opt_cifs_server_admin_user_name_01 | default(omit) }}'
-    #domain: '{{ opt_cifs_server_domain_01 | default(omit) }}'
-    #feature_flags: '{{ opt_cifs_server_feature_flags_01 | default(omit) }}'
-    #force: '{{ opt_cifs_server_force_01 | default(omit) }}'
-    #ou: '{{ opt_cifs_server_ou_01 | default(omit) }}'
-    #service_state: '{{ opt_cifs_server_service_state_01 | default(omit) }}'
-    #state: '{{ opt_cifs_server_state_01 | default(omit) }}'
-    #workgroup: '{{ opt_cifs_server_workgroup_01 | default(omit) }}'
+    admin_password: '{{ opt_cifs_server_admin_password_01 | default(omit) }}'
+    admin_user_name: '{{ opt_cifs_server_admin_user_name_01 | default(omit) }}'
+    domain: '{{ opt_cifs_server_domain_01 | default(omit) }}'
+    feature_flags: '{{ opt_cifs_server_feature_flags_01 | default(omit) }}'
+    force: '{{ opt_cifs_server_force_01 | default(omit) }}'
+    ou: '{{ opt_cifs_server_ou_01 | default(omit) }}'
+    service_state: '{{ opt_cifs_server_service_state_01 | default(omit) }}'
+    state: '{{ opt_cifs_server_state_01 | default(omit) }}'
+    workgroup: '{{ opt_cifs_server_workgroup_01 | default(omit) }}'
   

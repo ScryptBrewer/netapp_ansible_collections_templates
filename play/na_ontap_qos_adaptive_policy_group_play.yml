@@ -1,2 +1,2 @@
     - name: Running command na_ontap_qos_adaptive_policy_group
-      include_task: tasks/na_ontap_qos_adaptive_policy_group_task.yml
+      include_tasks: tasks/na_ontap_qos_adaptive_policy_group_task.yml

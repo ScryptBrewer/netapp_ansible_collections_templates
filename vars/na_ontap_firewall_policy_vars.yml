@@ -1,5 +1,4 @@
 
-    #vars:
 # Section: na_ontap_firewall_policy:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
@@ -7,14 +6,14 @@
     https: "{{ netapp_https | default(omit) }}"
     port: "{{ netapp_port | default(omit) }}"
     #validate_certs: "{{ validate_certs }}"
-    #allow_list: '{{ opt_firewall_policy_allow_list_01 | default(omit) }}'
-    #enable: '{{ opt_firewall_policy_enable_01 | default(omit) }}'
-    #feature_flags: '{{ opt_firewall_policy_feature_flags_01 | default(omit) }}'
-    #logging: '{{ opt_firewall_policy_logging_01 | default(omit) }}'
-    #name: '{{ opt_firewall_policy_name_01 | default(omit) }}'
-    #node: '{{ opt_firewall_policy_node_01 | default(omit) }}'
-    #policy: '{{ opt_firewall_policy_policy_01 | default(omit) }}'
-    #service: '{{ opt_firewall_policy_service_01 | default(omit) }}'
-    #state: '{{ opt_firewall_policy_state_01 | default(omit) }}'
-    #vserver: '{{ opt_firewall_policy_vserver_01 | default(omit) }}'
+    allow_list: '{{ opt_firewall_policy_allow_list_01 | default(omit) }}'
+    enable: '{{ opt_firewall_policy_enable_01 | default(omit) }}'
+    feature_flags: '{{ opt_firewall_policy_feature_flags_01 | default(omit) }}'
+    logging: '{{ opt_firewall_policy_logging_01 | default(omit) }}'
+    name: '{{ opt_firewall_policy_name_01 | default(omit) }}'
+    node: '{{ opt_firewall_policy_node_01 | default(omit) }}'
+    policy: '{{ opt_firewall_policy_policy_01 | default(omit) }}'
+    service: '{{ opt_firewall_policy_service_01 | default(omit) }}'
+    state: '{{ opt_firewall_policy_state_01 | default(omit) }}'
+    vserver: '{{ opt_firewall_policy_vserver_01 | default(omit) }}'
   

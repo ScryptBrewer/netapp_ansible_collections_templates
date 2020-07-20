@@ -1,5 +1,4 @@
 
-    #vars:
 # Section: na_ontap_lun_copy:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
@@ -10,8 +9,8 @@
     destination_path: '{{ req_lun_copy_destination_path_01 }}'
     destination_vserver: '{{ req_lun_copy_destination_vserver_01 }}'
     source_path: '{{ req_lun_copy_source_path_01 }}'
-    #feature_flags: '{{ opt_lun_copy_feature_flags_01 | default(omit) }}'
-    #name: '{{ opt_lun_copy_name_01 | default(omit) }}'
-    #source_vserver: '{{ opt_lun_copy_source_vserver_01 | default(omit) }}'
-    #state: '{{ opt_lun_copy_state_01 | default(omit) }}'
+    feature_flags: '{{ opt_lun_copy_feature_flags_01 | default(omit) }}'
+    name: '{{ opt_lun_copy_name_01 | default(omit) }}'
+    source_vserver: '{{ opt_lun_copy_source_vserver_01 | default(omit) }}'
+    state: '{{ opt_lun_copy_state_01 | default(omit) }}'
   

@@ -1,5 +1,4 @@
 
-    #vars:
 # Section: na_ontap_restit:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
@@ -8,11 +7,11 @@
     port: "{{ netapp_port | default(omit) }}"
     #validate_certs: "{{ validate_certs }}"
     api: '{{ req_restit_api_01 }}'
-    #body: '{{ opt_restit_body_01 | default(omit) }}'
-    #feature_flags: '{{ opt_restit_feature_flags_01 | default(omit) }}'
-    #hal_linking: '{{ opt_restit_hal_linking_01 | default(omit) }}'
-    #method: '{{ opt_restit_method_01 | default(omit) }}'
-    #query: '{{ opt_restit_query_01 | default(omit) }}'
-    #vserver_name: '{{ opt_restit_vserver_name_01 | default(omit) }}'
-    #vserver_uuid: '{{ opt_restit_vserver_uuid_01 | default(omit) }}'
+    body: '{{ opt_restit_body_01 | default(omit) }}'
+    feature_flags: '{{ opt_restit_feature_flags_01 | default(omit) }}'
+    hal_linking: '{{ opt_restit_hal_linking_01 | default(omit) }}'
+    method: '{{ opt_restit_method_01 | default(omit) }}'
+    query: '{{ opt_restit_query_01 | default(omit) }}'
+    vserver_name: '{{ opt_restit_vserver_name_01 | default(omit) }}'
+    vserver_uuid: '{{ opt_restit_vserver_uuid_01 | default(omit) }}'
   

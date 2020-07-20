@@ -1,2 +1,2 @@
     - name: Running command na_ontap_login_messages
-      include_task: tasks/na_ontap_login_messages_task.yml
+      include_tasks: tasks/na_ontap_login_messages_task.yml

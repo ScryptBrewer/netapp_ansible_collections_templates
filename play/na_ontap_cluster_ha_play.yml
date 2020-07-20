@@ -1,2 +1,2 @@
     - name: Running command na_ontap_cluster_ha
-      include_task: tasks/na_ontap_cluster_ha_task.yml
+      include_tasks: tasks/na_ontap_cluster_ha_task.yml

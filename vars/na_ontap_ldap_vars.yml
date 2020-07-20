@@ -1,5 +1,4 @@
 
-    #vars:
 # Section: na_ontap_ldap:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
@@ -9,7 +8,7 @@
     #validate_certs: "{{ validate_certs }}"
     name: '{{ req_ldap_name_01 }}'
     vserver: '{{ req_ldap_vserver_01 }}'
-    #feature_flags: '{{ opt_ldap_feature_flags_01 | default(omit) }}'
-    #skip_config_validation: '{{ opt_ldap_skip_config_validation_01 | default(omit) }}'
-    #state: '{{ opt_ldap_state_01 | default(omit) }}'
+    feature_flags: '{{ opt_ldap_feature_flags_01 | default(omit) }}'
+    skip_config_validation: '{{ opt_ldap_skip_config_validation_01 | default(omit) }}'
+    state: '{{ opt_ldap_state_01 | default(omit) }}'
   

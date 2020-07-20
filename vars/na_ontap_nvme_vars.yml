@@ -1,5 +1,4 @@
 
-    #vars:
 # Section: na_ontap_nvme:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
@@ -8,8 +7,8 @@
     port: "{{ netapp_port | default(omit) }}"
     #validate_certs: "{{ validate_certs }}"
     vserver: '{{ req_nvme_vserver_01 }}'
-    #feature_flags: '{{ opt_nvme_feature_flags_01 | default(omit) }}'
-    #name: '{{ opt_nvme_name_01 | default(omit) }}'
-    #state: '{{ opt_nvme_state_01 | default(omit) }}'
-    #status_admin: '{{ opt_nvme_status_admin_01 | default(omit) }}'
+    feature_flags: '{{ opt_nvme_feature_flags_01 | default(omit) }}'
+    name: '{{ opt_nvme_name_01 | default(omit) }}'
+    state: '{{ opt_nvme_state_01 | default(omit) }}'
+    status_admin: '{{ opt_nvme_status_admin_01 | default(omit) }}'
   

@@ -1,2 +1,2 @@
     - name: Running command na_ontap_ntfs_dacl
-      include_task: tasks/na_ontap_ntfs_dacl_task.yml
+      include_tasks: tasks/na_ontap_ntfs_dacl_task.yml

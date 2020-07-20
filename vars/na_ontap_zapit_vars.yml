@@ -1,5 +1,4 @@
 
-    #vars:
 # Section: na_ontap_zapit:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
@@ -8,6 +7,6 @@
     port: "{{ netapp_port | default(omit) }}"
     #validate_certs: "{{ validate_certs }}"
     zapi: '{{ req_zapit_zapi_01 }}'
-    #feature_flags: '{{ opt_zapit_feature_flags_01 | default(omit) }}'
-    #vserver: '{{ opt_zapit_vserver_01 | default(omit) }}'
+    feature_flags: '{{ opt_zapit_feature_flags_01 | default(omit) }}'
+    vserver: '{{ opt_zapit_vserver_01 | default(omit) }}'
   

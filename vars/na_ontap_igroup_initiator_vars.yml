@@ -1,5 +1,4 @@
 
-    #vars:
 # Section: na_ontap_igroup_initiator:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
@@ -10,8 +9,8 @@
     initiator_group: '{{ req_igroup_initiator_initiator_group_01 }}'
     names: '{{ req_igroup_initiator_names_01 }}'
     vserver: '{{ req_igroup_initiator_vserver_01 }}'
-    #feature_flags: '{{ opt_igroup_initiator_feature_flags_01 | default(omit) }}'
-    #force_remove: '{{ opt_igroup_initiator_force_remove_01 | default(omit) }}'
-    #name: '{{ opt_igroup_initiator_name_01 | default(omit) }}'
-    #state: '{{ opt_igroup_initiator_state_01 | default(omit) }}'
+    feature_flags: '{{ opt_igroup_initiator_feature_flags_01 | default(omit) }}'
+    force_remove: '{{ opt_igroup_initiator_force_remove_01 | default(omit) }}'
+    name: '{{ opt_igroup_initiator_name_01 | default(omit) }}'
+    state: '{{ opt_igroup_initiator_state_01 | default(omit) }}'
   

@@ -1,2 +1,2 @@
     - name: Running command na_ontap_cg_snapshot
-      include_task: tasks/na_ontap_cg_snapshot_task.yml
+      include_tasks: tasks/na_ontap_cg_snapshot_task.yml

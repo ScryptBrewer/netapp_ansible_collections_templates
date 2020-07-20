@@ -1,5 +1,4 @@
 
-    #vars:
 # Section: na_ontap_nvme_namespace:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
@@ -8,12 +7,12 @@
     port: "{{ netapp_port | default(omit) }}"
     #validate_certs: "{{ validate_certs }}"
     vserver: '{{ req_nvme_namespace_vserver_01 }}'
-    #block_size: '{{ opt_nvme_namespace_block_size_01 | default(omit) }}'
-    #feature_flags: '{{ opt_nvme_namespace_feature_flags_01 | default(omit) }}'
-    #name: '{{ opt_nvme_namespace_name_01 | default(omit) }}'
-    #ostype: '{{ opt_nvme_namespace_ostype_01 | default(omit) }}'
-    #path: '{{ opt_nvme_namespace_path_01 | default(omit) }}'
-    #size: '{{ opt_nvme_namespace_size_01 | default(omit) }}'
-    #size_unit: '{{ opt_nvme_namespace_size_unit_01 | default(omit) }}'
-    #state: '{{ opt_nvme_namespace_state_01 | default(omit) }}'
+    block_size: '{{ opt_nvme_namespace_block_size_01 | default(omit) }}'
+    feature_flags: '{{ opt_nvme_namespace_feature_flags_01 | default(omit) }}'
+    name: '{{ opt_nvme_namespace_name_01 | default(omit) }}'
+    ostype: '{{ opt_nvme_namespace_ostype_01 | default(omit) }}'
+    path: '{{ opt_nvme_namespace_path_01 | default(omit) }}'
+    size: '{{ opt_nvme_namespace_size_01 | default(omit) }}'
+    size_unit: '{{ opt_nvme_namespace_size_unit_01 | default(omit) }}'
+    state: '{{ opt_nvme_namespace_state_01 | default(omit) }}'
   
