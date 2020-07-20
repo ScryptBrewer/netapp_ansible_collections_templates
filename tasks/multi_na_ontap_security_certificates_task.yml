@@ -1,0 +1,23 @@
+---
+- name: Running command na_ontap_security_certificates
+  na_ontap_security_certificates:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
+    name: '{{ item.req_security_certificates_name_01 }}'
+    common_name: '{{ item.opt_security_certificates_common_name_01 | default(omit) }}'
+    expiry_time: '{{ item.opt_security_certificates_expiry_time_01 | default(omit) }}'
+    feature_flags: '{{ item.opt_security_certificates_feature_flags_01 | default(omit) }}'
+    hash_function: '{{ item.opt_security_certificates_hash_function_01 | default(omit) }}'
+    intermediate_certificates: '{{ item.opt_security_certificates_intermediate_certificates_01 | default(omit) }}'
+    key_size: '{{ item.opt_security_certificates_key_size_01 | default(omit) }}'
+    private_key: '{{ item.opt_security_certificates_private_key_01 | default(omit) }}'
+    public_certificate: '{{ item.opt_security_certificates_public_certificate_01 | default(omit) }}'
+    signing_request: '{{ item.opt_security_certificates_signing_request_01 | default(omit) }}'
+    state: '{{ item.opt_security_certificates_state_01 | default(omit) }}'
+    svm: '{{ item.opt_security_certificates_svm_01 | default(omit) }}'
+    type: '{{ item.opt_security_certificates_type_01 | default(omit) }}'
+  register: results

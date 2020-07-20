@@ -1,0 +1,22 @@
+---
+- name: Running command na_ontap_efficiency_policy
+  na_ontap_efficiency_policy:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
+    policy_name: '{{ item.req_efficiency_policy_policy_name_01 }}'
+    vserver: '{{ item.req_efficiency_policy_vserver_01 }}'
+    changelog_threshold_percent: '{{ item.opt_efficiency_policy_changelog_threshold_percent_01 | default(omit) }}'
+    comment: '{{ item.opt_efficiency_policy_comment_01 | default(omit) }}'
+    duration: '{{ item.opt_efficiency_policy_duration_01 | default(omit) }}'
+    enabled: '{{ item.opt_efficiency_policy_enabled_01 | default(omit) }}'
+    feature_flags: '{{ item.opt_efficiency_policy_feature_flags_01 | default(omit) }}'
+    name: '{{ item.opt_efficiency_policy_name_01 | default(omit) }}'
+    policy_type: '{{ item.opt_efficiency_policy_policy_type_01 | default(omit) }}'
+    qos_policy: '{{ item.opt_efficiency_policy_qos_policy_01 | default(omit) }}'
+    schedule: '{{ item.opt_efficiency_policy_schedule_01 | default(omit) }}'
+    state: '{{ item.opt_efficiency_policy_state_01 | default(omit) }}'
+  register: results

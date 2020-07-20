@@ -1,0 +1,16 @@
+---
+- name: Running command na_ontap_rest_cli
+  na_ontap_rest_cli:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
+    command: '{{ item.req_rest_cli_command_01 }}'
+    body: '{{ item.opt_rest_cli_body_01 | default(omit) }}'
+    feature_flags: '{{ item.opt_rest_cli_feature_flags_01 | default(omit) }}'
+    name: '{{ item.opt_rest_cli_name_01 | default(omit) }}'
+    params: '{{ item.opt_rest_cli_params_01 | default(omit) }}'
+    verb: '{{ item.opt_rest_cli_verb_01 | default(omit) }}'
+  register: results

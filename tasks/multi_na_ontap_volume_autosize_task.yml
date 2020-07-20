@@ -1,0 +1,21 @@
+---
+- name: Running command na_ontap_volume_autosize
+  na_ontap_volume_autosize:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
+    volume: '{{ item.req_volume_autosize_volume_01 }}'
+    vserver: '{{ item.req_volume_autosize_vserver_01 }}'
+    feature_flags: '{{ item.opt_volume_autosize_feature_flags_01 | default(omit) }}'
+    grow_threshold_percent: '{{ item.opt_volume_autosize_grow_threshold_percent_01 | default(omit) }}'
+    increment_size: '{{ item.opt_volume_autosize_increment_size_01 | default(omit) }}'
+    maximum_size: '{{ item.opt_volume_autosize_maximum_size_01 | default(omit) }}'
+    minimum_size: '{{ item.opt_volume_autosize_minimum_size_01 | default(omit) }}'
+    mode: '{{ item.opt_volume_autosize_mode_01 | default(omit) }}'
+    name: '{{ item.opt_volume_autosize_name_01 | default(omit) }}'
+    reset: '{{ item.opt_volume_autosize_reset_01 | default(omit) }}'
+    shrink_threshold_percent: '{{ item.opt_volume_autosize_shrink_threshold_percent_01 | default(omit) }}'
+  register: results

@@ -1,0 +1,15 @@
+---
+- name: Running command na_ontap_export_policy
+  na_ontap_export_policy:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
+    name: '{{ item.req_export_policy_name_01 }}'
+    vserver: '{{ item.req_export_policy_vserver_01 }}'
+    feature_flags: '{{ item.opt_export_policy_feature_flags_01 | default(omit) }}'
+    from_name: '{{ item.opt_export_policy_from_name_01 | default(omit) }}'
+    state: '{{ item.opt_export_policy_state_01 | default(omit) }}'
+  register: results

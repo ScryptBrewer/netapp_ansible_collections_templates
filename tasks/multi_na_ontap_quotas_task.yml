@@ -1,0 +1,23 @@
+---
+- name: Running command na_ontap_quotas
+  na_ontap_quotas:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
+    quota_target: '{{ item.req_quotas_quota_target_01 }}'
+    type: '{{ item.req_quotas_type_01 }}'
+    volume: '{{ item.req_quotas_volume_01 }}'
+    vserver: '{{ item.req_quotas_vserver_01 }}'
+    disk_limit: '{{ item.opt_quotas_disk_limit_01 | default(omit) }}'
+    feature_flags: '{{ item.opt_quotas_feature_flags_01 | default(omit) }}'
+    file_limit: '{{ item.opt_quotas_file_limit_01 | default(omit) }}'
+    name: '{{ item.opt_quotas_name_01 | default(omit) }}'
+    policy: '{{ item.opt_quotas_policy_01 | default(omit) }}'
+    qtree: '{{ item.opt_quotas_qtree_01 | default(omit) }}'
+    set_quota_status: '{{ item.opt_quotas_set_quota_status_01 | default(omit) }}'
+    state: '{{ item.opt_quotas_state_01 | default(omit) }}'
+    threshold: '{{ item.opt_quotas_threshold_01 | default(omit) }}'
+  register: results

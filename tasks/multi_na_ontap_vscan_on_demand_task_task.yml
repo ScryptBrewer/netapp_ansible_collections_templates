@@ -1,0 +1,28 @@
+---
+- name: Running command na_ontap_vscan_on_demand_task
+  na_ontap_vscan_on_demand_task:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
+    task_name: '{{ item.req_vscan_on_demand_task_task_name_01 }}'
+    vserver: '{{ item.req_vscan_on_demand_task_vserver_01 }}'
+    cross_junction: '{{ item.opt_vscan_on_demand_task_cross_junction_01 | default(omit) }}'
+    directory_recursion: '{{ item.opt_vscan_on_demand_task_directory_recursion_01 | default(omit) }}'
+    feature_flags: '{{ item.opt_vscan_on_demand_task_feature_flags_01 | default(omit) }}'
+    file_ext_to_exclude: '{{ item.opt_vscan_on_demand_task_file_ext_to_exclude_01 | default(omit) }}'
+    file_ext_to_include: '{{ item.opt_vscan_on_demand_task_file_ext_to_include_01 | default(omit) }}'
+    max_file_size: '{{ item.opt_vscan_on_demand_task_max_file_size_01 | default(omit) }}'
+    name: '{{ item.opt_vscan_on_demand_task_name_01 | default(omit) }}'
+    paths_to_exclude: '{{ item.opt_vscan_on_demand_task_paths_to_exclude_01 | default(omit) }}'
+    report_directory: '{{ item.opt_vscan_on_demand_task_report_directory_01 | default(omit) }}'
+    report_log_level: '{{ item.opt_vscan_on_demand_task_report_log_level_01 | default(omit) }}'
+    request_timeout: '{{ item.opt_vscan_on_demand_task_request_timeout_01 | default(omit) }}'
+    scan_files_with_no_ext: '{{ item.opt_vscan_on_demand_task_scan_files_with_no_ext_01 | default(omit) }}'
+    scan_paths: '{{ item.opt_vscan_on_demand_task_scan_paths_01 | default(omit) }}'
+    scan_priority: '{{ item.opt_vscan_on_demand_task_scan_priority_01 | default(omit) }}'
+    schedule: '{{ item.opt_vscan_on_demand_task_schedule_01 | default(omit) }}'
+    state: '{{ item.opt_vscan_on_demand_task_state_01 | default(omit) }}'
+  register: results

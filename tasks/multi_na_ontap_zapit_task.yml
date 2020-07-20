@@ -1,0 +1,13 @@
+---
+- name: Running command na_ontap_zapit
+  na_ontap_zapit:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
+    zapi: '{{ item.req_zapit_zapi_01 }}'
+    feature_flags: '{{ item.opt_zapit_feature_flags_01 | default(omit) }}'
+    vserver: '{{ item.opt_zapit_vserver_01 | default(omit) }}'
+  register: results

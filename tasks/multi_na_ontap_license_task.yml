@@ -1,0 +1,18 @@
+---
+- name: Running command na_ontap_license
+  na_ontap_license:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
+    feature_flags: '{{ item.opt_license_feature_flags_01 | default(omit) }}'
+    license_codes: '{{ item.opt_license_license_codes_01 | default(omit) }}'
+    license_names: '{{ item.opt_license_license_names_01 | default(omit) }}'
+    name: '{{ item.opt_license_name_01 | default(omit) }}'
+    remove_expired: '{{ item.opt_license_remove_expired_01 | default(omit) }}'
+    remove_unused: '{{ item.opt_license_remove_unused_01 | default(omit) }}'
+    serial_number: '{{ item.opt_license_serial_number_01 | default(omit) }}'
+    state: '{{ item.opt_license_state_01 | default(omit) }}'
+  register: results

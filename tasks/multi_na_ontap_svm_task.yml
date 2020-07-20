@@ -1,0 +1,24 @@
+---
+- name: Running command na_ontap_svm
+  na_ontap_svm:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
+    name: '{{ item.req_svm_name_01 }}'
+    aggr_list: '{{ item.opt_svm_aggr_list_01 | default(omit) }}'
+    allowed_protocols: '{{ item.opt_svm_allowed_protocols_01 | default(omit) }}'
+    comment: '{{ item.opt_svm_comment_01 | default(omit) }}'
+    feature_flags: '{{ item.opt_svm_feature_flags_01 | default(omit) }}'
+    from_name: '{{ item.opt_svm_from_name_01 | default(omit) }}'
+    ipspace: '{{ item.opt_svm_ipspace_01 | default(omit) }}'
+    language: '{{ item.opt_svm_language_01 | default(omit) }}'
+    root_volume: '{{ item.opt_svm_root_volume_01 | default(omit) }}'
+    root_volume_aggregate: '{{ item.opt_svm_root_volume_aggregate_01 | default(omit) }}'
+    root_volume_security_style: '{{ item.opt_svm_root_volume_security_style_01 | default(omit) }}'
+    snapshot_policy: '{{ item.opt_svm_snapshot_policy_01 | default(omit) }}'
+    state: '{{ item.opt_svm_state_01 | default(omit) }}'
+    subtype: '{{ item.opt_svm_subtype_01 | default(omit) }}'
+  register: results

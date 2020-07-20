@@ -1,0 +1,33 @@
+---
+- name: Running command na_ontap_ndmp
+  na_ontap_ndmp:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username }}"
+    password: "{{ netapp_password }}"
+    https: "{{ netapp_https | default(omit) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    #validate_certs: "{{ validate_certs }}"
+    vserver: '{{ item.req_ndmp_vserver_01 }}'
+    abort_on_disk_error: '{{ item.opt_ndmp_abort_on_disk_error_01 | default(omit) }}'
+    authtype: '{{ item.opt_ndmp_authtype_01 | default(omit) }}'
+    backup_log_enable: '{{ item.opt_ndmp_backup_log_enable_01 | default(omit) }}'
+    data_port_range: '{{ item.opt_ndmp_data_port_range_01 | default(omit) }}'
+    debug_enable: '{{ item.opt_ndmp_debug_enable_01 | default(omit) }}'
+    debug_filter: '{{ item.opt_ndmp_debug_filter_01 | default(omit) }}'
+    dump_detailed_stats: '{{ item.opt_ndmp_dump_detailed_stats_01 | default(omit) }}'
+    dump_logical_find: '{{ item.opt_ndmp_dump_logical_find_01 | default(omit) }}'
+    enable: '{{ item.opt_ndmp_enable_01 | default(omit) }}'
+    feature_flags: '{{ item.opt_ndmp_feature_flags_01 | default(omit) }}'
+    fh_dir_retry_interval: '{{ item.opt_ndmp_fh_dir_retry_interval_01 | default(omit) }}'
+    fh_node_retry_interval: '{{ item.opt_ndmp_fh_node_retry_interval_01 | default(omit) }}'
+    ignore_ctime_enabled: '{{ item.opt_ndmp_ignore_ctime_enabled_01 | default(omit) }}'
+    is_secure_control_connection_enabled: '{{ item.opt_ndmp_is_secure_control_connection_enabled_01 | default(omit) }}'
+    name: '{{ item.opt_ndmp_name_01 | default(omit) }}'
+    offset_map_enable: '{{ item.opt_ndmp_offset_map_enable_01 | default(omit) }}'
+    per_qtree_exclude_enable: '{{ item.opt_ndmp_per_qtree_exclude_enable_01 | default(omit) }}'
+    preferred_interface_role: '{{ item.opt_ndmp_preferred_interface_role_01 | default(omit) }}'
+    restore_vm_cache_size: '{{ item.opt_ndmp_restore_vm_cache_size_01 | default(omit) }}'
+    secondary_debug_filter: '{{ item.opt_ndmp_secondary_debug_filter_01 | default(omit) }}'
+    tcpnodelay: '{{ item.opt_ndmp_tcpnodelay_01 | default(omit) }}'
+    tcpwinsize: '{{ item.opt_ndmp_tcpwinsize_01 | default(omit) }}'
+  register: results
