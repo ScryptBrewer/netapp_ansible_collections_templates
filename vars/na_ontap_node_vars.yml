@@ -1,12 +1,23 @@
 
+    #vars:
 # Section: na_ontap_node:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    from_name: '{{ req_node_from_name_01 }}'
-    name: '{{ req_node_name_01 }}'
-    feature_flags: '{{ opt_node_feature_flags_01 | default(omit) }}'
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_node_from_name_01: ' '
+    req_node_hostname_01: ' '
+    req_node_name_01: ' '
+    #opt_node_cert_filepath_01: ' '
+    #opt_node_feature_flags_01: ' '
+    #opt_node_http_port_01: ' '
+    #opt_node_https_01: ' '
+    #opt_node_key_filepath_01: ' '
+    #opt_node_ontapi_01: ' '
+    #opt_node_password_01: ' '
+    #opt_node_use_rest_01: ' '
+    #opt_node_username_01: ' '
+    #opt_node_validate_certs_01: ' '
   

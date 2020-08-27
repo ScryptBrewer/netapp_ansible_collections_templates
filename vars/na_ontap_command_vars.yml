@@ -1,17 +1,27 @@
 
+    #vars:
 # Section: na_ontap_command:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    command: '{{ req_command_command_01 }}'
-    exclude_lines: '{{ opt_command_exclude_lines_01 | default(omit) }}'
-    feature_flags: '{{ opt_command_feature_flags_01 | default(omit) }}'
-    include_lines: '{{ opt_command_include_lines_01 | default(omit) }}'
-    name: '{{ opt_command_name_01 | default(omit) }}'
-    privilege: '{{ opt_command_privilege_01 | default(omit) }}'
-    return_dict: '{{ opt_command_return_dict_01 | default(omit) }}'
-    vserver: '{{ opt_command_vserver_01 | default(omit) }}'
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_command_command_01: ' '
+    req_command_hostname_01: ' '
+    #opt_command_cert_filepath_01: ' '
+    #opt_command_exclude_lines_01: ' '
+    #opt_command_feature_flags_01: ' '
+    #opt_command_http_port_01: ' '
+    #opt_command_https_01: ' '
+    #opt_command_include_lines_01: ' '
+    #opt_command_key_filepath_01: ' '
+    #opt_command_ontapi_01: ' '
+    #opt_command_password_01: ' '
+    #opt_command_privilege_01: ' '
+    #opt_command_return_dict_01: ' '
+    #opt_command_use_rest_01: ' '
+    #opt_command_username_01: ' '
+    #opt_command_validate_certs_01: ' '
+    #opt_command_vserver_01: ' '
   

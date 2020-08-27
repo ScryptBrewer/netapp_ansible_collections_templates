@@ -1,29 +1,42 @@
 
+    #vars:
 # Section: na_ontap_aggregate:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    name: '{{ req_aggregate_name_01 }}'
-    disk_count: '{{ opt_aggregate_disk_count_01 | default(omit) }}'
-    disk_size: '{{ opt_aggregate_disk_size_01 | default(omit) }}'
-    disk_type: '{{ opt_aggregate_disk_type_01 | default(omit) }}'
-    disks: '{{ opt_aggregate_disks_01 | default(omit) }}'
-    feature_flags: '{{ opt_aggregate_feature_flags_01 | default(omit) }}'
-    from_name: '{{ opt_aggregate_from_name_01 | default(omit) }}'
-    is_mirrored: '{{ opt_aggregate_is_mirrored_01 | default(omit) }}'
-    mirror_disks: '{{ opt_aggregate_mirror_disks_01 | default(omit) }}'
-    nodes: '{{ opt_aggregate_nodes_01 | default(omit) }}'
-    object_store_name: '{{ opt_aggregate_object_store_name_01 | default(omit) }}'
-    raid_size: '{{ opt_aggregate_raid_size_01 | default(omit) }}'
-    raid_type: '{{ opt_aggregate_raid_type_01 | default(omit) }}'
-    service_state: '{{ opt_aggregate_service_state_01 | default(omit) }}'
-    snaplock_type: '{{ opt_aggregate_snaplock_type_01 | default(omit) }}'
-    spare_pool: '{{ opt_aggregate_spare_pool_01 | default(omit) }}'
-    state: '{{ opt_aggregate_state_01 | default(omit) }}'
-    time_out: '{{ opt_aggregate_time_out_01 | default(omit) }}'
-    unmount_volumes: '{{ opt_aggregate_unmount_volumes_01 | default(omit) }}'
-    wait_for_online: '{{ opt_aggregate_wait_for_online_01 | default(omit) }}'
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_aggregate_hostname_01: ' '
+    req_aggregate_name_01: ' '
+    #opt_aggregate_cert_filepath_01: ' '
+    #opt_aggregate_disk_count_01: ' '
+    #opt_aggregate_disk_size_01: ' '
+    #opt_aggregate_disk_size_with_unit_01: ' '
+    #opt_aggregate_disk_type_01: ' '
+    #opt_aggregate_disks_01: ' '
+    #opt_aggregate_feature_flags_01: ' '
+    #opt_aggregate_from_name_01: ' '
+    #opt_aggregate_http_port_01: ' '
+    #opt_aggregate_https_01: ' '
+    #opt_aggregate_ignore_pool_checks_01: ' '
+    #opt_aggregate_is_mirrored_01: ' '
+    #opt_aggregate_key_filepath_01: ' '
+    #opt_aggregate_mirror_disks_01: ' '
+    #opt_aggregate_nodes_01: ' '
+    #opt_aggregate_object_store_name_01: ' '
+    #opt_aggregate_ontapi_01: ' '
+    #opt_aggregate_password_01: ' '
+    #opt_aggregate_raid_size_01: ' '
+    #opt_aggregate_raid_type_01: ' '
+    #opt_aggregate_service_state_01: ' '
+    #opt_aggregate_snaplock_type_01: ' '
+    #opt_aggregate_spare_pool_01: ' '
+    #opt_aggregate_state_01: ' '
+    #opt_aggregate_time_out_01: ' '
+    #opt_aggregate_unmount_volumes_01: ' '
+    #opt_aggregate_use_rest_01: ' '
+    #opt_aggregate_username_01: ' '
+    #opt_aggregate_validate_certs_01: ' '
+    #opt_aggregate_wait_for_online_01: ' '
   

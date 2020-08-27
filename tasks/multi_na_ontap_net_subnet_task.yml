@@ -1,19 +1,24 @@
 ---
-- name: Running command na_ontap_net_subnet
-  na_ontap_net_subnet:
+- name: Running command na_ontap_zapit
+  na_ontap_zapit:
     hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
+    username: "{{ netapp_username | default(omit }}"
+    password: "{{ netapp_password | default(omit) }}"
+    cert_filepath: "{{ netapp_cert_filepath | default(omit) }}"
+    key_filepath: "{{ netapp_key_filepath | default(omit) }}"
+    https: "{{ netapp_https | default(true) }}"
     port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    broadcast_domain: '{{ item.req_net_subnet_broadcast_domain_01 }}'
-    name: '{{ item.req_net_subnet_name_01 }}'
-    subnet: '{{ item.req_net_subnet_subnet_01 }}'
-    feature_flags: '{{ item.opt_net_subnet_feature_flags_01 | default(omit) }}'
-    from_name: '{{ item.opt_net_subnet_from_name_01 | default(omit) }}'
-    gateway: '{{ item.opt_net_subnet_gateway_01 | default(omit) }}'
-    ip_ranges: '{{ item.opt_net_subnet_ip_ranges_01 | default(omit) }}'
-    ipspace: '{{ item.opt_net_subnet_ipspace_01 | default(omit) }}'
-    state: '{{ item.opt_net_subnet_state_01 | default(omit) }}'
+    validate_certs: "{{ validate_certs | default(false) }}"
+    http_port: "{{ opt_lun_map_http_port_01 | default(omit) }}"
+    ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
+    use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
+    name: 'item.{{ req_net_subnet_name_01 }}'
+    broadcast_domain: 'item.{{ opt_net_subnet_broadcast_domain_01 | default(omit) }}'
+    feature_flags: 'item.{{ opt_net_subnet_feature_flags_01 | default(omit) }}'
+    from_name: 'item.{{ opt_net_subnet_from_name_01 | default(omit) }}'
+    gateway: 'item.{{ opt_net_subnet_gateway_01 | default(omit) }}'
+    ip_ranges: 'item.{{ opt_net_subnet_ip_ranges_01 | default(omit) }}'
+    ipspace: 'item.{{ opt_net_subnet_ipspace_01 | default(omit) }}'
+    state: 'item.{{ opt_net_subnet_state_01 | default(omit) }}'
+    subnet: 'item.{{ opt_net_subnet_subnet_01 | default(omit) }}'
   register: results

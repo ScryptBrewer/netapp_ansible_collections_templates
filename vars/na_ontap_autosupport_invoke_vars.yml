@@ -1,14 +1,25 @@
 
+    #vars:
 # Section: na_ontap_autosupport_invoke:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    feature_flags: '{{ opt_autosupport_invoke_feature_flags_01 | default(omit) }}'
-    message: '{{ opt_autosupport_invoke_message_01 | default(omit) }}'
-    name: '{{ opt_autosupport_invoke_name_01 | default(omit) }}'
-    type: '{{ opt_autosupport_invoke_type_01 | default(omit) }}'
-    uri: '{{ opt_autosupport_invoke_uri_01 | default(omit) }}'
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_autosupport_invoke_hostname_01: ' '
+    #opt_autosupport_invoke_autosupport_message_01: ' '
+    #opt_autosupport_invoke_cert_filepath_01: ' '
+    #opt_autosupport_invoke_feature_flags_01: ' '
+    #opt_autosupport_invoke_http_port_01: ' '
+    #opt_autosupport_invoke_https_01: ' '
+    #opt_autosupport_invoke_key_filepath_01: ' '
+    #opt_autosupport_invoke_name_01: ' '
+    #opt_autosupport_invoke_ontapi_01: ' '
+    #opt_autosupport_invoke_password_01: ' '
+    #opt_autosupport_invoke_type_01: ' '
+    #opt_autosupport_invoke_uri_01: ' '
+    #opt_autosupport_invoke_use_rest_01: ' '
+    #opt_autosupport_invoke_username_01: ' '
+    #opt_autosupport_invoke_validate_certs_01: ' '
   

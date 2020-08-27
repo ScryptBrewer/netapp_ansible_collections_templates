@@ -1,13 +1,24 @@
 
+    #vars:
 # Section: na_ontap_ipspace:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    name: '{{ req_ipspace_name_01 }}'
-    feature_flags: '{{ opt_ipspace_feature_flags_01 | default(omit) }}'
-    from_name: '{{ opt_ipspace_from_name_01 | default(omit) }}'
-    state: '{{ opt_ipspace_state_01 | default(omit) }}'
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_ipspace_hostname_01: ' '
+    req_ipspace_name_01: ' '
+    #opt_ipspace_cert_filepath_01: ' '
+    #opt_ipspace_feature_flags_01: ' '
+    #opt_ipspace_from_name_01: ' '
+    #opt_ipspace_http_port_01: ' '
+    #opt_ipspace_https_01: ' '
+    #opt_ipspace_key_filepath_01: ' '
+    #opt_ipspace_ontapi_01: ' '
+    #opt_ipspace_password_01: ' '
+    #opt_ipspace_state_01: ' '
+    #opt_ipspace_use_rest_01: ' '
+    #opt_ipspace_username_01: ' '
+    #opt_ipspace_validate_certs_01: ' '
   

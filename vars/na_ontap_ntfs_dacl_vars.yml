@@ -1,19 +1,29 @@
 
+    #vars:
 # Section: na_ontap_ntfs_dacl:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    access_type: '{{ req_ntfs_dacl_access_type_01 }}'
-    account: '{{ req_ntfs_dacl_account_01 }}'
-    security_descriptor: '{{ req_ntfs_dacl_security_descriptor_01 }}'
-    vserver: '{{ req_ntfs_dacl_vserver_01 }}'
-    advanced_access_rights: '{{ opt_ntfs_dacl_advanced_access_rights_01 | default(omit) }}'
-    apply_to: '{{ opt_ntfs_dacl_apply_to_01 | default(omit) }}'
-    feature_flags: '{{ opt_ntfs_dacl_feature_flags_01 | default(omit) }}'
-    name: '{{ opt_ntfs_dacl_name_01 | default(omit) }}'
-    rights: '{{ opt_ntfs_dacl_rights_01 | default(omit) }}'
-    state: '{{ opt_ntfs_dacl_state_01 | default(omit) }}'
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_ntfs_dacl_access_type_01: ' '
+    req_ntfs_dacl_account_01: ' '
+    req_ntfs_dacl_hostname_01: ' '
+    req_ntfs_dacl_security_descriptor_01: ' '
+    req_ntfs_dacl_vserver_01: ' '
+    #opt_ntfs_dacl_advanced_access_rights_01: ' '
+    #opt_ntfs_dacl_apply_to_01: ' '
+    #opt_ntfs_dacl_cert_filepath_01: ' '
+    #opt_ntfs_dacl_feature_flags_01: ' '
+    #opt_ntfs_dacl_http_port_01: ' '
+    #opt_ntfs_dacl_https_01: ' '
+    #opt_ntfs_dacl_key_filepath_01: ' '
+    #opt_ntfs_dacl_ontapi_01: ' '
+    #opt_ntfs_dacl_password_01: ' '
+    #opt_ntfs_dacl_rights_01: ' '
+    #opt_ntfs_dacl_state_01: ' '
+    #opt_ntfs_dacl_use_rest_01: ' '
+    #opt_ntfs_dacl_username_01: ' '
+    #opt_ntfs_dacl_validate_certs_01: ' '
   

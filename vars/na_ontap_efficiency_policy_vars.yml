@@ -1,21 +1,31 @@
 
+    #vars:
 # Section: na_ontap_efficiency_policy:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    policy_name: '{{ req_efficiency_policy_policy_name_01 }}'
-    vserver: '{{ req_efficiency_policy_vserver_01 }}'
-    changelog_threshold_percent: '{{ opt_efficiency_policy_changelog_threshold_percent_01 | default(omit) }}'
-    comment: '{{ opt_efficiency_policy_comment_01 | default(omit) }}'
-    duration: '{{ opt_efficiency_policy_duration_01 | default(omit) }}'
-    enabled: '{{ opt_efficiency_policy_enabled_01 | default(omit) }}'
-    feature_flags: '{{ opt_efficiency_policy_feature_flags_01 | default(omit) }}'
-    name: '{{ opt_efficiency_policy_name_01 | default(omit) }}'
-    policy_type: '{{ opt_efficiency_policy_policy_type_01 | default(omit) }}'
-    qos_policy: '{{ opt_efficiency_policy_qos_policy_01 | default(omit) }}'
-    schedule: '{{ opt_efficiency_policy_schedule_01 | default(omit) }}'
-    state: '{{ opt_efficiency_policy_state_01 | default(omit) }}'
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_efficiency_policy_hostname_01: ' '
+    req_efficiency_policy_policy_name_01: ' '
+    req_efficiency_policy_vserver_01: ' '
+    #opt_efficiency_policy_cert_filepath_01: ' '
+    #opt_efficiency_policy_changelog_threshold_percent_01: ' '
+    #opt_efficiency_policy_comment_01: ' '
+    #opt_efficiency_policy_duration_01: ' '
+    #opt_efficiency_policy_enabled_01: ' '
+    #opt_efficiency_policy_feature_flags_01: ' '
+    #opt_efficiency_policy_http_port_01: ' '
+    #opt_efficiency_policy_https_01: ' '
+    #opt_efficiency_policy_key_filepath_01: ' '
+    #opt_efficiency_policy_ontapi_01: ' '
+    #opt_efficiency_policy_password_01: ' '
+    #opt_efficiency_policy_policy_type_01: ' '
+    #opt_efficiency_policy_qos_policy_01: ' '
+    #opt_efficiency_policy_schedule_01: ' '
+    #opt_efficiency_policy_state_01: ' '
+    #opt_efficiency_policy_use_rest_01: ' '
+    #opt_efficiency_policy_username_01: ' '
+    #opt_efficiency_policy_validate_certs_01: ' '
   

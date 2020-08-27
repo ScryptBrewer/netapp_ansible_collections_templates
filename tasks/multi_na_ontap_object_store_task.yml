@@ -1,18 +1,23 @@
 ---
-- name: Running command na_ontap_object_store
-  na_ontap_object_store:
+- name: Running command na_ontap_zapit
+  na_ontap_zapit:
     hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
+    username: "{{ netapp_username | default(omit }}"
+    password: "{{ netapp_password | default(omit) }}"
+    cert_filepath: "{{ netapp_cert_filepath | default(omit) }}"
+    key_filepath: "{{ netapp_key_filepath | default(omit) }}"
+    https: "{{ netapp_https | default(true) }}"
     port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    name: '{{ item.req_object_store_name_01 }}'
-    access_key: '{{ item.opt_object_store_access_key_01 | default(omit) }}'
-    container: '{{ item.opt_object_store_container_01 | default(omit) }}'
-    feature_flags: '{{ item.opt_object_store_feature_flags_01 | default(omit) }}'
-    provider_type: '{{ item.opt_object_store_provider_type_01 | default(omit) }}'
-    secret_password: '{{ item.opt_object_store_secret_password_01 | default(omit) }}'
-    server: '{{ item.opt_object_store_server_01 | default(omit) }}'
-    state: '{{ item.opt_object_store_state_01 | default(omit) }}'
+    validate_certs: "{{ validate_certs | default(false) }}"
+    http_port: "{{ opt_lun_map_http_port_01 | default(omit) }}"
+    ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
+    use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
+    name: 'item.{{ req_object_store_name_01 }}'
+    access_key: 'item.{{ opt_object_store_access_key_01 | default(omit) }}'
+    container: 'item.{{ opt_object_store_container_01 | default(omit) }}'
+    feature_flags: 'item.{{ opt_object_store_feature_flags_01 | default(omit) }}'
+    provider_type: 'item.{{ opt_object_store_provider_type_01 | default(omit) }}'
+    secret_password: 'item.{{ opt_object_store_secret_password_01 | default(omit) }}'
+    server: 'item.{{ opt_object_store_server_01 | default(omit) }}'
+    state: 'item.{{ opt_object_store_state_01 | default(omit) }}'
   register: results

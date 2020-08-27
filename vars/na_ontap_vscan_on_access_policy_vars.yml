@@ -1,21 +1,32 @@
 
+    #vars:
 # Section: na_ontap_vscan_on_access_policy:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    policy_name: '{{ req_vscan_on_access_policy_policy_name_01 }}'
-    vserver: '{{ req_vscan_on_access_policy_vserver_01 }}'
-    feature_flags: '{{ opt_vscan_on_access_policy_feature_flags_01 | default(omit) }}'
-    file_ext_to_exclude: '{{ opt_vscan_on_access_policy_file_ext_to_exclude_01 | default(omit) }}'
-    file_ext_to_include: '{{ opt_vscan_on_access_policy_file_ext_to_include_01 | default(omit) }}'
-    filters: '{{ opt_vscan_on_access_policy_filters_01 | default(omit) }}'
-    is_scan_mandatory: '{{ opt_vscan_on_access_policy_is_scan_mandatory_01 | default(omit) }}'
-    max_file_size: '{{ opt_vscan_on_access_policy_max_file_size_01 | default(omit) }}'
-    name: '{{ opt_vscan_on_access_policy_name_01 | default(omit) }}'
-    paths_to_exclude: '{{ opt_vscan_on_access_policy_paths_to_exclude_01 | default(omit) }}'
-    scan_files_with_no_ext: '{{ opt_vscan_on_access_policy_scan_files_with_no_ext_01 | default(omit) }}'
-    state: '{{ opt_vscan_on_access_policy_state_01 | default(omit) }}'
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_vscan_on_access_policy_hostname_01: ' '
+    req_vscan_on_access_policy_policy_name_01: ' '
+    req_vscan_on_access_policy_vserver_01: ' '
+    #opt_vscan_on_access_policy_cert_filepath_01: ' '
+    #opt_vscan_on_access_policy_feature_flags_01: ' '
+    #opt_vscan_on_access_policy_file_ext_to_exclude_01: ' '
+    #opt_vscan_on_access_policy_file_ext_to_include_01: ' '
+    #opt_vscan_on_access_policy_filters_01: ' '
+    #opt_vscan_on_access_policy_http_port_01: ' '
+    #opt_vscan_on_access_policy_https_01: ' '
+    #opt_vscan_on_access_policy_is_scan_mandatory_01: ' '
+    #opt_vscan_on_access_policy_key_filepath_01: ' '
+    #opt_vscan_on_access_policy_max_file_size_01: ' '
+    #opt_vscan_on_access_policy_ontapi_01: ' '
+    #opt_vscan_on_access_policy_password_01: ' '
+    #opt_vscan_on_access_policy_paths_to_exclude_01: ' '
+    #opt_vscan_on_access_policy_policy_status_01: ' '
+    #opt_vscan_on_access_policy_scan_files_with_no_ext_01: ' '
+    #opt_vscan_on_access_policy_state_01: ' '
+    #opt_vscan_on_access_policy_use_rest_01: ' '
+    #opt_vscan_on_access_policy_username_01: ' '
+    #opt_vscan_on_access_policy_validate_certs_01: ' '
   

@@ -1,23 +1,34 @@
 
+    #vars:
 # Section: na_ontap_volume_clone:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    name: '{{ req_volume_clone_name_01 }}'
-    parent_volume: '{{ req_volume_clone_parent_volume_01 }}'
-    vserver: '{{ req_volume_clone_vserver_01 }}'
-    feature_flags: '{{ opt_volume_clone_feature_flags_01 | default(omit) }}'
-    gid: '{{ opt_volume_clone_gid_01 | default(omit) }}'
-    junction_path: '{{ opt_volume_clone_junction_path_01 | default(omit) }}'
-    parent_snapshot: '{{ opt_volume_clone_parent_snapshot_01 | default(omit) }}'
-    parent_vserver: '{{ opt_volume_clone_parent_vserver_01 | default(omit) }}'
-    qos_policy_group_name: '{{ opt_volume_clone_qos_policy_group_name_01 | default(omit) }}'
-    space_reserve: '{{ opt_volume_clone_space_reserve_01 | default(omit) }}'
-    split: '{{ opt_volume_clone_split_01 | default(omit) }}'
-    state: '{{ opt_volume_clone_state_01 | default(omit) }}'
-    uid: '{{ opt_volume_clone_uid_01 | default(omit) }}'
-    volume_type: '{{ opt_volume_clone_volume_type_01 | default(omit) }}'
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_volume_clone_hostname_01: ' '
+    req_volume_clone_name_01: ' '
+    req_volume_clone_parent_volume_01: ' '
+    req_volume_clone_vserver_01: ' '
+    #opt_volume_clone_cert_filepath_01: ' '
+    #opt_volume_clone_feature_flags_01: ' '
+    #opt_volume_clone_gid_01: ' '
+    #opt_volume_clone_http_port_01: ' '
+    #opt_volume_clone_https_01: ' '
+    #opt_volume_clone_junction_path_01: ' '
+    #opt_volume_clone_key_filepath_01: ' '
+    #opt_volume_clone_ontapi_01: ' '
+    #opt_volume_clone_parent_snapshot_01: ' '
+    #opt_volume_clone_parent_vserver_01: ' '
+    #opt_volume_clone_password_01: ' '
+    #opt_volume_clone_qos_policy_group_name_01: ' '
+    #opt_volume_clone_space_reserve_01: ' '
+    #opt_volume_clone_split_01: ' '
+    #opt_volume_clone_state_01: ' '
+    #opt_volume_clone_uid_01: ' '
+    #opt_volume_clone_use_rest_01: ' '
+    #opt_volume_clone_username_01: ' '
+    #opt_volume_clone_validate_certs_01: ' '
+    #opt_volume_clone_volume_type_01: ' '
   

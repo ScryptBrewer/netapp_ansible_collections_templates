@@ -1,16 +1,27 @@
 
+    #vars:
 # Section: na_ontap_broadcast_domain:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    name: '{{ req_broadcast_domain_name_01 }}'
-    feature_flags: '{{ opt_broadcast_domain_feature_flags_01 | default(omit) }}'
-    from_name: '{{ opt_broadcast_domain_from_name_01 | default(omit) }}'
-    ipspace: '{{ opt_broadcast_domain_ipspace_01 | default(omit) }}'
-    mtu: '{{ opt_broadcast_domain_mtu_01 | default(omit) }}'
-    ports: '{{ opt_broadcast_domain_ports_01 | default(omit) }}'
-    state: '{{ opt_broadcast_domain_state_01 | default(omit) }}'
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_broadcast_domain_hostname_01: ' '
+    req_broadcast_domain_name_01: ' '
+    #opt_broadcast_domain_cert_filepath_01: ' '
+    #opt_broadcast_domain_feature_flags_01: ' '
+    #opt_broadcast_domain_from_name_01: ' '
+    #opt_broadcast_domain_http_port_01: ' '
+    #opt_broadcast_domain_https_01: ' '
+    #opt_broadcast_domain_ipspace_01: ' '
+    #opt_broadcast_domain_key_filepath_01: ' '
+    #opt_broadcast_domain_mtu_01: ' '
+    #opt_broadcast_domain_ontapi_01: ' '
+    #opt_broadcast_domain_password_01: ' '
+    #opt_broadcast_domain_ports_01: ' '
+    #opt_broadcast_domain_state_01: ' '
+    #opt_broadcast_domain_use_rest_01: ' '
+    #opt_broadcast_domain_username_01: ' '
+    #opt_broadcast_domain_validate_certs_01: ' '
   

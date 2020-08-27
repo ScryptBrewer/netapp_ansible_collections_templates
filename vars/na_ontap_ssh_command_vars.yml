@@ -1,0 +1,27 @@
+
+    #vars:
+# Section: na_ontap_ssh_command:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_ssh_command_command_01: ' '
+    req_ssh_command_hostname_01: ' '
+    #opt_ssh_command_accept_unknown_host_keys_01: ' '
+    #opt_ssh_command_cert_filepath_01: ' '
+    #opt_ssh_command_exclude_lines_01: ' '
+    #opt_ssh_command_feature_flags_01: ' '
+    #opt_ssh_command_http_port_01: ' '
+    #opt_ssh_command_https_01: ' '
+    #opt_ssh_command_include_lines_01: ' '
+    #opt_ssh_command_key_filepath_01: ' '
+    #opt_ssh_command_ontapi_01: ' '
+    #opt_ssh_command_password_01: ' '
+    #opt_ssh_command_privilege_01: ' '
+    #opt_ssh_command_service_processor_01: ' '
+    #opt_ssh_command_use_rest_01: ' '
+    #opt_ssh_command_username_01: ' '
+    #opt_ssh_command_validate_certs_01: ' '
+  

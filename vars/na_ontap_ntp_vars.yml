@@ -1,14 +1,24 @@
 
+    #vars:
 # Section: na_ontap_ntp:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    server_name: '{{ req_ntp_server_name_01 }}'
-    feature_flags: '{{ opt_ntp_feature_flags_01 | default(omit) }}'
-    name: '{{ opt_ntp_name_01 | default(omit) }}'
-    state: '{{ opt_ntp_state_01 | default(omit) }}'
-    version: '{{ opt_ntp_version_01 | default(omit) }}'
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_ntp_hostname_01: ' '
+    req_ntp_server_name_01: ' '
+    #opt_ntp_cert_filepath_01: ' '
+    #opt_ntp_feature_flags_01: ' '
+    #opt_ntp_http_port_01: ' '
+    #opt_ntp_https_01: ' '
+    #opt_ntp_key_filepath_01: ' '
+    #opt_ntp_ontapi_01: ' '
+    #opt_ntp_password_01: ' '
+    #opt_ntp_state_01: ' '
+    #opt_ntp_use_rest_01: ' '
+    #opt_ntp_username_01: ' '
+    #opt_ntp_validate_certs_01: ' '
+    #opt_ntp_version_01: ' '
   

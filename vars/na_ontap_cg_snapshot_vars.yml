@@ -1,17 +1,27 @@
 
+    #vars:
 # Section: na_ontap_cg_snapshot:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    snapshot: '{{ req_cg_snapshot_snapshot_01 }}'
-    volumes: '{{ req_cg_snapshot_volumes_01 }}'
-    vserver: '{{ req_cg_snapshot_vserver_01 }}'
-    feature_flags: '{{ opt_cg_snapshot_feature_flags_01 | default(omit) }}'
-    name: '{{ opt_cg_snapshot_name_01 | default(omit) }}'
-    snapmirror_label: '{{ opt_cg_snapshot_snapmirror_label_01 | default(omit) }}'
-    state: '{{ opt_cg_snapshot_state_01 | default(omit) }}'
-    timeout: '{{ opt_cg_snapshot_timeout_01 | default(omit) }}'
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_cg_snapshot_hostname_01: ' '
+    req_cg_snapshot_snapshot_01: ' '
+    req_cg_snapshot_volumes_01: ' '
+    req_cg_snapshot_vserver_01: ' '
+    #opt_cg_snapshot_cert_filepath_01: ' '
+    #opt_cg_snapshot_feature_flags_01: ' '
+    #opt_cg_snapshot_http_port_01: ' '
+    #opt_cg_snapshot_https_01: ' '
+    #opt_cg_snapshot_key_filepath_01: ' '
+    #opt_cg_snapshot_ontapi_01: ' '
+    #opt_cg_snapshot_password_01: ' '
+    #opt_cg_snapshot_snapmirror_label_01: ' '
+    #opt_cg_snapshot_state_01: ' '
+    #opt_cg_snapshot_timeout_01: ' '
+    #opt_cg_snapshot_use_rest_01: ' '
+    #opt_cg_snapshot_username_01: ' '
+    #opt_cg_snapshot_validate_certs_01: ' '
   

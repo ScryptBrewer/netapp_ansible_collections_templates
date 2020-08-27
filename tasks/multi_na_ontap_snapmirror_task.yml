@@ -1,32 +1,37 @@
 ---
-- name: Running command na_ontap_snapmirror
-  na_ontap_snapmirror:
+- name: Running command na_ontap_zapit
+  na_ontap_zapit:
     hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
+    username: "{{ netapp_username | default(omit }}"
+    password: "{{ netapp_password | default(omit) }}"
+    cert_filepath: "{{ netapp_cert_filepath | default(omit) }}"
+    key_filepath: "{{ netapp_key_filepath | default(omit) }}"
+    https: "{{ netapp_https | default(true) }}"
     port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    connection_type: '{{ item.opt_snapmirror_connection_type_01 | default(omit) }}'
-    destination_path: '{{ item.opt_snapmirror_destination_path_01 | default(omit) }}'
-    destination_volume: '{{ item.opt_snapmirror_destination_volume_01 | default(omit) }}'
-    destination_vserver: '{{ item.opt_snapmirror_destination_vserver_01 | default(omit) }}'
-    feature_flags: '{{ item.opt_snapmirror_feature_flags_01 | default(omit) }}'
-    identity_preserve: '{{ item.opt_snapmirror_identity_preserve_01 | default(omit) }}'
-    initialize: '{{ item.opt_snapmirror_initialize_01 | default(omit) }}'
-    max_transfer_rate: '{{ item.opt_snapmirror_max_transfer_rate_01 | default(omit) }}'
-    policy: '{{ item.opt_snapmirror_policy_01 | default(omit) }}'
-    relationship_info_only: '{{ item.opt_snapmirror_relationship_info_only_01 | default(omit) }}'
-    relationship_state: '{{ item.opt_snapmirror_relationship_state_01 | default(omit) }}'
-    relationship_type: '{{ item.opt_snapmirror_relationship_type_01 | default(omit) }}'
-    schedule: '{{ item.opt_snapmirror_schedule_01 | default(omit) }}'
-    source_hostname: '{{ item.opt_snapmirror_source_hostname_01 | default(omit) }}'
-    source_password: '{{ item.opt_snapmirror_source_password_01 | default(omit) }}'
-    source_path: '{{ item.opt_snapmirror_source_path_01 | default(omit) }}'
-    source_snapshot: '{{ item.opt_snapmirror_source_snapshot_01 | default(omit) }}'
-    source_username: '{{ item.opt_snapmirror_source_username_01 | default(omit) }}'
-    source_volume: '{{ item.opt_snapmirror_source_volume_01 | default(omit) }}'
-    source_vserver: '{{ item.opt_snapmirror_source_vserver_01 | default(omit) }}'
-    state: '{{ item.opt_snapmirror_state_01 | default(omit) }}'
-    update: '{{ item.opt_snapmirror_update_01 | default(omit) }}'
+    validate_certs: "{{ validate_certs | default(false) }}"
+    http_port: "{{ opt_lun_map_http_port_01 | default(omit) }}"
+    ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
+    use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
+    connection_type: 'item.{{ opt_snapmirror_connection_type_01 | default(omit) }}'
+    destination_path: 'item.{{ opt_snapmirror_destination_path_01 | default(omit) }}'
+    destination_volume: 'item.{{ opt_snapmirror_destination_volume_01 | default(omit) }}'
+    destination_vserver: 'item.{{ opt_snapmirror_destination_vserver_01 | default(omit) }}'
+    feature_flags: 'item.{{ opt_snapmirror_feature_flags_01 | default(omit) }}'
+    identity_preserve: 'item.{{ opt_snapmirror_identity_preserve_01 | default(omit) }}'
+    initialize: 'item.{{ opt_snapmirror_initialize_01 | default(omit) }}'
+    max_transfer_rate: 'item.{{ opt_snapmirror_max_transfer_rate_01 | default(omit) }}'
+    policy: 'item.{{ opt_snapmirror_policy_01 | default(omit) }}'
+    relationship_info_only: 'item.{{ opt_snapmirror_relationship_info_only_01 | default(omit) }}'
+    relationship_state: 'item.{{ opt_snapmirror_relationship_state_01 | default(omit) }}'
+    relationship_type: 'item.{{ opt_snapmirror_relationship_type_01 | default(omit) }}'
+    schedule: 'item.{{ opt_snapmirror_schedule_01 | default(omit) }}'
+    source_hostname: 'item.{{ opt_snapmirror_source_hostname_01 | default(omit) }}'
+    source_password: 'item.{{ opt_snapmirror_source_password_01 | default(omit) }}'
+    source_path: 'item.{{ opt_snapmirror_source_path_01 | default(omit) }}'
+    source_snapshot: 'item.{{ opt_snapmirror_source_snapshot_01 | default(omit) }}'
+    source_username: 'item.{{ opt_snapmirror_source_username_01 | default(omit) }}'
+    source_volume: 'item.{{ opt_snapmirror_source_volume_01 | default(omit) }}'
+    source_vserver: 'item.{{ opt_snapmirror_source_vserver_01 | default(omit) }}'
+    state: 'item.{{ opt_snapmirror_state_01 | default(omit) }}'
+    update: 'item.{{ opt_snapmirror_update_01 | default(omit) }}'
   register: results

@@ -1,21 +1,32 @@
 
+    #vars:
 # Section: na_ontap_export_policy_rule:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    name: '{{ req_export_policy_rule_name_01 }}'
-    vserver: '{{ req_export_policy_rule_vserver_01 }}'
-    allow_suid: '{{ opt_export_policy_rule_allow_suid_01 | default(omit) }}'
-    anonymous_user_id: '{{ opt_export_policy_rule_anonymous_user_id_01 | default(omit) }}'
-    client_match: '{{ opt_export_policy_rule_client_match_01 | default(omit) }}'
-    feature_flags: '{{ opt_export_policy_rule_feature_flags_01 | default(omit) }}'
-    protocol: '{{ opt_export_policy_rule_protocol_01 | default(omit) }}'
-    ro_rule: '{{ opt_export_policy_rule_ro_rule_01 | default(omit) }}'
-    rule_index: '{{ opt_export_policy_rule_rule_index_01 | default(omit) }}'
-    rw_rule: '{{ opt_export_policy_rule_rw_rule_01 | default(omit) }}'
-    state: '{{ opt_export_policy_rule_state_01 | default(omit) }}'
-    super_user_security: '{{ opt_export_policy_rule_super_user_security_01 | default(omit) }}'
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_export_policy_rule_hostname_01: ' '
+    req_export_policy_rule_name_01: ' '
+    req_export_policy_rule_vserver_01: ' '
+    #opt_export_policy_rule_allow_suid_01: ' '
+    #opt_export_policy_rule_anonymous_user_id_01: ' '
+    #opt_export_policy_rule_cert_filepath_01: ' '
+    #opt_export_policy_rule_client_match_01: ' '
+    #opt_export_policy_rule_feature_flags_01: ' '
+    #opt_export_policy_rule_http_port_01: ' '
+    #opt_export_policy_rule_https_01: ' '
+    #opt_export_policy_rule_key_filepath_01: ' '
+    #opt_export_policy_rule_ontapi_01: ' '
+    #opt_export_policy_rule_password_01: ' '
+    #opt_export_policy_rule_protocol_01: ' '
+    #opt_export_policy_rule_ro_rule_01: ' '
+    #opt_export_policy_rule_rule_index_01: ' '
+    #opt_export_policy_rule_rw_rule_01: ' '
+    #opt_export_policy_rule_state_01: ' '
+    #opt_export_policy_rule_super_user_security_01: ' '
+    #opt_export_policy_rule_use_rest_01: ' '
+    #opt_export_policy_rule_username_01: ' '
+    #opt_export_policy_rule_validate_certs_01: ' '
   

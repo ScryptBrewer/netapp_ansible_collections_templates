@@ -2,11 +2,16 @@
 - name: Running command na_ontap_cluster_peer
   na_ontap_cluster_peer:
     hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
+    username: "{{ netapp_username | default(omit }}"
+    password: "{{ netapp_password | default(omit) }}"
+    cert_filepath: "{{ netapp_cert_filepath | default(omit) }}"
+    key_filepath: "{{ netapp_key_filepath | default(omit) }}"
+    https: "{{ netapp_https | default(true) }}"
     port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
+    validate_certs: "{{ validate_certs | default(false) }}"
+    http_port: "{{ opt_lun_map_http_port_01 | default(omit) }}"
+    ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
+    use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
     dest_hostname: '{{ req_cluster_peer_dest_hostname_01 }}'
     dest_cluster_name: '{{ opt_cluster_peer_dest_cluster_name_01 | default(omit) }}'
     dest_intercluster_lifs: '{{ opt_cluster_peer_dest_intercluster_lifs_01 | default(omit) }}'
@@ -14,7 +19,6 @@
     dest_username: '{{ opt_cluster_peer_dest_username_01 | default(omit) }}'
     encryption_protocol_proposed: '{{ opt_cluster_peer_encryption_protocol_proposed_01 | default(omit) }}'
     feature_flags: '{{ opt_cluster_peer_feature_flags_01 | default(omit) }}'
-    name: '{{ opt_cluster_peer_name_01 | default(omit) }}'
     passphrase: '{{ opt_cluster_peer_passphrase_01 | default(omit) }}'
     source_cluster_name: '{{ opt_cluster_peer_source_cluster_name_01 | default(omit) }}'
     source_intercluster_lifs: '{{ opt_cluster_peer_source_intercluster_lifs_01 | default(omit) }}'

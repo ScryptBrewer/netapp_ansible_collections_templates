@@ -1,20 +1,30 @@
 
+    #vars:
 # Section: na_ontap_volume_autosize:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    volume: '{{ req_volume_autosize_volume_01 }}'
-    vserver: '{{ req_volume_autosize_vserver_01 }}'
-    feature_flags: '{{ opt_volume_autosize_feature_flags_01 | default(omit) }}'
-    grow_threshold_percent: '{{ opt_volume_autosize_grow_threshold_percent_01 | default(omit) }}'
-    increment_size: '{{ opt_volume_autosize_increment_size_01 | default(omit) }}'
-    maximum_size: '{{ opt_volume_autosize_maximum_size_01 | default(omit) }}'
-    minimum_size: '{{ opt_volume_autosize_minimum_size_01 | default(omit) }}'
-    mode: '{{ opt_volume_autosize_mode_01 | default(omit) }}'
-    name: '{{ opt_volume_autosize_name_01 | default(omit) }}'
-    reset: '{{ opt_volume_autosize_reset_01 | default(omit) }}'
-    shrink_threshold_percent: '{{ opt_volume_autosize_shrink_threshold_percent_01 | default(omit) }}'
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_volume_autosize_hostname_01: ' '
+    req_volume_autosize_volume_01: ' '
+    req_volume_autosize_vserver_01: ' '
+    #opt_volume_autosize_cert_filepath_01: ' '
+    #opt_volume_autosize_feature_flags_01: ' '
+    #opt_volume_autosize_grow_threshold_percent_01: ' '
+    #opt_volume_autosize_http_port_01: ' '
+    #opt_volume_autosize_https_01: ' '
+    #opt_volume_autosize_increment_size_01: ' '
+    #opt_volume_autosize_key_filepath_01: ' '
+    #opt_volume_autosize_maximum_size_01: ' '
+    #opt_volume_autosize_minimum_size_01: ' '
+    #opt_volume_autosize_mode_01: ' '
+    #opt_volume_autosize_ontapi_01: ' '
+    #opt_volume_autosize_password_01: ' '
+    #opt_volume_autosize_reset_01: ' '
+    #opt_volume_autosize_shrink_threshold_percent_01: ' '
+    #opt_volume_autosize_use_rest_01: ' '
+    #opt_volume_autosize_username_01: ' '
+    #opt_volume_autosize_validate_certs_01: ' '
   

@@ -1,27 +1,31 @@
 ---
-- name: Running command na_ontap_firmware_upgrade
-  na_ontap_firmware_upgrade:
+- name: Running command na_ontap_zapit
+  na_ontap_zapit:
     hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
+    username: "{{ netapp_username | default(omit }}"
+    password: "{{ netapp_password | default(omit) }}"
+    cert_filepath: "{{ netapp_cert_filepath | default(omit) }}"
+    key_filepath: "{{ netapp_key_filepath | default(omit) }}"
+    https: "{{ netapp_https | default(true) }}"
     port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    clear_logs: '{{ item.opt_firmware_upgrade_clear_logs_01 | default(omit) }}'
-    disk_fw: '{{ item.opt_firmware_upgrade_disk_fw_01 | default(omit) }}'
-    fail_on_502_error: '{{ item.opt_firmware_upgrade_fail_on_502_error_01 | default(omit) }}'
-    feature_flags: '{{ item.opt_firmware_upgrade_feature_flags_01 | default(omit) }}'
-    firmware_type: '{{ item.opt_firmware_upgrade_firmware_type_01 | default(omit) }}'
-    force_disruptive_update: '{{ item.opt_firmware_upgrade_force_disruptive_update_01 | default(omit) }}'
-    install_baseline_image: '{{ item.opt_firmware_upgrade_install_baseline_image_01 | default(omit) }}'
-    name: '{{ item.opt_firmware_upgrade_name_01 | default(omit) }}'
-    node: '{{ item.opt_firmware_upgrade_node_01 | default(omit) }}'
-    package: '{{ item.opt_firmware_upgrade_package_01 | default(omit) }}'
-    package_url: '{{ item.opt_firmware_upgrade_package_url_01 | default(omit) }}'
-    reboot_sp: '{{ item.opt_firmware_upgrade_reboot_sp_01 | default(omit) }}'
-    rename_package: '{{ item.opt_firmware_upgrade_rename_package_01 | default(omit) }}'
-    replace_package: '{{ item.opt_firmware_upgrade_replace_package_01 | default(omit) }}'
-    shelf_module_fw: '{{ item.opt_firmware_upgrade_shelf_module_fw_01 | default(omit) }}'
-    state: '{{ item.opt_firmware_upgrade_state_01 | default(omit) }}'
-    update_type: '{{ item.opt_firmware_upgrade_update_type_01 | default(omit) }}'
+    validate_certs: "{{ validate_certs | default(false) }}"
+    http_port: "{{ opt_lun_map_http_port_01 | default(omit) }}"
+    ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
+    use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
+    clear_logs: 'item.{{ opt_firmware_upgrade_clear_logs_01 | default(omit) }}'
+    disk_fw: 'item.{{ opt_firmware_upgrade_disk_fw_01 | default(omit) }}'
+    fail_on_502_error: 'item.{{ opt_firmware_upgrade_fail_on_502_error_01 | default(omit) }}'
+    feature_flags: 'item.{{ opt_firmware_upgrade_feature_flags_01 | default(omit) }}'
+    firmware_type: 'item.{{ opt_firmware_upgrade_firmware_type_01 | default(omit) }}'
+    force_disruptive_update: 'item.{{ opt_firmware_upgrade_force_disruptive_update_01 | default(omit) }}'
+    install_baseline_image: 'item.{{ opt_firmware_upgrade_install_baseline_image_01 | default(omit) }}'
+    node: 'item.{{ opt_firmware_upgrade_node_01 | default(omit) }}'
+    package: 'item.{{ opt_firmware_upgrade_package_01 | default(omit) }}'
+    package_url: 'item.{{ opt_firmware_upgrade_package_url_01 | default(omit) }}'
+    reboot_sp: 'item.{{ opt_firmware_upgrade_reboot_sp_01 | default(omit) }}'
+    rename_package: 'item.{{ opt_firmware_upgrade_rename_package_01 | default(omit) }}'
+    replace_package: 'item.{{ opt_firmware_upgrade_replace_package_01 | default(omit) }}'
+    shelf_module_fw: 'item.{{ opt_firmware_upgrade_shelf_module_fw_01 | default(omit) }}'
+    state: 'item.{{ opt_firmware_upgrade_state_01 | default(omit) }}'
+    update_type: 'item.{{ opt_firmware_upgrade_update_type_01 | default(omit) }}'
   register: results

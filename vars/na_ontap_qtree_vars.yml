@@ -1,19 +1,31 @@
 
+    #vars:
 # Section: na_ontap_qtree:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    flexvol_name: '{{ req_qtree_flexvol_name_01 }}'
-    name: '{{ req_qtree_name_01 }}'
-    vserver: '{{ req_qtree_vserver_01 }}'
-    export_policy: '{{ opt_qtree_export_policy_01 | default(omit) }}'
-    feature_flags: '{{ opt_qtree_feature_flags_01 | default(omit) }}'
-    from_name: '{{ opt_qtree_from_name_01 | default(omit) }}'
-    oplocks: '{{ opt_qtree_oplocks_01 | default(omit) }}'
-    security_style: '{{ opt_qtree_security_style_01 | default(omit) }}'
-    state: '{{ opt_qtree_state_01 | default(omit) }}'
-    unix_permissions: '{{ opt_qtree_unix_permissions_01 | default(omit) }}'
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_qtree_hostname_01: ' '
+    req_qtree_name_01: ' '
+    req_qtree_vserver_01: ' '
+    #opt_qtree_cert_filepath_01: ' '
+    #opt_qtree_export_policy_01: ' '
+    #opt_qtree_feature_flags_01: ' '
+    #opt_qtree_flexvol_name_01: ' '
+    #opt_qtree_force_delete_01: ' '
+    #opt_qtree_from_name_01: ' '
+    #opt_qtree_http_port_01: ' '
+    #opt_qtree_https_01: ' '
+    #opt_qtree_key_filepath_01: ' '
+    #opt_qtree_ontapi_01: ' '
+    #opt_qtree_oplocks_01: ' '
+    #opt_qtree_password_01: ' '
+    #opt_qtree_security_style_01: ' '
+    #opt_qtree_state_01: ' '
+    #opt_qtree_unix_permissions_01: ' '
+    #opt_qtree_use_rest_01: ' '
+    #opt_qtree_username_01: ' '
+    #opt_qtree_validate_certs_01: ' '
   

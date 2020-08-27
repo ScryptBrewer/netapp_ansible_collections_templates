@@ -1,27 +1,37 @@
 
+    #vars:
 # Section: na_ontap_snapmirror_policy:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    policy_name: '{{ req_snapmirror_policy_policy_name_01 }}'
-    vserver: '{{ req_snapmirror_policy_vserver_01 }}'
-    comment: '{{ opt_snapmirror_policy_comment_01 | default(omit) }}'
-    common_snapshot_schedule: '{{ opt_snapmirror_policy_common_snapshot_schedule_01 | default(omit) }}'
-    feature_flags: '{{ opt_snapmirror_policy_feature_flags_01 | default(omit) }}'
-    ignore_atime: '{{ opt_snapmirror_policy_ignore_atime_01 | default(omit) }}'
-    is_network_compression_enabled: '{{ opt_snapmirror_policy_is_network_compression_enabled_01 | default(omit) }}'
-    keep: '{{ opt_snapmirror_policy_keep_01 | default(omit) }}'
-    name: '{{ opt_snapmirror_policy_name_01 | default(omit) }}'
-    owner: '{{ opt_snapmirror_policy_owner_01 | default(omit) }}'
-    policy_type: '{{ opt_snapmirror_policy_policy_type_01 | default(omit) }}'
-    prefix: '{{ opt_snapmirror_policy_prefix_01 | default(omit) }}'
-    restart: '{{ opt_snapmirror_policy_restart_01 | default(omit) }}'
-    schedule: '{{ opt_snapmirror_policy_schedule_01 | default(omit) }}'
-    snapmirror_label: '{{ opt_snapmirror_policy_snapmirror_label_01 | default(omit) }}'
-    state: '{{ opt_snapmirror_policy_state_01 | default(omit) }}'
-    transfer_priority: '{{ opt_snapmirror_policy_transfer_priority_01 | default(omit) }}'
-    tries: '{{ opt_snapmirror_policy_tries_01 | default(omit) }}'
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_snapmirror_policy_hostname_01: ' '
+    req_snapmirror_policy_policy_name_01: ' '
+    req_snapmirror_policy_vserver_01: ' '
+    #opt_snapmirror_policy_cert_filepath_01: ' '
+    #opt_snapmirror_policy_comment_01: ' '
+    #opt_snapmirror_policy_common_snapshot_schedule_01: ' '
+    #opt_snapmirror_policy_feature_flags_01: ' '
+    #opt_snapmirror_policy_http_port_01: ' '
+    #opt_snapmirror_policy_https_01: ' '
+    #opt_snapmirror_policy_ignore_atime_01: ' '
+    #opt_snapmirror_policy_is_network_compression_enabled_01: ' '
+    #opt_snapmirror_policy_keep_01: ' '
+    #opt_snapmirror_policy_key_filepath_01: ' '
+    #opt_snapmirror_policy_ontapi_01: ' '
+    #opt_snapmirror_policy_owner_01: ' '
+    #opt_snapmirror_policy_password_01: ' '
+    #opt_snapmirror_policy_policy_type_01: ' '
+    #opt_snapmirror_policy_prefix_01: ' '
+    #opt_snapmirror_policy_restart_01: ' '
+    #opt_snapmirror_policy_schedule_01: ' '
+    #opt_snapmirror_policy_snapmirror_label_01: ' '
+    #opt_snapmirror_policy_state_01: ' '
+    #opt_snapmirror_policy_transfer_priority_01: ' '
+    #opt_snapmirror_policy_tries_01: ' '
+    #opt_snapmirror_policy_use_rest_01: ' '
+    #opt_snapmirror_policy_username_01: ' '
+    #opt_snapmirror_policy_validate_certs_01: ' '
   

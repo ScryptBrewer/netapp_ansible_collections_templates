@@ -1,23 +1,34 @@
 
+    #vars:
 # Section: na_ontap_svm:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    name: '{{ req_svm_name_01 }}'
-    aggr_list: '{{ opt_svm_aggr_list_01 | default(omit) }}'
-    allowed_protocols: '{{ opt_svm_allowed_protocols_01 | default(omit) }}'
-    comment: '{{ opt_svm_comment_01 | default(omit) }}'
-    feature_flags: '{{ opt_svm_feature_flags_01 | default(omit) }}'
-    from_name: '{{ opt_svm_from_name_01 | default(omit) }}'
-    ipspace: '{{ opt_svm_ipspace_01 | default(omit) }}'
-    language: '{{ opt_svm_language_01 | default(omit) }}'
-    root_volume: '{{ opt_svm_root_volume_01 | default(omit) }}'
-    root_volume_aggregate: '{{ opt_svm_root_volume_aggregate_01 | default(omit) }}'
-    root_volume_security_style: '{{ opt_svm_root_volume_security_style_01 | default(omit) }}'
-    snapshot_policy: '{{ opt_svm_snapshot_policy_01 | default(omit) }}'
-    state: '{{ opt_svm_state_01 | default(omit) }}'
-    subtype: '{{ opt_svm_subtype_01 | default(omit) }}'
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_svm_hostname_01: ' '
+    req_svm_name_01: ' '
+    #opt_svm_aggr_list_01: ' '
+    #opt_svm_allowed_protocols_01: ' '
+    #opt_svm_cert_filepath_01: ' '
+    #opt_svm_comment_01: ' '
+    #opt_svm_feature_flags_01: ' '
+    #opt_svm_from_name_01: ' '
+    #opt_svm_http_port_01: ' '
+    #opt_svm_https_01: ' '
+    #opt_svm_ipspace_01: ' '
+    #opt_svm_key_filepath_01: ' '
+    #opt_svm_language_01: ' '
+    #opt_svm_ontapi_01: ' '
+    #opt_svm_password_01: ' '
+    #opt_svm_root_volume_01: ' '
+    #opt_svm_root_volume_aggregate_01: ' '
+    #opt_svm_root_volume_security_style_01: ' '
+    #opt_svm_snapshot_policy_01: ' '
+    #opt_svm_state_01: ' '
+    #opt_svm_subtype_01: ' '
+    #opt_svm_use_rest_01: ' '
+    #opt_svm_username_01: ' '
+    #opt_svm_validate_certs_01: ' '
   

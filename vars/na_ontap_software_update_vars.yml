@@ -1,18 +1,29 @@
 
+    #vars:
 # Section: na_ontap_software_update:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    package_url: '{{ req_software_update_package_url_01 }}'
-    package_version: '{{ req_software_update_package_version_01 }}'
-    download_only: '{{ opt_software_update_download_only_01 | default(omit) }}'
-    feature_flags: '{{ opt_software_update_feature_flags_01 | default(omit) }}'
-    ignore_validation_warning: '{{ opt_software_update_ignore_validation_warning_01 | default(omit) }}'
-    name: '{{ opt_software_update_name_01 | default(omit) }}'
-    nodes: '{{ opt_software_update_nodes_01 | default(omit) }}'
-    stabilize_minutes: '{{ opt_software_update_stabilize_minutes_01 | default(omit) }}'
-    state: '{{ opt_software_update_state_01 | default(omit) }}'
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_software_update_hostname_01: ' '
+    req_software_update_package_url_01: ' '
+    req_software_update_package_version_01: ' '
+    #opt_software_update_cert_filepath_01: ' '
+    #opt_software_update_download_only_01: ' '
+    #opt_software_update_feature_flags_01: ' '
+    #opt_software_update_http_port_01: ' '
+    #opt_software_update_https_01: ' '
+    #opt_software_update_ignore_validation_warning_01: ' '
+    #opt_software_update_key_filepath_01: ' '
+    #opt_software_update_nodes_01: ' '
+    #opt_software_update_ontapi_01: ' '
+    #opt_software_update_password_01: ' '
+    #opt_software_update_stabilize_minutes_01: ' '
+    #opt_software_update_state_01: ' '
+    #opt_software_update_timeout_01: ' '
+    #opt_software_update_use_rest_01: ' '
+    #opt_software_update_username_01: ' '
+    #opt_software_update_validate_certs_01: ' '
   

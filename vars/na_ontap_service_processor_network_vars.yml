@@ -1,21 +1,31 @@
 
+    #vars:
 # Section: na_ontap_service_processor_network:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    address_type: '{{ req_service_processor_network_address_type_01 }}'
-    is_enabled: '{{ req_service_processor_network_is_enabled_01 }}'
-    node: '{{ req_service_processor_network_node_01 }}'
-    dhcp: '{{ opt_service_processor_network_dhcp_01 | default(omit) }}'
-    feature_flags: '{{ opt_service_processor_network_feature_flags_01 | default(omit) }}'
-    gateway_ip_address: '{{ opt_service_processor_network_gateway_ip_address_01 | default(omit) }}'
-    ip_address: '{{ opt_service_processor_network_ip_address_01 | default(omit) }}'
-    name: '{{ opt_service_processor_network_name_01 | default(omit) }}'
-    netmask: '{{ opt_service_processor_network_netmask_01 | default(omit) }}'
-    prefix_length: '{{ opt_service_processor_network_prefix_length_01 | default(omit) }}'
-    state: '{{ opt_service_processor_network_state_01 | default(omit) }}'
-    wait_for_completion: '{{ opt_service_processor_network_wait_for_completion_01 | default(omit) }}'
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_service_processor_network_address_type_01: ' '
+    req_service_processor_network_hostname_01: ' '
+    req_service_processor_network_is_enabled_01: ' '
+    req_service_processor_network_node_01: ' '
+    #opt_service_processor_network_cert_filepath_01: ' '
+    #opt_service_processor_network_dhcp_01: ' '
+    #opt_service_processor_network_feature_flags_01: ' '
+    #opt_service_processor_network_gateway_ip_address_01: ' '
+    #opt_service_processor_network_http_port_01: ' '
+    #opt_service_processor_network_https_01: ' '
+    #opt_service_processor_network_ip_address_01: ' '
+    #opt_service_processor_network_key_filepath_01: ' '
+    #opt_service_processor_network_netmask_01: ' '
+    #opt_service_processor_network_ontapi_01: ' '
+    #opt_service_processor_network_password_01: ' '
+    #opt_service_processor_network_prefix_length_01: ' '
+    #opt_service_processor_network_state_01: ' '
+    #opt_service_processor_network_use_rest_01: ' '
+    #opt_service_processor_network_username_01: ' '
+    #opt_service_processor_network_validate_certs_01: ' '
+    #opt_service_processor_network_wait_for_completion_01: ' '
   

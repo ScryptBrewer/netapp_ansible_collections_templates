@@ -1,16 +1,27 @@
 
+    #vars:
 # Section: na_ontap_portset:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    name: '{{ req_portset_name_01 }}'
-    vserver: '{{ req_portset_vserver_01 }}'
-    feature_flags: '{{ opt_portset_feature_flags_01 | default(omit) }}'
-    force: '{{ opt_portset_force_01 | default(omit) }}'
-    ports: '{{ opt_portset_ports_01 | default(omit) }}'
-    state: '{{ opt_portset_state_01 | default(omit) }}'
-    type: '{{ opt_portset_type_01 | default(omit) }}'
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_portset_hostname_01: ' '
+    req_portset_name_01: ' '
+    req_portset_vserver_01: ' '
+    #opt_portset_cert_filepath_01: ' '
+    #opt_portset_feature_flags_01: ' '
+    #opt_portset_force_01: ' '
+    #opt_portset_http_port_01: ' '
+    #opt_portset_https_01: ' '
+    #opt_portset_key_filepath_01: ' '
+    #opt_portset_ontapi_01: ' '
+    #opt_portset_password_01: ' '
+    #opt_portset_ports_01: ' '
+    #opt_portset_state_01: ' '
+    #opt_portset_type_01: ' '
+    #opt_portset_use_rest_01: ' '
+    #opt_portset_username_01: ' '
+    #opt_portset_validate_certs_01: ' '
   

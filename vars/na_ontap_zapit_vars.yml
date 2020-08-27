@@ -1,12 +1,23 @@
 
+    #vars:
 # Section: na_ontap_zapit:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    zapi: '{{ req_zapit_zapi_01 }}'
-    feature_flags: '{{ opt_zapit_feature_flags_01 | default(omit) }}'
-    vserver: '{{ opt_zapit_vserver_01 | default(omit) }}'
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_zapit_hostname_01: ' '
+    req_zapit_zapi_01: ' '
+    #opt_zapit_cert_filepath_01: ' '
+    #opt_zapit_feature_flags_01: ' '
+    #opt_zapit_http_port_01: ' '
+    #opt_zapit_https_01: ' '
+    #opt_zapit_key_filepath_01: ' '
+    #opt_zapit_ontapi_01: ' '
+    #opt_zapit_password_01: ' '
+    #opt_zapit_use_rest_01: ' '
+    #opt_zapit_username_01: ' '
+    #opt_zapit_validate_certs_01: ' '
+    #opt_zapit_vserver_01: ' '
   

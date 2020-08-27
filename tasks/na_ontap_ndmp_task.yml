@@ -2,11 +2,16 @@
 - name: Running command na_ontap_ndmp
   na_ontap_ndmp:
     hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
+    username: "{{ netapp_username | default(omit }}"
+    password: "{{ netapp_password | default(omit) }}"
+    cert_filepath: "{{ netapp_cert_filepath | default(omit) }}"
+    key_filepath: "{{ netapp_key_filepath | default(omit) }}"
+    https: "{{ netapp_https | default(true) }}"
     port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
+    validate_certs: "{{ validate_certs | default(false) }}"
+    http_port: "{{ opt_lun_map_http_port_01 | default(omit) }}"
+    ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
+    use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
     vserver: '{{ req_ndmp_vserver_01 }}'
     abort_on_disk_error: '{{ opt_ndmp_abort_on_disk_error_01 | default(omit) }}'
     authtype: '{{ opt_ndmp_authtype_01 | default(omit) }}'
@@ -22,7 +27,6 @@
     fh_node_retry_interval: '{{ opt_ndmp_fh_node_retry_interval_01 | default(omit) }}'
     ignore_ctime_enabled: '{{ opt_ndmp_ignore_ctime_enabled_01 | default(omit) }}'
     is_secure_control_connection_enabled: '{{ opt_ndmp_is_secure_control_connection_enabled_01 | default(omit) }}'
-    name: '{{ opt_ndmp_name_01 | default(omit) }}'
     offset_map_enable: '{{ opt_ndmp_offset_map_enable_01 | default(omit) }}'
     per_qtree_exclude_enable: '{{ opt_ndmp_per_qtree_exclude_enable_01 | default(omit) }}'
     preferred_interface_role: '{{ opt_ndmp_preferred_interface_role_01 | default(omit) }}'

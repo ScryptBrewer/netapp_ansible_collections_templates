@@ -1,15 +1,25 @@
 
+    #vars:
 # Section: na_ontap_security_key_manager:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    ip_address: '{{ req_security_key_manager_ip_address_01 }}'
-    feature_flags: '{{ opt_security_key_manager_feature_flags_01 | default(omit) }}'
-    name: '{{ opt_security_key_manager_name_01 | default(omit) }}'
-    node: '{{ opt_security_key_manager_node_01 | default(omit) }}'
-    state: '{{ opt_security_key_manager_state_01 | default(omit) }}'
-    tcp_port: '{{ opt_security_key_manager_tcp_port_01 | default(omit) }}'
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_security_key_manager_hostname_01: ' '
+    req_security_key_manager_ip_address_01: ' '
+    #opt_security_key_manager_cert_filepath_01: ' '
+    #opt_security_key_manager_feature_flags_01: ' '
+    #opt_security_key_manager_http_port_01: ' '
+    #opt_security_key_manager_https_01: ' '
+    #opt_security_key_manager_key_filepath_01: ' '
+    #opt_security_key_manager_node_01: ' '
+    #opt_security_key_manager_ontapi_01: ' '
+    #opt_security_key_manager_password_01: ' '
+    #opt_security_key_manager_state_01: ' '
+    #opt_security_key_manager_tcp_port_01: ' '
+    #opt_security_key_manager_use_rest_01: ' '
+    #opt_security_key_manager_username_01: ' '
+    #opt_security_key_manager_validate_certs_01: ' '
   

@@ -1,19 +1,29 @@
 
+    #vars:
 # Section: na_ontap_net_routes:
-    hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username }}"
-    password: "{{ netapp_password }}"
-    https: "{{ netapp_https | default(omit) }}"
-    port: "{{ netapp_port | default(omit) }}"
-    #validate_certs: "{{ validate_certs }}"
-    destination: '{{ req_net_routes_destination_01 }}'
-    gateway: '{{ req_net_routes_gateway_01 }}'
-    vserver: '{{ req_net_routes_vserver_01 }}'
-    feature_flags: '{{ opt_net_routes_feature_flags_01 | default(omit) }}'
-    from_destination: '{{ opt_net_routes_from_destination_01 | default(omit) }}'
-    from_gateway: '{{ opt_net_routes_from_gateway_01 | default(omit) }}'
-    from_metric: '{{ opt_net_routes_from_metric_01 | default(omit) }}'
-    metric: '{{ opt_net_routes_metric_01 | default(omit) }}'
-    name: '{{ opt_net_routes_name_01 | default(omit) }}'
-    state: '{{ opt_net_routes_state_01 | default(omit) }}'
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_net_routes_destination_01: ' '
+    req_net_routes_gateway_01: ' '
+    req_net_routes_hostname_01: ' '
+    req_net_routes_vserver_01: ' '
+    #opt_net_routes_cert_filepath_01: ' '
+    #opt_net_routes_feature_flags_01: ' '
+    #opt_net_routes_from_destination_01: ' '
+    #opt_net_routes_from_gateway_01: ' '
+    #opt_net_routes_from_metric_01: ' '
+    #opt_net_routes_http_port_01: ' '
+    #opt_net_routes_https_01: ' '
+    #opt_net_routes_key_filepath_01: ' '
+    #opt_net_routes_metric_01: ' '
+    #opt_net_routes_ontapi_01: ' '
+    #opt_net_routes_password_01: ' '
+    #opt_net_routes_state_01: ' '
+    #opt_net_routes_use_rest_01: ' '
+    #opt_net_routes_username_01: ' '
+    #opt_net_routes_validate_certs_01: ' '
   
