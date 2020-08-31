@@ -1,0 +1,2 @@
+    - name: Running command nac_sg_grid_dns
+      include_tasks: tasks/nac_sg_grid_dns_task.yml

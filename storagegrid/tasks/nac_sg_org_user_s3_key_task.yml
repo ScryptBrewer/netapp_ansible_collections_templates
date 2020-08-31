@@ -1,0 +1,11 @@
+---
+- name: Running command nac_sg_org_user_s3_key
+  nac_sg_org_user_s3_key:
+    api_url: "{{ sg_api_url }}"
+    auth_token: "{{ sg_auth_token }}"
+    validate_certs: "{{ sg_validate_certs | default(false) }}"
+    state: '{{ nac_sg_org_user_s3_key_state_01 }}'
+    unique_user_name: '{{ nac_sg_org_user_s3_key_unique_user_name_01 }}'
+    access_key: '{{ nac_sg_org_user_s3_key_access_key_01 | default(omit) }}'
+    expires: '{{ nac_sg_org_user_s3_key_expires_01 | default(omit) }}'
+  register: results

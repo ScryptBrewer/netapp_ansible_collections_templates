@@ -12,7 +12,7 @@ The play allows users to uncomment whatever vars are required and use the includ
 **Example 1:**
 Creates a complete volume create command.
 ```
-cat head.yml vars/na_ontap_volume_vars.yml main.yml play/na_ontap_volume_play.yml >create_new_netapp_volume.yml
+cat head.yml ontap/vars/na_ontap_volume_vars.yml main.yml ontap/play/na_ontap_volume_play.yml >create_new_netapp_volume.yml
 ```
 ```
 ansible-playbook multi_create_vol_ntap.yml -e "netapp_hostname=cluster1" -e "netapp_username=admin" -e "netapp_password=Secret123^"
@@ -24,11 +24,12 @@ How do you loop through multiple volumes/lifs/interfaces ... Use the /task/multi
 Creating a loop for multiple volumes. 
 The following commands will help create and setup multivolume play for a example that can be use for other plays.
 ```
-cat head.yml vars/na_ontap_volume_vars.yml main.yml play/na_ontap_volume_play.yml >multi_create_vol_ntap.yml
-sed -i 's/{{ /{{ item./' multi_create_vol_ntap.yml
-sed -i 's/    validate_certs:/    #validate_certs:/' multi_create_vol_ntap.yml 
-sed -i 's/tasks\/na_/tasks\/multi_na_/' multi_create_vol_ntap.yml 
-echo '      loop: "{{ ntap_volumes }}"'>>multi_create_vol_ntap.yml
+cat head.yml ontap/vars/na_ontap_volume_vars.yml main.yml ontap/play/multi_na_ontap_volume_play.yml >multi_create_vol_ntap.yml
+add 
+     loop: {{ ntap_volumes }}
+
+after the task line and your all set.
+
 ```
 copy this to the bottom of the vars section and update for your environment.  
 ```

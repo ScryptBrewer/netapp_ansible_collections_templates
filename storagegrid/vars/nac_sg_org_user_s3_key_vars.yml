@@ -1,0 +1,17 @@
+
+    #vars:
+# Section: nac_sg_org_user_s3_key:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    nac_sg_org_user_s3_key_api_url_01: ' '
+    nac_sg_org_user_s3_key_auth_token_01: ' '
+    nac_sg_org_user_s3_key_state_01: ' '
+    nac_sg_org_user_s3_key_unique_user_name_01: ' '
+    #nac_sg_org_user_s3_key_access_key_01: ' '
+    #nac_sg_org_user_s3_key_expires_01: ' '
+    #nac_sg_org_user_s3_key_validate_certs_01: ' '
+  
