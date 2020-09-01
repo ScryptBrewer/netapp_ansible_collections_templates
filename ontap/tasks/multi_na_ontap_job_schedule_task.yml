@@ -1,6 +1,6 @@
 ---
-- name: Running command na_ontap_zapit
-  na_ontap_zapit:
+- name: Running command na_ontap_job_schedule
+  na_ontap_job_schedule:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username | default(omit }}"
     password: "{{ netapp_password | default(omit) }}"

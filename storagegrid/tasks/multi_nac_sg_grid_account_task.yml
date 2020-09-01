@@ -1,6 +1,6 @@
 ---
-- name: Running command nac_sg_org_user_s3_key
-  nac_sg_org_user_s3_key:
+- name: Running command nac_sg_grid_account
+  nac_sg_grid_account:
     api_url: "{{ sg_api_url }}"
     auth_token: "{{ sg_auth_token }}"
     validate_certs: "{{ sg_validate_certs | default(false) }}"
