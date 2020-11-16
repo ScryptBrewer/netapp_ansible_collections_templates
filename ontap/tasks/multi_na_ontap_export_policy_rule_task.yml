@@ -2,7 +2,7 @@
 - name: Running command na_ontap_export_policy_rule
   na_ontap_export_policy_rule:
     hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username | default(omit }}"
+    username: "{{ netapp_username | default(omit) }}"
     password: "{{ netapp_password | default(omit) }}"
     cert_filepath: "{{ netapp_cert_filepath | default(omit) }}"
     key_filepath: "{{ netapp_key_filepath | default(omit) }}"
@@ -12,16 +12,16 @@
     http_port: "{{ opt_lun_map_http_port_01 | default(omit) }}"
     ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
     use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
-    name: 'item.{{ req_export_policy_rule_name_01 }}'
-    vserver: 'item.{{ req_export_policy_rule_vserver_01 }}'
-    allow_suid: 'item.{{ opt_export_policy_rule_allow_suid_01 | default(omit) }}'
-    anonymous_user_id: 'item.{{ opt_export_policy_rule_anonymous_user_id_01 | default(omit) }}'
-    client_match: 'item.{{ opt_export_policy_rule_client_match_01 | default(omit) }}'
-    feature_flags: 'item.{{ opt_export_policy_rule_feature_flags_01 | default(omit) }}'
-    protocol: 'item.{{ opt_export_policy_rule_protocol_01 | default(omit) }}'
-    ro_rule: 'item.{{ opt_export_policy_rule_ro_rule_01 | default(omit) }}'
-    rule_index: 'item.{{ opt_export_policy_rule_rule_index_01 | default(omit) }}'
-    rw_rule: 'item.{{ opt_export_policy_rule_rw_rule_01 | default(omit) }}'
-    state: 'item.{{ opt_export_policy_rule_state_01 | default(omit) }}'
-    super_user_security: 'item.{{ opt_export_policy_rule_super_user_security_01 | default(omit) }}'
+    name: '{{ item.req_export_policy_rule_name_01 }}'
+    vserver: '{{ item.req_export_policy_rule_vserver_01 }}'
+    allow_suid: '{{ item.opt_export_policy_rule_allow_suid_01 | default(omit) }}'
+    anonymous_user_id: '{{ item.opt_export_policy_rule_anonymous_user_id_01 | default(omit) }}'
+    client_match: '{{ item.opt_export_policy_rule_client_match_01 | default(omit) }}'
+    feature_flags: '{{ item.opt_export_policy_rule_feature_flags_01 | default(omit) }}'
+    protocol: '{{ item.opt_export_policy_rule_protocol_01 | default(omit) }}'
+    ro_rule: '{{ item.opt_export_policy_rule_ro_rule_01 | default(omit) }}'
+    rule_index: '{{ item.opt_export_policy_rule_rule_index_01 | default(omit) }}'
+    rw_rule: '{{ item.opt_export_policy_rule_rw_rule_01 | default(omit) }}'
+    state: '{{ item.opt_export_policy_rule_state_01 | default(omit) }}'
+    super_user_security: '{{ item.opt_export_policy_rule_super_user_security_01 | default(omit) }}'
   register: results

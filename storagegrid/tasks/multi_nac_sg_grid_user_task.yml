@@ -4,9 +4,9 @@
     api_url: "{{ sg_api_url }}"
     auth_token: "{{ sg_auth_token }}"
     validate_certs: "{{ sg_validate_certs | default(false) }}"
-    state: 'item.{{ req_sg_user_state_01 }}'
-    disable: 'item.{{ req_sg_user_disable_01 | default(omit) }}'
-    full_name: 'item.{{ req_sg_user_full_name_01 | default(omit) }}'
-    member_of: 'item.{{ req_sg_user_member_of_01 | default(omit) }}'
-    unique_name: 'item.{{ req_sg_user_unique_name_01 | default(omit) }}'
+    state: '{{ item.req_sg_user_state_01 }}'
+    disable: '{{ item.req_sg_user_disable_01 | default(omit) }}'
+    full_name: '{{ item.req_sg_user_full_name_01 | default(omit) }}'
+    member_of: '{{ item.req_sg_user_member_of_01 | default(omit) }}'
+    unique_name: '{{ item.req_sg_user_unique_name_01 | default(omit) }}'
   register: results

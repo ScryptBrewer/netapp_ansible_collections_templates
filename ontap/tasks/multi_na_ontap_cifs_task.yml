@@ -2,7 +2,7 @@
 - name: Running command na_ontap_cifs
   na_ontap_cifs:
     hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username | default(omit }}"
+    username: "{{ netapp_username | default(omit) }}"
     password: "{{ netapp_password | default(omit) }}"
     cert_filepath: "{{ netapp_cert_filepath | default(omit) }}"
     key_filepath: "{{ netapp_key_filepath | default(omit) }}"
@@ -12,12 +12,12 @@
     http_port: "{{ opt_lun_map_http_port_01 | default(omit) }}"
     ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
     use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
-    share_name: 'item.{{ req_cifs_share_name_01 }}'
-    vserver: 'item.{{ req_cifs_vserver_01 }}'
-    feature_flags: 'item.{{ opt_cifs_feature_flags_01 | default(omit) }}'
-    path: 'item.{{ opt_cifs_path_01 | default(omit) }}'
-    share_properties: 'item.{{ opt_cifs_share_properties_01 | default(omit) }}'
-    state: 'item.{{ opt_cifs_state_01 | default(omit) }}'
-    symlink_properties: 'item.{{ opt_cifs_symlink_properties_01 | default(omit) }}'
-    vscan_fileop_profile: 'item.{{ opt_cifs_vscan_fileop_profile_01 | default(omit) }}'
+    share_name: '{{ item.req_cifs_share_name_01 }}'
+    vserver: '{{ item.req_cifs_vserver_01 }}'
+    feature_flags: '{{ item.opt_cifs_feature_flags_01 | default(omit) }}'
+    path: '{{ item.opt_cifs_path_01 | default(omit) }}'
+    share_properties: '{{ item.opt_cifs_share_properties_01 | default(omit) }}'
+    state: '{{ item.opt_cifs_state_01 | default(omit) }}'
+    symlink_properties: '{{ item.opt_cifs_symlink_properties_01 | default(omit) }}'
+    vscan_fileop_profile: '{{ item.opt_cifs_vscan_fileop_profile_01 | default(omit) }}'
   register: results

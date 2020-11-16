@@ -2,7 +2,7 @@
 - name: Running command na_ontap_service_processor_network
   na_ontap_service_processor_network:
     hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username | default(omit }}"
+    username: "{{ netapp_username | default(omit) }}"
     password: "{{ netapp_password | default(omit) }}"
     cert_filepath: "{{ netapp_cert_filepath | default(omit) }}"
     key_filepath: "{{ netapp_key_filepath | default(omit) }}"
@@ -12,15 +12,15 @@
     http_port: "{{ opt_lun_map_http_port_01 | default(omit) }}"
     ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
     use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
-    address_type: 'item.{{ req_service_processor_network_address_type_01 }}'
-    is_enabled: 'item.{{ req_service_processor_network_is_enabled_01 }}'
-    node: 'item.{{ req_service_processor_network_node_01 }}'
-    dhcp: 'item.{{ opt_service_processor_network_dhcp_01 | default(omit) }}'
-    feature_flags: 'item.{{ opt_service_processor_network_feature_flags_01 | default(omit) }}'
-    gateway_ip_address: 'item.{{ opt_service_processor_network_gateway_ip_address_01 | default(omit) }}'
-    ip_address: 'item.{{ opt_service_processor_network_ip_address_01 | default(omit) }}'
-    netmask: 'item.{{ opt_service_processor_network_netmask_01 | default(omit) }}'
-    prefix_length: 'item.{{ opt_service_processor_network_prefix_length_01 | default(omit) }}'
-    state: 'item.{{ opt_service_processor_network_state_01 | default(omit) }}'
-    wait_for_completion: 'item.{{ opt_service_processor_network_wait_for_completion_01 | default(omit) }}'
+    address_type: '{{ item.req_service_processor_network_address_type_01 }}'
+    is_enabled: '{{ item.req_service_processor_network_is_enabled_01 }}'
+    node: '{{ item.req_service_processor_network_node_01 }}'
+    dhcp: '{{ item.opt_service_processor_network_dhcp_01 | default(omit) }}'
+    feature_flags: '{{ item.opt_service_processor_network_feature_flags_01 | default(omit) }}'
+    gateway_ip_address: '{{ item.opt_service_processor_network_gateway_ip_address_01 | default(omit) }}'
+    ip_address: '{{ item.opt_service_processor_network_ip_address_01 | default(omit) }}'
+    netmask: '{{ item.opt_service_processor_network_netmask_01 | default(omit) }}'
+    prefix_length: '{{ item.opt_service_processor_network_prefix_length_01 | default(omit) }}'
+    state: '{{ item.opt_service_processor_network_state_01 | default(omit) }}'
+    wait_for_completion: '{{ item.opt_service_processor_network_wait_for_completion_01 | default(omit) }}'
   register: results

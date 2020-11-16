@@ -4,13 +4,13 @@
     api_url: "{{ sg_api_url }}"
     auth_token: "{{ sg_auth_token }}"
     validate_certs: "{{ sg_validate_certs | default(false) }}"
-    account_id: 'item.{{ req_sg_account_account_id_01 | default(omit) }}'
-    allow_platform_services: 'item.{{ req_sg_account_allow_platform_services_01 | default(omit) }}'
-    management: 'item.{{ req_sg_account_management_01 | default(omit) }}'
-    name: 'item.{{ req_sg_account_name_01 | default(omit) }}'
-    protocol: 'item.{{ req_sg_account_protocol_01 | default(omit) }}'
-    quota_size: 'item.{{ req_sg_account_quota_size_01 | default(omit) }}'
-    quota_size_unit: 'item.{{ req_sg_account_quota_size_unit_01 | default(omit) }}'
-    state: 'item.{{ req_sg_account_state_01 | default(omit) }}'
-    use_own_identity_source: 'item.{{ req_sg_account_use_own_identity_source_01 | default(omit) }}'
+    account_id: '{{ item.req_sg_account_account_id_01 | default(omit) }}'
+    allow_platform_services: '{{ item.req_sg_account_allow_platform_services_01 | default(omit) }}'
+    management: '{{ item.req_sg_account_management_01 | default(omit) }}'
+    name: '{{ item.req_sg_account_name_01 | default(omit) }}'
+    protocol: '{{ item.req_sg_account_protocol_01 | default(omit) }}'
+    quota_size: '{{ item.req_sg_account_quota_size_01 | default(omit) }}'
+    quota_size_unit: '{{ item.req_sg_account_quota_size_unit_01 | default(omit) }}'
+    state: '{{ item.req_sg_account_state_01 | default(omit) }}'
+    use_own_identity_source: '{{ item.req_sg_account_use_own_identity_source_01 | default(omit) }}'
   register: results

@@ -2,7 +2,7 @@
 - name: Running command na_ontap_qtree
   na_ontap_qtree:
     hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username | default(omit }}"
+    username: "{{ netapp_username | default(omit) }}"
     password: "{{ netapp_password | default(omit) }}"
     cert_filepath: "{{ netapp_cert_filepath | default(omit) }}"
     key_filepath: "{{ netapp_key_filepath | default(omit) }}"
@@ -12,15 +12,15 @@
     http_port: "{{ opt_lun_map_http_port_01 | default(omit) }}"
     ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
     use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
-    name: 'item.{{ req_qtree_name_01 }}'
-    vserver: 'item.{{ req_qtree_vserver_01 }}'
-    export_policy: 'item.{{ opt_qtree_export_policy_01 | default(omit) }}'
-    feature_flags: 'item.{{ opt_qtree_feature_flags_01 | default(omit) }}'
-    flexvol_name: 'item.{{ opt_qtree_flexvol_name_01 | default(omit) }}'
-    force_delete: 'item.{{ opt_qtree_force_delete_01 | default(omit) }}'
-    from_name: 'item.{{ opt_qtree_from_name_01 | default(omit) }}'
-    oplocks: 'item.{{ opt_qtree_oplocks_01 | default(omit) }}'
-    security_style: 'item.{{ opt_qtree_security_style_01 | default(omit) }}'
-    state: 'item.{{ opt_qtree_state_01 | default(omit) }}'
-    unix_permissions: 'item.{{ opt_qtree_unix_permissions_01 | default(omit) }}'
+    name: '{{ item.req_qtree_name_01 }}'
+    vserver: '{{ item.req_qtree_vserver_01 }}'
+    export_policy: '{{ item.opt_qtree_export_policy_01 | default(omit) }}'
+    feature_flags: '{{ item.opt_qtree_feature_flags_01 | default(omit) }}'
+    flexvol_name: '{{ item.opt_qtree_flexvol_name_01 | default(omit) }}'
+    force_delete: '{{ item.opt_qtree_force_delete_01 | default(omit) }}'
+    from_name: '{{ item.opt_qtree_from_name_01 | default(omit) }}'
+    oplocks: '{{ item.opt_qtree_oplocks_01 | default(omit) }}'
+    security_style: '{{ item.opt_qtree_security_style_01 | default(omit) }}'
+    state: '{{ item.opt_qtree_state_01 | default(omit) }}'
+    unix_permissions: '{{ item.opt_qtree_unix_permissions_01 | default(omit) }}'
   register: results
