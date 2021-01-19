@@ -16,6 +16,7 @@
     #opt_qos_policy_group_from_name_01: ' '
     #opt_qos_policy_group_http_port_01: ' '
     #opt_qos_policy_group_https_01: ' '
+    #opt_qos_policy_group_is_shared_01: ' '
     #opt_qos_policy_group_key_filepath_01: ' '
     #opt_qos_policy_group_max_throughput_01: ' '
     #opt_qos_policy_group_min_throughput_01: ' '

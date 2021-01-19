@@ -17,6 +17,8 @@
     cluster_location: '{{ item.opt_cluster_cluster_location_01 | default(omit) }}'
     cluster_name: '{{ item.opt_cluster_cluster_name_01 | default(omit) }}'
     feature_flags: '{{ item.opt_cluster_feature_flags_01 | default(omit) }}'
+    node_name: '{{ item.opt_cluster_node_name_01 | default(omit) }}'
     single_node_cluster: '{{ item.opt_cluster_single_node_cluster_01 | default(omit) }}'
     state: '{{ item.opt_cluster_state_01 | default(omit) }}'
+    time_out: '{{ item.opt_cluster_time_out_01 | default(omit) }}'
   register: results

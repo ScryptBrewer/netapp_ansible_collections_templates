@@ -7,13 +7,13 @@
     # netapp_https: "True" 
     # netapp_port: "443" 
     # validate_certs: "false"
+    req_qtree_flexvol_name_01: ' '
     req_qtree_hostname_01: ' '
     req_qtree_name_01: ' '
     req_qtree_vserver_01: ' '
     #opt_qtree_cert_filepath_01: ' '
     #opt_qtree_export_policy_01: ' '
     #opt_qtree_feature_flags_01: ' '
-    #opt_qtree_flexvol_name_01: ' '
     #opt_qtree_force_delete_01: ' '
     #opt_qtree_from_name_01: ' '
     #opt_qtree_http_port_01: ' '
@@ -24,8 +24,10 @@
     #opt_qtree_password_01: ' '
     #opt_qtree_security_style_01: ' '
     #opt_qtree_state_01: ' '
+    #opt_qtree_time_out_01: ' '
     #opt_qtree_unix_permissions_01: ' '
     #opt_qtree_use_rest_01: ' '
     #opt_qtree_username_01: ' '
     #opt_qtree_validate_certs_01: ' '
+    #opt_qtree_wait_for_completion_01: ' '
   

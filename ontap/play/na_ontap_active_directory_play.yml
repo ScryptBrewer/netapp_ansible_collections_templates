@@ -1,0 +1,2 @@
+    - name: Running command na_ontap_active_directory
+      include_tasks: tasks/na_ontap_active_directory_task.yml

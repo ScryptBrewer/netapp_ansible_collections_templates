@@ -12,15 +12,17 @@
     http_port: "{{ opt_lun_map_http_port_01 | default(omit) }}"
     ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
     use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
+    flexvol_name: '{{ req_qtree_flexvol_name_01 }}'
     name: '{{ req_qtree_name_01 }}'
     vserver: '{{ req_qtree_vserver_01 }}'
     export_policy: '{{ opt_qtree_export_policy_01 | default(omit) }}'
     feature_flags: '{{ opt_qtree_feature_flags_01 | default(omit) }}'
-    flexvol_name: '{{ opt_qtree_flexvol_name_01 | default(omit) }}'
     force_delete: '{{ opt_qtree_force_delete_01 | default(omit) }}'
     from_name: '{{ opt_qtree_from_name_01 | default(omit) }}'
     oplocks: '{{ opt_qtree_oplocks_01 | default(omit) }}'
     security_style: '{{ opt_qtree_security_style_01 | default(omit) }}'
     state: '{{ opt_qtree_state_01 | default(omit) }}'
+    time_out: '{{ opt_qtree_time_out_01 | default(omit) }}'
     unix_permissions: '{{ opt_qtree_unix_permissions_01 | default(omit) }}'
+    wait_for_completion: '{{ opt_qtree_wait_for_completion_01 | default(omit) }}'
   register: results

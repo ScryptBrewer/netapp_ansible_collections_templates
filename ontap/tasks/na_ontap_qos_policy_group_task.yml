@@ -17,6 +17,7 @@
     feature_flags: '{{ opt_qos_policy_group_feature_flags_01 | default(omit) }}'
     force: '{{ opt_qos_policy_group_force_01 | default(omit) }}'
     from_name: '{{ opt_qos_policy_group_from_name_01 | default(omit) }}'
+    is_shared: '{{ opt_qos_policy_group_is_shared_01 | default(omit) }}'
     max_throughput: '{{ opt_qos_policy_group_max_throughput_01 | default(omit) }}'
     min_throughput: '{{ opt_qos_policy_group_min_throughput_01 | default(omit) }}'
     state: '{{ opt_qos_policy_group_state_01 | default(omit) }}'

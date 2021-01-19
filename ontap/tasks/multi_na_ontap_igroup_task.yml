@@ -20,6 +20,6 @@
     from_name: '{{ item.opt_igroup_from_name_01 | default(omit) }}'
     initiator_group_type: '{{ item.opt_igroup_initiator_group_type_01 | default(omit) }}'
     initiators: '{{ item.opt_igroup_initiators_01 | default(omit) }}'
-    ostype: '{{ item.opt_igroup_ostype_01 | default(omit) }}'
+    os_type: '{{ item.opt_igroup_os_type_01 | default(omit) }}'
     state: '{{ item.opt_igroup_state_01 | default(omit) }}'
   register: results

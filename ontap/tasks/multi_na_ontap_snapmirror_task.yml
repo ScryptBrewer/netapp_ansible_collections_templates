@@ -13,6 +13,8 @@
     ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
     use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
     connection_type: '{{ item.opt_snapmirror_connection_type_01 | default(omit) }}'
+    create_destination: '{{ item.opt_snapmirror_create_destination_01 | default(omit) }}'
+    destination_cluster: '{{ item.opt_snapmirror_destination_cluster_01 | default(omit) }}'
     destination_path: '{{ item.opt_snapmirror_destination_path_01 | default(omit) }}'
     destination_volume: '{{ item.opt_snapmirror_destination_volume_01 | default(omit) }}'
     destination_vserver: '{{ item.opt_snapmirror_destination_vserver_01 | default(omit) }}'
@@ -25,6 +27,7 @@
     relationship_state: '{{ item.opt_snapmirror_relationship_state_01 | default(omit) }}'
     relationship_type: '{{ item.opt_snapmirror_relationship_type_01 | default(omit) }}'
     schedule: '{{ item.opt_snapmirror_schedule_01 | default(omit) }}'
+    source_cluster: '{{ item.opt_snapmirror_source_cluster_01 | default(omit) }}'
     source_hostname: '{{ item.opt_snapmirror_source_hostname_01 | default(omit) }}'
     source_password: '{{ item.opt_snapmirror_source_password_01 | default(omit) }}'
     source_path: '{{ item.opt_snapmirror_source_path_01 | default(omit) }}'

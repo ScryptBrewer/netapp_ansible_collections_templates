@@ -7,9 +7,9 @@
     # netapp_https: "True" 
     # netapp_port: "443" 
     # validate_certs: "false"
-    req_snmp_access_control_01: ' '
     req_snmp_community_name_01: ' '
     req_snmp_hostname_01: ' '
+    #opt_snmp_access_control_01: ' '
     #opt_snmp_cert_filepath_01: ' '
     #opt_snmp_feature_flags_01: ' '
     #opt_snmp_http_port_01: ' '

@@ -19,6 +19,7 @@
     dest_username: '{{ item.opt_cluster_peer_dest_username_01 | default(omit) }}'
     encryption_protocol_proposed: '{{ item.opt_cluster_peer_encryption_protocol_proposed_01 | default(omit) }}'
     feature_flags: '{{ item.opt_cluster_peer_feature_flags_01 | default(omit) }}'
+    ipspace: '{{ item.opt_cluster_peer_ipspace_01 | default(omit) }}'
     passphrase: '{{ item.opt_cluster_peer_passphrase_01 | default(omit) }}'
     source_cluster_name: '{{ item.opt_cluster_peer_source_cluster_name_01 | default(omit) }}'
     source_intercluster_lifs: '{{ item.opt_cluster_peer_source_intercluster_lifs_01 | default(omit) }}'

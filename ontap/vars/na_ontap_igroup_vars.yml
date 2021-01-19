@@ -21,7 +21,7 @@
     #opt_igroup_initiators_01: ' '
     #opt_igroup_key_filepath_01: ' '
     #opt_igroup_ontapi_01: ' '
-    #opt_igroup_ostype_01: ' '
+    #opt_igroup_os_type_01: ' '
     #opt_igroup_password_01: ' '
     #opt_igroup_state_01: ' '
     #opt_igroup_use_rest_01: ' '

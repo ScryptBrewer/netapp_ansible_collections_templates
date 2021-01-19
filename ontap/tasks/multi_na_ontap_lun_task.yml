@@ -12,17 +12,21 @@
     http_port: "{{ opt_lun_map_http_port_01 | default(omit) }}"
     ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
     use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
-    flexvol_name: '{{ item.req_lun_flexvol_name_01 }}'
     name: '{{ item.req_lun_name_01 }}'
     vserver: '{{ item.req_lun_vserver_01 }}'
     feature_flags: '{{ item.opt_lun_feature_flags_01 | default(omit) }}'
+    flexvol_name: '{{ item.opt_lun_flexvol_name_01 | default(omit) }}'
     force_remove: '{{ item.opt_lun_force_remove_01 | default(omit) }}'
     force_remove_fenced: '{{ item.opt_lun_force_remove_fenced_01 | default(omit) }}'
     force_resize: '{{ item.opt_lun_force_resize_01 | default(omit) }}'
-    ostype: '{{ item.opt_lun_ostype_01 | default(omit) }}'
+    from_name: '{{ item.opt_lun_from_name_01 | default(omit) }}'
+    os_type: '{{ item.opt_lun_os_type_01 | default(omit) }}'
+    qos_policy_group: '{{ item.opt_lun_qos_policy_group_01 | default(omit) }}'
+    san_application_template: '{{ item.opt_lun_san_application_template_01 | default(omit) }}'
     size: '{{ item.opt_lun_size_01 | default(omit) }}'
     size_unit: '{{ item.opt_lun_size_unit_01 | default(omit) }}'
     space_allocation: '{{ item.opt_lun_space_allocation_01 | default(omit) }}'
     space_reserve: '{{ item.opt_lun_space_reserve_01 | default(omit) }}'
     state: '{{ item.opt_lun_state_01 | default(omit) }}'
+    use_exact_size: '{{ item.opt_lun_use_exact_size_01 | default(omit) }}'
   register: results

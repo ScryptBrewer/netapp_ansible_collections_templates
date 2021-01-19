@@ -16,6 +16,7 @@
     package_version: '{{ item.req_software_update_package_version_01 }}'
     download_only: '{{ item.opt_software_update_download_only_01 | default(omit) }}'
     feature_flags: '{{ item.opt_software_update_feature_flags_01 | default(omit) }}'
+    force_update: '{{ item.opt_software_update_force_update_01 | default(omit) }}'
     ignore_validation_warning: '{{ item.opt_software_update_ignore_validation_warning_01 | default(omit) }}'
     nodes: '{{ item.opt_software_update_nodes_01 | default(omit) }}'
     stabilize_minutes: '{{ item.opt_software_update_stabilize_minutes_01 | default(omit) }}'

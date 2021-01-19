@@ -1,0 +1,2 @@
+    - name: Running command na_ontap_debug
+      include_tasks: tasks/na_ontap_debug_task.yml

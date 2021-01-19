@@ -18,6 +18,7 @@
     #opt_cluster_peer_feature_flags_01: ' '
     #opt_cluster_peer_http_port_01: ' '
     #opt_cluster_peer_https_01: ' '
+    #opt_cluster_peer_ipspace_01: ' '
     #opt_cluster_peer_key_filepath_01: ' '
     #opt_cluster_peer_ontapi_01: ' '
     #opt_cluster_peer_passphrase_01: ' '

@@ -13,6 +13,7 @@
     #opt_software_update_cert_filepath_01: ' '
     #opt_software_update_download_only_01: ' '
     #opt_software_update_feature_flags_01: ' '
+    #opt_software_update_force_update_01: ' '
     #opt_software_update_http_port_01: ' '
     #opt_software_update_https_01: ' '
     #opt_software_update_ignore_validation_warning_01: ' '
