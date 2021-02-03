@@ -1,0 +1,18 @@
+---
+- name: Running command na_sg_grid_account
+  na_sg_grid_account:
+    api_url: "{{ sg_api_url }}"
+    auth_token: "{{ sg_auth_token }}"
+    validate_certs: "{{ sg_validate_certs | default(false) }}"
+    account_id: '{{ item.na_sg_grid_account_account_id_01 | default(omit) }}'
+    allow_platform_services: '{{ item.na_sg_grid_account_allow_platform_services_01 | default(omit) }}'
+    management: '{{ item.na_sg_grid_account_management_01 | default(omit) }}'
+    name: '{{ item.na_sg_grid_account_name_01 | default(omit) }}'
+    protocol: '{{ item.na_sg_grid_account_protocol_01 | default(omit) }}'
+    quota_size: '{{ item.na_sg_grid_account_quota_size_01 | default(omit) }}'
+    quota_size_unit: '{{ item.na_sg_grid_account_quota_size_unit_01 | default(omit) }}'
+    root_access_group: '{{ item.na_sg_grid_account_root_access_group_01 | default(omit) }}'
+    state: '{{ item.na_sg_grid_account_state_01 | default(omit) }}'
+    update_password: '{{ item.na_sg_grid_account_update_password_01 | default(omit) }}'
+    use_own_identity_source: '{{ item.na_sg_grid_account_use_own_identity_source_01 | default(omit) }}'
+  register: results

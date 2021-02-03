@@ -2,7 +2,7 @@
 - name: Running command na_ontap_vscan_on_access_policy
   na_ontap_vscan_on_access_policy:
     hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username | default(omit }}"
+    username: "{{ netapp_username | default(omit) }}"
     password: "{{ netapp_password | default(omit) }}"
     cert_filepath: "{{ netapp_cert_filepath | default(omit) }}"
     key_filepath: "{{ netapp_key_filepath | default(omit) }}"
