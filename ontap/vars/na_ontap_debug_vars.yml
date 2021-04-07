@@ -18,4 +18,5 @@
     #opt_debug_use_rest_01: ' '
     #opt_debug_username_01: ' '
     #opt_debug_validate_certs_01: ' '
+    #opt_debug_vserver_01: ' '
   

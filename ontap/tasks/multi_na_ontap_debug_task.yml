@@ -13,4 +13,5 @@
     ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
     use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
     feature_flags: '{{ item.opt_debug_feature_flags_01 | default(omit) }}'
+    vserver: '{{ item.opt_debug_vserver_01 | default(omit) }}'
   register: results

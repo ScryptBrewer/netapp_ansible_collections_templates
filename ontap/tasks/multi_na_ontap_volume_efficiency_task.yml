@@ -1,0 +1,27 @@
+---
+- name: Running command na_ontap_volume_efficiency
+  na_ontap_volume_efficiency:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username | default(omit) }}"
+    password: "{{ netapp_password | default(omit) }}"
+    cert_filepath: "{{ netapp_cert_filepath | default(omit) }}"
+    key_filepath: "{{ netapp_key_filepath | default(omit) }}"
+    https: "{{ netapp_https | default(true) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    validate_certs: "{{ validate_certs | default(false) }}"
+    http_port: "{{ opt_lun_map_http_port_01 | default(omit) }}"
+    ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
+    use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
+    path: '{{ item.req_volume_efficiency_path_01 }}'
+    vserver: '{{ item.req_volume_efficiency_vserver_01 }}'
+    enable_compression: '{{ item.opt_volume_efficiency_enable_compression_01 | default(omit) }}'
+    enable_cross_volume_background_dedupe: '{{ item.opt_volume_efficiency_enable_cross_volume_background_dedupe_01 | default(omit) }}'
+    enable_cross_volume_inline_dedupe: '{{ item.opt_volume_efficiency_enable_cross_volume_inline_dedupe_01 | default(omit) }}'
+    enable_data_compaction: '{{ item.opt_volume_efficiency_enable_data_compaction_01 | default(omit) }}'
+    enable_inline_compression: '{{ item.opt_volume_efficiency_enable_inline_compression_01 | default(omit) }}'
+    enable_inline_dedupe: '{{ item.opt_volume_efficiency_enable_inline_dedupe_01 | default(omit) }}'
+    feature_flags: '{{ item.opt_volume_efficiency_feature_flags_01 | default(omit) }}'
+    policy: '{{ item.opt_volume_efficiency_policy_01 | default(omit) }}'
+    schedule: '{{ item.opt_volume_efficiency_schedule_01 | default(omit) }}'
+    state: '{{ item.opt_volume_efficiency_state_01 | default(omit) }}'
+  register: results

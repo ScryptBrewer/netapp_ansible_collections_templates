@@ -1,0 +1,2 @@
+    - name: Running command na_ontap_storage_auto_giveback
+      include_tasks: tasks/na_ontap_storage_auto_giveback_task.yml

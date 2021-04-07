@@ -1,2 +1,0 @@
-    - name: Running command nac_sg_grid_regions
-      include_tasks: tasks/nac_sg_grid_regions_task.yml

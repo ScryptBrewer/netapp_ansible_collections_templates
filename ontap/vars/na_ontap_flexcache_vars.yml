@@ -8,7 +8,7 @@
     # netapp_port: "443" 
     # validate_certs: "false"
     req_flexcache_hostname_01: ' '
-    req_flexcache_volume_01: ' '
+    req_flexcache_name_01: ' '
     req_flexcache_vserver_01: ' '
     #opt_flexcache_aggr_list_01: ' '
     #opt_flexcache_aggr_list_multiplier_01: ' '
@@ -26,6 +26,7 @@
     #opt_flexcache_origin_volume_01: ' '
     #opt_flexcache_origin_vserver_01: ' '
     #opt_flexcache_password_01: ' '
+    #opt_flexcache_prepopulate_01: ' '
     #opt_flexcache_size_01: ' '
     #opt_flexcache_size_unit_01: ' '
     #opt_flexcache_state_01: ' '

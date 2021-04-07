@@ -1,2 +1,0 @@
-    - name: Running command nac_sg_grid_ntp
-      include_tasks: tasks/nac_sg_grid_ntp_task.yml

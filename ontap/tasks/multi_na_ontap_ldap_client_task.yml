@@ -29,5 +29,6 @@
     schema: '{{ item.opt_ldap_client_schema_01 | default(omit) }}'
     session_security: '{{ item.opt_ldap_client_session_security_01 | default(omit) }}'
     state: '{{ item.opt_ldap_client_state_01 | default(omit) }}'
+    tcp_port: '{{ item.opt_ldap_client_tcp_port_01 | default(omit) }}'
     use_start_tls: '{{ item.opt_ldap_client_use_start_tls_01 | default(omit) }}'
   register: results

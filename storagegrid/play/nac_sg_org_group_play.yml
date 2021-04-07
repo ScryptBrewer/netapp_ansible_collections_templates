@@ -1,2 +1,0 @@
-    - name: Running command nac_sg_org_group
-      include_tasks: tasks/nac_sg_org_group_task.yml

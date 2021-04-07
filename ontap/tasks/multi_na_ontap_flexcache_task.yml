@@ -12,7 +12,7 @@
     http_port: "{{ opt_lun_map_http_port_01 | default(omit) }}"
     ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
     use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
-    volume: '{{ item.req_flexcache_volume_01 }}'
+    name: '{{ item.req_flexcache_name_01 }}'
     vserver: '{{ item.req_flexcache_vserver_01 }}'
     aggr_list: '{{ item.opt_flexcache_aggr_list_01 | default(omit) }}'
     aggr_list_multiplier: '{{ item.opt_flexcache_aggr_list_multiplier_01 | default(omit) }}'
@@ -24,6 +24,7 @@
     origin_cluster: '{{ item.opt_flexcache_origin_cluster_01 | default(omit) }}'
     origin_volume: '{{ item.opt_flexcache_origin_volume_01 | default(omit) }}'
     origin_vserver: '{{ item.opt_flexcache_origin_vserver_01 | default(omit) }}'
+    prepopulate: '{{ item.opt_flexcache_prepopulate_01 | default(omit) }}'
     size: '{{ item.opt_flexcache_size_01 | default(omit) }}'
     size_unit: '{{ item.opt_flexcache_size_unit_01 | default(omit) }}'
     state: '{{ item.opt_flexcache_state_01 | default(omit) }}'

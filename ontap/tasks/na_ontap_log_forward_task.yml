@@ -1,6 +1,6 @@
 ---
-- name: Running command na_ontap_node
-  na_ontap_node:
+- name: Running command na_ontap_log_forward
+  na_ontap_log_forward:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username | default(omit) }}"
     password: "{{ netapp_password | default(omit) }}"
@@ -12,9 +12,11 @@
     http_port: "{{ opt_lun_map_http_port_01 | default(omit) }}"
     ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
     use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
-    name: '{{ req_node_name_01 }}'
-    asset_tag: '{{ opt_node_asset_tag_01 | default(omit) }}'
-    feature_flags: '{{ opt_node_feature_flags_01 | default(omit) }}'
-    from_name: '{{ opt_node_from_name_01 | default(omit) }}'
-    location: '{{ opt_node_location_01 | default(omit) }}'
+    destination: '{{ req_log_forward_destination_01 }}'
+    facility: '{{ opt_log_forward_facility_01 | default(omit) }}'
+    feature_flags: '{{ opt_log_forward_feature_flags_01 | default(omit) }}'
+    force: '{{ opt_log_forward_force_01 | default(omit) }}'
+    protocol: '{{ opt_log_forward_protocol_01 | default(omit) }}'
+    state: '{{ opt_log_forward_state_01 | default(omit) }}'
+    verify_server: '{{ opt_log_forward_verify_server_01 | default(omit) }}'
   register: results

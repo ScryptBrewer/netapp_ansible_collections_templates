@@ -7,14 +7,16 @@
     # netapp_https: "True" 
     # netapp_port: "443" 
     # validate_certs: "false"
-    req_node_from_name_01: ' '
     req_node_hostname_01: ' '
     req_node_name_01: ' '
+    #opt_node_asset_tag_01: ' '
     #opt_node_cert_filepath_01: ' '
     #opt_node_feature_flags_01: ' '
+    #opt_node_from_name_01: ' '
     #opt_node_http_port_01: ' '
     #opt_node_https_01: ' '
     #opt_node_key_filepath_01: ' '
+    #opt_node_location_01: ' '
     #opt_node_ontapi_01: ' '
     #opt_node_password_01: ' '
     #opt_node_use_rest_01: ' '

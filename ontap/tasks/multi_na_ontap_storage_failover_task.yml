@@ -1,6 +1,6 @@
 ---
-- name: Running command na_ontap_node
-  na_ontap_node:
+- name: Running command na_ontap_storage_failover
+  na_ontap_storage_failover:
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username | default(omit) }}"
     password: "{{ netapp_password | default(omit) }}"
@@ -12,9 +12,7 @@
     http_port: "{{ opt_lun_map_http_port_01 | default(omit) }}"
     ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
     use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
-    name: '{{ req_node_name_01 }}'
-    asset_tag: '{{ opt_node_asset_tag_01 | default(omit) }}'
-    feature_flags: '{{ opt_node_feature_flags_01 | default(omit) }}'
-    from_name: '{{ opt_node_from_name_01 | default(omit) }}'
-    location: '{{ opt_node_location_01 | default(omit) }}'
+    node_name: '{{ item.req_storage_failover_node_name_01 }}'
+    feature_flags: '{{ item.opt_storage_failover_feature_flags_01 | default(omit) }}'
+    state: '{{ item.opt_storage_failover_state_01 | default(omit) }}'
   register: results

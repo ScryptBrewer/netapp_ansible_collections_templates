@@ -1,0 +1,2 @@
+    - name: Running command na_ontap_fpolicy_policy
+      include_tasks: tasks/na_ontap_fpolicy_policy_task.yml

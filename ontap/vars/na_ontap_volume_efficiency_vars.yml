@@ -1,0 +1,32 @@
+
+    #vars:
+# Section: na_ontap_volume_efficiency:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_volume_efficiency_hostname_01: ' '
+    req_volume_efficiency_path_01: ' '
+    req_volume_efficiency_vserver_01: ' '
+    #opt_volume_efficiency_cert_filepath_01: ' '
+    #opt_volume_efficiency_enable_compression_01: ' '
+    #opt_volume_efficiency_enable_cross_volume_background_dedupe_01: ' '
+    #opt_volume_efficiency_enable_cross_volume_inline_dedupe_01: ' '
+    #opt_volume_efficiency_enable_data_compaction_01: ' '
+    #opt_volume_efficiency_enable_inline_compression_01: ' '
+    #opt_volume_efficiency_enable_inline_dedupe_01: ' '
+    #opt_volume_efficiency_feature_flags_01: ' '
+    #opt_volume_efficiency_http_port_01: ' '
+    #opt_volume_efficiency_https_01: ' '
+    #opt_volume_efficiency_key_filepath_01: ' '
+    #opt_volume_efficiency_ontapi_01: ' '
+    #opt_volume_efficiency_password_01: ' '
+    #opt_volume_efficiency_policy_01: ' '
+    #opt_volume_efficiency_schedule_01: ' '
+    #opt_volume_efficiency_state_01: ' '
+    #opt_volume_efficiency_use_rest_01: ' '
+    #opt_volume_efficiency_username_01: ' '
+    #opt_volume_efficiency_validate_certs_01: ' '
+  

@@ -14,6 +14,7 @@
     use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
     name: '{{ req_lun_name_01 }}'
     vserver: '{{ req_lun_vserver_01 }}'
+    comment: '{{ opt_lun_comment_01 | default(omit) }}'
     feature_flags: '{{ opt_lun_feature_flags_01 | default(omit) }}'
     flexvol_name: '{{ opt_lun_flexvol_name_01 | default(omit) }}'
     force_remove: '{{ opt_lun_force_remove_01 | default(omit) }}'
@@ -21,6 +22,7 @@
     force_resize: '{{ opt_lun_force_resize_01 | default(omit) }}'
     from_name: '{{ opt_lun_from_name_01 | default(omit) }}'
     os_type: '{{ opt_lun_os_type_01 | default(omit) }}'
+    qos_adaptive_policy_group: '{{ opt_lun_qos_adaptive_policy_group_01 | default(omit) }}'
     qos_policy_group: '{{ opt_lun_qos_policy_group_01 | default(omit) }}'
     san_application_template: '{{ opt_lun_san_application_template_01 | default(omit) }}'
     size: '{{ opt_lun_size_01 | default(omit) }}'

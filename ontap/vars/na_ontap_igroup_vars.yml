@@ -17,6 +17,7 @@
     #opt_igroup_from_name_01: ' '
     #opt_igroup_http_port_01: ' '
     #opt_igroup_https_01: ' '
+    #opt_igroup_igroups_01: ' '
     #opt_igroup_initiator_group_type_01: ' '
     #opt_igroup_initiators_01: ' '
     #opt_igroup_key_filepath_01: ' '
