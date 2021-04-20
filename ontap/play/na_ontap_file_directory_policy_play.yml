@@ -1,2 +1,25 @@
     - name: Running command na_ontap_file_directory_policy
       include_tasks: tasks/na_ontap_file_directory_policy_task.yml
+      loop: "{{ na_ontap_file_directory_policy }}"
+      vars:
+        req_file_directory_policy_hostname_01: '{{ item.hostname }}'
+        req_file_directory_policy_policy_name_01: '{{ item.policy_name }}'
+        req_file_directory_policy_vserver_01: '{{ item.vserver }}'
+        #opt_file_directory_policy_access_control_01: '{{ item.access_control }}'
+        #opt_file_directory_policy_cert_filepath_01: '{{ item.cert_filepath }}'
+        #opt_file_directory_policy_feature_flags_01: '{{ item.feature_flags }}'
+        #opt_file_directory_policy_http_port_01: '{{ item.http_port }}'
+        #opt_file_directory_policy_https_01: '{{ item.https }}'
+        #opt_file_directory_policy_ignore_broken_symlinks_01: '{{ item.ignore_broken_symlinks }}'
+        #opt_file_directory_policy_key_filepath_01: '{{ item.key_filepath }}'
+        #opt_file_directory_policy_ntfs_mode_01: '{{ item.ntfs_mode }}'
+        #opt_file_directory_policy_ntfs_sd_01: '{{ item.ntfs_sd }}'
+        #opt_file_directory_policy_ontapi_01: '{{ item.ontapi }}'
+        #opt_file_directory_policy_password_01: '{{ item.password }}'
+        #opt_file_directory_policy_path_01: '{{ item.path }}'
+        #opt_file_directory_policy_security_type_01: '{{ item.security_type }}'
+        #opt_file_directory_policy_state_01: '{{ item.state }}'
+        #opt_file_directory_policy_use_rest_01: '{{ item.use_rest }}'
+        #opt_file_directory_policy_username_01: '{{ item.username }}'
+        #opt_file_directory_policy_validate_certs_01: '{{ item.validate_certs }}'
+  

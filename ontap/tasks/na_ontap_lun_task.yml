@@ -2,33 +2,33 @@
 - name: Running command na_ontap_lun
   na_ontap_lun:
     hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username | default(omit) }}"
-    password: "{{ netapp_password | default(omit) }}"
-    cert_filepath: "{{ netapp_cert_filepath | default(omit) }}"
-    key_filepath: "{{ netapp_key_filepath | default(omit) }}"
+    username: "{{ netapp_username  | default(omit) }}"
+    password: "{{ netapp_password  | default(omit) }}"
+    cert_filepath: "{{ netapp_cert_filepath  | default(omit) }}"
+    key_filepath: "{{ netapp_key_filepath  | default(omit) }}"
     https: "{{ netapp_https | default(true) }}"
-    port: "{{ netapp_port | default(omit) }}"
+    port: "{{ netapp_port  | default(omit) }}"
     validate_certs: "{{ validate_certs | default(false) }}"
-    http_port: "{{ opt_lun_map_http_port_01 | default(omit) }}"
-    ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
-    use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
+    http_port: "{{ opt_lun_map_http_port_01  | default(omit) }}"
+    ontapi: "{{ opt_lun_map_ontapi_01  | default(omit) }}"
+    use_rest: "{{ opt_lun_map_use_rest_01  | default(omit) }}"
     name: '{{ req_lun_name_01 }}'
     vserver: '{{ req_lun_vserver_01 }}'
-    comment: '{{ opt_lun_comment_01 | default(omit) }}'
-    feature_flags: '{{ opt_lun_feature_flags_01 | default(omit) }}'
-    flexvol_name: '{{ opt_lun_flexvol_name_01 | default(omit) }}'
-    force_remove: '{{ opt_lun_force_remove_01 | default(omit) }}'
-    force_remove_fenced: '{{ opt_lun_force_remove_fenced_01 | default(omit) }}'
-    force_resize: '{{ opt_lun_force_resize_01 | default(omit) }}'
-    from_name: '{{ opt_lun_from_name_01 | default(omit) }}'
-    os_type: '{{ opt_lun_os_type_01 | default(omit) }}'
-    qos_adaptive_policy_group: '{{ opt_lun_qos_adaptive_policy_group_01 | default(omit) }}'
-    qos_policy_group: '{{ opt_lun_qos_policy_group_01 | default(omit) }}'
-    san_application_template: '{{ opt_lun_san_application_template_01 | default(omit) }}'
-    size: '{{ opt_lun_size_01 | default(omit) }}'
-    size_unit: '{{ opt_lun_size_unit_01 | default(omit) }}'
-    space_allocation: '{{ opt_lun_space_allocation_01 | default(omit) }}'
-    space_reserve: '{{ opt_lun_space_reserve_01 | default(omit) }}'
-    state: '{{ opt_lun_state_01 | default(omit) }}'
-    use_exact_size: '{{ opt_lun_use_exact_size_01 | default(omit) }}'
+    comment: '{{ opt_lun_comment_01  | default(omit) }}'
+    feature_flags: '{{ opt_lun_feature_flags_01  | default(omit) }}'
+    flexvol_name: '{{ opt_lun_flexvol_name_01  | default(omit) }}'
+    force_remove: '{{ opt_lun_force_remove_01  | default(omit) }}'
+    force_remove_fenced: '{{ opt_lun_force_remove_fenced_01  | default(omit) }}'
+    force_resize: '{{ opt_lun_force_resize_01  | default(omit) }}'
+    from_name: '{{ opt_lun_from_name_01  | default(omit) }}'
+    os_type: '{{ opt_lun_os_type_01  | default(omit) }}'
+    qos_adaptive_policy_group: '{{ opt_lun_qos_adaptive_policy_group_01  | default(omit) }}'
+    qos_policy_group: '{{ opt_lun_qos_policy_group_01  | default(omit) }}'
+    san_application_template: '{{ opt_lun_san_application_template_01  | default(omit) }}'
+    size: '{{ opt_lun_size_01  | default(omit) }}'
+    size_unit: '{{ opt_lun_size_unit_01  | default(omit) }}'
+    space_allocation: '{{ opt_lun_space_allocation_01  | default(omit) }}'
+    space_reserve: '{{ opt_lun_space_reserve_01  | default(omit) }}'
+    state: '{{ opt_lun_state_01  | default(omit) }}'
+    use_exact_size: '{{ opt_lun_use_exact_size_01  | default(omit) }}'
   register: results

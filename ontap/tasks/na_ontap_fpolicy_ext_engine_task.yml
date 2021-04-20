@@ -1,0 +1,32 @@
+---
+- name: Running command na_ontap_fpolicy_ext_engine
+  na_ontap_fpolicy_ext_engine:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username  | default(omit) }}"
+    password: "{{ netapp_password  | default(omit) }}"
+    cert_filepath: "{{ netapp_cert_filepath  | default(omit) }}"
+    key_filepath: "{{ netapp_key_filepath  | default(omit) }}"
+    https: "{{ netapp_https | default(true) }}"
+    port: "{{ netapp_port  | default(omit) }}"
+    validate_certs: "{{ validate_certs | default(false) }}"
+    http_port: "{{ opt_lun_map_http_port_01  | default(omit) }}"
+    ontapi: "{{ opt_lun_map_ontapi_01  | default(omit) }}"
+    use_rest: "{{ opt_lun_map_use_rest_01  | default(omit) }}"
+    name: '{{ req_fpolicy_ext_engine_name_01 }}'
+    vserver: '{{ req_fpolicy_ext_engine_vserver_01 }}'
+    certificate_ca: '{{ opt_fpolicy_ext_engine_certificate_ca_01  | default(omit) }}'
+    certificate_common_name: '{{ opt_fpolicy_ext_engine_certificate_common_name_01  | default(omit) }}'
+    certificate_serial: '{{ opt_fpolicy_ext_engine_certificate_serial_01  | default(omit) }}'
+    extern_engine_type: '{{ opt_fpolicy_ext_engine_extern_engine_type_01  | default(omit) }}'
+    feature_flags: '{{ opt_fpolicy_ext_engine_feature_flags_01  | default(omit) }}'
+    is_resiliency_enabled: '{{ opt_fpolicy_ext_engine_is_resiliency_enabled_01  | default(omit) }}'
+    max_connection_retries: '{{ opt_fpolicy_ext_engine_max_connection_retries_01  | default(omit) }}'
+    max_server_reqs: '{{ opt_fpolicy_ext_engine_max_server_reqs_01  | default(omit) }}'
+    primary_servers: '{{ opt_fpolicy_ext_engine_primary_servers_01  | default(omit) }}'
+    recv_buffer_size: '{{ opt_fpolicy_ext_engine_recv_buffer_size_01  | default(omit) }}'
+    resiliency_directory_path: '{{ opt_fpolicy_ext_engine_resiliency_directory_path_01  | default(omit) }}'
+    secondary_servers: '{{ opt_fpolicy_ext_engine_secondary_servers_01  | default(omit) }}'
+    send_buffer_size: '{{ opt_fpolicy_ext_engine_send_buffer_size_01  | default(omit) }}'
+    ssl_option: '{{ opt_fpolicy_ext_engine_ssl_option_01  | default(omit) }}'
+    state: '{{ opt_fpolicy_ext_engine_state_01  | default(omit) }}'
+  register: results

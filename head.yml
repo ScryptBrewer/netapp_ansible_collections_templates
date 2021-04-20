@@ -6,3 +6,11 @@
     - netapp.ontap
 
   vars:
+    netapp_hostname: "Cluster1" 
+    netapp_username: "admin" 
+    netapp_password: "Secret123" 
+    netapp_https: "True" 
+    netapp_port: "443" 
+    validate_certs: "false"
+
+  tasks:

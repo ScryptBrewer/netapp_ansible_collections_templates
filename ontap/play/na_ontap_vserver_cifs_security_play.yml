@@ -1,2 +1,31 @@
     - name: Running command na_ontap_vserver_cifs_security
       include_tasks: tasks/na_ontap_vserver_cifs_security_task.yml
+      loop: "{{ na_ontap_vserver_cifs_security }}"
+      vars:
+        req_vserver_cifs_security_hostname_01: '{{ item.hostname }}'
+        req_vserver_cifs_security_vserver_01: '{{ item.vserver }}'
+        #opt_vserver_cifs_security_cert_filepath_01: '{{ item.cert_filepath }}'
+        #opt_vserver_cifs_security_feature_flags_01: '{{ item.feature_flags }}'
+        #opt_vserver_cifs_security_http_port_01: '{{ item.http_port }}'
+        #opt_vserver_cifs_security_https_01: '{{ item.https }}'
+        #opt_vserver_cifs_security_is_aes_encryption_enabled_01: '{{ item.is_aes_encryption_enabled }}'
+        #opt_vserver_cifs_security_is_password_complexity_required_01: '{{ item.is_password_complexity_required }}'
+        #opt_vserver_cifs_security_is_signing_required_01: '{{ item.is_signing_required }}'
+        #opt_vserver_cifs_security_is_smb_encryption_required_01: '{{ item.is_smb_encryption_required }}'
+        #opt_vserver_cifs_security_kerberos_clock_skew_01: '{{ item.kerberos_clock_skew }}'
+        #opt_vserver_cifs_security_kerberos_kdc_timeout_01: '{{ item.kerberos_kdc_timeout }}'
+        #opt_vserver_cifs_security_kerberos_renew_age_01: '{{ item.kerberos_renew_age }}'
+        #opt_vserver_cifs_security_kerberos_ticket_age_01: '{{ item.kerberos_ticket_age }}'
+        #opt_vserver_cifs_security_key_filepath_01: '{{ item.key_filepath }}'
+        #opt_vserver_cifs_security_lm_compatibility_level_01: '{{ item.lm_compatibility_level }}'
+        #opt_vserver_cifs_security_ontapi_01: '{{ item.ontapi }}'
+        #opt_vserver_cifs_security_password_01: '{{ item.password }}'
+        #opt_vserver_cifs_security_referral_enabled_for_ad_ldap_01: '{{ item.referral_enabled_for_ad_ldap }}'
+        #opt_vserver_cifs_security_session_security_for_ad_ldap_01: '{{ item.session_security_for_ad_ldap }}'
+        #opt_vserver_cifs_security_smb1_enabled_for_dc_connections_01: '{{ item.smb1_enabled_for_dc_connections }}'
+        #opt_vserver_cifs_security_smb2_enabled_for_dc_connections_01: '{{ item.smb2_enabled_for_dc_connections }}'
+        #opt_vserver_cifs_security_use_rest_01: '{{ item.use_rest }}'
+        #opt_vserver_cifs_security_use_start_tls_for_ad_ldap_01: '{{ item.use_start_tls_for_ad_ldap }}'
+        #opt_vserver_cifs_security_username_01: '{{ item.username }}'
+        #opt_vserver_cifs_security_validate_certs_01: '{{ item.validate_certs }}'
+  

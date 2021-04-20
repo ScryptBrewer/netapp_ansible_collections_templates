@@ -1,2 +1,17 @@
     - name: Running command na_ontap_cluster_ha
       include_tasks: tasks/na_ontap_cluster_ha_task.yml
+      loop: "{{ na_ontap_cluster_ha }}"
+      vars:
+        req_cluster_ha_hostname_01: '{{ item.hostname }}'
+        #opt_cluster_ha_cert_filepath_01: '{{ item.cert_filepath }}'
+        #opt_cluster_ha_feature_flags_01: '{{ item.feature_flags }}'
+        #opt_cluster_ha_http_port_01: '{{ item.http_port }}'
+        #opt_cluster_ha_https_01: '{{ item.https }}'
+        #opt_cluster_ha_key_filepath_01: '{{ item.key_filepath }}'
+        #opt_cluster_ha_ontapi_01: '{{ item.ontapi }}'
+        #opt_cluster_ha_password_01: '{{ item.password }}'
+        #opt_cluster_ha_state_01: '{{ item.state }}'
+        #opt_cluster_ha_use_rest_01: '{{ item.use_rest }}'
+        #opt_cluster_ha_username_01: '{{ item.username }}'
+        #opt_cluster_ha_validate_certs_01: '{{ item.validate_certs }}'
+  

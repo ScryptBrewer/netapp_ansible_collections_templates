@@ -1,2 +1,12 @@
     - name: Running command na_sg_org_user_s3_key
       include_tasks: tasks/na_sg_org_user_s3_key_task.yml
+      loop: "{{ na_sg_org_user_s3_key }}"
+      vars:
+        na_sg_org_user_s3_key_api_url_01: '{{ item.api_url }}'
+        na_sg_org_user_s3_key_auth_token_01: '{{ item.auth_token }}'
+        na_sg_org_user_s3_key_unique_user_name_01: '{{ item.unique_user_name }}'
+        #na_sg_org_user_s3_key_access_key_01: '{{ item.access_key }}'
+        #na_sg_org_user_s3_key_expires_01: '{{ item.expires }}'
+        #na_sg_org_user_s3_key_state_01: '{{ item.state }}'
+        #na_sg_org_user_s3_key_validate_certs_01: '{{ item.validate_certs }}'
+  

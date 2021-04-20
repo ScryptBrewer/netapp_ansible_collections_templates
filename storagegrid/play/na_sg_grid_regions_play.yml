@@ -1,2 +1,10 @@
     - name: Running command na_sg_grid_regions
       include_tasks: tasks/na_sg_grid_regions_task.yml
+      loop: "{{ na_sg_grid_regions }}"
+      vars:
+        na_sg_grid_regions_api_url_01: '{{ item.api_url }}'
+        na_sg_grid_regions_auth_token_01: '{{ item.auth_token }}'
+        na_sg_grid_regions_regions_01: '{{ item.regions }}'
+        #na_sg_grid_regions_state_01: '{{ item.state }}'
+        #na_sg_grid_regions_validate_certs_01: '{{ item.validate_certs }}'
+  

@@ -1,2 +1,22 @@
     - name: Running command na_ontap_ssh_command
       include_tasks: tasks/na_ontap_ssh_command_task.yml
+      loop: "{{ na_ontap_ssh_command }}"
+      vars:
+        req_ssh_command_command_01: '{{ item.command }}'
+        req_ssh_command_hostname_01: '{{ item.hostname }}'
+        #opt_ssh_command_accept_unknown_host_keys_01: '{{ item.accept_unknown_host_keys }}'
+        #opt_ssh_command_cert_filepath_01: '{{ item.cert_filepath }}'
+        #opt_ssh_command_exclude_lines_01: '{{ item.exclude_lines }}'
+        #opt_ssh_command_feature_flags_01: '{{ item.feature_flags }}'
+        #opt_ssh_command_http_port_01: '{{ item.http_port }}'
+        #opt_ssh_command_https_01: '{{ item.https }}'
+        #opt_ssh_command_include_lines_01: '{{ item.include_lines }}'
+        #opt_ssh_command_key_filepath_01: '{{ item.key_filepath }}'
+        #opt_ssh_command_ontapi_01: '{{ item.ontapi }}'
+        #opt_ssh_command_password_01: '{{ item.password }}'
+        #opt_ssh_command_privilege_01: '{{ item.privilege }}'
+        #opt_ssh_command_service_processor_01: '{{ item.service_processor }}'
+        #opt_ssh_command_use_rest_01: '{{ item.use_rest }}'
+        #opt_ssh_command_username_01: '{{ item.username }}'
+        #opt_ssh_command_validate_certs_01: '{{ item.validate_certs }}'
+  

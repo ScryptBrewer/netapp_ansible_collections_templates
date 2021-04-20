@@ -1,2 +1,22 @@
     - name: Running command na_ontap_license
       include_tasks: tasks/na_ontap_license_task.yml
+      loop: "{{ na_ontap_license }}"
+      vars:
+        req_license_hostname_01: '{{ item.hostname }}'
+        #opt_license_cert_filepath_01: '{{ item.cert_filepath }}'
+        #opt_license_feature_flags_01: '{{ item.feature_flags }}'
+        #opt_license_http_port_01: '{{ item.http_port }}'
+        #opt_license_https_01: '{{ item.https }}'
+        #opt_license_key_filepath_01: '{{ item.key_filepath }}'
+        #opt_license_license_codes_01: '{{ item.license_codes }}'
+        #opt_license_license_names_01: '{{ item.license_names }}'
+        #opt_license_ontapi_01: '{{ item.ontapi }}'
+        #opt_license_password_01: '{{ item.password }}'
+        #opt_license_remove_expired_01: '{{ item.remove_expired }}'
+        #opt_license_remove_unused_01: '{{ item.remove_unused }}'
+        #opt_license_serial_number_01: '{{ item.serial_number }}'
+        #opt_license_state_01: '{{ item.state }}'
+        #opt_license_use_rest_01: '{{ item.use_rest }}'
+        #opt_license_username_01: '{{ item.username }}'
+        #opt_license_validate_certs_01: '{{ item.validate_certs }}'
+  

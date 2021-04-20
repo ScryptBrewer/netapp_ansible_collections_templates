@@ -2,26 +2,34 @@
 - name: Running command na_ontap_volume_efficiency
   na_ontap_volume_efficiency:
     hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username | default(omit) }}"
-    password: "{{ netapp_password | default(omit) }}"
-    cert_filepath: "{{ netapp_cert_filepath | default(omit) }}"
-    key_filepath: "{{ netapp_key_filepath | default(omit) }}"
+    username: "{{ netapp_username  | default(omit) }}"
+    password: "{{ netapp_password  | default(omit) }}"
+    cert_filepath: "{{ netapp_cert_filepath  | default(omit) }}"
+    key_filepath: "{{ netapp_key_filepath  | default(omit) }}"
     https: "{{ netapp_https | default(true) }}"
-    port: "{{ netapp_port | default(omit) }}"
+    port: "{{ netapp_port  | default(omit) }}"
     validate_certs: "{{ validate_certs | default(false) }}"
-    http_port: "{{ opt_lun_map_http_port_01 | default(omit) }}"
-    ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
-    use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
+    http_port: "{{ opt_lun_map_http_port_01  | default(omit) }}"
+    ontapi: "{{ opt_lun_map_ontapi_01  | default(omit) }}"
+    use_rest: "{{ opt_lun_map_use_rest_01  | default(omit) }}"
     path: '{{ req_volume_efficiency_path_01 }}'
     vserver: '{{ req_volume_efficiency_vserver_01 }}'
-    enable_compression: '{{ opt_volume_efficiency_enable_compression_01 | default(omit) }}'
-    enable_cross_volume_background_dedupe: '{{ opt_volume_efficiency_enable_cross_volume_background_dedupe_01 | default(omit) }}'
-    enable_cross_volume_inline_dedupe: '{{ opt_volume_efficiency_enable_cross_volume_inline_dedupe_01 | default(omit) }}'
-    enable_data_compaction: '{{ opt_volume_efficiency_enable_data_compaction_01 | default(omit) }}'
-    enable_inline_compression: '{{ opt_volume_efficiency_enable_inline_compression_01 | default(omit) }}'
-    enable_inline_dedupe: '{{ opt_volume_efficiency_enable_inline_dedupe_01 | default(omit) }}'
-    feature_flags: '{{ opt_volume_efficiency_feature_flags_01 | default(omit) }}'
-    policy: '{{ opt_volume_efficiency_policy_01 | default(omit) }}'
-    schedule: '{{ opt_volume_efficiency_schedule_01 | default(omit) }}'
-    state: '{{ opt_volume_efficiency_state_01 | default(omit) }}'
+    enable_compression: '{{ opt_volume_efficiency_enable_compression_01  | default(omit) }}'
+    enable_cross_volume_background_dedupe: '{{ opt_volume_efficiency_enable_cross_volume_background_dedupe_01  | default(omit) }}'
+    enable_cross_volume_inline_dedupe: '{{ opt_volume_efficiency_enable_cross_volume_inline_dedupe_01  | default(omit) }}'
+    enable_data_compaction: '{{ opt_volume_efficiency_enable_data_compaction_01  | default(omit) }}'
+    enable_inline_compression: '{{ opt_volume_efficiency_enable_inline_compression_01  | default(omit) }}'
+    enable_inline_dedupe: '{{ opt_volume_efficiency_enable_inline_dedupe_01  | default(omit) }}'
+    feature_flags: '{{ opt_volume_efficiency_feature_flags_01  | default(omit) }}'
+    policy: '{{ opt_volume_efficiency_policy_01  | default(omit) }}'
+    schedule: '{{ opt_volume_efficiency_schedule_01  | default(omit) }}'
+    start_ve_build_metadata: '{{ opt_volume_efficiency_start_ve_build_metadata_01  | default(omit) }}'
+    start_ve_delete_checkpoint: '{{ opt_volume_efficiency_start_ve_delete_checkpoint_01  | default(omit) }}'
+    start_ve_qos_policy: '{{ opt_volume_efficiency_start_ve_qos_policy_01  | default(omit) }}'
+    start_ve_queue_operation: '{{ opt_volume_efficiency_start_ve_queue_operation_01  | default(omit) }}'
+    start_ve_scan_all: '{{ opt_volume_efficiency_start_ve_scan_all_01  | default(omit) }}'
+    start_ve_scan_old_data: '{{ opt_volume_efficiency_start_ve_scan_old_data_01  | default(omit) }}'
+    state: '{{ opt_volume_efficiency_state_01  | default(omit) }}'
+    stop_ve_all_operations: '{{ opt_volume_efficiency_stop_ve_all_operations_01  | default(omit) }}'
+    volume_efficiency: '{{ opt_volume_efficiency_volume_efficiency_01  | default(omit) }}'
   register: results
