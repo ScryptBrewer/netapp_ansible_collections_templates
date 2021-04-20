@@ -25,7 +25,7 @@ How do you loop through multiple volumes/lifs/interfaces
 Creating a loop for multiple volumes. 
 The following commands will help create and setup multivolume play for a example that can be use for other plays.
 ```
-cat head.yml ontap/play/multi_na_ontap_volume_play.yml >multi_create_vol_ntap.yml
+cat head.yml ontap/play/na_ontap_volume_play.yml >multi_create_vol_ntap.yml
 
 update the loop name to your var
      loop: {{ ntap_volumes }}
