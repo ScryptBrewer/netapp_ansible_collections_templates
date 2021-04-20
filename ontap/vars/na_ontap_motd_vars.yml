@@ -1,0 +1,25 @@
+
+    #vars:
+# Section: na_ontap_motd:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_motd_hostname_01: ' '
+    req_motd_vserver_01: ' '
+    #opt_motd_cert_filepath_01: ' '
+    #opt_motd_feature_flags_01: ' '
+    #opt_motd_http_port_01: ' '
+    #opt_motd_https_01: ' '
+    #opt_motd_key_filepath_01: ' '
+    #opt_motd_motd_message_01: ' '
+    #opt_motd_ontapi_01: ' '
+    #opt_motd_password_01: ' '
+    #opt_motd_show_cluster_motd_01: ' '
+    #opt_motd_state_01: ' '
+    #opt_motd_use_rest_01: ' '
+    #opt_motd_username_01: ' '
+    #opt_motd_validate_certs_01: ' '
+  

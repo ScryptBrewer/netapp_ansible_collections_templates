@@ -1,0 +1,13 @@
+---
+- name: Running command na_elementsw_access_group
+  na_elementsw_access_group:
+    name: '{{ req_access_group_name_01 }}'
+    account_id: '{{ opt_access_group_account_id_01  | default(omit)  }}'
+    attributes: '{{ opt_access_group_attributes_01  | default(omit)  }}'
+    from_name: '{{ opt_access_group_from_name_01  | default(omit)  }}'
+    initiators: '{{ opt_access_group_initiators_01  | default(omit)  }}'
+    state: '{{ opt_access_group_state_01  | default(omit)  }}'
+    virtual_network_id: '{{ opt_access_group_virtual_network_id_01  | default(omit)  }}'
+    virtual_network_tags: '{{ opt_access_group_virtual_network_tags_01  | default(omit)  }}'
+    volumes: '{{ opt_access_group_volumes_01  | default(omit)  }}'
+  register: results

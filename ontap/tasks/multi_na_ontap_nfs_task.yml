@@ -1,0 +1,40 @@
+---
+- name: Running command na_ontap_nfs
+  na_ontap_nfs:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username | default(omit) }}"
+    password: "{{ netapp_password | default(omit) }}"
+    cert_filepath: "{{ netapp_cert_filepath | default(omit) }}"
+    key_filepath: "{{ netapp_key_filepath | default(omit) }}"
+    https: "{{ netapp_https | default(true) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    validate_certs: "{{ validate_certs | default(false) }}"
+    http_port: "{{ opt_lun_map_http_port_01 | default(omit) }}"
+    ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
+    use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
+    vserver: '{{ item.req_nfs_vserver_01 }}'
+    feature_flags: '{{ item.opt_nfs_feature_flags_01 | default(omit) }}'
+    nfsv3: '{{ item.opt_nfs_nfsv3_01 | default(omit) }}'
+    nfsv3_fsid_change: '{{ item.opt_nfs_nfsv3_fsid_change_01 | default(omit) }}'
+    nfsv4: '{{ item.opt_nfs_nfsv4_01 | default(omit) }}'
+    nfsv40_acl: '{{ item.opt_nfs_nfsv40_acl_01 | default(omit) }}'
+    nfsv40_read_delegation: '{{ item.opt_nfs_nfsv40_read_delegation_01 | default(omit) }}'
+    nfsv40_referrals: '{{ item.opt_nfs_nfsv40_referrals_01 | default(omit) }}'
+    nfsv40_write_delegation: '{{ item.opt_nfs_nfsv40_write_delegation_01 | default(omit) }}'
+    nfsv41: '{{ item.opt_nfs_nfsv41_01 | default(omit) }}'
+    nfsv41_acl: '{{ item.opt_nfs_nfsv41_acl_01 | default(omit) }}'
+    nfsv41_pnfs: '{{ item.opt_nfs_nfsv41_pnfs_01 | default(omit) }}'
+    nfsv41_read_delegation: '{{ item.opt_nfs_nfsv41_read_delegation_01 | default(omit) }}'
+    nfsv41_referrals: '{{ item.opt_nfs_nfsv41_referrals_01 | default(omit) }}'
+    nfsv41_write_delegation: '{{ item.opt_nfs_nfsv41_write_delegation_01 | default(omit) }}'
+    nfsv4_fsid_change: '{{ item.opt_nfs_nfsv4_fsid_change_01 | default(omit) }}'
+    nfsv4_id_domain: '{{ item.opt_nfs_nfsv4_id_domain_01 | default(omit) }}'
+    nfsv4_numeric_ids: '{{ item.opt_nfs_nfsv4_numeric_ids_01 | default(omit) }}'
+    service_state: '{{ item.opt_nfs_service_state_01 | default(omit) }}'
+    showmount: '{{ item.opt_nfs_showmount_01 | default(omit) }}'
+    state: '{{ item.opt_nfs_state_01 | default(omit) }}'
+    tcp: '{{ item.opt_nfs_tcp_01 | default(omit) }}'
+    tcp_max_xfer_size: '{{ item.opt_nfs_tcp_max_xfer_size_01 | default(omit) }}'
+    udp: '{{ item.opt_nfs_udp_01 | default(omit) }}'
+    vstorage_state: '{{ item.opt_nfs_vstorage_state_01 | default(omit) }}'
+  register: results

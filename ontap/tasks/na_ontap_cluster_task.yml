@@ -2,23 +2,23 @@
 - name: Running command na_ontap_cluster
   na_ontap_cluster:
     hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username  | default(omit) }}"
-    password: "{{ netapp_password  | default(omit) }}"
-    cert_filepath: "{{ netapp_cert_filepath  | default(omit) }}"
-    key_filepath: "{{ netapp_key_filepath  | default(omit) }}"
+    username: "{{ netapp_username  | default(omit)  }}"
+    password: "{{ netapp_password  | default(omit)  }}"
+    cert_filepath: "{{ netapp_cert_filepath  | default(omit)  }}"
+    key_filepath: "{{ netapp_key_filepath  | default(omit)  }}"
     https: "{{ netapp_https | default(true) }}"
-    port: "{{ netapp_port  | default(omit) }}"
+    port: "{{ netapp_port  | default(omit)  }}"
     validate_certs: "{{ validate_certs | default(false) }}"
-    http_port: "{{ opt_lun_map_http_port_01  | default(omit) }}"
-    ontapi: "{{ opt_lun_map_ontapi_01  | default(omit) }}"
-    use_rest: "{{ opt_lun_map_use_rest_01  | default(omit) }}"
-    cluster_contact: '{{ opt_cluster_cluster_contact_01  | default(omit) }}'
-    cluster_ip_address: '{{ opt_cluster_cluster_ip_address_01  | default(omit) }}'
-    cluster_location: '{{ opt_cluster_cluster_location_01  | default(omit) }}'
-    cluster_name: '{{ opt_cluster_cluster_name_01  | default(omit) }}'
-    feature_flags: '{{ opt_cluster_feature_flags_01  | default(omit) }}'
-    node_name: '{{ opt_cluster_node_name_01  | default(omit) }}'
-    single_node_cluster: '{{ opt_cluster_single_node_cluster_01  | default(omit) }}'
-    state: '{{ opt_cluster_state_01  | default(omit) }}'
-    time_out: '{{ opt_cluster_time_out_01  | default(omit) }}'
+    http_port: "{{ opt_lun_map_http_port_01  | default(omit)  }}"
+    ontapi: "{{ opt_lun_map_ontapi_01  | default(omit)  }}"
+    use_rest: "{{ opt_lun_map_use_rest_01  | default(omit)  }}"
+    cluster_contact: '{{ opt_cluster_cluster_contact_01  | default(omit)  }}'
+    cluster_ip_address: '{{ opt_cluster_cluster_ip_address_01  | default(omit)  }}'
+    cluster_location: '{{ opt_cluster_cluster_location_01  | default(omit)  }}'
+    cluster_name: '{{ opt_cluster_cluster_name_01  | default(omit)  }}'
+    feature_flags: '{{ opt_cluster_feature_flags_01  | default(omit)  }}'
+    node_name: '{{ opt_cluster_node_name_01  | default(omit)  }}'
+    single_node_cluster: '{{ opt_cluster_single_node_cluster_01  | default(omit)  }}'
+    state: '{{ opt_cluster_state_01  | default(omit)  }}'
+    time_out: '{{ opt_cluster_time_out_01  | default(omit)  }}'
   register: results

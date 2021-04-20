@@ -1,0 +1,28 @@
+
+    #vars:
+# Section: na_ontap_fpolicy_event:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_fpolicy_event_hostname_01: ' '
+    req_fpolicy_event_name_01: ' '
+    req_fpolicy_event_vserver_01: ' '
+    #opt_fpolicy_event_cert_filepath_01: ' '
+    #opt_fpolicy_event_feature_flags_01: ' '
+    #opt_fpolicy_event_file_operations_01: ' '
+    #opt_fpolicy_event_filters_01: ' '
+    #opt_fpolicy_event_http_port_01: ' '
+    #opt_fpolicy_event_https_01: ' '
+    #opt_fpolicy_event_key_filepath_01: ' '
+    #opt_fpolicy_event_ontapi_01: ' '
+    #opt_fpolicy_event_password_01: ' '
+    #opt_fpolicy_event_protocol_01: ' '
+    #opt_fpolicy_event_state_01: ' '
+    #opt_fpolicy_event_use_rest_01: ' '
+    #opt_fpolicy_event_username_01: ' '
+    #opt_fpolicy_event_validate_certs_01: ' '
+    #opt_fpolicy_event_volume_monitoring_01: ' '
+  

@@ -1,0 +1,17 @@
+    - name: Running command na_elementsw_vlan
+      include_tasks: tasks/na_elementsw_vlan_task.yml
+      loop: "{{ na_elementsw_vlan }}"
+      vars:
+        req_vlan_hostname_01: '{{ item.hostname }}'
+        req_vlan_password_01: '{{ item.password }}'
+        req_vlan_username_01: '{{ item.username }}'
+        req_vlan_vlan_tag_01: '{{ item.vlan_tag }}'
+        #opt_vlan_address_blocks_01: '{{ item.address_blocks }}'
+        #opt_vlan_attributes_01: '{{ item.attributes }}'
+        #opt_vlan_gateway_01: '{{ item.gateway }}'
+        #opt_vlan_name_01: '{{ item.name }}'
+        #opt_vlan_namespace_01: '{{ item.namespace }}'
+        #opt_vlan_netmask_01: '{{ item.netmask }}'
+        #opt_vlan_state_01: '{{ item.state }}'
+        #opt_vlan_svip_01: '{{ item.svip }}'
+  

@@ -1,0 +1,11 @@
+---
+- name: Running command aws_netapp_cvs_snapshots
+  aws_netapp_cvs_snapshots:
+    api_key: '{{ aws_netapp_cvs_snapshots_api_key_01 }}'
+    name: '{{ aws_netapp_cvs_snapshots_name_01 }}'
+    region: '{{ aws_netapp_cvs_snapshots_region_01 }}'
+    secret_key: '{{ aws_netapp_cvs_snapshots_secret_key_01 }}'
+    state: '{{ aws_netapp_cvs_snapshots_state_01 }}'
+    fileSystemId: '{{ aws_netapp_cvs_snapshots_fileSystemId_01  | default(omit)  }}'
+    from_name: '{{ aws_netapp_cvs_snapshots_from_name_01  | default(omit)  }}'
+  register: results

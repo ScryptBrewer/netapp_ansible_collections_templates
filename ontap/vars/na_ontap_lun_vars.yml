@@ -1,0 +1,39 @@
+
+    #vars:
+# Section: na_ontap_lun:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_lun_hostname_01: ' '
+    req_lun_name_01: ' '
+    req_lun_vserver_01: ' '
+    #opt_lun_cert_filepath_01: ' '
+    #opt_lun_comment_01: ' '
+    #opt_lun_feature_flags_01: ' '
+    #opt_lun_flexvol_name_01: ' '
+    #opt_lun_force_remove_01: ' '
+    #opt_lun_force_remove_fenced_01: ' '
+    #opt_lun_force_resize_01: ' '
+    #opt_lun_from_name_01: ' '
+    #opt_lun_http_port_01: ' '
+    #opt_lun_https_01: ' '
+    #opt_lun_key_filepath_01: ' '
+    #opt_lun_ontapi_01: ' '
+    #opt_lun_os_type_01: ' '
+    #opt_lun_password_01: ' '
+    #opt_lun_qos_adaptive_policy_group_01: ' '
+    #opt_lun_qos_policy_group_01: ' '
+    #opt_lun_san_application_template_01: ' '
+    #opt_lun_size_01: ' '
+    #opt_lun_size_unit_01: ' '
+    #opt_lun_space_allocation_01: ' '
+    #opt_lun_space_reserve_01: ' '
+    #opt_lun_state_01: ' '
+    #opt_lun_use_exact_size_01: ' '
+    #opt_lun_use_rest_01: ' '
+    #opt_lun_username_01: ' '
+    #opt_lun_validate_certs_01: ' '
+  

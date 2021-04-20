@@ -1,0 +1,27 @@
+
+    #vars:
+# Section: na_ontap_user_role:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_user_role_command_directory_name_01: ' '
+    req_user_role_hostname_01: ' '
+    req_user_role_name_01: ' '
+    req_user_role_vserver_01: ' '
+    #opt_user_role_access_level_01: ' '
+    #opt_user_role_cert_filepath_01: ' '
+    #opt_user_role_feature_flags_01: ' '
+    #opt_user_role_http_port_01: ' '
+    #opt_user_role_https_01: ' '
+    #opt_user_role_key_filepath_01: ' '
+    #opt_user_role_ontapi_01: ' '
+    #opt_user_role_password_01: ' '
+    #opt_user_role_query_01: ' '
+    #opt_user_role_state_01: ' '
+    #opt_user_role_use_rest_01: ' '
+    #opt_user_role_username_01: ' '
+    #opt_user_role_validate_certs_01: ' '
+  

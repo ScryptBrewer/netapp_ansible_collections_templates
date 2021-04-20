@@ -2,22 +2,22 @@
 - name: Running command na_ontap_restit
   na_ontap_restit:
     hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username  | default(omit) }}"
-    password: "{{ netapp_password  | default(omit) }}"
-    cert_filepath: "{{ netapp_cert_filepath  | default(omit) }}"
-    key_filepath: "{{ netapp_key_filepath  | default(omit) }}"
+    username: "{{ netapp_username  | default(omit)  }}"
+    password: "{{ netapp_password  | default(omit)  }}"
+    cert_filepath: "{{ netapp_cert_filepath  | default(omit)  }}"
+    key_filepath: "{{ netapp_key_filepath  | default(omit)  }}"
     https: "{{ netapp_https | default(true) }}"
-    port: "{{ netapp_port  | default(omit) }}"
+    port: "{{ netapp_port  | default(omit)  }}"
     validate_certs: "{{ validate_certs | default(false) }}"
-    http_port: "{{ opt_lun_map_http_port_01  | default(omit) }}"
-    ontapi: "{{ opt_lun_map_ontapi_01  | default(omit) }}"
-    use_rest: "{{ opt_lun_map_use_rest_01  | default(omit) }}"
+    http_port: "{{ opt_lun_map_http_port_01  | default(omit)  }}"
+    ontapi: "{{ opt_lun_map_ontapi_01  | default(omit)  }}"
+    use_rest: "{{ opt_lun_map_use_rest_01  | default(omit)  }}"
     api: '{{ req_restit_api_01 }}'
-    body: '{{ opt_restit_body_01  | default(omit) }}'
-    feature_flags: '{{ opt_restit_feature_flags_01  | default(omit) }}'
-    hal_linking: '{{ opt_restit_hal_linking_01  | default(omit) }}'
-    method: '{{ opt_restit_method_01  | default(omit) }}'
-    query: '{{ opt_restit_query_01  | default(omit) }}'
-    vserver_name: '{{ opt_restit_vserver_name_01  | default(omit) }}'
-    vserver_uuid: '{{ opt_restit_vserver_uuid_01  | default(omit) }}'
+    body: '{{ opt_restit_body_01  | default(omit)  }}'
+    feature_flags: '{{ opt_restit_feature_flags_01  | default(omit)  }}'
+    hal_linking: '{{ opt_restit_hal_linking_01  | default(omit)  }}'
+    method: '{{ opt_restit_method_01  | default(omit)  }}'
+    query: '{{ opt_restit_query_01  | default(omit)  }}'
+    vserver_name: '{{ opt_restit_vserver_name_01  | default(omit)  }}'
+    vserver_uuid: '{{ opt_restit_vserver_uuid_01  | default(omit)  }}'
   register: results

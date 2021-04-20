@@ -1,0 +1,14 @@
+    - name: Running command aws_netapp_cvs_snapshots
+      include_tasks: tasks/aws_netapp_cvs_snapshots_task.yml
+      loop: "{{ aws_netapp_cvs_snapshots }}"
+      vars:
+        aws_netapp_cvs_snapshots_api_key_01: '{{ item.api_key }}'
+        aws_netapp_cvs_snapshots_api_url_01: '{{ item.api_url }}'
+        aws_netapp_cvs_snapshots_name_01: '{{ item.name }}'
+        aws_netapp_cvs_snapshots_region_01: '{{ item.region }}'
+        aws_netapp_cvs_snapshots_secret_key_01: '{{ item.secret_key }}'
+        aws_netapp_cvs_snapshots_state_01: '{{ item.state }}'
+        #aws_netapp_cvs_snapshots_fileSystemId_01: '{{ item.fileSystemId }}'
+        #aws_netapp_cvs_snapshots_from_name_01: '{{ item.from_name }}'
+        #aws_netapp_cvs_snapshots_validate_certs_01: '{{ item.validate_certs }}'
+  

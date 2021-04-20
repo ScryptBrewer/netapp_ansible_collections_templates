@@ -1,0 +1,23 @@
+
+    #vars:
+# Section: na_ontap_snmp_traphosts:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_snmp_traphosts_hostname_01: ' '
+    req_snmp_traphosts_ip_address_01: ' '
+    #opt_snmp_traphosts_cert_filepath_01: ' '
+    #opt_snmp_traphosts_feature_flags_01: ' '
+    #opt_snmp_traphosts_http_port_01: ' '
+    #opt_snmp_traphosts_https_01: ' '
+    #opt_snmp_traphosts_key_filepath_01: ' '
+    #opt_snmp_traphosts_ontapi_01: ' '
+    #opt_snmp_traphosts_password_01: ' '
+    #opt_snmp_traphosts_state_01: ' '
+    #opt_snmp_traphosts_use_rest_01: ' '
+    #opt_snmp_traphosts_username_01: ' '
+    #opt_snmp_traphosts_validate_certs_01: ' '
+  

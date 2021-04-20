@@ -1,0 +1,31 @@
+
+    #vars:
+# Section: na_ontap_info:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_info_hostname_01: ' '
+    #opt_info_cert_filepath_01: ' '
+    #opt_info_continue_on_error_01: ' '
+    #opt_info_desired_attributes_01: ' '
+    #opt_info_feature_flags_01: ' '
+    #opt_info_gather_subset_01: ' '
+    #opt_info_http_port_01: ' '
+    #opt_info_https_01: ' '
+    #opt_info_key_filepath_01: ' '
+    #opt_info_max_records_01: ' '
+    #opt_info_ontapi_01: ' '
+    #opt_info_password_01: ' '
+    #opt_info_query_01: ' '
+    #opt_info_state_01: ' '
+    #opt_info_summary_01: ' '
+    #opt_info_use_native_zapi_tags_01: ' '
+    #opt_info_use_rest_01: ' '
+    #opt_info_username_01: ' '
+    #opt_info_validate_certs_01: ' '
+    #opt_info_volume_move_target_aggr_info_01: ' '
+    #opt_info_vserver_01: ' '
+  

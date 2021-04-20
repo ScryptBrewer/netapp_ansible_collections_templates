@@ -1,0 +1,16 @@
+    - name: Running command aws_netapp_cvs_active_directory
+      include_tasks: tasks/aws_netapp_cvs_active_directory_task.yml
+      loop: "{{ aws_netapp_cvs_active_directory }}"
+      vars:
+        aws_netapp_cvs_active_directory_api_key_01: '{{ item.api_key }}'
+        aws_netapp_cvs_active_directory_api_url_01: '{{ item.api_url }}'
+        aws_netapp_cvs_active_directory_region_01: '{{ item.region }}'
+        aws_netapp_cvs_active_directory_secret_key_01: '{{ item.secret_key }}'
+        aws_netapp_cvs_active_directory_state_01: '{{ item.state }}'
+        #aws_netapp_cvs_active_directory_DNS_01: '{{ item.DNS }}'
+        #aws_netapp_cvs_active_directory_domain_01: '{{ item.domain }}'
+        #aws_netapp_cvs_active_directory_netBIOS_01: '{{ item.netBIOS }}'
+        #aws_netapp_cvs_active_directory_password_01: '{{ item.password }}'
+        #aws_netapp_cvs_active_directory_username_01: '{{ item.username }}'
+        #aws_netapp_cvs_active_directory_validate_certs_01: '{{ item.validate_certs }}'
+  

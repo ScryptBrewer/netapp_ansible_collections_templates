@@ -1,0 +1,35 @@
+
+    #vars:
+# Section: na_ontap_kerberos_realm:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_kerberos_realm_hostname_01: ' '
+    req_kerberos_realm_realm_01: ' '
+    req_kerberos_realm_vserver_01: ' '
+    #opt_kerberos_realm_ad_server_ip_01: ' '
+    #opt_kerberos_realm_ad_server_name_01: ' '
+    #opt_kerberos_realm_admin_server_ip_01: ' '
+    #opt_kerberos_realm_admin_server_port_01: ' '
+    #opt_kerberos_realm_cert_filepath_01: ' '
+    #opt_kerberos_realm_clock_skew_01: ' '
+    #opt_kerberos_realm_comment_01: ' '
+    #opt_kerberos_realm_feature_flags_01: ' '
+    #opt_kerberos_realm_http_port_01: ' '
+    #opt_kerberos_realm_https_01: ' '
+    #opt_kerberos_realm_kdc_ip_01: ' '
+    #opt_kerberos_realm_kdc_port_01: ' '
+    #opt_kerberos_realm_kdc_vendor_01: ' '
+    #opt_kerberos_realm_key_filepath_01: ' '
+    #opt_kerberos_realm_ontapi_01: ' '
+    #opt_kerberos_realm_password_01: ' '
+    #opt_kerberos_realm_pw_server_ip_01: ' '
+    #opt_kerberos_realm_pw_server_port_01: ' '
+    #opt_kerberos_realm_state_01: ' '
+    #opt_kerberos_realm_use_rest_01: ' '
+    #opt_kerberos_realm_username_01: ' '
+    #opt_kerberos_realm_validate_certs_01: ' '
+  

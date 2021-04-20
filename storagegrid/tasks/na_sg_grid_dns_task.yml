@@ -5,5 +5,5 @@
     auth_token: "{{{{ sg_auth_token }}}}"
     validate_certs: "{{{{ sg_validate_certs | default(false) }}}}"
     dns_servers: '{{ na_sg_grid_dns_dns_servers_01 }}'
-    state: '{{ na_sg_grid_dns_state_01  | default(omit) }}'
+    state: '{{ na_sg_grid_dns_state_01  | default(omit)  }}'
   register: results

@@ -1,0 +1,25 @@
+
+    #vars:
+# Section: na_ontap_security_key_manager:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_security_key_manager_hostname_01: ' '
+    req_security_key_manager_ip_address_01: ' '
+    #opt_security_key_manager_cert_filepath_01: ' '
+    #opt_security_key_manager_feature_flags_01: ' '
+    #opt_security_key_manager_http_port_01: ' '
+    #opt_security_key_manager_https_01: ' '
+    #opt_security_key_manager_key_filepath_01: ' '
+    #opt_security_key_manager_node_01: ' '
+    #opt_security_key_manager_ontapi_01: ' '
+    #opt_security_key_manager_password_01: ' '
+    #opt_security_key_manager_state_01: ' '
+    #opt_security_key_manager_tcp_port_01: ' '
+    #opt_security_key_manager_use_rest_01: ' '
+    #opt_security_key_manager_username_01: ' '
+    #opt_security_key_manager_validate_certs_01: ' '
+  

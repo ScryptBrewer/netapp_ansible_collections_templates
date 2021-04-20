@@ -1,0 +1,26 @@
+
+    #vars:
+# Section: na_ontap_quota_policy:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_quota_policy_hostname_01: ' '
+    req_quota_policy_name_01: ' '
+    req_quota_policy_vserver_01: ' '
+    #opt_quota_policy_auto_assign_01: ' '
+    #opt_quota_policy_cert_filepath_01: ' '
+    #opt_quota_policy_feature_flags_01: ' '
+    #opt_quota_policy_from_name_01: ' '
+    #opt_quota_policy_http_port_01: ' '
+    #opt_quota_policy_https_01: ' '
+    #opt_quota_policy_key_filepath_01: ' '
+    #opt_quota_policy_ontapi_01: ' '
+    #opt_quota_policy_password_01: ' '
+    #opt_quota_policy_state_01: ' '
+    #opt_quota_policy_use_rest_01: ' '
+    #opt_quota_policy_username_01: ' '
+    #opt_quota_policy_validate_certs_01: ' '
+  

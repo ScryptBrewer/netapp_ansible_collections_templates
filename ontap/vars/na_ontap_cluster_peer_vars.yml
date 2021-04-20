@@ -1,0 +1,32 @@
+
+    #vars:
+# Section: na_ontap_cluster_peer:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_cluster_peer_dest_hostname_01: ' '
+    req_cluster_peer_hostname_01: ' '
+    #opt_cluster_peer_cert_filepath_01: ' '
+    #opt_cluster_peer_dest_cluster_name_01: ' '
+    #opt_cluster_peer_dest_intercluster_lifs_01: ' '
+    #opt_cluster_peer_dest_password_01: ' '
+    #opt_cluster_peer_dest_username_01: ' '
+    #opt_cluster_peer_encryption_protocol_proposed_01: ' '
+    #opt_cluster_peer_feature_flags_01: ' '
+    #opt_cluster_peer_http_port_01: ' '
+    #opt_cluster_peer_https_01: ' '
+    #opt_cluster_peer_ipspace_01: ' '
+    #opt_cluster_peer_key_filepath_01: ' '
+    #opt_cluster_peer_ontapi_01: ' '
+    #opt_cluster_peer_passphrase_01: ' '
+    #opt_cluster_peer_password_01: ' '
+    #opt_cluster_peer_source_cluster_name_01: ' '
+    #opt_cluster_peer_source_intercluster_lifs_01: ' '
+    #opt_cluster_peer_state_01: ' '
+    #opt_cluster_peer_use_rest_01: ' '
+    #opt_cluster_peer_username_01: ' '
+    #opt_cluster_peer_validate_certs_01: ' '
+  

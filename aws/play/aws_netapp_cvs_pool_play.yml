@@ -1,0 +1,16 @@
+    - name: Running command aws_netapp_cvs_pool
+      include_tasks: tasks/aws_netapp_cvs_pool_task.yml
+      loop: "{{ aws_netapp_cvs_pool }}"
+      vars:
+        aws_netapp_cvs_pool_api_key_01: '{{ item.api_key }}'
+        aws_netapp_cvs_pool_api_url_01: '{{ item.api_url }}'
+        aws_netapp_cvs_pool_name_01: '{{ item.name }}'
+        aws_netapp_cvs_pool_region_01: '{{ item.region }}'
+        aws_netapp_cvs_pool_secret_key_01: '{{ item.secret_key }}'
+        aws_netapp_cvs_pool_state_01: '{{ item.state }}'
+        #aws_netapp_cvs_pool_from_name_01: '{{ item.from_name }}'
+        #aws_netapp_cvs_pool_serviceLevel_01: '{{ item.serviceLevel }}'
+        #aws_netapp_cvs_pool_sizeInBytes_01: '{{ item.sizeInBytes }}'
+        #aws_netapp_cvs_pool_validate_certs_01: '{{ item.validate_certs }}'
+        #aws_netapp_cvs_pool_vendorID_01: '{{ item.vendorID }}'
+  

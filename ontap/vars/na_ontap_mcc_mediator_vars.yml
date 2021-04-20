@@ -1,0 +1,25 @@
+
+    #vars:
+# Section: na_ontap_mcc_mediator:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_mcc_mediator_hostname_01: ' '
+    req_mcc_mediator_mediator_address_01: ' '
+    req_mcc_mediator_mediator_password_01: ' '
+    req_mcc_mediator_mediator_user_01: ' '
+    #opt_mcc_mediator_cert_filepath_01: ' '
+    #opt_mcc_mediator_feature_flags_01: ' '
+    #opt_mcc_mediator_http_port_01: ' '
+    #opt_mcc_mediator_https_01: ' '
+    #opt_mcc_mediator_key_filepath_01: ' '
+    #opt_mcc_mediator_ontapi_01: ' '
+    #opt_mcc_mediator_password_01: ' '
+    #opt_mcc_mediator_state_01: ' '
+    #opt_mcc_mediator_use_rest_01: ' '
+    #opt_mcc_mediator_username_01: ' '
+    #opt_mcc_mediator_validate_certs_01: ' '
+  

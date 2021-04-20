@@ -5,5 +5,5 @@
     auth_token: "{{{{ sg_auth_token }}}}"
     validate_certs: "{{{{ sg_validate_certs | default(false) }}}}"
     regions: '{{ na_sg_grid_regions_regions_01 }}'
-    state: '{{ na_sg_grid_regions_state_01  | default(omit) }}'
+    state: '{{ na_sg_grid_regions_state_01  | default(omit)  }}'
   register: results

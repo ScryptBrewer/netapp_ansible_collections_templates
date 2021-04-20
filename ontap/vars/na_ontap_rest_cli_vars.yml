@@ -1,0 +1,25 @@
+
+    #vars:
+# Section: na_ontap_rest_cli:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_rest_cli_command_01: ' '
+    req_rest_cli_hostname_01: ' '
+    req_rest_cli_verb_01: ' '
+    #opt_rest_cli_body_01: ' '
+    #opt_rest_cli_cert_filepath_01: ' '
+    #opt_rest_cli_feature_flags_01: ' '
+    #opt_rest_cli_http_port_01: ' '
+    #opt_rest_cli_https_01: ' '
+    #opt_rest_cli_key_filepath_01: ' '
+    #opt_rest_cli_ontapi_01: ' '
+    #opt_rest_cli_params_01: ' '
+    #opt_rest_cli_password_01: ' '
+    #opt_rest_cli_use_rest_01: ' '
+    #opt_rest_cli_username_01: ' '
+    #opt_rest_cli_validate_certs_01: ' '
+  

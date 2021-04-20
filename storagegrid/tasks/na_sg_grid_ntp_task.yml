@@ -6,5 +6,5 @@
     validate_certs: "{{{{ sg_validate_certs | default(false) }}}}"
     ntp_servers: '{{ na_sg_grid_ntp_ntp_servers_01 }}'
     passphrase: '{{ na_sg_grid_ntp_passphrase_01 }}'
-    state: '{{ na_sg_grid_ntp_state_01  | default(omit) }}'
+    state: '{{ na_sg_grid_ntp_state_01  | default(omit)  }}'
   register: results

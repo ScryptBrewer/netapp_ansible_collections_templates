@@ -1,0 +1,18 @@
+    - name: Running command azure_rm_netapp_volume
+      include_tasks: tasks/azure_rm_netapp_volume_task.yml
+      loop: "{{ azure_rm_netapp_volume }}"
+      vars:
+        azure_rm_netapp_volume_account_name_01: '{{ item.account_name }}'
+        azure_rm_netapp_volume_name_01: '{{ item.name }}'
+        azure_rm_netapp_volume_pool_name_01: '{{ item.pool_name }}'
+        azure_rm_netapp_volume_resource_group_01: '{{ item.resource_group }}'
+        #azure_rm_netapp_volume_file_path_01: '{{ item.file_path }}'
+        #azure_rm_netapp_volume_location_01: '{{ item.location }}'
+        #azure_rm_netapp_volume_protocol_types_01: '{{ item.protocol_types }}'
+        #azure_rm_netapp_volume_service_level_01: '{{ item.service_level }}'
+        #azure_rm_netapp_volume_size_01: '{{ item.size }}'
+        #azure_rm_netapp_volume_state_01: '{{ item.state }}'
+        #azure_rm_netapp_volume_subnet_name_01: '{{ item.subnet_name }}'
+        #azure_rm_netapp_volume_virtual_network_01: '{{ item.virtual_network }}'
+        #azure_rm_netapp_volume_vnet_resource_group_for_subnet_01: '{{ item.vnet_resource_group_for_subnet }}'
+  

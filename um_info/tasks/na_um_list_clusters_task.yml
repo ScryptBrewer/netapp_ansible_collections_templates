@@ -1,0 +1,4 @@
+---
+- name: Running command na_um_list_clusters
+  na_um_list_clusters:
+  register: results

@@ -1,0 +1,33 @@
+
+    #vars:
+# Section: na_ontap_autosupport:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_autosupport_hostname_01: ' '
+    req_autosupport_node_name_01: ' '
+    #opt_autosupport_cert_filepath_01: ' '
+    #opt_autosupport_feature_flags_01: ' '
+    #opt_autosupport_from_address_01: ' '
+    #opt_autosupport_hostname_in_subject_01: ' '
+    #opt_autosupport_http_port_01: ' '
+    #opt_autosupport_https_01: ' '
+    #opt_autosupport_key_filepath_01: ' '
+    #opt_autosupport_mail_hosts_01: ' '
+    #opt_autosupport_noteto_01: ' '
+    #opt_autosupport_ontapi_01: ' '
+    #opt_autosupport_partner_addresses_01: ' '
+    #opt_autosupport_password_01: ' '
+    #opt_autosupport_post_url_01: ' '
+    #opt_autosupport_proxy_url_01: ' '
+    #opt_autosupport_state_01: ' '
+    #opt_autosupport_support_01: ' '
+    #opt_autosupport_to_addresses_01: ' '
+    #opt_autosupport_transport_01: ' '
+    #opt_autosupport_use_rest_01: ' '
+    #opt_autosupport_username_01: ' '
+    #opt_autosupport_validate_certs_01: ' '
+  

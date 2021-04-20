@@ -1,0 +1,32 @@
+---
+- name: Running command na_ontap_flexcache
+  na_ontap_flexcache:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username | default(omit) }}"
+    password: "{{ netapp_password | default(omit) }}"
+    cert_filepath: "{{ netapp_cert_filepath | default(omit) }}"
+    key_filepath: "{{ netapp_key_filepath | default(omit) }}"
+    https: "{{ netapp_https | default(true) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    validate_certs: "{{ validate_certs | default(false) }}"
+    http_port: "{{ opt_lun_map_http_port_01 | default(omit) }}"
+    ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
+    use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
+    name: '{{ item.req_flexcache_name_01 }}'
+    vserver: '{{ item.req_flexcache_vserver_01 }}'
+    aggr_list: '{{ item.opt_flexcache_aggr_list_01 | default(omit) }}'
+    aggr_list_multiplier: '{{ item.opt_flexcache_aggr_list_multiplier_01 | default(omit) }}'
+    auto_provision_as: '{{ item.opt_flexcache_auto_provision_as_01 | default(omit) }}'
+    feature_flags: '{{ item.opt_flexcache_feature_flags_01 | default(omit) }}'
+    force_offline: '{{ item.opt_flexcache_force_offline_01 | default(omit) }}'
+    force_unmount: '{{ item.opt_flexcache_force_unmount_01 | default(omit) }}'
+    junction_path: '{{ item.opt_flexcache_junction_path_01 | default(omit) }}'
+    origin_cluster: '{{ item.opt_flexcache_origin_cluster_01 | default(omit) }}'
+    origin_volume: '{{ item.opt_flexcache_origin_volume_01 | default(omit) }}'
+    origin_vserver: '{{ item.opt_flexcache_origin_vserver_01 | default(omit) }}'
+    prepopulate: '{{ item.opt_flexcache_prepopulate_01 | default(omit) }}'
+    size: '{{ item.opt_flexcache_size_01 | default(omit) }}'
+    size_unit: '{{ item.opt_flexcache_size_unit_01 | default(omit) }}'
+    state: '{{ item.opt_flexcache_state_01 | default(omit) }}'
+    time_out: '{{ item.opt_flexcache_time_out_01 | default(omit) }}'
+  register: results

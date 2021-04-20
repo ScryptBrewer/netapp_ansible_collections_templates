@@ -2,20 +2,20 @@
 - name: Running command na_ontap_dns
   na_ontap_dns:
     hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username  | default(omit) }}"
-    password: "{{ netapp_password  | default(omit) }}"
-    cert_filepath: "{{ netapp_cert_filepath  | default(omit) }}"
-    key_filepath: "{{ netapp_key_filepath  | default(omit) }}"
+    username: "{{ netapp_username  | default(omit)  }}"
+    password: "{{ netapp_password  | default(omit)  }}"
+    cert_filepath: "{{ netapp_cert_filepath  | default(omit)  }}"
+    key_filepath: "{{ netapp_key_filepath  | default(omit)  }}"
     https: "{{ netapp_https | default(true) }}"
-    port: "{{ netapp_port  | default(omit) }}"
+    port: "{{ netapp_port  | default(omit)  }}"
     validate_certs: "{{ validate_certs | default(false) }}"
-    http_port: "{{ opt_lun_map_http_port_01  | default(omit) }}"
-    ontapi: "{{ opt_lun_map_ontapi_01  | default(omit) }}"
-    use_rest: "{{ opt_lun_map_use_rest_01  | default(omit) }}"
+    http_port: "{{ opt_lun_map_http_port_01  | default(omit)  }}"
+    ontapi: "{{ opt_lun_map_ontapi_01  | default(omit)  }}"
+    use_rest: "{{ opt_lun_map_use_rest_01  | default(omit)  }}"
     vserver: '{{ req_dns_vserver_01 }}'
-    domains: '{{ opt_dns_domains_01  | default(omit) }}'
-    feature_flags: '{{ opt_dns_feature_flags_01  | default(omit) }}'
-    nameservers: '{{ opt_dns_nameservers_01  | default(omit) }}'
-    skip_validation: '{{ opt_dns_skip_validation_01  | default(omit) }}'
-    state: '{{ opt_dns_state_01  | default(omit) }}'
+    domains: '{{ opt_dns_domains_01  | default(omit)  }}'
+    feature_flags: '{{ opt_dns_feature_flags_01  | default(omit)  }}'
+    nameservers: '{{ opt_dns_nameservers_01  | default(omit)  }}'
+    skip_validation: '{{ opt_dns_skip_validation_01  | default(omit)  }}'
+    state: '{{ opt_dns_state_01  | default(omit)  }}'
   register: results

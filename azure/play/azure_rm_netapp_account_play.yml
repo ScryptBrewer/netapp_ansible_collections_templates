@@ -1,0 +1,12 @@
+    - name: Running command azure_rm_netapp_account
+      include_tasks: tasks/azure_rm_netapp_account_task.yml
+      loop: "{{ azure_rm_netapp_account }}"
+      vars:
+        azure_rm_netapp_account_name_01: '{{ item.name }}'
+        azure_rm_netapp_account_resource_group_01: '{{ item.resource_group }}'
+        #azure_rm_netapp_account_active_directories_01: '{{ item.active_directories }}'
+        #azure_rm_netapp_account_debug_01: '{{ item.debug }}'
+        #azure_rm_netapp_account_location_01: '{{ item.location }}'
+        #azure_rm_netapp_account_state_01: '{{ item.state }}'
+        #azure_rm_netapp_account_tags_01: '{{ item.tags }}'
+  

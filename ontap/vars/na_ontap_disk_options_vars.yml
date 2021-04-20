@@ -1,0 +1,26 @@
+
+    #vars:
+# Section: na_ontap_disk_options:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_disk_options_hostname_01: ' '
+    req_disk_options_node_01: ' '
+    #opt_disk_options_autoassign_01: ' '
+    #opt_disk_options_autoassign_policy_01: ' '
+    #opt_disk_options_autocopy_01: ' '
+    #opt_disk_options_bkg_firmware_update_01: ' '
+    #opt_disk_options_cert_filepath_01: ' '
+    #opt_disk_options_feature_flags_01: ' '
+    #opt_disk_options_http_port_01: ' '
+    #opt_disk_options_https_01: ' '
+    #opt_disk_options_key_filepath_01: ' '
+    #opt_disk_options_ontapi_01: ' '
+    #opt_disk_options_password_01: ' '
+    #opt_disk_options_use_rest_01: ' '
+    #opt_disk_options_username_01: ' '
+    #opt_disk_options_validate_certs_01: ' '
+  

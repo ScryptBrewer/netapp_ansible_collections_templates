@@ -1,0 +1,15 @@
+    - name: Running command aws_netapp_cvs_filesystems
+      include_tasks: tasks/aws_netapp_cvs_filesystems_task.yml
+      loop: "{{ aws_netapp_cvs_filesystems }}"
+      vars:
+        aws_netapp_cvs_filesystems_api_key_01: '{{ item.api_key }}'
+        aws_netapp_cvs_filesystems_api_url_01: '{{ item.api_url }}'
+        aws_netapp_cvs_filesystems_creationToken_01: '{{ item.creationToken }}'
+        aws_netapp_cvs_filesystems_region_01: '{{ item.region }}'
+        aws_netapp_cvs_filesystems_secret_key_01: '{{ item.secret_key }}'
+        aws_netapp_cvs_filesystems_state_01: '{{ item.state }}'
+        #aws_netapp_cvs_filesystems_exportPolicy_01: '{{ item.exportPolicy }}'
+        #aws_netapp_cvs_filesystems_quotaInBytes_01: '{{ item.quotaInBytes }}'
+        #aws_netapp_cvs_filesystems_serviceLevel_01: '{{ item.serviceLevel }}'
+        #aws_netapp_cvs_filesystems_validate_certs_01: '{{ item.validate_certs }}'
+  

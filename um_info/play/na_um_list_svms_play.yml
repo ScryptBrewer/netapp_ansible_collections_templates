@@ -1,0 +1,10 @@
+    - name: Running command na_um_list_svms
+      include_tasks: tasks/na_um_list_svms_task.yml
+      loop: "{{ na_um_list_svms }}"
+      vars:
+        na_um_list_svms_hostname_01: '{{ item.hostname }}'
+        na_um_list_svms_password_01: '{{ item.password }}'
+        na_um_list_svms_username_01: '{{ item.username }}'
+        #na_um_list_svms_http_port_01: '{{ item.http_port }}'
+        #na_um_list_svms_validate_certs_01: '{{ item.validate_certs }}'
+  

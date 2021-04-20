@@ -1,0 +1,26 @@
+
+    #vars:
+# Section: na_ontap_dns:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_dns_hostname_01: ' '
+    req_dns_vserver_01: ' '
+    #opt_dns_cert_filepath_01: ' '
+    #opt_dns_domains_01: ' '
+    #opt_dns_feature_flags_01: ' '
+    #opt_dns_http_port_01: ' '
+    #opt_dns_https_01: ' '
+    #opt_dns_key_filepath_01: ' '
+    #opt_dns_nameservers_01: ' '
+    #opt_dns_ontapi_01: ' '
+    #opt_dns_password_01: ' '
+    #opt_dns_skip_validation_01: ' '
+    #opt_dns_state_01: ' '
+    #opt_dns_use_rest_01: ' '
+    #opt_dns_username_01: ' '
+    #opt_dns_validate_certs_01: ' '
+  

@@ -2,23 +2,23 @@
 - name: Running command na_ontap_active_directory
   na_ontap_active_directory:
     hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username  | default(omit) }}"
-    password: "{{ netapp_password  | default(omit) }}"
-    cert_filepath: "{{ netapp_cert_filepath  | default(omit) }}"
-    key_filepath: "{{ netapp_key_filepath  | default(omit) }}"
+    username: "{{ netapp_username  | default(omit)  }}"
+    password: "{{ netapp_password  | default(omit)  }}"
+    cert_filepath: "{{ netapp_cert_filepath  | default(omit)  }}"
+    key_filepath: "{{ netapp_key_filepath  | default(omit)  }}"
     https: "{{ netapp_https | default(true) }}"
-    port: "{{ netapp_port  | default(omit) }}"
+    port: "{{ netapp_port  | default(omit)  }}"
     validate_certs: "{{ validate_certs | default(false) }}"
-    http_port: "{{ opt_lun_map_http_port_01  | default(omit) }}"
-    ontapi: "{{ opt_lun_map_ontapi_01  | default(omit) }}"
-    use_rest: "{{ opt_lun_map_use_rest_01  | default(omit) }}"
+    http_port: "{{ opt_lun_map_http_port_01  | default(omit)  }}"
+    ontapi: "{{ opt_lun_map_ontapi_01  | default(omit)  }}"
+    use_rest: "{{ opt_lun_map_use_rest_01  | default(omit)  }}"
     account_name: '{{ req_active_directory_account_name_01 }}'
     admin_password: '{{ req_active_directory_admin_password_01 }}'
     admin_username: '{{ req_active_directory_admin_username_01 }}'
     vserver: '{{ req_active_directory_vserver_01 }}'
-    domain: '{{ opt_active_directory_domain_01  | default(omit) }}'
-    feature_flags: '{{ opt_active_directory_feature_flags_01  | default(omit) }}'
-    force_account_overwrite: '{{ opt_active_directory_force_account_overwrite_01  | default(omit) }}'
-    organizational_unit: '{{ opt_active_directory_organizational_unit_01  | default(omit) }}'
-    state: '{{ opt_active_directory_state_01  | default(omit) }}'
+    domain: '{{ opt_active_directory_domain_01  | default(omit)  }}'
+    feature_flags: '{{ opt_active_directory_feature_flags_01  | default(omit)  }}'
+    force_account_overwrite: '{{ opt_active_directory_force_account_overwrite_01  | default(omit)  }}'
+    organizational_unit: '{{ opt_active_directory_organizational_unit_01  | default(omit)  }}'
+    state: '{{ opt_active_directory_state_01  | default(omit)  }}'
   register: results

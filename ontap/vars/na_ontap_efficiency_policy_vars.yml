@@ -1,0 +1,31 @@
+
+    #vars:
+# Section: na_ontap_efficiency_policy:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_efficiency_policy_hostname_01: ' '
+    req_efficiency_policy_policy_name_01: ' '
+    req_efficiency_policy_vserver_01: ' '
+    #opt_efficiency_policy_cert_filepath_01: ' '
+    #opt_efficiency_policy_changelog_threshold_percent_01: ' '
+    #opt_efficiency_policy_comment_01: ' '
+    #opt_efficiency_policy_duration_01: ' '
+    #opt_efficiency_policy_enabled_01: ' '
+    #opt_efficiency_policy_feature_flags_01: ' '
+    #opt_efficiency_policy_http_port_01: ' '
+    #opt_efficiency_policy_https_01: ' '
+    #opt_efficiency_policy_key_filepath_01: ' '
+    #opt_efficiency_policy_ontapi_01: ' '
+    #opt_efficiency_policy_password_01: ' '
+    #opt_efficiency_policy_policy_type_01: ' '
+    #opt_efficiency_policy_qos_policy_01: ' '
+    #opt_efficiency_policy_schedule_01: ' '
+    #opt_efficiency_policy_state_01: ' '
+    #opt_efficiency_policy_use_rest_01: ' '
+    #opt_efficiency_policy_username_01: ' '
+    #opt_efficiency_policy_validate_certs_01: ' '
+  

@@ -1,0 +1,29 @@
+---
+- name: Running command na_ontap_volume_clone
+  na_ontap_volume_clone:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username | default(omit) }}"
+    password: "{{ netapp_password | default(omit) }}"
+    cert_filepath: "{{ netapp_cert_filepath | default(omit) }}"
+    key_filepath: "{{ netapp_key_filepath | default(omit) }}"
+    https: "{{ netapp_https | default(true) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    validate_certs: "{{ validate_certs | default(false) }}"
+    http_port: "{{ opt_lun_map_http_port_01 | default(omit) }}"
+    ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
+    use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
+    name: '{{ item.req_volume_clone_name_01 }}'
+    parent_volume: '{{ item.req_volume_clone_parent_volume_01 }}'
+    vserver: '{{ item.req_volume_clone_vserver_01 }}'
+    feature_flags: '{{ item.opt_volume_clone_feature_flags_01 | default(omit) }}'
+    gid: '{{ item.opt_volume_clone_gid_01 | default(omit) }}'
+    junction_path: '{{ item.opt_volume_clone_junction_path_01 | default(omit) }}'
+    parent_snapshot: '{{ item.opt_volume_clone_parent_snapshot_01 | default(omit) }}'
+    parent_vserver: '{{ item.opt_volume_clone_parent_vserver_01 | default(omit) }}'
+    qos_policy_group_name: '{{ item.opt_volume_clone_qos_policy_group_name_01 | default(omit) }}'
+    space_reserve: '{{ item.opt_volume_clone_space_reserve_01 | default(omit) }}'
+    split: '{{ item.opt_volume_clone_split_01 | default(omit) }}'
+    state: '{{ item.opt_volume_clone_state_01 | default(omit) }}'
+    uid: '{{ item.opt_volume_clone_uid_01 | default(omit) }}'
+    volume_type: '{{ item.opt_volume_clone_volume_type_01 | default(omit) }}'
+  register: results

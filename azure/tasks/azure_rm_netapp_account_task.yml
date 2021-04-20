@@ -1,0 +1,11 @@
+---
+- name: Running command azure_rm_netapp_account
+  azure_rm_netapp_account:
+    name: '{{ azure_rm_netapp_account_name_01 }}'
+    resource_group: '{{ azure_rm_netapp_account_resource_group_01 }}'
+    active_directories: '{{ azure_rm_netapp_account_active_directories_01  | default(omit)  }}'
+    debug: '{{ azure_rm_netapp_account_debug_01  | default(omit)  }}'
+    location: '{{ azure_rm_netapp_account_location_01  | default(omit)  }}'
+    state: '{{ azure_rm_netapp_account_state_01  | default(omit)  }}'
+    tags: '{{ azure_rm_netapp_account_tags_01  | default(omit)  }}'
+  register: results

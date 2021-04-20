@@ -1,0 +1,15 @@
+
+    #vars:
+# Section: na_sg_grid_info:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    na_sg_grid_info_api_url_01: ' '
+    na_sg_grid_info_auth_token_01: ' '
+    #na_sg_grid_info_gather_subset_01: ' '
+    #na_sg_grid_info_parameters_01: ' '
+    #na_sg_grid_info_validate_certs_01: ' '
+  

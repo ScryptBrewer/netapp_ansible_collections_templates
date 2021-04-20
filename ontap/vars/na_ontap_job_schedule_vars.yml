@@ -1,0 +1,28 @@
+
+    #vars:
+# Section: na_ontap_job_schedule:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_job_schedule_hostname_01: ' '
+    req_job_schedule_name_01: ' '
+    #opt_job_schedule_cert_filepath_01: ' '
+    #opt_job_schedule_feature_flags_01: ' '
+    #opt_job_schedule_http_port_01: ' '
+    #opt_job_schedule_https_01: ' '
+    #opt_job_schedule_job_days_of_month_01: ' '
+    #opt_job_schedule_job_days_of_week_01: ' '
+    #opt_job_schedule_job_hours_01: ' '
+    #opt_job_schedule_job_minutes_01: ' '
+    #opt_job_schedule_job_months_01: ' '
+    #opt_job_schedule_key_filepath_01: ' '
+    #opt_job_schedule_ontapi_01: ' '
+    #opt_job_schedule_password_01: ' '
+    #opt_job_schedule_state_01: ' '
+    #opt_job_schedule_use_rest_01: ' '
+    #opt_job_schedule_username_01: ' '
+    #opt_job_schedule_validate_certs_01: ' '
+  

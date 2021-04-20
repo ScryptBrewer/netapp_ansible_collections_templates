@@ -1,0 +1,23 @@
+
+    #vars:
+# Section: na_ontap_vscan:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_vscan_hostname_01: ' '
+    req_vscan_vserver_01: ' '
+    #opt_vscan_cert_filepath_01: ' '
+    #opt_vscan_enable_01: ' '
+    #opt_vscan_feature_flags_01: ' '
+    #opt_vscan_http_port_01: ' '
+    #opt_vscan_https_01: ' '
+    #opt_vscan_key_filepath_01: ' '
+    #opt_vscan_ontapi_01: ' '
+    #opt_vscan_password_01: ' '
+    #opt_vscan_use_rest_01: ' '
+    #opt_vscan_username_01: ' '
+    #opt_vscan_validate_certs_01: ' '
+  

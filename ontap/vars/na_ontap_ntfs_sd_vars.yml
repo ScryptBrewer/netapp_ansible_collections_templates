@@ -1,0 +1,27 @@
+
+    #vars:
+# Section: na_ontap_ntfs_sd:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_ntfs_sd_hostname_01: ' '
+    req_ntfs_sd_name_01: ' '
+    req_ntfs_sd_vserver_01: ' '
+    #opt_ntfs_sd_cert_filepath_01: ' '
+    #opt_ntfs_sd_control_flags_raw_01: ' '
+    #opt_ntfs_sd_feature_flags_01: ' '
+    #opt_ntfs_sd_group_01: ' '
+    #opt_ntfs_sd_http_port_01: ' '
+    #opt_ntfs_sd_https_01: ' '
+    #opt_ntfs_sd_key_filepath_01: ' '
+    #opt_ntfs_sd_ontapi_01: ' '
+    #opt_ntfs_sd_owner_01: ' '
+    #opt_ntfs_sd_password_01: ' '
+    #opt_ntfs_sd_state_01: ' '
+    #opt_ntfs_sd_use_rest_01: ' '
+    #opt_ntfs_sd_username_01: ' '
+    #opt_ntfs_sd_validate_certs_01: ' '
+  

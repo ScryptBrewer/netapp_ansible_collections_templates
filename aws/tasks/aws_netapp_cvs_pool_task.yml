@@ -1,0 +1,13 @@
+---
+- name: Running command aws_netapp_cvs_pool
+  aws_netapp_cvs_pool:
+    api_key: '{{ aws_netapp_cvs_pool_api_key_01 }}'
+    name: '{{ aws_netapp_cvs_pool_name_01 }}'
+    region: '{{ aws_netapp_cvs_pool_region_01 }}'
+    secret_key: '{{ aws_netapp_cvs_pool_secret_key_01 }}'
+    state: '{{ aws_netapp_cvs_pool_state_01 }}'
+    from_name: '{{ aws_netapp_cvs_pool_from_name_01  | default(omit)  }}'
+    serviceLevel: '{{ aws_netapp_cvs_pool_serviceLevel_01  | default(omit)  }}'
+    sizeInBytes: '{{ aws_netapp_cvs_pool_sizeInBytes_01  | default(omit)  }}'
+    vendorID: '{{ aws_netapp_cvs_pool_vendorID_01  | default(omit)  }}'
+  register: results

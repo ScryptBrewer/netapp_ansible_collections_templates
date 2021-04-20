@@ -1,0 +1,13 @@
+    - name: Running command na_elementsw_info
+      include_tasks: tasks/na_elementsw_info_task.yml
+      loop: "{{ na_elementsw_info }}"
+      vars:
+        req_info_hostname_01: '{{ item.hostname }}'
+        req_info_password_01: '{{ item.password }}'
+        req_info_username_01: '{{ item.username }}'
+        #opt_info_fail_on_error_01: '{{ item.fail_on_error }}'
+        #opt_info_fail_on_key_not_found_01: '{{ item.fail_on_key_not_found }}'
+        #opt_info_fail_on_record_not_found_01: '{{ item.fail_on_record_not_found }}'
+        #opt_info_filter_01: '{{ item.filter }}'
+        #opt_info_gather_subsets_01: '{{ item.gather_subsets }}'
+  

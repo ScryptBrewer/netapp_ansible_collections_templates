@@ -1,0 +1,25 @@
+
+    #vars:
+# Section: na_sg_grid_account:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    na_sg_grid_account_api_url_01: ' '
+    na_sg_grid_account_auth_token_01: ' '
+    #na_sg_grid_account_account_id_01: ' '
+    #na_sg_grid_account_allow_platform_services_01: ' '
+    #na_sg_grid_account_management_01: ' '
+    #na_sg_grid_account_name_01: ' '
+    #na_sg_grid_account_password_01: ' '
+    #na_sg_grid_account_protocol_01: ' '
+    #na_sg_grid_account_quota_size_01: ' '
+    #na_sg_grid_account_quota_size_unit_01: ' '
+    #na_sg_grid_account_root_access_group_01: ' '
+    #na_sg_grid_account_state_01: ' '
+    #na_sg_grid_account_update_password_01: ' '
+    #na_sg_grid_account_use_own_identity_source_01: ' '
+    #na_sg_grid_account_validate_certs_01: ' '
+  

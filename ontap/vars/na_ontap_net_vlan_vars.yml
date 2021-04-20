@@ -1,0 +1,25 @@
+
+    #vars:
+# Section: na_ontap_net_vlan:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_net_vlan_hostname_01: ' '
+    req_net_vlan_node_01: ' '
+    req_net_vlan_parent_interface_01: ' '
+    req_net_vlan_vlanid_01: ' '
+    #opt_net_vlan_cert_filepath_01: ' '
+    #opt_net_vlan_feature_flags_01: ' '
+    #opt_net_vlan_http_port_01: ' '
+    #opt_net_vlan_https_01: ' '
+    #opt_net_vlan_key_filepath_01: ' '
+    #opt_net_vlan_ontapi_01: ' '
+    #opt_net_vlan_password_01: ' '
+    #opt_net_vlan_state_01: ' '
+    #opt_net_vlan_use_rest_01: ' '
+    #opt_net_vlan_username_01: ' '
+    #opt_net_vlan_validate_certs_01: ' '
+  

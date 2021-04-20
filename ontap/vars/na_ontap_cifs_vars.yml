@@ -1,0 +1,28 @@
+
+    #vars:
+# Section: na_ontap_cifs:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_cifs_hostname_01: ' '
+    req_cifs_share_name_01: ' '
+    req_cifs_vserver_01: ' '
+    #opt_cifs_cert_filepath_01: ' '
+    #opt_cifs_feature_flags_01: ' '
+    #opt_cifs_http_port_01: ' '
+    #opt_cifs_https_01: ' '
+    #opt_cifs_key_filepath_01: ' '
+    #opt_cifs_ontapi_01: ' '
+    #opt_cifs_password_01: ' '
+    #opt_cifs_path_01: ' '
+    #opt_cifs_share_properties_01: ' '
+    #opt_cifs_state_01: ' '
+    #opt_cifs_symlink_properties_01: ' '
+    #opt_cifs_use_rest_01: ' '
+    #opt_cifs_username_01: ' '
+    #opt_cifs_validate_certs_01: ' '
+    #opt_cifs_vscan_fileop_profile_01: ' '
+  

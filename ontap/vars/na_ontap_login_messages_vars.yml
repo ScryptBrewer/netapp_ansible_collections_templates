@@ -1,0 +1,25 @@
+
+    #vars:
+# Section: na_ontap_login_messages:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_login_messages_hostname_01: ' '
+    req_login_messages_vserver_01: ' '
+    #opt_login_messages_banner_01: ' '
+    #opt_login_messages_cert_filepath_01: ' '
+    #opt_login_messages_feature_flags_01: ' '
+    #opt_login_messages_http_port_01: ' '
+    #opt_login_messages_https_01: ' '
+    #opt_login_messages_key_filepath_01: ' '
+    #opt_login_messages_motd_message_01: ' '
+    #opt_login_messages_ontapi_01: ' '
+    #opt_login_messages_password_01: ' '
+    #opt_login_messages_show_cluster_motd_01: ' '
+    #opt_login_messages_use_rest_01: ' '
+    #opt_login_messages_username_01: ' '
+    #opt_login_messages_validate_certs_01: ' '
+  

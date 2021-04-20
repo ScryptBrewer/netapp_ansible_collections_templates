@@ -1,0 +1,37 @@
+
+    #vars:
+# Section: na_ontap_vscan_on_demand_task:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_vscan_on_demand_task_hostname_01: ' '
+    req_vscan_on_demand_task_task_name_01: ' '
+    req_vscan_on_demand_task_vserver_01: ' '
+    #opt_vscan_on_demand_task_cert_filepath_01: ' '
+    #opt_vscan_on_demand_task_cross_junction_01: ' '
+    #opt_vscan_on_demand_task_directory_recursion_01: ' '
+    #opt_vscan_on_demand_task_feature_flags_01: ' '
+    #opt_vscan_on_demand_task_file_ext_to_exclude_01: ' '
+    #opt_vscan_on_demand_task_file_ext_to_include_01: ' '
+    #opt_vscan_on_demand_task_http_port_01: ' '
+    #opt_vscan_on_demand_task_https_01: ' '
+    #opt_vscan_on_demand_task_key_filepath_01: ' '
+    #opt_vscan_on_demand_task_max_file_size_01: ' '
+    #opt_vscan_on_demand_task_ontapi_01: ' '
+    #opt_vscan_on_demand_task_password_01: ' '
+    #opt_vscan_on_demand_task_paths_to_exclude_01: ' '
+    #opt_vscan_on_demand_task_report_directory_01: ' '
+    #opt_vscan_on_demand_task_report_log_level_01: ' '
+    #opt_vscan_on_demand_task_request_timeout_01: ' '
+    #opt_vscan_on_demand_task_scan_files_with_no_ext_01: ' '
+    #opt_vscan_on_demand_task_scan_paths_01: ' '
+    #opt_vscan_on_demand_task_scan_priority_01: ' '
+    #opt_vscan_on_demand_task_schedule_01: ' '
+    #opt_vscan_on_demand_task_state_01: ' '
+    #opt_vscan_on_demand_task_use_rest_01: ' '
+    #opt_vscan_on_demand_task_username_01: ' '
+    #opt_vscan_on_demand_task_validate_certs_01: ' '
+  

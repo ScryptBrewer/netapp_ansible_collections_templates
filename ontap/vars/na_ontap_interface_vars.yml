@@ -1,0 +1,44 @@
+
+    #vars:
+# Section: na_ontap_interface:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_interface_hostname_01: ' '
+    req_interface_interface_name_01: ' '
+    req_interface_vserver_01: ' '
+    #opt_interface_address_01: ' '
+    #opt_interface_admin_status_01: ' '
+    #opt_interface_cert_filepath_01: ' '
+    #opt_interface_current_node_01: ' '
+    #opt_interface_current_port_01: ' '
+    #opt_interface_dns_domain_name_01: ' '
+    #opt_interface_failover_group_01: ' '
+    #opt_interface_failover_policy_01: ' '
+    #opt_interface_feature_flags_01: ' '
+    #opt_interface_firewall_policy_01: ' '
+    #opt_interface_force_subnet_association_01: ' '
+    #opt_interface_home_node_01: ' '
+    #opt_interface_home_port_01: ' '
+    #opt_interface_http_port_01: ' '
+    #opt_interface_https_01: ' '
+    #opt_interface_is_auto_revert_01: ' '
+    #opt_interface_is_dns_update_enabled_01: ' '
+    #opt_interface_is_ipv4_link_local_01: ' '
+    #opt_interface_key_filepath_01: ' '
+    #opt_interface_listen_for_dns_query_01: ' '
+    #opt_interface_netmask_01: ' '
+    #opt_interface_ontapi_01: ' '
+    #opt_interface_password_01: ' '
+    #opt_interface_protocols_01: ' '
+    #opt_interface_role_01: ' '
+    #opt_interface_service_policy_01: ' '
+    #opt_interface_state_01: ' '
+    #opt_interface_subnet_name_01: ' '
+    #opt_interface_use_rest_01: ' '
+    #opt_interface_username_01: ' '
+    #opt_interface_validate_certs_01: ' '
+  

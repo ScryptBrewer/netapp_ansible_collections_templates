@@ -1,0 +1,12 @@
+    - name: Running command azure_rm_netapp_capacity_pool
+      include_tasks: tasks/azure_rm_netapp_capacity_pool_task.yml
+      loop: "{{ azure_rm_netapp_capacity_pool }}"
+      vars:
+        azure_rm_netapp_capacity_pool_account_name_01: '{{ item.account_name }}'
+        azure_rm_netapp_capacity_pool_name_01: '{{ item.name }}'
+        azure_rm_netapp_capacity_pool_resource_group_01: '{{ item.resource_group }}'
+        #azure_rm_netapp_capacity_pool_location_01: '{{ item.location }}'
+        #azure_rm_netapp_capacity_pool_service_level_01: '{{ item.service_level }}'
+        #azure_rm_netapp_capacity_pool_size_01: '{{ item.size }}'
+        #azure_rm_netapp_capacity_pool_state_01: '{{ item.state }}'
+  

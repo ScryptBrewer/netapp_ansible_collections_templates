@@ -1,0 +1,11 @@
+---
+- name: Running command azure_rm_netapp_snapshot
+  azure_rm_netapp_snapshot:
+    account_name: '{{ azure_rm_netapp_snapshot_account_name_01 }}'
+    name: '{{ azure_rm_netapp_snapshot_name_01 }}'
+    pool_name: '{{ azure_rm_netapp_snapshot_pool_name_01 }}'
+    resource_group: '{{ azure_rm_netapp_snapshot_resource_group_01 }}'
+    volume_name: '{{ azure_rm_netapp_snapshot_volume_name_01 }}'
+    location: '{{ azure_rm_netapp_snapshot_location_01  | default(omit)  }}'
+    state: '{{ azure_rm_netapp_snapshot_state_01  | default(omit)  }}'
+  register: results

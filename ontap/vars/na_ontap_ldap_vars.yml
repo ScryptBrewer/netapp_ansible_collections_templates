@@ -1,0 +1,25 @@
+
+    #vars:
+# Section: na_ontap_ldap:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_ldap_hostname_01: ' '
+    req_ldap_name_01: ' '
+    req_ldap_vserver_01: ' '
+    #opt_ldap_cert_filepath_01: ' '
+    #opt_ldap_feature_flags_01: ' '
+    #opt_ldap_http_port_01: ' '
+    #opt_ldap_https_01: ' '
+    #opt_ldap_key_filepath_01: ' '
+    #opt_ldap_ontapi_01: ' '
+    #opt_ldap_password_01: ' '
+    #opt_ldap_skip_config_validation_01: ' '
+    #opt_ldap_state_01: ' '
+    #opt_ldap_use_rest_01: ' '
+    #opt_ldap_username_01: ' '
+    #opt_ldap_validate_certs_01: ' '
+  

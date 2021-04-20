@@ -1,0 +1,4 @@
+---
+- name: Running command na_um_list_svms
+  na_um_list_svms:
+  register: results

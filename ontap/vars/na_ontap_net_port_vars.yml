@@ -1,0 +1,30 @@
+
+    #vars:
+# Section: na_ontap_net_port:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_net_port_hostname_01: ' '
+    req_net_port_node_01: ' '
+    req_net_port_ports_01: ' '
+    #opt_net_port_autonegotiate_admin_01: ' '
+    #opt_net_port_cert_filepath_01: ' '
+    #opt_net_port_duplex_admin_01: ' '
+    #opt_net_port_feature_flags_01: ' '
+    #opt_net_port_flowcontrol_admin_01: ' '
+    #opt_net_port_http_port_01: ' '
+    #opt_net_port_https_01: ' '
+    #opt_net_port_ipspace_01: ' '
+    #opt_net_port_key_filepath_01: ' '
+    #opt_net_port_mtu_01: ' '
+    #opt_net_port_ontapi_01: ' '
+    #opt_net_port_password_01: ' '
+    #opt_net_port_speed_admin_01: ' '
+    #opt_net_port_state_01: ' '
+    #opt_net_port_use_rest_01: ' '
+    #opt_net_port_username_01: ' '
+    #opt_net_port_validate_certs_01: ' '
+  

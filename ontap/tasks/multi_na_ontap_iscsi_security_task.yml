@@ -1,0 +1,25 @@
+---
+- name: Running command na_ontap_iscsi_security
+  na_ontap_iscsi_security:
+    hostname: "{{ netapp_hostname }}"
+    username: "{{ netapp_username | default(omit) }}"
+    password: "{{ netapp_password | default(omit) }}"
+    cert_filepath: "{{ netapp_cert_filepath | default(omit) }}"
+    key_filepath: "{{ netapp_key_filepath | default(omit) }}"
+    https: "{{ netapp_https | default(true) }}"
+    port: "{{ netapp_port | default(omit) }}"
+    validate_certs: "{{ validate_certs | default(false) }}"
+    http_port: "{{ opt_lun_map_http_port_01 | default(omit) }}"
+    ontapi: "{{ opt_lun_map_ontapi_01 | default(omit) }}"
+    use_rest: "{{ opt_lun_map_use_rest_01 | default(omit) }}"
+    initiator: '{{ item.req_iscsi_security_initiator_01 }}'
+    vserver: '{{ item.req_iscsi_security_vserver_01 }}'
+    address_ranges: '{{ item.opt_iscsi_security_address_ranges_01 | default(omit) }}'
+    auth_type: '{{ item.opt_iscsi_security_auth_type_01 | default(omit) }}'
+    feature_flags: '{{ item.opt_iscsi_security_feature_flags_01 | default(omit) }}'
+    inbound_password: '{{ item.opt_iscsi_security_inbound_password_01 | default(omit) }}'
+    inbound_username: '{{ item.opt_iscsi_security_inbound_username_01 | default(omit) }}'
+    outbound_password: '{{ item.opt_iscsi_security_outbound_password_01 | default(omit) }}'
+    outbound_username: '{{ item.opt_iscsi_security_outbound_username_01 | default(omit) }}'
+    state: '{{ item.opt_iscsi_security_state_01 | default(omit) }}'
+  register: results

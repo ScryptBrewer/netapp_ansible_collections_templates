@@ -2,30 +2,30 @@
 - name: Running command na_ontap_vserver_cifs_security
   na_ontap_vserver_cifs_security:
     hostname: "{{ netapp_hostname }}"
-    username: "{{ netapp_username  | default(omit) }}"
-    password: "{{ netapp_password  | default(omit) }}"
-    cert_filepath: "{{ netapp_cert_filepath  | default(omit) }}"
-    key_filepath: "{{ netapp_key_filepath  | default(omit) }}"
+    username: "{{ netapp_username  | default(omit)  }}"
+    password: "{{ netapp_password  | default(omit)  }}"
+    cert_filepath: "{{ netapp_cert_filepath  | default(omit)  }}"
+    key_filepath: "{{ netapp_key_filepath  | default(omit)  }}"
     https: "{{ netapp_https | default(true) }}"
-    port: "{{ netapp_port  | default(omit) }}"
+    port: "{{ netapp_port  | default(omit)  }}"
     validate_certs: "{{ validate_certs | default(false) }}"
-    http_port: "{{ opt_lun_map_http_port_01  | default(omit) }}"
-    ontapi: "{{ opt_lun_map_ontapi_01  | default(omit) }}"
-    use_rest: "{{ opt_lun_map_use_rest_01  | default(omit) }}"
+    http_port: "{{ opt_lun_map_http_port_01  | default(omit)  }}"
+    ontapi: "{{ opt_lun_map_ontapi_01  | default(omit)  }}"
+    use_rest: "{{ opt_lun_map_use_rest_01  | default(omit)  }}"
     vserver: '{{ req_vserver_cifs_security_vserver_01 }}'
-    feature_flags: '{{ opt_vserver_cifs_security_feature_flags_01  | default(omit) }}'
-    is_aes_encryption_enabled: '{{ opt_vserver_cifs_security_is_aes_encryption_enabled_01  | default(omit) }}'
-    is_password_complexity_required: '{{ opt_vserver_cifs_security_is_password_complexity_required_01  | default(omit) }}'
-    is_signing_required: '{{ opt_vserver_cifs_security_is_signing_required_01  | default(omit) }}'
-    is_smb_encryption_required: '{{ opt_vserver_cifs_security_is_smb_encryption_required_01  | default(omit) }}'
-    kerberos_clock_skew: '{{ opt_vserver_cifs_security_kerberos_clock_skew_01  | default(omit) }}'
-    kerberos_kdc_timeout: '{{ opt_vserver_cifs_security_kerberos_kdc_timeout_01  | default(omit) }}'
-    kerberos_renew_age: '{{ opt_vserver_cifs_security_kerberos_renew_age_01  | default(omit) }}'
-    kerberos_ticket_age: '{{ opt_vserver_cifs_security_kerberos_ticket_age_01  | default(omit) }}'
-    lm_compatibility_level: '{{ opt_vserver_cifs_security_lm_compatibility_level_01  | default(omit) }}'
-    referral_enabled_for_ad_ldap: '{{ opt_vserver_cifs_security_referral_enabled_for_ad_ldap_01  | default(omit) }}'
-    session_security_for_ad_ldap: '{{ opt_vserver_cifs_security_session_security_for_ad_ldap_01  | default(omit) }}'
-    smb1_enabled_for_dc_connections: '{{ opt_vserver_cifs_security_smb1_enabled_for_dc_connections_01  | default(omit) }}'
-    smb2_enabled_for_dc_connections: '{{ opt_vserver_cifs_security_smb2_enabled_for_dc_connections_01  | default(omit) }}'
-    use_start_tls_for_ad_ldap: '{{ opt_vserver_cifs_security_use_start_tls_for_ad_ldap_01  | default(omit) }}'
+    feature_flags: '{{ opt_vserver_cifs_security_feature_flags_01  | default(omit)  }}'
+    is_aes_encryption_enabled: '{{ opt_vserver_cifs_security_is_aes_encryption_enabled_01  | default(omit)  }}'
+    is_password_complexity_required: '{{ opt_vserver_cifs_security_is_password_complexity_required_01  | default(omit)  }}'
+    is_signing_required: '{{ opt_vserver_cifs_security_is_signing_required_01  | default(omit)  }}'
+    is_smb_encryption_required: '{{ opt_vserver_cifs_security_is_smb_encryption_required_01  | default(omit)  }}'
+    kerberos_clock_skew: '{{ opt_vserver_cifs_security_kerberos_clock_skew_01  | default(omit)  }}'
+    kerberos_kdc_timeout: '{{ opt_vserver_cifs_security_kerberos_kdc_timeout_01  | default(omit)  }}'
+    kerberos_renew_age: '{{ opt_vserver_cifs_security_kerberos_renew_age_01  | default(omit)  }}'
+    kerberos_ticket_age: '{{ opt_vserver_cifs_security_kerberos_ticket_age_01  | default(omit)  }}'
+    lm_compatibility_level: '{{ opt_vserver_cifs_security_lm_compatibility_level_01  | default(omit)  }}'
+    referral_enabled_for_ad_ldap: '{{ opt_vserver_cifs_security_referral_enabled_for_ad_ldap_01  | default(omit)  }}'
+    session_security_for_ad_ldap: '{{ opt_vserver_cifs_security_session_security_for_ad_ldap_01  | default(omit)  }}'
+    smb1_enabled_for_dc_connections: '{{ opt_vserver_cifs_security_smb1_enabled_for_dc_connections_01  | default(omit)  }}'
+    smb2_enabled_for_dc_connections: '{{ opt_vserver_cifs_security_smb2_enabled_for_dc_connections_01  | default(omit)  }}'
+    use_start_tls_for_ad_ldap: '{{ opt_vserver_cifs_security_use_start_tls_for_ad_ldap_01  | default(omit)  }}'
   register: results

@@ -1,0 +1,30 @@
+
+    #vars:
+# Section: na_ontap_software_update:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_software_update_hostname_01: ' '
+    req_software_update_package_url_01: ' '
+    req_software_update_package_version_01: ' '
+    #opt_software_update_cert_filepath_01: ' '
+    #opt_software_update_download_only_01: ' '
+    #opt_software_update_feature_flags_01: ' '
+    #opt_software_update_force_update_01: ' '
+    #opt_software_update_http_port_01: ' '
+    #opt_software_update_https_01: ' '
+    #opt_software_update_ignore_validation_warning_01: ' '
+    #opt_software_update_key_filepath_01: ' '
+    #opt_software_update_nodes_01: ' '
+    #opt_software_update_ontapi_01: ' '
+    #opt_software_update_password_01: ' '
+    #opt_software_update_stabilize_minutes_01: ' '
+    #opt_software_update_state_01: ' '
+    #opt_software_update_timeout_01: ' '
+    #opt_software_update_use_rest_01: ' '
+    #opt_software_update_username_01: ' '
+    #opt_software_update_validate_certs_01: ' '
+  

@@ -1,0 +1,17 @@
+    - name: Running command na_elementsw_access_group
+      include_tasks: tasks/na_elementsw_access_group_task.yml
+      loop: "{{ na_elementsw_access_group }}"
+      vars:
+        req_access_group_hostname_01: '{{ item.hostname }}'
+        req_access_group_name_01: '{{ item.name }}'
+        req_access_group_password_01: '{{ item.password }}'
+        req_access_group_username_01: '{{ item.username }}'
+        #opt_access_group_account_id_01: '{{ item.account_id }}'
+        #opt_access_group_attributes_01: '{{ item.attributes }}'
+        #opt_access_group_from_name_01: '{{ item.from_name }}'
+        #opt_access_group_initiators_01: '{{ item.initiators }}'
+        #opt_access_group_state_01: '{{ item.state }}'
+        #opt_access_group_virtual_network_id_01: '{{ item.virtual_network_id }}'
+        #opt_access_group_virtual_network_tags_01: '{{ item.virtual_network_tags }}'
+        #opt_access_group_volumes_01: '{{ item.volumes }}'
+  

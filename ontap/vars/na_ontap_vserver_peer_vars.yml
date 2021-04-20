@@ -1,0 +1,29 @@
+
+    #vars:
+# Section: na_ontap_vserver_peer:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_vserver_peer_hostname_01: ' '
+    req_vserver_peer_peer_vserver_01: ' '
+    req_vserver_peer_vserver_01: ' '
+    #opt_vserver_peer_applications_01: ' '
+    #opt_vserver_peer_cert_filepath_01: ' '
+    #opt_vserver_peer_dest_hostname_01: ' '
+    #opt_vserver_peer_dest_password_01: ' '
+    #opt_vserver_peer_dest_username_01: ' '
+    #opt_vserver_peer_feature_flags_01: ' '
+    #opt_vserver_peer_http_port_01: ' '
+    #opt_vserver_peer_https_01: ' '
+    #opt_vserver_peer_key_filepath_01: ' '
+    #opt_vserver_peer_ontapi_01: ' '
+    #opt_vserver_peer_password_01: ' '
+    #opt_vserver_peer_peer_cluster_01: ' '
+    #opt_vserver_peer_state_01: ' '
+    #opt_vserver_peer_use_rest_01: ' '
+    #opt_vserver_peer_username_01: ' '
+    #opt_vserver_peer_validate_certs_01: ' '
+  

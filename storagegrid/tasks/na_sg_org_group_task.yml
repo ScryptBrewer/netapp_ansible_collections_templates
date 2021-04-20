@@ -5,8 +5,8 @@
     auth_token: "{{{{ sg_auth_token }}}}"
     validate_certs: "{{{{ sg_validate_certs | default(false) }}}}"
     unique_name: '{{ na_sg_org_group_unique_name_01 }}'
-    display_name: '{{ na_sg_org_group_display_name_01  | default(omit) }}'
-    management_policy: '{{ na_sg_org_group_management_policy_01  | default(omit) }}'
-    s3_policy: '{{ na_sg_org_group_s3_policy_01  | default(omit) }}'
-    state: '{{ na_sg_org_group_state_01  | default(omit) }}'
+    display_name: '{{ na_sg_org_group_display_name_01  | default(omit)  }}'
+    management_policy: '{{ na_sg_org_group_management_policy_01  | default(omit)  }}'
+    s3_policy: '{{ na_sg_org_group_s3_policy_01  | default(omit)  }}'
+    state: '{{ na_sg_org_group_state_01  | default(omit)  }}'
   register: results

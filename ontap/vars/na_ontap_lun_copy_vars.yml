@@ -1,0 +1,26 @@
+
+    #vars:
+# Section: na_ontap_lun_copy:
+    # netapp_hostname: "" 
+    # netapp_username: "" 
+    # netapp_password: "" 
+    # netapp_https: "True" 
+    # netapp_port: "443" 
+    # validate_certs: "false"
+    req_lun_copy_destination_path_01: ' '
+    req_lun_copy_destination_vserver_01: ' '
+    req_lun_copy_hostname_01: ' '
+    req_lun_copy_source_path_01: ' '
+    #opt_lun_copy_cert_filepath_01: ' '
+    #opt_lun_copy_feature_flags_01: ' '
+    #opt_lun_copy_http_port_01: ' '
+    #opt_lun_copy_https_01: ' '
+    #opt_lun_copy_key_filepath_01: ' '
+    #opt_lun_copy_ontapi_01: ' '
+    #opt_lun_copy_password_01: ' '
+    #opt_lun_copy_source_vserver_01: ' '
+    #opt_lun_copy_state_01: ' '
+    #opt_lun_copy_use_rest_01: ' '
+    #opt_lun_copy_username_01: ' '
+    #opt_lun_copy_validate_certs_01: ' '
+  

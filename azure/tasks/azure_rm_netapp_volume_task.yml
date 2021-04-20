@@ -1,0 +1,17 @@
+---
+- name: Running command azure_rm_netapp_volume
+  azure_rm_netapp_volume:
+    account_name: '{{ azure_rm_netapp_volume_account_name_01 }}'
+    name: '{{ azure_rm_netapp_volume_name_01 }}'
+    pool_name: '{{ azure_rm_netapp_volume_pool_name_01 }}'
+    resource_group: '{{ azure_rm_netapp_volume_resource_group_01 }}'
+    file_path: '{{ azure_rm_netapp_volume_file_path_01  | default(omit)  }}'
+    location: '{{ azure_rm_netapp_volume_location_01  | default(omit)  }}'
+    protocol_types: '{{ azure_rm_netapp_volume_protocol_types_01  | default(omit)  }}'
+    service_level: '{{ azure_rm_netapp_volume_service_level_01  | default(omit)  }}'
+    size: '{{ azure_rm_netapp_volume_size_01  | default(omit)  }}'
+    state: '{{ azure_rm_netapp_volume_state_01  | default(omit)  }}'
+    subnet_name: '{{ azure_rm_netapp_volume_subnet_name_01  | default(omit)  }}'
+    virtual_network: '{{ azure_rm_netapp_volume_virtual_network_01  | default(omit)  }}'
+    vnet_resource_group_for_subnet: '{{ azure_rm_netapp_volume_vnet_resource_group_for_subnet_01  | default(omit)  }}'
+  register: results

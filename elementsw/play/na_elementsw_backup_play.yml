@@ -1,0 +1,16 @@
+    - name: Running command na_elementsw_backup
+      include_tasks: tasks/na_elementsw_backup_task.yml
+      loop: "{{ na_elementsw_backup }}"
+      vars:
+        req_backup_dest_volume_id_01: '{{ item.dest_volume_id }}'
+        req_backup_hostname_01: '{{ item.hostname }}'
+        req_backup_password_01: '{{ item.password }}'
+        req_backup_src_volume_id_01: '{{ item.src_volume_id }}'
+        req_backup_username_01: '{{ item.username }}'
+        #opt_backup_dest_hostname_01: '{{ item.dest_hostname }}'
+        #opt_backup_dest_password_01: '{{ item.dest_password }}'
+        #opt_backup_dest_username_01: '{{ item.dest_username }}'
+        #opt_backup_format_01: '{{ item.format }}'
+        #opt_backup_script_01: '{{ item.script }}'
+        #opt_backup_script_parameters_01: '{{ item.script_parameters }}'
+  
