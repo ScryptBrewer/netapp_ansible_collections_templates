@@ -9,9 +9,9 @@ The NetApp ansible modules are complete and offer many choices however, starting
 **How to run**
 
 **Example 1:**
-Creates a complete volume create command.
+Create multiple svm's and volumes.
 ```
-cat head.yml ontap/play/na_ontap_volume_play.yml >create_new_netapp_volume.yml
+cat head.yml ontap/play/na_ontap_vvm_play.yml ontap/play/na_ontap_volume_play.yml >create_new_netapp_volume.yml
 Update your play to include the desired varibles and delete the rest. 
 Note if your only doing a single item you can remove the loop parameter and update the vars directly. 
 ```
