@@ -1,0 +1,23 @@
+---
+- name: Running command na_elementsw_snapshot_schedule
+  na_elementsw_snapshot_schedule:
+    name: '{{ req_snapshot_schedule_name_01 }}'
+    account_id: '{{ opt_snapshot_schedule_account_id_01  | default(omit)  }}'
+    days_of_month_hours: '{{ opt_snapshot_schedule_days_of_month_hours_01  | default(omit)  }}'
+    days_of_month_minutes: '{{ opt_snapshot_schedule_days_of_month_minutes_01  | default(omit)  }}'
+    days_of_month_monthdays: '{{ opt_snapshot_schedule_days_of_month_monthdays_01  | default(omit)  }}'
+    days_of_week_hours: '{{ opt_snapshot_schedule_days_of_week_hours_01  | default(omit)  }}'
+    days_of_week_minutes: '{{ opt_snapshot_schedule_days_of_week_minutes_01  | default(omit)  }}'
+    days_of_week_weekdays: '{{ opt_snapshot_schedule_days_of_week_weekdays_01  | default(omit)  }}'
+    paused: '{{ opt_snapshot_schedule_paused_01  | default(omit)  }}'
+    recurring: '{{ opt_snapshot_schedule_recurring_01  | default(omit)  }}'
+    retention: '{{ opt_snapshot_schedule_retention_01  | default(omit)  }}'
+    schedule_type: '{{ opt_snapshot_schedule_schedule_type_01  | default(omit)  }}'
+    snapshot_name: '{{ opt_snapshot_schedule_snapshot_name_01  | default(omit)  }}'
+    starting_date: '{{ opt_snapshot_schedule_starting_date_01  | default(omit)  }}'
+    state: '{{ opt_snapshot_schedule_state_01  | default(omit)  }}'
+    time_interval_days: '{{ opt_snapshot_schedule_time_interval_days_01  | default(omit)  }}'
+    time_interval_hours: '{{ opt_snapshot_schedule_time_interval_hours_01  | default(omit)  }}'
+    time_interval_minutes: '{{ opt_snapshot_schedule_time_interval_minutes_01  | default(omit)  }}'
+    volumes: '{{ opt_snapshot_schedule_volumes_01  | default(omit)  }}'
+  register: results

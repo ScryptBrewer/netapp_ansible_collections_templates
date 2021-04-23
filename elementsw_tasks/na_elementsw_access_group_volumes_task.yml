@@ -1,0 +1,8 @@
+---
+- name: Running command na_elementsw_access_group_volumes
+  na_elementsw_access_group_volumes:
+    access_group: '{{ req_access_group_volumes_access_group_01 }}'
+    account_id: '{{ req_access_group_volumes_account_id_01 }}'
+    volumes: '{{ req_access_group_volumes_volumes_01 }}'
+    state: '{{ opt_access_group_volumes_state_01  | default(omit)  }}'
+  register: results
