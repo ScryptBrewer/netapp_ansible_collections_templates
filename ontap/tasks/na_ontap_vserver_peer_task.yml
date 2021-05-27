@@ -19,6 +19,8 @@
     dest_password: '{{ opt_vserver_peer_dest_password_01  | default(omit)  }}'
     dest_username: '{{ opt_vserver_peer_dest_username_01  | default(omit)  }}'
     feature_flags: '{{ opt_vserver_peer_feature_flags_01  | default(omit)  }}'
+    local_name_for_peer: '{{ opt_vserver_peer_local_name_for_peer_01  | default(omit)  }}'
+    local_name_for_source: '{{ opt_vserver_peer_local_name_for_source_01  | default(omit)  }}'
     peer_cluster: '{{ opt_vserver_peer_peer_cluster_01  | default(omit)  }}'
     state: '{{ opt_vserver_peer_state_01  | default(omit)  }}'
   register: results

@@ -1,0 +1,21 @@
+---
+- name: Running command na_cloudmanager_snapmirror
+  na_cloudmanager_snapmirror:
+    client_id: '{{ na_cloudmanager_snapmirror_client_id_01 }}'
+    destination_volume_name: '{{ na_cloudmanager_snapmirror_destination_volume_name_01 }}'
+    refresh_token: '{{ na_cloudmanager_snapmirror_refresh_token_01 }}'
+    source_volume_name: '{{ na_cloudmanager_snapmirror_source_volume_name_01 }}'
+    capacity_tier: '{{ na_cloudmanager_snapmirror_capacity_tier_01  | default(omit)  }}'
+    destination_aggregate_name: '{{ na_cloudmanager_snapmirror_destination_aggregate_name_01  | default(omit)  }}'
+    destination_svm_name: '{{ na_cloudmanager_snapmirror_destination_svm_name_01  | default(omit)  }}'
+    destination_working_environment_id: '{{ na_cloudmanager_snapmirror_destination_working_environment_id_01  | default(omit)  }}'
+    destination_working_environment_name: '{{ na_cloudmanager_snapmirror_destination_working_environment_name_01  | default(omit)  }}'
+    max_transfer_rate: '{{ na_cloudmanager_snapmirror_max_transfer_rate_01  | default(omit)  }}'
+    policy: '{{ na_cloudmanager_snapmirror_policy_01  | default(omit)  }}'
+    provider_volume_type: '{{ na_cloudmanager_snapmirror_provider_volume_type_01  | default(omit)  }}'
+    schedule: '{{ na_cloudmanager_snapmirror_schedule_01  | default(omit)  }}'
+    source_svm_name: '{{ na_cloudmanager_snapmirror_source_svm_name_01  | default(omit)  }}'
+    source_working_environment_id: '{{ na_cloudmanager_snapmirror_source_working_environment_id_01  | default(omit)  }}'
+    source_working_environment_name: '{{ na_cloudmanager_snapmirror_source_working_environment_name_01  | default(omit)  }}'
+    state: '{{ na_cloudmanager_snapmirror_state_01  | default(omit)  }}'
+  register: results

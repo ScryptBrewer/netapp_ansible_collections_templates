@@ -14,6 +14,8 @@
         #opt_vserver_peer_http_port_01: '{{ item.http_port }}'
         #opt_vserver_peer_https_01: '{{ item.https }}'
         #opt_vserver_peer_key_filepath_01: '{{ item.key_filepath }}'
+        #opt_vserver_peer_local_name_for_peer_01: '{{ item.local_name_for_peer }}'
+        #opt_vserver_peer_local_name_for_source_01: '{{ item.local_name_for_source }}'
         #opt_vserver_peer_ontapi_01: '{{ item.ontapi }}'
         #opt_vserver_peer_password_01: '{{ item.password }}'
         #opt_vserver_peer_peer_cluster_01: '{{ item.peer_cluster }}'

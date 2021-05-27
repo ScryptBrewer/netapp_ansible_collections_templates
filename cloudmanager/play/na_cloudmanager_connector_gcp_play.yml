@@ -2,7 +2,6 @@
       include_tasks: tasks/na_cloudmanager_connector_gcp_task.yml
       loop: "{{ na_cloudmanager_connector_gcp }}"
       vars:
-        na_cloudmanager_connector_gcp_client_id_01: '{{ item.client_id }}'
         na_cloudmanager_connector_gcp_company_01: '{{ item.company }}'
         na_cloudmanager_connector_gcp_name_01: '{{ item.name }}'
         na_cloudmanager_connector_gcp_project_id_01: '{{ item.project_id }}'
@@ -12,6 +11,7 @@
         na_cloudmanager_connector_gcp_zone_01: '{{ item.zone }}'
         #na_cloudmanager_connector_gcp_account_id_01: '{{ item.account_id }}'
         #na_cloudmanager_connector_gcp_associate_public_ip_01: '{{ item.associate_public_ip }}'
+        #na_cloudmanager_connector_gcp_client_id_01: '{{ item.client_id }}'
         #na_cloudmanager_connector_gcp_firewall_tags_01: '{{ item.firewall_tags }}'
         #na_cloudmanager_connector_gcp_machine_type_01: '{{ item.machine_type }}'
         #na_cloudmanager_connector_gcp_network_project_id_01: '{{ item.network_project_id }}'

@@ -1,0 +1,4 @@
+---
+- name: Running command na_um_volumes_info
+  na_um_volumes_info:
+  register: results

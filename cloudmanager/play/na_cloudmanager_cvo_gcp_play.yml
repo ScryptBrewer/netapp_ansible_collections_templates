@@ -7,6 +7,7 @@
         na_cloudmanager_cvo_gcp_name_01: '{{ item.name }}'
         na_cloudmanager_cvo_gcp_project_id_01: '{{ item.project_id }}'
         na_cloudmanager_cvo_gcp_refresh_token_01: '{{ item.refresh_token }}'
+        na_cloudmanager_cvo_gcp_vpc_id_01: '{{ item.vpc_id }}'
         na_cloudmanager_cvo_gcp_zone_01: '{{ item.zone }}'
         #na_cloudmanager_cvo_gcp_backup_volumes_to_cbs_01: '{{ item.backup_volumes_to_cbs }}'
         #na_cloudmanager_cvo_gcp_capacity_tier_01: '{{ item.capacity_tier }}'
@@ -46,7 +47,6 @@
         #na_cloudmanager_cvo_gcp_vpc2_ha_connectivity_01: '{{ item.vpc2_ha_connectivity }}'
         #na_cloudmanager_cvo_gcp_vpc3_data_replication_01: '{{ item.vpc3_data_replication }}'
         #na_cloudmanager_cvo_gcp_vpc3_firewall_rule_name_01: '{{ item.vpc3_firewall_rule_name }}'
-        #na_cloudmanager_cvo_gcp_vpc_id_01: '{{ item.vpc_id }}'
         #na_cloudmanager_cvo_gcp_workspace_id_01: '{{ item.workspace_id }}'
         #na_cloudmanager_cvo_gcp_writing_speed_state_01: '{{ item.writing_speed_state }}'
   

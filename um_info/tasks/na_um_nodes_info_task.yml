@@ -1,0 +1,4 @@
+---
+- name: Running command na_um_nodes_info
+  na_um_nodes_info:
+  register: results

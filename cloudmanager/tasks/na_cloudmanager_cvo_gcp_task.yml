@@ -6,6 +6,7 @@
     name: '{{ na_cloudmanager_cvo_gcp_name_01 }}'
     project_id: '{{ na_cloudmanager_cvo_gcp_project_id_01 }}'
     refresh_token: '{{ na_cloudmanager_cvo_gcp_refresh_token_01 }}'
+    vpc_id: '{{ na_cloudmanager_cvo_gcp_vpc_id_01 }}'
     zone: '{{ na_cloudmanager_cvo_gcp_zone_01 }}'
     backup_volumes_to_cbs: '{{ na_cloudmanager_cvo_gcp_backup_volumes_to_cbs_01  | default(omit)  }}'
     capacity_tier: '{{ na_cloudmanager_cvo_gcp_capacity_tier_01  | default(omit)  }}'
@@ -45,7 +46,6 @@
     vpc2_ha_connectivity: '{{ na_cloudmanager_cvo_gcp_vpc2_ha_connectivity_01  | default(omit)  }}'
     vpc3_data_replication: '{{ na_cloudmanager_cvo_gcp_vpc3_data_replication_01  | default(omit)  }}'
     vpc3_firewall_rule_name: '{{ na_cloudmanager_cvo_gcp_vpc3_firewall_rule_name_01  | default(omit)  }}'
-    vpc_id: '{{ na_cloudmanager_cvo_gcp_vpc_id_01  | default(omit)  }}'
     workspace_id: '{{ na_cloudmanager_cvo_gcp_workspace_id_01  | default(omit)  }}'
     writing_speed_state: '{{ na_cloudmanager_cvo_gcp_writing_speed_state_01  | default(omit)  }}'
   register: results

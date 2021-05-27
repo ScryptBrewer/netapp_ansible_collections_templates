@@ -2,11 +2,12 @@
       include_tasks: tasks/na_ontap_user_task.yml
       loop: "{{ na_ontap_user }}"
       vars:
-        req_user_applications_01: '{{ item.applications }}'
-        req_user_authentication_method_01: '{{ item.authentication_method }}'
         req_user_hostname_01: '{{ item.hostname }}'
         req_user_name_01: '{{ item.name }}'
         req_user_vserver_01: '{{ item.vserver }}'
+        #opt_user_application_dicts_01: '{{ item.application_dicts }}'
+        #opt_user_application_strs_01: '{{ item.application_strs }}'
+        #opt_user_authentication_method_01: '{{ item.authentication_method }}'
         #opt_user_authentication_password_01: '{{ item.authentication_password }}'
         #opt_user_authentication_protocol_01: '{{ item.authentication_protocol }}'
         #opt_user_cert_filepath_01: '{{ item.cert_filepath }}'
@@ -21,6 +22,7 @@
         #opt_user_privacy_password_01: '{{ item.privacy_password }}'
         #opt_user_privacy_protocol_01: '{{ item.privacy_protocol }}'
         #opt_user_remote_switch_ipaddress_01: '{{ item.remote_switch_ipaddress }}'
+        #opt_user_replace_existing_apps_and_methods_01: '{{ item.replace_existing_apps_and_methods }}'
         #opt_user_role_name_01: '{{ item.role_name }}'
         #opt_user_set_password_01: '{{ item.set_password }}'
         #opt_user_state_01: '{{ item.state }}'

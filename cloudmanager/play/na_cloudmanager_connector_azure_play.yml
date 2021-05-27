@@ -2,6 +2,7 @@
       include_tasks: tasks/na_cloudmanager_connector_azure_task.yml
       loop: "{{ na_cloudmanager_connector_azure }}"
       vars:
+        na_cloudmanager_connector_azure_account_id_01: '{{ item.account_id }}'
         na_cloudmanager_connector_azure_admin_password_01: '{{ item.admin_password }}'
         na_cloudmanager_connector_azure_admin_username_01: '{{ item.admin_username }}'
         na_cloudmanager_connector_azure_company_01: '{{ item.company }}'
@@ -13,7 +14,6 @@
         na_cloudmanager_connector_azure_subnet_id_01: '{{ item.subnet_id }}'
         na_cloudmanager_connector_azure_subscription_id_01: '{{ item.subscription_id }}'
         na_cloudmanager_connector_azure_vnet_id_01: '{{ item.vnet_id }}'
-        #na_cloudmanager_connector_azure_account_id_01: '{{ item.account_id }}'
         #na_cloudmanager_connector_azure_associate_public_ip_address_01: '{{ item.associate_public_ip_address }}'
         #na_cloudmanager_connector_azure_client_id_01: '{{ item.client_id }}'
         #na_cloudmanager_connector_azure_network_security_resource_group_01: '{{ item.network_security_resource_group }}'
