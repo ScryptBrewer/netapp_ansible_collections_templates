@@ -7,5 +7,6 @@
     state: '{{ aws_netapp_cvs_active_directory_state_01 }}'
     DNS: '{{ aws_netapp_cvs_active_directory_DNS_01  | default(omit)  }}'
     domain: '{{ aws_netapp_cvs_active_directory_domain_01  | default(omit)  }}'
+    feature_flags: '{{ aws_netapp_cvs_active_directory_feature_flags_01  | default(omit)  }}'
     netBIOS: '{{ aws_netapp_cvs_active_directory_netBIOS_01  | default(omit)  }}'
   register: results

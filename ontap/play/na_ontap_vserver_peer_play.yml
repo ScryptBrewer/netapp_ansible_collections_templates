@@ -19,6 +19,7 @@
         #opt_vserver_peer_ontapi_01: '{{ item.ontapi }}'
         #opt_vserver_peer_password_01: '{{ item.password }}'
         #opt_vserver_peer_peer_cluster_01: '{{ item.peer_cluster }}'
+        #opt_vserver_peer_peer_options_01: '{{ item.peer_options }}'
         #opt_vserver_peer_state_01: '{{ item.state }}'
         #opt_vserver_peer_use_rest_01: '{{ item.use_rest }}'
         #opt_vserver_peer_username_01: '{{ item.username }}'

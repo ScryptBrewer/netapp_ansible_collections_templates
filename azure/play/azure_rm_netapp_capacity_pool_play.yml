@@ -14,6 +14,8 @@
         #azure_rm_netapp_capacity_pool_client_id_01: '{{ item.client_id }}'
         #azure_rm_netapp_capacity_pool_cloud_environment_01: '{{ item.cloud_environment }}'
         #azure_rm_netapp_capacity_pool_location_01: '{{ item.location }}'
+        #azure_rm_netapp_capacity_pool_log_mode_01: '{{ item.log_mode }}'
+        #azure_rm_netapp_capacity_pool_log_path_01: '{{ item.log_path }}'
         #azure_rm_netapp_capacity_pool_password_01: '{{ item.password }}'
         #azure_rm_netapp_capacity_pool_profile_01: '{{ item.profile }}'
         #azure_rm_netapp_capacity_pool_secret_01: '{{ item.secret }}'

@@ -6,6 +6,7 @@
         req_cifs_share_name_01: '{{ item.share_name }}'
         req_cifs_vserver_01: '{{ item.vserver }}'
         #opt_cifs_cert_filepath_01: '{{ item.cert_filepath }}'
+        #opt_cifs_comment_01: '{{ item.comment }}'
         #opt_cifs_feature_flags_01: '{{ item.feature_flags }}'
         #opt_cifs_http_port_01: '{{ item.http_port }}'
         #opt_cifs_https_01: '{{ item.https }}'

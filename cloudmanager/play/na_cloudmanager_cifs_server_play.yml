@@ -3,14 +3,17 @@
       loop: "{{ na_cloudmanager_cifs_server }}"
       vars:
         na_cloudmanager_cifs_server_client_id_01: '{{ item.client_id }}'
-        na_cloudmanager_cifs_server_refresh_token_01: '{{ item.refresh_token }}'
         #na_cloudmanager_cifs_server_dns_domain_01: '{{ item.dns_domain }}'
         #na_cloudmanager_cifs_server_domain_01: '{{ item.domain }}'
+        #na_cloudmanager_cifs_server_environment_01: '{{ item.environment }}'
         #na_cloudmanager_cifs_server_ip_addresses_01: '{{ item.ip_addresses }}'
         #na_cloudmanager_cifs_server_is_workgroup_01: '{{ item.is_workgroup }}'
         #na_cloudmanager_cifs_server_netbios_01: '{{ item.netbios }}'
         #na_cloudmanager_cifs_server_organizational_unit_01: '{{ item.organizational_unit }}'
         #na_cloudmanager_cifs_server_password_01: '{{ item.password }}'
+        #na_cloudmanager_cifs_server_refresh_token_01: '{{ item.refresh_token }}'
+        #na_cloudmanager_cifs_server_sa_client_id_01: '{{ item.sa_client_id }}'
+        #na_cloudmanager_cifs_server_sa_secret_key_01: '{{ item.sa_secret_key }}'
         #na_cloudmanager_cifs_server_server_name_01: '{{ item.server_name }}'
         #na_cloudmanager_cifs_server_state_01: '{{ item.state }}'
         #na_cloudmanager_cifs_server_username_01: '{{ item.username }}'

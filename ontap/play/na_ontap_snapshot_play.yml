@@ -9,6 +9,7 @@
         #opt_snapshot_async_bool_01: '{{ item.async_bool }}'
         #opt_snapshot_cert_filepath_01: '{{ item.cert_filepath }}'
         #opt_snapshot_comment_01: '{{ item.comment }}'
+        #opt_snapshot_expiry_time_01: '{{ item.expiry_time }}'
         #opt_snapshot_feature_flags_01: '{{ item.feature_flags }}'
         #opt_snapshot_from_name_01: '{{ item.from_name }}'
         #opt_snapshot_http_port_01: '{{ item.http_port }}'

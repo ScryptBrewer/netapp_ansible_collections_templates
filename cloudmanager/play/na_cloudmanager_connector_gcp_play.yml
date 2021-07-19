@@ -3,15 +3,15 @@
       loop: "{{ na_cloudmanager_connector_gcp }}"
       vars:
         na_cloudmanager_connector_gcp_company_01: '{{ item.company }}'
+        na_cloudmanager_connector_gcp_gcp_service_account_email_01: '{{ item.gcp_service_account_email }}'
+        na_cloudmanager_connector_gcp_gcp_service_account_path_01: '{{ item.gcp_service_account_path }}'
         na_cloudmanager_connector_gcp_name_01: '{{ item.name }}'
         na_cloudmanager_connector_gcp_project_id_01: '{{ item.project_id }}'
-        na_cloudmanager_connector_gcp_refresh_token_01: '{{ item.refresh_token }}'
-        na_cloudmanager_connector_gcp_service_account_email_01: '{{ item.service_account_email }}'
-        na_cloudmanager_connector_gcp_service_account_path_01: '{{ item.service_account_path }}'
         na_cloudmanager_connector_gcp_zone_01: '{{ item.zone }}'
         #na_cloudmanager_connector_gcp_account_id_01: '{{ item.account_id }}'
         #na_cloudmanager_connector_gcp_associate_public_ip_01: '{{ item.associate_public_ip }}'
         #na_cloudmanager_connector_gcp_client_id_01: '{{ item.client_id }}'
+        #na_cloudmanager_connector_gcp_environment_01: '{{ item.environment }}'
         #na_cloudmanager_connector_gcp_firewall_tags_01: '{{ item.firewall_tags }}'
         #na_cloudmanager_connector_gcp_machine_type_01: '{{ item.machine_type }}'
         #na_cloudmanager_connector_gcp_network_project_id_01: '{{ item.network_project_id }}'
@@ -19,6 +19,9 @@
         #na_cloudmanager_connector_gcp_proxy_password_01: '{{ item.proxy_password }}'
         #na_cloudmanager_connector_gcp_proxy_url_01: '{{ item.proxy_url }}'
         #na_cloudmanager_connector_gcp_proxy_user_name_01: '{{ item.proxy_user_name }}'
+        #na_cloudmanager_connector_gcp_refresh_token_01: '{{ item.refresh_token }}'
+        #na_cloudmanager_connector_gcp_sa_client_id_01: '{{ item.sa_client_id }}'
+        #na_cloudmanager_connector_gcp_sa_secret_key_01: '{{ item.sa_secret_key }}'
         #na_cloudmanager_connector_gcp_state_01: '{{ item.state }}'
         #na_cloudmanager_connector_gcp_subnet_id_01: '{{ item.subnet_id }}'
   

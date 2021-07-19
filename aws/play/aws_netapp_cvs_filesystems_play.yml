@@ -9,6 +9,7 @@
         aws_netapp_cvs_filesystems_secret_key_01: '{{ item.secret_key }}'
         aws_netapp_cvs_filesystems_state_01: '{{ item.state }}'
         #aws_netapp_cvs_filesystems_exportPolicy_01: '{{ item.exportPolicy }}'
+        #aws_netapp_cvs_filesystems_feature_flags_01: '{{ item.feature_flags }}'
         #aws_netapp_cvs_filesystems_quotaInBytes_01: '{{ item.quotaInBytes }}'
         #aws_netapp_cvs_filesystems_serviceLevel_01: '{{ item.serviceLevel }}'
         #aws_netapp_cvs_filesystems_validate_certs_01: '{{ item.validate_certs }}'

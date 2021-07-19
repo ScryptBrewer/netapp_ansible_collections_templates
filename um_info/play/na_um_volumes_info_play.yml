@@ -5,6 +5,8 @@
         na_um_volumes_info_hostname_01: '{{ item.hostname }}'
         na_um_volumes_info_password_01: '{{ item.password }}'
         na_um_volumes_info_username_01: '{{ item.username }}'
+        #na_um_volumes_info_feature_flags_01: '{{ item.feature_flags }}'
         #na_um_volumes_info_http_port_01: '{{ item.http_port }}'
+        #na_um_volumes_info_max_records_01: '{{ item.max_records }}'
         #na_um_volumes_info_validate_certs_01: '{{ item.validate_certs }}'
   

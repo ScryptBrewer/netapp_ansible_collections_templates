@@ -14,6 +14,7 @@
     use_rest: "{{ opt_lun_map_use_rest_01  | default(omit)  }}"
     share_name: '{{ req_cifs_share_name_01 }}'
     vserver: '{{ req_cifs_vserver_01 }}'
+    comment: '{{ opt_cifs_comment_01  | default(omit)  }}'
     feature_flags: '{{ opt_cifs_feature_flags_01  | default(omit)  }}'
     path: '{{ opt_cifs_path_01  | default(omit)  }}'
     share_properties: '{{ opt_cifs_share_properties_01  | default(omit)  }}'

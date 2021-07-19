@@ -3,6 +3,9 @@
       loop: "{{ na_cloudmanager_info }}"
       vars:
         na_cloudmanager_info_client_id_01: '{{ item.client_id }}'
-        na_cloudmanager_info_refresh_token_01: '{{ item.refresh_token }}'
+        #na_cloudmanager_info_environment_01: '{{ item.environment }}'
         #na_cloudmanager_info_gather_subsets_01: '{{ item.gather_subsets }}'
+        #na_cloudmanager_info_refresh_token_01: '{{ item.refresh_token }}'
+        #na_cloudmanager_info_sa_client_id_01: '{{ item.sa_client_id }}'
+        #na_cloudmanager_info_sa_secret_key_01: '{{ item.sa_secret_key }}'
   

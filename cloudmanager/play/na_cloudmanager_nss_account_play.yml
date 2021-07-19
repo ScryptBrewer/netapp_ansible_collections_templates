@@ -3,11 +3,14 @@
       loop: "{{ na_cloudmanager_nss_account }}"
       vars:
         na_cloudmanager_nss_account_client_id_01: '{{ item.client_id }}'
-        na_cloudmanager_nss_account_refresh_token_01: '{{ item.refresh_token }}'
         na_cloudmanager_nss_account_username_01: '{{ item.username }}'
+        #na_cloudmanager_nss_account_environment_01: '{{ item.environment }}'
         #na_cloudmanager_nss_account_name_01: '{{ item.name }}'
         #na_cloudmanager_nss_account_password_01: '{{ item.password }}'
         #na_cloudmanager_nss_account_public_id_01: '{{ item.public_id }}'
+        #na_cloudmanager_nss_account_refresh_token_01: '{{ item.refresh_token }}'
+        #na_cloudmanager_nss_account_sa_client_id_01: '{{ item.sa_client_id }}'
+        #na_cloudmanager_nss_account_sa_secret_key_01: '{{ item.sa_secret_key }}'
         #na_cloudmanager_nss_account_state_01: '{{ item.state }}'
         #na_cloudmanager_nss_account_vsa_list_01: '{{ item.vsa_list }}'
   

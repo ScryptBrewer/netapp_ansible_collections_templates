@@ -1,4 +1,6 @@
 ---
 - name: Running command na_um_list_clusters
   na_um_list_clusters:
+    feature_flags: '{{ na_um_list_clusters_feature_flags_01  | default(omit)  }}'
+    max_records: '{{ na_um_list_clusters_max_records_01  | default(omit)  }}'
   register: results

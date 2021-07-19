@@ -11,6 +11,7 @@
         #opt_disks_http_port_01: '{{ item.http_port }}'
         #opt_disks_https_01: '{{ item.https }}'
         #opt_disks_key_filepath_01: '{{ item.key_filepath }}'
+        #opt_disks_min_spares_01: '{{ item.min_spares }}'
         #opt_disks_ontapi_01: '{{ item.ontapi }}'
         #opt_disks_password_01: '{{ item.password }}'
         #opt_disks_use_rest_01: '{{ item.use_rest }}'

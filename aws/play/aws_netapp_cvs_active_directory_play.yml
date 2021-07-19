@@ -9,6 +9,7 @@
         aws_netapp_cvs_active_directory_state_01: '{{ item.state }}'
         #aws_netapp_cvs_active_directory_DNS_01: '{{ item.DNS }}'
         #aws_netapp_cvs_active_directory_domain_01: '{{ item.domain }}'
+        #aws_netapp_cvs_active_directory_feature_flags_01: '{{ item.feature_flags }}'
         #aws_netapp_cvs_active_directory_netBIOS_01: '{{ item.netBIOS }}'
         #aws_netapp_cvs_active_directory_password_01: '{{ item.password }}'
         #aws_netapp_cvs_active_directory_username_01: '{{ item.username }}'

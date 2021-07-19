@@ -16,6 +16,8 @@
         #azure_rm_netapp_volume_cloud_environment_01: '{{ item.cloud_environment }}'
         #azure_rm_netapp_volume_file_path_01: '{{ item.file_path }}'
         #azure_rm_netapp_volume_location_01: '{{ item.location }}'
+        #azure_rm_netapp_volume_log_mode_01: '{{ item.log_mode }}'
+        #azure_rm_netapp_volume_log_path_01: '{{ item.log_path }}'
         #azure_rm_netapp_volume_password_01: '{{ item.password }}'
         #azure_rm_netapp_volume_profile_01: '{{ item.profile }}'
         #azure_rm_netapp_volume_protocol_types_01: '{{ item.protocol_types }}'

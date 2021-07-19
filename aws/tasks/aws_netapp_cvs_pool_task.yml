@@ -6,6 +6,7 @@
     region: '{{ aws_netapp_cvs_pool_region_01 }}'
     secret_key: '{{ aws_netapp_cvs_pool_secret_key_01 }}'
     state: '{{ aws_netapp_cvs_pool_state_01 }}'
+    feature_flags: '{{ aws_netapp_cvs_pool_feature_flags_01  | default(omit)  }}'
     from_name: '{{ aws_netapp_cvs_pool_from_name_01  | default(omit)  }}'
     serviceLevel: '{{ aws_netapp_cvs_pool_serviceLevel_01  | default(omit)  }}'
     sizeInBytes: '{{ aws_netapp_cvs_pool_sizeInBytes_01  | default(omit)  }}'

@@ -8,6 +8,7 @@
         aws_netapp_cvs_snapshots_region_01: '{{ item.region }}'
         aws_netapp_cvs_snapshots_secret_key_01: '{{ item.secret_key }}'
         aws_netapp_cvs_snapshots_state_01: '{{ item.state }}'
+        #aws_netapp_cvs_snapshots_feature_flags_01: '{{ item.feature_flags }}'
         #aws_netapp_cvs_snapshots_fileSystemId_01: '{{ item.fileSystemId }}'
         #aws_netapp_cvs_snapshots_from_name_01: '{{ item.from_name }}'
         #aws_netapp_cvs_snapshots_validate_certs_01: '{{ item.validate_certs }}'

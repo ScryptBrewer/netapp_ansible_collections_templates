@@ -13,6 +13,8 @@
     client_id: '{{ azure_rm_netapp_capacity_pool_client_id_01  | default(omit)  }}'
     cloud_environment: '{{ azure_rm_netapp_capacity_pool_cloud_environment_01  | default(omit)  }}'
     location: '{{ azure_rm_netapp_capacity_pool_location_01  | default(omit)  }}'
+    log_mode: '{{ azure_rm_netapp_capacity_pool_log_mode_01  | default(omit)  }}'
+    log_path: '{{ azure_rm_netapp_capacity_pool_log_path_01  | default(omit)  }}'
     profile: '{{ azure_rm_netapp_capacity_pool_profile_01  | default(omit)  }}'
     secret: '{{ azure_rm_netapp_capacity_pool_secret_01  | default(omit)  }}'
     service_level: '{{ azure_rm_netapp_capacity_pool_service_level_01  | default(omit)  }}'

@@ -19,6 +19,7 @@
         #opt_net_port_password_01: '{{ item.password }}'
         #opt_net_port_speed_admin_01: '{{ item.speed_admin }}'
         #opt_net_port_state_01: '{{ item.state }}'
+        #opt_net_port_up_admin_01: '{{ item.up_admin }}'
         #opt_net_port_use_rest_01: '{{ item.use_rest }}'
         #opt_net_port_username_01: '{{ item.username }}'
         #opt_net_port_validate_certs_01: '{{ item.validate_certs }}'

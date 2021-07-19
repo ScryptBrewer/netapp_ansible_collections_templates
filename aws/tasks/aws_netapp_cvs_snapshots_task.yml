@@ -6,6 +6,7 @@
     region: '{{ aws_netapp_cvs_snapshots_region_01 }}'
     secret_key: '{{ aws_netapp_cvs_snapshots_secret_key_01 }}'
     state: '{{ aws_netapp_cvs_snapshots_state_01 }}'
+    feature_flags: '{{ aws_netapp_cvs_snapshots_feature_flags_01  | default(omit)  }}'
     fileSystemId: '{{ aws_netapp_cvs_snapshots_fileSystemId_01  | default(omit)  }}'
     from_name: '{{ aws_netapp_cvs_snapshots_from_name_01  | default(omit)  }}'
   register: results

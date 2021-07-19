@@ -1,0 +1,23 @@
+    - name: Running command na_ontap_publickey
+      include_tasks: tasks/na_ontap_publickey_task.yml
+      loop: "{{ na_ontap_publickey }}"
+      vars:
+        req_publickey_account_01: '{{ item.account }}'
+        req_publickey_hostname_01: '{{ item.hostname }}'
+        #opt_publickey_cert_filepath_01: '{{ item.cert_filepath }}'
+        #opt_publickey_comment_01: '{{ item.comment }}'
+        #opt_publickey_delete_all_01: '{{ item.delete_all }}'
+        #opt_publickey_feature_flags_01: '{{ item.feature_flags }}'
+        #opt_publickey_http_port_01: '{{ item.http_port }}'
+        #opt_publickey_https_01: '{{ item.https }}'
+        #opt_publickey_index_01: '{{ item.index }}'
+        #opt_publickey_key_filepath_01: '{{ item.key_filepath }}'
+        #opt_publickey_ontapi_01: '{{ item.ontapi }}'
+        #opt_publickey_password_01: '{{ item.password }}'
+        #opt_publickey_public_key_01: '{{ item.public_key }}'
+        #opt_publickey_state_01: '{{ item.state }}'
+        #opt_publickey_use_rest_01: '{{ item.use_rest }}'
+        #opt_publickey_username_01: '{{ item.username }}'
+        #opt_publickey_validate_certs_01: '{{ item.validate_certs }}'
+        #opt_publickey_vserver_01: '{{ item.vserver }}'
+  

@@ -22,5 +22,6 @@
     local_name_for_peer: '{{ opt_vserver_peer_local_name_for_peer_01  | default(omit)  }}'
     local_name_for_source: '{{ opt_vserver_peer_local_name_for_source_01  | default(omit)  }}'
     peer_cluster: '{{ opt_vserver_peer_peer_cluster_01  | default(omit)  }}'
+    peer_options: '{{ opt_vserver_peer_peer_options_01  | default(omit)  }}'
     state: '{{ opt_vserver_peer_state_01  | default(omit)  }}'
   register: results

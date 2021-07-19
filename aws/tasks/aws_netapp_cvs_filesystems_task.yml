@@ -7,6 +7,7 @@
     secret_key: '{{ aws_netapp_cvs_filesystems_secret_key_01 }}'
     state: '{{ aws_netapp_cvs_filesystems_state_01 }}'
     exportPolicy: '{{ aws_netapp_cvs_filesystems_exportPolicy_01  | default(omit)  }}'
+    feature_flags: '{{ aws_netapp_cvs_filesystems_feature_flags_01  | default(omit)  }}'
     quotaInBytes: '{{ aws_netapp_cvs_filesystems_quotaInBytes_01  | default(omit)  }}'
     serviceLevel: '{{ aws_netapp_cvs_filesystems_serviceLevel_01  | default(omit)  }}'
   register: results

@@ -14,6 +14,8 @@
     cloud_environment: '{{ azure_rm_netapp_account_cloud_environment_01  | default(omit)  }}'
     debug: '{{ azure_rm_netapp_account_debug_01  | default(omit)  }}'
     location: '{{ azure_rm_netapp_account_location_01  | default(omit)  }}'
+    log_mode: '{{ azure_rm_netapp_account_log_mode_01  | default(omit)  }}'
+    log_path: '{{ azure_rm_netapp_account_log_path_01  | default(omit)  }}'
     profile: '{{ azure_rm_netapp_account_profile_01  | default(omit)  }}'
     secret: '{{ azure_rm_netapp_account_secret_01  | default(omit)  }}'
     state: '{{ azure_rm_netapp_account_state_01  | default(omit)  }}'

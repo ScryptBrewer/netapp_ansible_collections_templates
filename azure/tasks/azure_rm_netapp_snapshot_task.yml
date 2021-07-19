@@ -14,6 +14,8 @@
     client_id: '{{ azure_rm_netapp_snapshot_client_id_01  | default(omit)  }}'
     cloud_environment: '{{ azure_rm_netapp_snapshot_cloud_environment_01  | default(omit)  }}'
     location: '{{ azure_rm_netapp_snapshot_location_01  | default(omit)  }}'
+    log_mode: '{{ azure_rm_netapp_snapshot_log_mode_01  | default(omit)  }}'
+    log_path: '{{ azure_rm_netapp_snapshot_log_path_01  | default(omit)  }}'
     profile: '{{ azure_rm_netapp_snapshot_profile_01  | default(omit)  }}'
     secret: '{{ azure_rm_netapp_snapshot_secret_01  | default(omit)  }}'
     state: '{{ azure_rm_netapp_snapshot_state_01  | default(omit)  }}'
