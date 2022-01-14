@@ -1,0 +1,31 @@
+    - name: Running command na_cloudmanager_connector_azure
+      include_tasks: tasks/na_cloudmanager_connector_azure_task.yml
+      loop: "{{ na_cloudmanager_connector_azure }}"
+      vars:
+        na_cloudmanager_connector_azure_account_id_01: '{{ item.account_id }}'
+        na_cloudmanager_connector_azure_admin_password_01: '{{ item.admin_password }}'
+        na_cloudmanager_connector_azure_admin_username_01: '{{ item.admin_username }}'
+        na_cloudmanager_connector_azure_company_01: '{{ item.company }}'
+        na_cloudmanager_connector_azure_location_01: '{{ item.location }}'
+        na_cloudmanager_connector_azure_name_01: '{{ item.name }}'
+        na_cloudmanager_connector_azure_network_security_group_name_01: '{{ item.network_security_group_name }}'
+        na_cloudmanager_connector_azure_resource_group_01: '{{ item.resource_group }}'
+        na_cloudmanager_connector_azure_subnet_name_01: '{{ item.subnet_name }}'
+        na_cloudmanager_connector_azure_subscription_id_01: '{{ item.subscription_id }}'
+        na_cloudmanager_connector_azure_vnet_name_01: '{{ item.vnet_name }}'
+        #na_cloudmanager_connector_azure_associate_public_ip_address_01: '{{ item.associate_public_ip_address }}'
+        #na_cloudmanager_connector_azure_client_id_01: '{{ item.client_id }}'
+        #na_cloudmanager_connector_azure_environment_01: '{{ item.environment }}'
+        #na_cloudmanager_connector_azure_feature_flags_01: '{{ item.feature_flags }}'
+        #na_cloudmanager_connector_azure_network_security_resource_group_01: '{{ item.network_security_resource_group }}'
+        #na_cloudmanager_connector_azure_proxy_certificates_01: '{{ item.proxy_certificates }}'
+        #na_cloudmanager_connector_azure_proxy_password_01: '{{ item.proxy_password }}'
+        #na_cloudmanager_connector_azure_proxy_url_01: '{{ item.proxy_url }}'
+        #na_cloudmanager_connector_azure_proxy_user_name_01: '{{ item.proxy_user_name }}'
+        #na_cloudmanager_connector_azure_refresh_token_01: '{{ item.refresh_token }}'
+        #na_cloudmanager_connector_azure_sa_client_id_01: '{{ item.sa_client_id }}'
+        #na_cloudmanager_connector_azure_sa_secret_key_01: '{{ item.sa_secret_key }}'
+        #na_cloudmanager_connector_azure_state_01: '{{ item.state }}'
+        #na_cloudmanager_connector_azure_virtual_machine_size_01: '{{ item.virtual_machine_size }}'
+        #na_cloudmanager_connector_azure_vnet_resource_group_01: '{{ item.vnet_resource_group }}'
+  

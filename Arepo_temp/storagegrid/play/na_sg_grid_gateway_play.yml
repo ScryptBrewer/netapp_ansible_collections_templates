@@ -1,0 +1,22 @@
+    - name: Running command na_sg_grid_gateway
+      include_tasks: tasks/na_sg_grid_gateway_task.yml
+      loop: "{{ na_sg_grid_gateway }}"
+      vars:
+        na_sg_grid_gateway_api_url_01: '{{ item.api_url }}'
+        na_sg_grid_gateway_auth_token_01: '{{ item.auth_token }}'
+        na_sg_grid_gateway_port_01: '{{ item.port }}'
+        #na_sg_grid_gateway_binding_mode_01: '{{ item.binding_mode }}'
+        #na_sg_grid_gateway_ca_bundle_01: '{{ item.ca_bundle }}'
+        #na_sg_grid_gateway_default_service_type_01: '{{ item.default_service_type }}'
+        #na_sg_grid_gateway_display_name_01: '{{ item.display_name }}'
+        #na_sg_grid_gateway_enable_ipv4_01: '{{ item.enable_ipv4 }}'
+        #na_sg_grid_gateway_enable_ipv6_01: '{{ item.enable_ipv6 }}'
+        #na_sg_grid_gateway_gateway_id_01: '{{ item.gateway_id }}'
+        #na_sg_grid_gateway_ha_groups_01: '{{ item.ha_groups }}'
+        #na_sg_grid_gateway_node_interfaces_01: '{{ item.node_interfaces }}'
+        #na_sg_grid_gateway_private_key_01: '{{ item.private_key }}'
+        #na_sg_grid_gateway_secure_01: '{{ item.secure }}'
+        #na_sg_grid_gateway_server_certificate_01: '{{ item.server_certificate }}'
+        #na_sg_grid_gateway_state_01: '{{ item.state }}'
+        #na_sg_grid_gateway_validate_certs_01: '{{ item.validate_certs }}'
+  

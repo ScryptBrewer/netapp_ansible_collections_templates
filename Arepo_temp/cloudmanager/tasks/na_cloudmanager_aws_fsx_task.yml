@@ -1,0 +1,28 @@
+---
+- name: Running command na_cloudmanager_aws_fsx
+  na_cloudmanager_aws_fsx:
+    name: '{{ na_cloudmanager_aws_fsx_name_01 }}'
+    tenant_id: '{{ na_cloudmanager_aws_fsx_tenant_id_01 }}'
+    aws_credentials_name: '{{ na_cloudmanager_aws_fsx_aws_credentials_name_01  | default(omit)  }}'
+    endpoint_ip_address_range: '{{ na_cloudmanager_aws_fsx_endpoint_ip_address_range_01  | default(omit)  }}'
+    environment: '{{ na_cloudmanager_aws_fsx_environment_01  | default(omit)  }}'
+    feature_flags: '{{ na_cloudmanager_aws_fsx_feature_flags_01  | default(omit)  }}'
+    fsx_admin_password: '{{ na_cloudmanager_aws_fsx_fsx_admin_password_01  | default(omit)  }}'
+    kms_key_id: '{{ na_cloudmanager_aws_fsx_kms_key_id_01  | default(omit)  }}'
+    minimum_ssd_iops: '{{ na_cloudmanager_aws_fsx_minimum_ssd_iops_01  | default(omit)  }}'
+    primary_subnet_id: '{{ na_cloudmanager_aws_fsx_primary_subnet_id_01  | default(omit)  }}'
+    refresh_token: '{{ na_cloudmanager_aws_fsx_refresh_token_01  | default(omit)  }}'
+    region: '{{ na_cloudmanager_aws_fsx_region_01  | default(omit)  }}'
+    route_table_ids: '{{ na_cloudmanager_aws_fsx_route_table_ids_01  | default(omit)  }}'
+    sa_client_id: '{{ na_cloudmanager_aws_fsx_sa_client_id_01  | default(omit)  }}'
+    sa_secret_key: '{{ na_cloudmanager_aws_fsx_sa_secret_key_01  | default(omit)  }}'
+    secondary_subnet_id: '{{ na_cloudmanager_aws_fsx_secondary_subnet_id_01  | default(omit)  }}'
+    security_group_ids: '{{ na_cloudmanager_aws_fsx_security_group_ids_01  | default(omit)  }}'
+    state: '{{ na_cloudmanager_aws_fsx_state_01  | default(omit)  }}'
+    storage_capacity_size: '{{ na_cloudmanager_aws_fsx_storage_capacity_size_01  | default(omit)  }}'
+    storage_capacity_size_unit: '{{ na_cloudmanager_aws_fsx_storage_capacity_size_unit_01  | default(omit)  }}'
+    tags: '{{ na_cloudmanager_aws_fsx_tags_01  | default(omit)  }}'
+    throughput_capacity: '{{ na_cloudmanager_aws_fsx_throughput_capacity_01  | default(omit)  }}'
+    working_environment_id: '{{ na_cloudmanager_aws_fsx_working_environment_id_01  | default(omit)  }}'
+    workspace_id: '{{ na_cloudmanager_aws_fsx_workspace_id_01  | default(omit)  }}'
+  register: results

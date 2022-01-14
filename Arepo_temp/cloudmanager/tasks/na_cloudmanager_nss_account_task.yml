@@ -1,0 +1,14 @@
+---
+- name: Running command na_cloudmanager_nss_account
+  na_cloudmanager_nss_account:
+    client_id: '{{ na_cloudmanager_nss_account_client_id_01 }}'
+    environment: '{{ na_cloudmanager_nss_account_environment_01  | default(omit)  }}'
+    feature_flags: '{{ na_cloudmanager_nss_account_feature_flags_01  | default(omit)  }}'
+    name: '{{ na_cloudmanager_nss_account_name_01  | default(omit)  }}'
+    public_id: '{{ na_cloudmanager_nss_account_public_id_01  | default(omit)  }}'
+    refresh_token: '{{ na_cloudmanager_nss_account_refresh_token_01  | default(omit)  }}'
+    sa_client_id: '{{ na_cloudmanager_nss_account_sa_client_id_01  | default(omit)  }}'
+    sa_secret_key: '{{ na_cloudmanager_nss_account_sa_secret_key_01  | default(omit)  }}'
+    state: '{{ na_cloudmanager_nss_account_state_01  | default(omit)  }}'
+    vsa_list: '{{ na_cloudmanager_nss_account_vsa_list_01  | default(omit)  }}'
+  register: results

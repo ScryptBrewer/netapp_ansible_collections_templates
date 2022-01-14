@@ -1,0 +1,22 @@
+---
+- name: Running command na_cloudmanager_aggregate
+  na_cloudmanager_aggregate:
+    client_id: '{{ na_cloudmanager_aggregate_client_id_01 }}'
+    name: '{{ na_cloudmanager_aggregate_name_01 }}'
+    state: '{{ na_cloudmanager_aggregate_state_01 }}'
+    capacity_tier: '{{ na_cloudmanager_aggregate_capacity_tier_01  | default(omit)  }}'
+    disk_size_size: '{{ na_cloudmanager_aggregate_disk_size_size_01  | default(omit)  }}'
+    disk_size_unit: '{{ na_cloudmanager_aggregate_disk_size_unit_01  | default(omit)  }}'
+    environment: '{{ na_cloudmanager_aggregate_environment_01  | default(omit)  }}'
+    feature_flags: '{{ na_cloudmanager_aggregate_feature_flags_01  | default(omit)  }}'
+    home_node: '{{ na_cloudmanager_aggregate_home_node_01  | default(omit)  }}'
+    iops: '{{ na_cloudmanager_aggregate_iops_01  | default(omit)  }}'
+    number_of_disks: '{{ na_cloudmanager_aggregate_number_of_disks_01  | default(omit)  }}'
+    provider_volume_type: '{{ na_cloudmanager_aggregate_provider_volume_type_01  | default(omit)  }}'
+    refresh_token: '{{ na_cloudmanager_aggregate_refresh_token_01  | default(omit)  }}'
+    sa_client_id: '{{ na_cloudmanager_aggregate_sa_client_id_01  | default(omit)  }}'
+    sa_secret_key: '{{ na_cloudmanager_aggregate_sa_secret_key_01  | default(omit)  }}'
+    throughput: '{{ na_cloudmanager_aggregate_throughput_01  | default(omit)  }}'
+    working_environment_id: '{{ na_cloudmanager_aggregate_working_environment_id_01  | default(omit)  }}'
+    working_environment_name: '{{ na_cloudmanager_aggregate_working_environment_name_01  | default(omit)  }}'
+  register: results
